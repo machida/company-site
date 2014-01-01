@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title CompanySite
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    %header.page__title
+      .wrapper
+        %h1.page__first-heading
+          -#
+            - if index?
+              FJORD, LLC
+            - elsif page?
+              = @entry.title
+            - elsif category?
+              = @category.title
+            - elsif post? and @entry.category
+              = @entry.category.title
+    = yield

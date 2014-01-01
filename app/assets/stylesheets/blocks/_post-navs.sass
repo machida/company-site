@@ -1,0 +1,70 @@
+.post-nav__articles
+  @extend .reset-ul
+.post-nav__article
+  +inline-block
+  width: 33.33%
+  float: left
+.post-nav__article-inner
+  padding-right: 1.8em
+  padding-bottom: 1.8em
+  +rem('height', 80px)
+.post-navs
+  position: relative
+  background-color: $pink
+  @extend .clearfix
+  padding-top: 2.4em
+  padding-bottom: 2.4em
+.post-nav
+  +rem('padding-left', 170px)
+  position: relative
+  margin-bottom: 2em
+  clear: both
+  @extend .clearfix
+  &:last-child
+    margin-bottom: 0
+.post-nav__articles
+  margin-right: -1.8em
+.post-nav__article-link
+  text-decoration: none
+  +rem('padding-left', 90px)
+  display: block
+  position: relative
+  +inconspicuous-white-link
+  &:hover
+    .post-nav____article-image
+      +opacity(1)
+.post-nav____article-image-wrapper
+  +rem('width', 78px)
+  +absolute(left, 0, top, 0)
+  overflow: hidden
+  height: 100%
+.post-nav____article-image
+  width: 100%
+  +opacity(.7)
+.post-nav____article-title
+  +text-block($sm, 1.5, .6)
+  +rem('height', $sm*3)
+  display: block
+  overflow: hidden
+.post-nav__article-date
+  +text-block($xxs)
+  display: block
+.post-nav__first-heading
+  @extend .reset
+  +tauri
+  +text-block($md)
+  color: $white
+  +absolute(left, 0, top, 0)
+  +rem('width', 130px)
+  text-align: right
+.post-nav__items
+  @extend .reset-ul
+.post-nav__item
+  +inline-block
+  +text-block($sm)
+  +rem('margin-right', $sm*.8)
+.post-nav__item-link
+  +inconspicuous-white-link
+  +hover-link
+  &.tag
+    +tag-icon

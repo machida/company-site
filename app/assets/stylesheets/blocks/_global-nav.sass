@@ -1,0 +1,19 @@
+.global-nav
+  +rem('padding-top', 40px)
+  +rem('margin-bottom', 60px)
+  @extend .clearfix
+.global-nav__li
+  display: block
+  width: 20%
+.global-nav__link
+  text-decoration: none
+  border-bottom: 2px solid $gray-l
+  display: block
+  font-weight: bold
+  color: $gray-l
+  text-align: right
+  +tauri
+  +text-block($lg, 1)
+  &:hover
+    color: darken($gray-l, 18%)
+    border-bottom: 2px solid darken($gray-l, 18%)

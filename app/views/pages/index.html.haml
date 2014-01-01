@@ -1,0 +1,13 @@
+%h1 Listing pages
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+  %tbody
+    - @pages.each do |page|
+      %tr
+        %td= page.title
+        %td= page.body
+        %td= link_to 'Show', page

@@ -1,0 +1,47 @@
+.home-access__address
+  @extend .reset-address
+  +text-block($md, 1.4, .8)
+.home-access__take-time
+  +rem('font-size', $sm)
+  @extend .reset
+.home-access__take-time-link
+  color: $pink
+  +hover-link
+  +inline-block
+  +rem('font-size', $xs)
+  +rem('margin-left', $xs*.6)
+.home-access__directions
+  @extend .reset-ol
+.home-access__direction
+  position: relative
+  +rem('padding-left', 32px)
+  margin-bottom: .6em
+  line-height: 1.8
+  +rem('font-size', $sm)
+  &:before
+    +inline-block
+    position: absolute
+    left: 0
+    +rem('top', 3px)
+    +text-block($xxs)
+    +square-block(18px)
+    text-align: center
+    border: $gray 1px solid
+    +box-sizing(border-box)
+    color: $gray
+  &:last-child
+    margin-bottom: 0
+  @for $i from 1 through 8
+    &:nth-child(#{$i})
+      &:before
+        content: "#{$i}"
+.home-access__map-link-wrapper
+  text-align: center
+  +rem('width', 66px)
+  float: right
+.home-access__map-link
+  color: $black
+  i
+    +rem('font-size', $xxl)
+  &:hover
+    color: $pink

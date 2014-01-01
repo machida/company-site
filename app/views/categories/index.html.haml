@@ -1,0 +1,14 @@
+%h1 Listing categories
+
+%table
+  %tr
+    %th Title
+    %th Slug
+    %th
+    %th
+    %th
+
+  - @categories.each do |category|
+    %tr
+      %td= category.name
+      %td= category.slug

@@ -1,0 +1,19 @@
+.side-column
+  position: absolute
+  right: 0
+  +rem('top', -88px)
+  +rem('min-height', 1300px)
+  background-color: #f22494
+  +rem('width', 220px)
+  padding-top: 1.2em
+  padding-left: 1em
+  padding-right: 1em
+  +box-sizing(border-box)
+
+.side-column__first-heading
+  @extend .reset
+  text-align: center
+  font-family: 'Tauri', sans-serif
+  +rem('font-size', $md)
+  margin-bottom: 1.2em
+  color: $white

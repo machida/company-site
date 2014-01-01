@@ -1,0 +1,15 @@
+.articles-list__articles
+  @extend .reset-ul
+.articles-list__article
+  display: block
+.articles-list__article-title
+  +text-block($sm, 1.5, .4)
+  display: block
+.articles-list__article-date
+  +rem('font-size', $xxs)
+  display: block
+.articles-list__article-link
+  display: block
+  margin-bottom: 1.4em
+  +hover-link
+  +inconspicuous-white-link

@@ -1,0 +1,18 @@
+.home-overview
+  +rem('font-size', $sm)
+.home-overview__informations
+  @extend .reset-ul
+.home-overview__information
+  line-height: 1.8
+  margin-bottom: .4em
+.home-overview__label
+  +inline-block
+  width: 4em
+  text-align: right
+  &:after
+    content: ":"
+    +inline-block
+    margin-left: .2em
+    margin-right: .2em
+.home-overview__value
+  +inline-block

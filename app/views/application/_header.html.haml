@@ -1,0 +1,24 @@
+%header#header
+  .wrapper
+    %form.header-search-form#search_form{"accept-charset" => "UTF-8", action: "/search", method: "get"}
+      %input.header-search-form__input-text{autocapitalize: "off", autofocus: "", name: "q", tabindex: "2", type: "text", value: ""}/
+      %input#type_value{name: "type", type: "hidden", value: "Repositories"}/
+      %button.header-search-form__button{tabindex: "3", type: "submit"}
+        %i.fa.fa-search
+      %input{name: "ref", type: "hidden", value: "searchresults"}/
+    - if author_signed_in?
+      %p.header-admin= link_to '管理画面', admin_root_path
+      %p.header-admin= link_to('Logout', destroy_author_session_path, :method => :delete)
+    - else
+      %p.header-admin= link_to('Login', new_author_session_path)
+#hero
+  - if home?
+    .wrapper.hero__image-wrapper--home
+      = image_tag("hero.png", {:class => "hero__image"})
+      .hero__hgrounp
+        %h1.hero__site-title
+          FJORD, LLC
+        %h2.hero__tag-line
+          Builing Apps and Design
+  - else
+    .wrapper.hero__image-wrapper.hero__image-wrapper

@@ -1,0 +1,46 @@
+.two-column-content
+  +rem('padding-left', 178px)
+  @extend .clearfix
+  position: relative
+  &:last-child
+    .two-column-content__inner
+      margin-bottom: 0
+      padding-bottom: 0
+  .two-column-content__inner
+    *:last-child
+      margin-bottom: 0
+
+.two-column-content__inner
+  border-left: rgba(0, 0, 0, .1) solid 1px
+  padding-left: 2em
+  padding-bottom: 3em
+  +box-sizing(border-box)
+
+.two-column-content__title-wrapper
+  +rem('width', 180px)
+  +absolute(left, 0, top, 0)
+  +rem('padding-right', 30px)
+  +box-sizing(border-box)
+  &.members__title-wrapper
+    padding-right: 0
+
+.two-column-content__first-heading
+  background-color: $yellow
+  +inline-block
+  @extend .reset
+  +text-block($xl, 3)
+  +rem('width', 180px)
+  text-align: center
+  +tauri
+  color: $black
+
+.two-column-content__second-heading
+  @extend .reset
+  +tauri
+  +text-block($lg, 1.4, .4)
+  +rem('font-size', $lg)
+  text-align: right
+  &.members__member-name
+    text-align: center
+    margin-bottom: .6em
+

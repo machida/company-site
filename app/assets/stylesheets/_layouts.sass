@@ -1,0 +1,21 @@
+html
+  font-size: 62.5%
+body
+  +rem('font-size', $md)
+.wrapper
+  max-width: 1100px
+  +box-sizing(border-box)
+  @extend .center-margin
+  +rem('padding-left', 20px)
+  +rem('padding-right', 20px)
+.content
+  color: $black
+  padding-bottom: 3em
+  min-height: 1000px
+.content__wrapper
+  padding-right: 260px
+  position: relative
+.pager
+  clear: both
+  ul
+    @extend .reset-ul

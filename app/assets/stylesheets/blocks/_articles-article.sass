@@ -1,0 +1,59 @@
+.articles__wrapper
+  +rem('margin-right', $md * -0.3)
+  +rem('margin-left', $md * -0.3)
+  position: relative
+  +rem('padding-right', 260px)
+.articles-article
+  width: 33.33%
+  float: left
+  +rem('padding-right', $md * .3)
+  +rem('padding-left', $md * .3)
+  +rem('padding-bottom', $md * .6)
+  +box-sizing(border-box)
+.articles-article__inner
+  +rem('padding', $md * .6)
+  border: $gray-l 1px solid
+  +rem('height', 300px)
+  overflow: hidden
+.articles-article__eyecatch-image-wrapper
+  display: block
+  overflow: hidden
+  +rem('height', 140px)
+  +rem('margin-bottom', $md * .6)
+.articles-article__eyecatch-image
+  width: 100%
+  height: auto
+.articles-article__title
+  @extend .reset
+  +text-block($lg, 1.6, .4)
+.articles-article__title-link
+  +hover-link
+  color: $black
+  display: block
+  +rem('height', $lg * 3)
+  overflow: hidden
+.articles-article__author-icon-image
+  +rem('width', 24px)
+  +border-radius(50%)
+  +inline-block
+  +rem('margin-right', $md * .2)
+.articles-article__created-at
+  +rem('font-size', $xs)
+  +inline-block
+  color: $gray
+.articles-article__tags
+  +rem('padding-top', $md * .4)
+  ul
+    @extend .reset-ul
+  li
+    +inline-block
+    +rem('margin-right', $md * .6)
+  a
+    +inline-block
+    +rem('font-size', $xs)
+    color: $black
+    +hover-link
+    &:before
+      +fa
+      content: "\f02b"
+      +rem('margin-right', $xs * .4)

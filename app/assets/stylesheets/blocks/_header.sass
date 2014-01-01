@@ -1,0 +1,47 @@
+#header
+  +rem('height', 86px)
+#hero
+  +rem('margin-bottom', 24px)
+  background-color: #bedce5
+  +filter-gradient(#bedce5, #d3e6e8, horizontal)
+  +background-image(linear-gradient(left,  #bedce5 0%,#d3e6e8 100%))
+.hero__image-wrapper
+  +rem('height', 120px)
+  overflow: hidden
+  +box-sizing(border-box)
+.hero__image-wrapper--home
+  +rem('height', 336px)
+  position: relative
+  +box-sizing(border-box)
+.hero__image
+  height: 100%
+  width: auto
+  display: block
+  +side-mg-auto
+.hero__hgrounp
+  +absolute(left, 0, top, 76px)
+  color: rgba(255, 255, 255, .7)
+.hero__site-title
+  +rem('font-size', 71px)
+  font-family: 'Tauri', sans-serif
+  @extend .reset
+  +rem('margin-bottom', -5px)
+.hero__tag-line
+  +text-block(30px)
+  +tauri
+  @extend .reset
+.header-search-form
+  border: $gray-l solid 1px
+  +box-sizing(border-box)
+  +inline-block
+  +rem('margin-top', 28px)
+  +rem('padding-right', 32px)
+  position: relative
+.header-search-form__input-text
+  +text-block($md, 1.4)
+.header-search-form__button
+  +absolute(right, 0, top, 0)
+  +text-block($md, 1.4)
+  +rem('width', 32px)
+  text-align: center
+  display: block

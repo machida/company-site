@@ -1,0 +1,90 @@
+.article__wrapper
+  padding-top: 2.6em
+
+.article__content
+  position: relative
+  margin-bottom: 2em
+
+.article__content-inner
+  +rem('max-width', 680px)
+  +side-mg-auto
+
+.article__title
+  @extend .reset
+  +text-block($xxxxxxxl, 1.4, .8)
+  margin-left: -0.1em
+  margin-right: -0.1em
+.article__title-link
+  color: $black
+  +hover-link
+
+.article__body
+  +rem('font-size', $lg)
+  p
+    @extend .reset
+    +rem('line-height', $lg*1.9)
+    +rem('margin-bottom', $lg*1.7)
+  ul,
+  ol
+    +rem('margin-bottom', $lg*1.7)
+  li
+    +rem('margin-bottom', $lg*.6)
+    &:last-child
+      margin-bottom: 0
+  a
+    color: $pink
+    +hover-link
+  img
+    display: block
+    +side-mg-auto
+    max-width: 120%
+  blockquote
+    @extend .reset
+    position: relative
+    padding-left: 1.8em
+    border-left: 8px solid rgba(0, 0, 0, .1)
+  *
+    &:last-child
+      margin-bottom: 0
+
+.article__informations
+  margin-bottom: 1.4em
+.article__author-icon-image
+  +square-block(32px)
+  +border-radius(50%)
+  +inline-block
+  margin-right: .2em
+.article__author-name
+  display: block
+  +rem('font-size', $lg)
+  +tauri
+  +inline-block
+  margin-right: .6em
+.article__created-at
+  font-weight: normal
+  +rem('font-size', $sm)
+  +inline-block
+  +rem('padding-top', $lg - $sm)
+  color: $gray
+
+.article__tags
+  display: inline
+  ul
+    @extend .reset-ul
+    display: inline
+  li
+    +inline-block
+  a
+    display: block
+    text-align: left
+    +text-block($sm)
+    +rem('padding-top', $lg - $sm)
+    color: $black
+    +hover-link
+    &:before
+      +fa
+      content: "\f02b"
+      margin-right: .4em
+
+.article__footer
+  padding-top: 3em

@@ -1,0 +1,31 @@
+//
+//## Buttons
+//これはボタンのスタイルです
+//
+// .primary             - （白）メインとなる普通のボタン
+// .primary:hover       - （白）メインとなる普通のボタン マウスオン
+// .primary:active      - （白）メインとなる普通のボタン クリック
+// .primary:disabled    - （白）メインとなる普通のボタン 無効
+// .danger              - （赤）削除なんかに使う危険なボタン
+// .danger:hover        - （赤）削除なんかに使う危険なボタン マウスオン
+// .danger:active       - （赤）削除なんかに使う危険なボタン クリック
+// .danger:disabled     - （赤）削除なんかに使う危険なボタン 無効
+// .blue                - （青）目立たせたいときに使うボタン
+// .blue:hover          - （青）目立たせたいときに使うボタン マウスオン
+// .blue:active         - （青）目立たせたいときに使うボタン クリック
+// .blue:disabled       - （青）目立たせたいときに使うボタン 無効
+//
+//Styleguide 1.1.
+
+.large-button
+  +inline-block
+  color: $white
+  background-color: blue
+  +box-shadow(rgba(0, 0, 0, .1) 0 1px 1px, rgba(255, 255, 255, .1) 0 1px 1px inset)
+  +box-sizing(border-box)
+  background-clip: border-box
+  border: rgba(0, 0, 0, .4) solid 1px
+  text-decoration: none
+  line-height: 38px
+  padding: 0 2em
+  +border-radius(4px)
