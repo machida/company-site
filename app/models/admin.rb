@@ -1,2 +1,2 @@
-class Admin < Author
+class Admin < Staff
 end

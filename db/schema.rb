@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131229141949) do
+ActiveRecord::Schema.define(version: 20140102124711) do
 
   create_table "admins", force: true do |t|
     t.datetime "created_at"
@@ -24,23 +24,9 @@ ActiveRecord::Schema.define(version: 20131229141949) do
   end
 
   create_table "authors", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name",                   default: "", null: false
   end
-
-  add_index "authors", ["email"], name: "index_authors_on_email", unique: true
-  add_index "authors", ["reset_password_token"], name: "index_authors_on_reset_password_token", unique: true
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -62,6 +48,11 @@ ActiveRecord::Schema.define(version: 20131229141949) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
 
+  create_table "members", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "pages", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -71,6 +62,7 @@ ActiveRecord::Schema.define(version: 20131229141949) do
     t.string   "title"
     t.text     "body"
     t.string   "slug"
+    t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "category_id"
@@ -79,10 +71,40 @@ ActiveRecord::Schema.define(version: 20131229141949) do
   add_index "posts", ["category_id"], name: "index_posts_on_category_id"
   add_index "posts", ["slug"], name: "index_posts_on_slug", unique: true
 
+  create_table "sites", force: true do |t|
+    t.string   "title"
+    t.string   "sub_title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "snippets", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "staffs", force: true do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name",                   default: "", null: false
+    t.string   "github_id"
+    t.string   "type"
+  end
+
+  add_index "staffs", ["email"], name: "index_staffs_on_email", unique: true
+  add_index "staffs", ["github_id"], name: "index_staffs_on_github_id"
+  add_index "staffs", ["reset_password_token"], name: "index_staffs_on_reset_password_token", unique: true
+  add_index "staffs", ["type"], name: "index_staffs_on_type"
 
   create_table "taggings", force: true do |t|
     t.integer  "tag_id"

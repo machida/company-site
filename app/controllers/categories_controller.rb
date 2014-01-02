@@ -1,12 +1,12 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: [:show, :edit, :update, :destroy]
-
   def index
     @categories = Category.all
+    @categories = Category.find(:all, :include => :posts)
   end
 
   def show
     @category = Category.friendly.find(params[:id])
+    @posts = @category.posts
   end
 
 end

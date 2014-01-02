@@ -4,11 +4,14 @@
   %tr
     %th Title
     %th Slug
-    %th
-    %th
-    %th
 
   - @categories.each do |category|
     %tr
       %td= category.name
       %td= category.slug
+
+- for category in @categories
+  = category.name
+  %ul
+    - for post in category.posts
+      %li= post.title

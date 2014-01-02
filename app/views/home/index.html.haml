@@ -1,2 +1,25 @@
-%p
-  aaaaa
+- content_for :page_title do
+  = @site.title
+
+%section.about
+  %section.two-column-content
+    .two-column-content__title-wrapper
+      %h2.two-column-content__second-heading
+        = @snippet_home_about.title
+    .about__description.two-column-content__inner
+      = @snippet_home_about.body
+  %section.home-access.two-column-content
+    .two-column-content__title-wrapper
+      %h2.two-column-content__second-heading
+        = @snippet_home_access.title
+      .home-access__map-link-wrapper
+        = link_to "/pages/access", :class => "home-access__map-link" do
+          %i.fa.fa-map-marker
+    .home-access__content.two-column-content__inner
+      = @snippet_home_access.body
+  %section.home-overview.two-column-content
+    .two-column-content__title-wrapper
+      %h2.two-column-content__second-heading
+        = @snippet_home_overview.title
+    .home-overview__content.two-column-content__inner
+      = @snippet_home_overview.body

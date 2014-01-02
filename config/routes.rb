@@ -8,6 +8,14 @@ CompanySite::Application.routes.draw do
     resources :categories
     resources :authors
   end
+  namespace :members do
+    root 'home#index'
+    resources :pages
+    resources :articles
+    resources :posts
+    resources :categories
+    resources :authors
+  end
   namespace :authors do
     root 'home#index'
     resources :pages
@@ -17,7 +25,7 @@ CompanySite::Application.routes.draw do
     resources :authors
   end
   resources :admins
-  devise_for :authors
+  devise_for :staffs
   resources :snippets
   resources :pages
   resources :articles

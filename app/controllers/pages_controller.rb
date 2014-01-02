@@ -6,6 +6,7 @@ class PagesController < PostsController
 
   def show
     @page = Page.friendly.find(params[:id])
+    @articles = Article.order('id desc').limit(10)
   end
 
   private

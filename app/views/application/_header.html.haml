@@ -10,15 +10,15 @@
       %p.header-admin= link_to '管理画面', admin_root_path
       %p.header-admin= link_to('Logout', destroy_author_session_path, :method => :delete)
     - else
-      %p.header-admin= link_to('Login', new_author_session_path)
+      %p.header-admin= link_to('Author', new_author_session_path)
 #hero
   - if home?
     .wrapper.hero__image-wrapper--home
       = image_tag("hero.png", {:class => "hero__image"})
       .hero__hgrounp
         %h1.hero__site-title
-          FJORD, LLC
+          = @site.title
         %h2.hero__tag-line
-          Builing Apps and Design
+          = @site.sub_title
   - else
     .wrapper.hero__image-wrapper.hero__image-wrapper

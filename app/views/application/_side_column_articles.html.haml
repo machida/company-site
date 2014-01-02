@@ -1,0 +1,13 @@
+%aside.side-column.side-column-articles
+  %h1.side-column__first-heading
+    BLOG
+  %ul.articles-list__articles
+    - @articles.each do |article|
+      %li.articles-list__article
+        = link_to article, {:class => "articles-list__article-link"} do
+          %span.articles-list__article-title
+            = article.title
+          %span.articles-list__article-date
+            = article.created_at
+    - if @articles.empty?
+      %p.empty= t('latest article was not found')
