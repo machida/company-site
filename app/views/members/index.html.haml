@@ -1,0 +1,11 @@
+- content_for :page_title do
+  MEMBERS
+
+%h1 Listing Members
+%table
+  %tbody
+    - @staffs.each do |staff|
+      %tr
+        %td= staff.name
+        %td= staff.body
+        %td= link_to 'Show', "/members/#{staff.name}"

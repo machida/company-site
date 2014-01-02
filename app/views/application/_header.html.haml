@@ -6,11 +6,14 @@
       %button.header-search-form__button{tabindex: "3", type: "submit"}
         %i.fa.fa-search
       %input{name: "ref", type: "hidden", value: "searchresults"}/
-    - if author_signed_in?
-      %p.header-admin= link_to '管理画面', admin_root_path
-      %p.header-admin= link_to('Logout', destroy_author_session_path, :method => :delete)
+    - if staff_signed_in?
+      %p.header-admin= link_to '管理画面', staffs_root_path
+      %p.header-admin= link_to('Logout', destroy_staff_session_path, :method => :delete)
+      %p.header-admin
+        = current_staff.name
     - else
-      %p.header-admin= link_to('Author', new_author_session_path)
+      %p.header-admin= link_to('Login', new_staff_session_path)
+
 #hero
   - if home?
     .wrapper.hero__image-wrapper--home

@@ -1,0 +1,8 @@
+- content_for :page_title do
+  = @staff.name
+
+%table
+  %tbody
+    %tr
+      %td= @staff.name
+      %td= @staff.body

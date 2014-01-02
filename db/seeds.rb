@@ -1,44 +1,49 @@
 # coding: utf-8
 
 # admin
-Admin.reset_column_information
+Staff.reset_column_information
 
-Admin.create!(
+Staff.create!(
   id: 1,
   name: 'admin',
   email: 'admin@example.com',
+  role: "admin",
   password: 'testtest',
   password_confirmation: 'testtest'
 )
 
-# author
-Author.reset_column_information
-
-Author.create!(
+Staff.create!(
   id: 2,
-  name: 'author',
-  email: 'author@example.com',
+  name: 'staff',
+  email: 'staff@example.com',
   password: 'testtest',
   password_confirmation: 'testtest'
 )
 
-# member
-Member.reset_column_information
-
-Member.create!(
+Staff.create!(
   id: 3,
   name: 'komagata',
   email: 'komagata@example.com',
   github_id: 'komagata',
+  twitter_id: 'komagata',
+  facebook_id: 'komagata1111',
+  role: "admin",
+  member: true,
+  body: 'Member Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   password: 'testtest',
   password_confirmation: 'testtest'
 )
 
-Member.create!(
+Staff.create!(
   id: 4,
   name: 'machida',
   email: 'machida@example.com',
   github_id: 'machida',
+  twitter_id: 'machida',
+  facebook_id: 'teppeimachida',
+  role: "admin",
+  member: true,
+  body: 'Member Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   password: 'testtest',
   password_confirmation: 'testtest'
 )

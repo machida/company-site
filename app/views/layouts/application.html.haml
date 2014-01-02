@@ -18,11 +18,10 @@
         .wrapper
           .articles__wrapper
             = yield
-      - elsif home? or page?
+      - elsif home? or page? or members?
         .wrapper.content__wrapper
           = yield
           = render 'side_column_articles'
       - else
         .wrapper.content__wrapper
           = yield
-          aaa

@@ -11,19 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140102124711) do
-
-  create_table "admins", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140104051621) do
 
   create_table "articles", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "authors", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -66,6 +56,8 @@ ActiveRecord::Schema.define(version: 20140102124711) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "category_id"
+    t.text     "meta_description", default: ""
+    t.string   "meta_keywords",    default: ""
   end
 
   add_index "posts", ["category_id"], name: "index_posts_on_category_id"
@@ -76,6 +68,8 @@ ActiveRecord::Schema.define(version: 20140102124711) do
     t.string   "sub_title"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "meta_description", default: ""
+    t.string   "meta_keywords",    default: ""
   end
 
   create_table "snippets", force: true do |t|
@@ -84,27 +78,34 @@ ActiveRecord::Schema.define(version: 20140102124711) do
   end
 
   create_table "staffs", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
+    t.string   "email",                  default: "",    null: false
+    t.string   "encrypted_password",     default: "",    null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",          default: 0,     null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name",                   default: "", null: false
+    t.string   "name",                   default: "",    null: false
     t.string   "github_id"
-    t.string   "type"
+    t.string   "facebook_id"
+    t.string   "twitter_id"
+    t.text     "body"
+    t.boolean  "member",                 default: false, null: false
+    t.string   "role"
+    t.string   "slug"
   end
 
+  add_index "staffs", ["body"], name: "index_staffs_on_body"
   add_index "staffs", ["email"], name: "index_staffs_on_email", unique: true
+  add_index "staffs", ["facebook_id"], name: "index_staffs_on_facebook_id"
   add_index "staffs", ["github_id"], name: "index_staffs_on_github_id"
   add_index "staffs", ["reset_password_token"], name: "index_staffs_on_reset_password_token", unique: true
-  add_index "staffs", ["type"], name: "index_staffs_on_type"
+  add_index "staffs", ["twitter_id"], name: "index_staffs_on_twitter_id"
 
   create_table "taggings", force: true do |t|
     t.integer  "tag_id"

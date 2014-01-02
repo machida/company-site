@@ -1,2 +1,0 @@
-class Author < Staff
-end
