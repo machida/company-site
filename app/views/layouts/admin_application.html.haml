@@ -1,21 +1,30 @@
 !!!
 %html
   %head
-    %title CompanySite
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    %title= @site.title
+    = stylesheet_link_tag    "staffs/application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    %header.page__title
-      .wrapper
-        %h1.page__first-heading
-          -#
-            - if index?
-              FJORD, LLC
-            - elsif page?
-              = @entry.title
-            - elsif category?
-              = @category.title
-            - elsif post? and @entry.category
-              = @entry.category.title
-    = yield
+    %header.header
+      %h1.header__site-title
+        = link_to root_path, {:class => "header__site-title-link"} do
+          = @site.title
+      %nav.header__nav
+        %ul.header__nav-items
+          - if staff_signed_in?
+            %li.header__nav-item
+              = link_to staffs_root_path, {:class => "header__nav-link"} do
+                %i.fa.fa-home.header__nav-icon
+                管理画面
+            %li.header__nav-item
+              = link_to(destroy_staff_session_path, :method => :delete, :class => "header__nav-link") do
+                %i.fa.fa-sign-out.header__nav-icon
+                Logout
+            %li.header__nav-item
+              = current_staff.name
+
+    .wrapper
+      %main.main
+        = yield
+      = render 'staffs_side_nav'

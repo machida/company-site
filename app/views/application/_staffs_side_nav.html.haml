@@ -1,0 +1,32 @@
+%nav.side-nav
+  %ul.side-nav__wrapper
+    %li.side-nav-link
+      %h2.side-nav-link__parent
+        = link_to staffs_root_path, {:class => "side-nav-link__parent-link"} do
+          %i.fa.fa-home.side-nav-link__parent-icon
+          ダッシュボード
+    %li.side-nav-link
+      %h2.side-nav-link__parent
+        = link_to staffs_articles_path, {:class => "side-nav-link__parent-link"} do
+          %i.fa.fa-pencil-square-o.side-nav-link__parent-icon
+          投稿
+    %li.side-nav-link
+      %h2.side-nav-link__parent
+        = link_to staffs_pages_path, {:class => "side-nav-link__parent-link"} do
+          %i.fa.fa-book.side-nav-link__parent-icon
+          ページ
+    %li.side-nav-link
+      %h2.side-nav-link__parent
+        = link_to staffs_snippets_path, {:class => "side-nav-link__parent-link"} do
+          %i.fa.fa-paperclip.side-nav-link__parent-icon
+          スニペット
+    %li.side-nav-link
+      %h2.side-nav-link__parent
+        = link_to staffs_staffs_path, {:class => "side-nav-link__parent-link"} do
+          %i.fa.fa-user.side-nav-link__parent-icon
+          ユーザー
+    %li.side-nav-link
+      %h2.side-nav-link__parent
+        = link_to staffs_sites_path, {:class => "side-nav-link__parent-link"} do
+          %i.fa.fa-home.side-nav-link__parent-icon
+          設定

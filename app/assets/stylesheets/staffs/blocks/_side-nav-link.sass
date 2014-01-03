@@ -1,0 +1,23 @@
+.side-nav-link
+  border-bottom: $bd
+.side-nav__wrapper
+  @extend .reset-ul
+.side-nav-link__parent
+  +rem('font-size', 16px)
+  line-height: 1
+  vertical-align: bottom
+.side-nav-link__parent-icon
+  +rem('font-size', 24px)
+  +rem('margin-right', 4px)
+.side-nav-link__parent-link
+  +block-link
+  +rem('padding', 16px 20px)
+  color: $black
+.side-nav-link__parent-heading
+  display: block
+  +rem('padding', 16px 20px 6px)
+.side-nav-link__children
+  @extend .reset-ul
+  +rem('padding', 0 20px 16px)
+.side-nav-link__child
+  +inline-block

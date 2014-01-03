@@ -21,7 +21,7 @@ class Staffs::PagesController < StaffsController
 
     respond_to do |format|
       if @page.save
-        format.html { redirect_to admin_pages_path, notice: 'article was successfully created.' }
+        format.html { redirect_to staffs_pages_path, notice: 'page was successfully created.' }
         format.json { render action: 'show', status: :created, location: @page }
       else
         format.html { render action: 'new' }
@@ -34,7 +34,7 @@ class Staffs::PagesController < StaffsController
     @page = Article.friendly.find(params[:id])
     respond_to do |format|
       if @page.update(page_params)
-        format.html { redirect_to admin_pages_path, notice: 'article was successfully updated.' }
+        format.html { redirect_to staffs_pages_path, notice: 'article was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -47,7 +47,7 @@ class Staffs::PagesController < StaffsController
     @page = Page.friendly.find(params[:id])
     @page.destroy
     respond_to do |format|
-      format.html { redirect_to admin_pages_path }
+      format.html { redirect_to staffs_pages_path }
       format.json { head :no_content }
     end
 

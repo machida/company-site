@@ -1,12 +1,12 @@
 module ApplicationHelper
 
-  %w(home articles pages tags categories members).each do |controller|
+  %w(home articles pages tags categories members services).each do |controller|
     define_method("#{controller}?") do
       params[:controller] == controller and params[:action] == 'index'
     end
   end
 
-  %w(articles pages tags categories members).each do |controller|
+  %w(articles pages tags categories members services).each do |controller|
     define_method("#{controller.singularize}?") do
       params[:controller] == controller and params[:action] == 'show'
     end

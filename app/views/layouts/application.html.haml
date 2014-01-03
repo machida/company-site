@@ -5,6 +5,8 @@
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
+    = auto_discovery_link_tag( :rss, "/articles/feed.rss" )
+    = analytics_init if Rails.env.production?
   %body
     = render 'header'
     = render 'global_nav'
@@ -14,14 +16,20 @@
           = yield :page_title
 
     .content
-      - if articles? or categories?
+      - if articles? or categories? or category?
         .wrapper
           .articles__wrapper
             = yield
-      - elsif home? or page? or members?
+            = render 'side_column_articles_nav'
+      - elsif home? or page? or members? or services?
         .wrapper.content__wrapper
           = yield
           = render 'side_column_articles'
+      - elsif article?
+        .wrapper.article__wrapper
+          .article__content
+            .article__content-inner
+              = yield
       - else
         .wrapper.content__wrapper
           = yield

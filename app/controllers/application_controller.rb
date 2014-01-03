@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :site_information
+  before_action :articles_by_month
   protect_from_forgery with: :exception
 
   # devise ログイン後のリダイレクト
@@ -16,4 +17,9 @@ class ApplicationController < ActionController::Base
       @current_ability ||= Ability.new(current_staff)
     end
   end
+
+  def articles_by_month
+    @articles_by_month = Article.find(:all, :order => "created_at DESC").group_by { |article| article.created_at.strftime("%B %Y") }
+  end
+
 end

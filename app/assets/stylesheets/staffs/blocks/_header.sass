@@ -1,0 +1,26 @@
+$header-bottom-mg: 4px
+.header
+  position: relative
+  +rem('padding', 4px 20px $header-bottom-mg)
+  border-bottom: $bd
+.header__site-title
+  @extend .reset
+  +rem('font-size', 38px)
+.header__site-title-link
+  text-decoration: none
+  color: $blue
+.header__nav-items
+  @extend .reset-ul
+  position: absolute
+  right: 20px
+  bottom: $header-bottom-mg
+.header__nav-item
+  +inline-block
+  +rem('margin-right', 10px)
+.header__nav-link
+  +hover-link
+  color: $blue
+  +rem('margin-left', 10px)
+.header__nav-icon
+  +rem('font-size', 20px)
+  +rem('margin-right', 2px)

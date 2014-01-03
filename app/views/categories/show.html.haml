@@ -3,8 +3,23 @@
 
 %p#notice= notice
 
-%ul
-  - @posts.each do |post|
-    %li= post.title
+- @posts.each do |post|
+  %article.articles-article
+    .articles-article__inner
+      = link_to post, {:class => "articles-article__eyecatch-image-wrapper"} do
+        - if post.thumbnail?
+          = image_tag("#{post.thumbnail}")
+        - else
+          <img class="articles-article__eyecatch-image" src="http://www.gravatar.com/avatar/ca8b183e3e8cf320dbd76b241bbd6eba">
+      %h2.articles-article__title
+        = link_to post, {:class => "articles-article__title-link"} do
+          = post.title
+      .articles-article__informations
+        = image_tag("member-icons/#{post.staff.slug}.jpg", :alt => "#{post.staff.name}", :class => "articles-article__author-icon-image")
+        .articles-article__created-at
+          = post.created_at
+        .articles-article__tags
+          %ul.tags
+            = raw post.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
 
 = paginate(@posts)

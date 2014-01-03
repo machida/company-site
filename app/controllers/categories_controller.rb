@@ -6,7 +6,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.friendly.find(params[:id])
-    @posts = @category.posts.page(params[:page]).per(10).order(:id)
+    @posts = @category.posts.page(params[:page]).per(12).order(:id)
   end
 
 end

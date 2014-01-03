@@ -1,0 +1,55 @@
+.login
+  background-color: #1898d3
+  min-height: 800px
+  padding-top: 300px
+  background-image: url("/admin/assets/images/login-bg.jpg")
+  background-size: auto 100%
+  #error
+    background-color: rgba(255, 255, 255, .4)
+    line-height: 38px
+    text-align: center
+    +rem('margin-bottom', 16px)
+.login-form
+  width: 540px
+  border: $white solid 12px
+  +side-mg-auto
+  color: $white
+  +box-sizing(border-box)
+  +rem('padding', 18px 24px)
+.login-form__first-heading
+  @extend .reset
+  font-family: 'Tauri', sans-serif
+  +rem('margin-bottom', 18px)
+  +rem('font-size', 38px)
+.login-form__first-heading-link
+  text-decoration: none
+  color: $white
+.login-form__input-field
+  +rem('font-size', 18px)
+  &:first-child
+    +rem('margin-bottom', 16px)
+  &:nth-child(2)
+    +rem('margin-bottom', 22px)
+.login-form__label
+  +inline-block
+  width: 120px
+  +rem('font-size', 18px)
+.login-form__input
+  color: $white
+.login-form__input[type="text"],
+.login-form__input[type="password"]
+  border: $white 4px solid
+  +inline-block
+  width: 320px
+  +box-sizing(border-box)
+  +rem('padding', 4px 8px)
+  font-family: 'Tauri', sans-serif
+.login-form__input[type="submit"]
+  display: block
+  +side-mg-auto
+  background-color: $white
+  +rem('padding', 8px 28px)
+  color: #1898d3
+  font-weight: bold
+.login-form__input-field--submit
+  +rem('padding-top', 20px)

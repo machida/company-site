@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140103030034) do
+ActiveRecord::Schema.define(version: 20140104051635) do
 
   create_table "articles", force: true do |t|
     t.datetime "created_at"
@@ -54,19 +54,24 @@ ActiveRecord::Schema.define(version: 20140103030034) do
     t.text     "meta_description", default: ""
     t.string   "meta_keywords",    default: ""
     t.integer  "staff_id"
+    t.string   "thumbnail"
+    t.string   "sub_title"
   end
 
   add_index "posts", ["category_id"], name: "index_posts_on_category_id"
   add_index "posts", ["slug"], name: "index_posts_on_slug", unique: true
   add_index "posts", ["staff_id"], name: "index_posts_on_staff_id"
+  add_index "posts", ["sub_title"], name: "index_posts_on_sub_title"
+  add_index "posts", ["thumbnail"], name: "index_posts_on_thumbnail"
 
-  create_table "sites", force: true do |t|
-    t.string   "title"
-    t.string   "sub_title"
+  create_table "services", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "meta_description", default: ""
-    t.string   "meta_keywords",    default: ""
+  end
+
+  create_table "sites", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "snippets", force: true do |t|

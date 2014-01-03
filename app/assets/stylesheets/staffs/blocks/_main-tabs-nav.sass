@@ -1,0 +1,20 @@
+.main-tabs-nav__tabs
+  @extend .reset-ul
+.main-tabs-nav__tab
+  +inline-block
+  +rem('font-size', 18px)
+  &:last-child
+    .main-tabs-nav__tab-link
+      border-right: rgba(0, 0, 0, .1) solid 1px
+.main-tabs-nav__tab-link
+  display: block
+  text-decoration: none
+  +rem('padding', 6px 32px)
+  border: rgba(0, 0, 0, .1) solid 1px
+  border-right: none
+  color: $black
+  position: relative
+  top: 1px
+  background-color: #FFF
+  +box-sizing(border-box)
+

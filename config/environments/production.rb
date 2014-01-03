@@ -77,4 +77,8 @@ CompanySite::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # replace this with your tracker code
+  GA.tracker = "UA-xxxxxx-x"
+  GA.script_source = "('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'"
 end

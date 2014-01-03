@@ -8,6 +8,7 @@ CompanySite::Application.routes.draw do
     resources :categories
     resources :snippets
     resources :staffs
+    resources :sites
   end
   devise_for :staffs
   resources :snippets
@@ -15,6 +16,8 @@ CompanySite::Application.routes.draw do
   resources :articles
   resources :categories
   resources :members
+  resources :services
+  get "month/:month", to: 'articles#index', :as => :article_month
   get 'tags/:tag', to: 'articles#index', as: :tag
   root :to => 'home#index'
 end

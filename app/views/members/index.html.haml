@@ -1,11 +1,13 @@
 - content_for :page_title do
   MEMBERS
 
-%h1 Listing Members
-%table
-  %tbody
-    - @staffs.each do |staff|
-      %tr
-        %td= staff.name
-        %td= staff.body
-        %td= link_to 'Show', "/members/#{staff.name}"
+%section.members
+  - @staffs.each do |staff|
+    %section.two-column-content.members__member
+      .two-column-content__title-wrapper.members__title-wrapper
+        %h2.two-column-content__second-heading.members__member-name
+          = staff.name
+        = link_to "/members/#{staff.slug}" do
+          = image_tag("member-icons/#{staff.slug}.jpg", :alt => "#{staff.name}", :class => "members__member-icon-image")
+      .two-column-content__inner
+        = staff.body
