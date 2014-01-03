@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140104051621) do
+ActiveRecord::Schema.define(version: 20140103030034) do
 
   create_table "articles", force: true do |t|
     t.datetime "created_at"
@@ -38,11 +38,6 @@ ActiveRecord::Schema.define(version: 20140104051621) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
 
-  create_table "members", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "pages", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -58,10 +53,12 @@ ActiveRecord::Schema.define(version: 20140104051621) do
     t.integer  "category_id"
     t.text     "meta_description", default: ""
     t.string   "meta_keywords",    default: ""
+    t.integer  "staff_id"
   end
 
   add_index "posts", ["category_id"], name: "index_posts_on_category_id"
   add_index "posts", ["slug"], name: "index_posts_on_slug", unique: true
+  add_index "posts", ["staff_id"], name: "index_posts_on_staff_id"
 
   create_table "sites", force: true do |t|
     t.string   "title"

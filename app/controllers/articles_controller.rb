@@ -1,10 +1,9 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.all
     if params[:tag]
       @articles = Article.tagged_with(params[:tag])
     else
-      @articles = Article.all
+      @articles = Article.page(params[:page]).per(10).order(:id)
     end
   end
 

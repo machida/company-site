@@ -5,7 +5,7 @@ class MembersController < ApplicationController
   end
 
   def show
-    @staff = Staff.find(params[:id], :conditions => { :member => true })
+    @staff = Staff.friendly.find(params[:id], :conditions => { :member => true })
   end
 
 end

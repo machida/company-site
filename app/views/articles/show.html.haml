@@ -1,3 +1,6 @@
+- content_for :page_title do
+  = @article.category.name.upcase
+
 %p#notice= notice
 = @article.title
 = @article.body

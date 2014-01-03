@@ -18,12 +18,12 @@
       - @staffs.each do |staff|
         %li.home-members__member
           %h3.home-members__member-icon
-            = link_to "#", {:class => "home-members__member-icon-link"} do
-              = image_tag("member-icons/#{staff.name}.jpg", :alt => "#{staff.name}", :class => "home-members__member-icon-image")
+            = link_to "/members/#{staff.slug}", {:class => "home-members__member-icon-link"} do
+              = image_tag("member-icons/#{staff.slug}.jpg", :alt => "#{staff.name}", :class => "home-members__member-icon-image")
 
           .home-members__member-informations
             %h4.home-members__member-name
-              = link_to "#", {:class => "home-members__member-name-link"} do
+              = link_to "/members/#{staff.slug}", {:class => "home-members__member-name-link"} do
                 = staff.name
             %ul.home-members__sns-icons
               %li.home-members__sns-icon.twitter

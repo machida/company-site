@@ -8,6 +8,7 @@ Staff.create!(
   name: 'admin',
   email: 'admin@example.com',
   role: "admin",
+  slug: "staff-admin",
   password: 'testtest',
   password_confirmation: 'testtest'
 )
@@ -16,6 +17,7 @@ Staff.create!(
   id: 2,
   name: 'staff',
   email: 'staff@example.com',
+  slug: "staff",
   password: 'testtest',
   password_confirmation: 'testtest'
 )
@@ -24,6 +26,7 @@ Staff.create!(
   id: 3,
   name: 'komagata',
   email: 'komagata@example.com',
+  slug: "komagata",
   github_id: 'komagata',
   twitter_id: 'komagata',
   facebook_id: 'komagata1111',
@@ -38,6 +41,7 @@ Staff.create!(
   id: 4,
   name: 'machida',
   email: 'machida@example.com',
+  slug: "machida",
   github_id: 'machida',
   twitter_id: 'machida',
   facebook_id: 'teppeimachida',
