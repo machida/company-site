@@ -8,6 +8,11 @@
         %tr
           %td= snippet.title
           %td= snippet.slug
+          %td
+            - if snippet.published?
+              公開
+            - else
+              下書き
           %td= link_to 'Show', staffs_snippet_path(snippet)
           %td= link_to 'Edit', edit_staffs_snippet_path(snippet)
           %td= link_to 'Destroy', staffs_snippet_path(snippet), method: :delete, data: { confirm: 'Are you sure?' }

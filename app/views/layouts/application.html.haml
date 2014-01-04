@@ -22,14 +22,17 @@
             = yield
             = render 'side_column_articles_nav'
       - elsif home? or page? or members? or services?
-        .wrapper.content__wrapper
-          = yield
-          = render 'side_column_articles'
+        .wrapper
+          .content__wrapper
+            = yield
+            = render 'side_column_articles'
       - elsif article?
-        .wrapper.article__wrapper
-          .article__content
-            .article__content-inner
-              = yield
+        .wrapper
+          .article__wrapper
+            .article__content
+              .article__content-inner
+                = yield
       - else
-        .wrapper.content__wrapper
-          = yield
+        .wrapper
+          .content__wrapper
+            = yield

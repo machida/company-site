@@ -8,6 +8,11 @@
         %tr
           %td= page.title
           %td= page.slug
+          %td
+            - if page.published?
+              公開
+            - else
+              下書き
           %td= link_to 'Show', staffs_page_path(page)
           %td= link_to 'Edit', edit_staffs_page_path(page)
           %td= link_to 'Destroy', staffs_page_path(page), method: :delete, data: { confirm: 'Are you sure?' }

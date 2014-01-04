@@ -18,6 +18,10 @@
   .field
     = f.label :slug
     %br/
-    = f.text_area :slug
+    = f.text_field :slug
+  .field
+    = f.label :published
+    %br/
+    = f.check_box :published
   .actions
     = f.submit
