@@ -22,6 +22,7 @@
                 %i.fa.fa-sign-out.header__nav-icon
                 Logout
             %li.header__nav-item
+              = image_tag gravatar_image_url(current_staff.email, 32)
               = current_staff.name
 
     .wrapper

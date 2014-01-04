@@ -1,11 +1,15 @@
-%h1 Listing Staffs
-%table
-  %tbody
-    - @staffs.each do |staff|
-      %tr
-        %td= staff.name
-        %td= link_to 'Show', staffs_staff_path(staff)
-        %td= link_to 'Edit', edit_staffs_staff_path(staff)
-        %td= link_to 'Destroy', staffs_staff_path(staff), method: :delete, data: { confirm: 'Are you sure?' }
-%br/
-= link_to 'New Staff', new_staffs_staff_path
+%header.main__header
+  %h2.main__header-heading
+    Listing Staffs
+.main__body
+  %table
+    %tbody
+      - @staffs.each do |staff|
+        %tr
+          %td= image_tag gravatar_image_url(staff.email, 32)
+          %td= staff.name
+          %td= link_to 'Show', staffs_staff_path(staff)
+          %td= link_to 'Edit', edit_staffs_staff_path(staff)
+          %td= link_to 'Destroy', staffs_staff_path(staff), method: :delete, data: { confirm: 'Are you sure?' }
+  - if can? :manage, @staff
+    = link_to 'New Staff', new_staffs_staff_path

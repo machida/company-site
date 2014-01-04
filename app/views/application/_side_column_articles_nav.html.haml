@@ -1,6 +1,8 @@
 %aside.side-column.blog-navs
   %h1.side-column__first-heading
     BLOG
-  - @articles_by_month.each do |monthname, article|
-    = link_to "/month/#{params[:month]}" do
-      = monthname
+  %ol
+    - @articles_by_month.each do |monthname, article|
+      %li
+        = link_to "/month/#{monthname}" do
+          = monthname

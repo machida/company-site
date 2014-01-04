@@ -1,12 +1,15 @@
-%h1 Listing snippets
-%table
-  %tbody
-    - @snippets.each do |snippet|
-      %tr
-        %td= snippet.title
-        %td= snippet.body
-        %td= link_to 'Show', snippet
-        %td= link_to 'Edit', edit_snippet_path(snippet)
-        %td= link_to 'Destroy', snippet, method: :delete, data: { confirm: 'Are you sure?' }
-%br/
-= link_to 'New Snippet', new_snippet_path
+%header.main__header
+  %h2.main__header-heading
+    Listing snippets
+.main__body
+  %table
+    %tbody
+      - @snippets.each do |snippet|
+        %tr
+          %td= snippet.title
+          %td= snippet.slug
+          %td= link_to 'Show', snippet
+          %td= link_to 'Edit', edit_snippet_path(snippet)
+          %td= link_to 'Destroy', snippet, method: :delete, data: { confirm: 'Are you sure?' }
+  %br/
+  = link_to 'New Snippet', new_snippet_path

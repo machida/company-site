@@ -1,14 +1,16 @@
-%h1 Listing articles
-%table
-  %tbody
-    - @articles.each do |article|
-      %tr
-        %td= article.title
-        %td= article.body
-        %td= raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
-        %td= article.created_at
-        %td= link_to 'Show', staffs_article_path(article)
-        %td= link_to 'Edit', edit_staffs_article_path(article)
-        %td= link_to 'Destroy', staffs_article_path(article), method: :delete, data: { confirm: 'Are you sure?' }
-%br/
-= link_to 'New Article', new_staffs_article_path
+%header.main__header
+  %h2.main__header-heading
+    Listing articles
+.main__body
+  %table
+    %tbody
+      - @articles.each do |article|
+        %tr
+          %td= article.title
+          %td= raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+          %td= article.created_at
+          %td= link_to 'Show', staffs_article_path(article)
+          %td= link_to 'Edit', edit_staffs_article_path(article)
+          %td= link_to 'Destroy', staffs_article_path(article), method: :delete, data: { confirm: 'Are you sure?' }
+  %br/
+  = link_to 'New Article', new_staffs_article_path
