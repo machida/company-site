@@ -6,6 +6,7 @@
         %td= article.title
         %td= article.body
         %td= raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+        %td= article.created_at
         %td= link_to 'Show', staffs_article_path(article)
         %td= link_to 'Edit', edit_staffs_article_path(article)
         %td= link_to 'Destroy', staffs_article_path(article), method: :delete, data: { confirm: 'Are you sure?' }
