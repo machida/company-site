@@ -3,6 +3,7 @@
     = t('Articles')
   = link_to 'New Article', new_staffs_article_path, {:class => "main__header-add-link large-button"}
 .main__body
+  = link_to 'ほげほげ', staffs_articles_path(:title => "false")
   %table
     %tbody
       - @articles.each do |article|

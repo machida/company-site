@@ -1,11 +1,9 @@
 %header#header
   .wrapper
-    %form.header-search-form#search_form{"accept-charset" => "UTF-8", action: "/search", method: "get"}
-      %input.header-search-form__input-text{autocapitalize: "off", autofocus: "", name: "q", tabindex: "2", type: "text", value: ""}/
-      %input#type_value{name: "type", type: "hidden", value: "Repositories"}/
-      %button.header-search-form__button{tabindex: "3", type: "submit"}
+    = form_tag(articles_path, :method => "get", :class => "header-search-form") do
+      = text_field_tag(:search, params[:search], :class => "header-search-form__input-text")
+      = button_tag(:name => nil, :class => "header-search-form__button", :type => "submit") do
         %i.fa.fa-search
-      %input{name: "ref", type: "hidden", value: "searchresults"}/
     - if staff_signed_in?
       %p.header-admin= link_to '管理画面', staffs_root_path
       %p.header-admin= link_to('Logout', destroy_staff_session_path, :method => :delete)

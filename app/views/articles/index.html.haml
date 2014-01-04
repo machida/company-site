@@ -1,15 +1,23 @@
 - content_for :page_title do
   BLOG
 
-%table
-  %tbody
-    - @articles.each do |article|
-      %tr
-        %td= article.title
-        %td= article.body
-        %td= article.created_at.strftime("%d/%m/%Y")
-        %td= article.category_id
-        %td= raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
-        %td= link_to 'Show', article
+- @articles.each do |article|
+  %article.articles-article
+    .articles-article__inner
+      = link_to article, {:class => "articles-article__eyecatch-image-wrapper"} do
+        - if article.thumbnail?
+          = image_tag("#{article.thumbnail}")
+        - else
+          <img class="articles-article__eyecatch-image" src="http://www.gravatar.com/avatar/ca8b183e3e8cf320dbd76b241bbd6eba">
+      %h2.articles-article__title
+        = link_to article, {:class => "articles-article__title-link"} do
+          = article.title
+      .articles-article__informations
+        = image_tag("member-icons/#{article.staff.slug}.jpg", :alt => "#{article.staff.name}", :class => "articles-article__author-icon-image")
+        .articles-article__created-at
+          = article.created_at
+        .articles-article__tags
+          %ul.tags
+            = raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
 
 = paginate(@articles)

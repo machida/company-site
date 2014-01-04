@@ -5,7 +5,7 @@ class Staffs::StaffsController < StaffsController
   end
 
   def show
-    @staff = Staff.find(params[:id])
+    @staff = Staff.friendly.find(params[:id])
   end
 
   def new

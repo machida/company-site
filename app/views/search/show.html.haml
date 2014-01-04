@@ -1,0 +1,22 @@
+- content_for :page_title do
+  = @article.category.name.upcase
+
+%p#notice= notice
+%header.article__header
+  %h2.article__title
+    = link_to @article, {:class => "article__title-link"} do
+      = @article.title
+.article__informations
+  = image_tag("member-icons/#{@article.staff.slug}.jpg", :alt => "#{@article.staff.name}", :class => "article__author-icon-image")
+  %span.article__author-name
+    = @article.staff.name
+  %span.article__created-at
+    = @article.created_at
+  .article__tags
+    %ul.tags
+      = raw @article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+
+.article__body
+  = @article.body
+
+#{link_to 'Back', @article.category}

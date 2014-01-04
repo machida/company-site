@@ -2,7 +2,6 @@ class ServicesController < PostsController
 
   def index
     @services = Service.all
-    @articles = Article.order('id desc').limit(10)
   end
 
   def show

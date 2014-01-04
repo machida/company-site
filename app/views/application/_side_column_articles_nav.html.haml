@@ -1,8 +1,15 @@
 %aside.side-column.blog-navs
   %h1.side-column__first-heading
-    BLOG
-  %ol
+    Tags
+  %ul.blog-navs-tags__tags
+    - tag_cloud(@tags, %w()) do |tag|
+      %li.blog-navs-tags__tag
+        = link_to tag.name, "/tags/#{tag.name}",{:class => "blog-navs-tags__tag-link"}
+
+  %h1.side-column__first-heading
+    Archive
+  %ol.blog-navs-archives__archives
     - @articles_by_month.each do |monthname, article|
-      %li
-        = link_to "/month/#{monthname}" do
+      %li.blog-navs-archives__archive
+        = link_to "/month/#{monthname}", {:class => "blog-navs-archives__archive-link"} do
           = monthname
