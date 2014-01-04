@@ -14,13 +14,9 @@
         %ul.header__nav-items
           - if staff_signed_in?
             %li.header__nav-item
-              = link_to staffs_root_path, {:class => "header__nav-link"} do
-                %i.fa.fa-home.header__nav-icon
-                管理画面
-            %li.header__nav-item
               = link_to(destroy_staff_session_path, :method => :delete, :class => "header__nav-link") do
                 %i.fa.fa-sign-out.header__nav-icon
-                Logout
+                = t('Logout')
             %li.header__nav-item
               = image_tag gravatar_image_url(current_staff.email, 32)
               = current_staff.name

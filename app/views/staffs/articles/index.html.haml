@@ -1,6 +1,7 @@
 %header.main__header
   %h2.main__header-heading
-    Listing articles
+    = t('Articles')
+  = link_to 'New Article', new_staffs_article_path, {:class => "main__header-add-link large-button"}
 .main__body
   %table
     %tbody
@@ -12,5 +13,3 @@
           %td= link_to 'Show', staffs_article_path(article)
           %td= link_to 'Edit', edit_staffs_article_path(article)
           %td= link_to 'Destroy', staffs_article_path(article), method: :delete, data: { confirm: 'Are you sure?' }
-  %br/
-  = link_to 'New Article', new_staffs_article_path

@@ -2,7 +2,7 @@
   - if @staff.errors.any?
     #error_explanation
       %h2
-        = pluralize([:admin, @article].errors.count, "error")
+        = pluralize([:staffs, @article].errors.count, "error")
         prohibited this article from being saved:
       %ul
         - @article.errors.full_messages.each do |msg|

@@ -4,29 +4,30 @@
       %h2.side-nav-link__parent
         = link_to staffs_root_path, {:class => "side-nav-link__parent-link"} do
           %i.fa.fa-home.side-nav-link__parent-icon
-          ダッシュボード
+          = t('Dashboard')
     %li.side-nav-link
       %h2.side-nav-link__parent
         = link_to staffs_articles_path, {:class => "side-nav-link__parent-link"} do
           %i.fa.fa-pencil-square-o.side-nav-link__parent-icon
-          投稿
+          = t('Articles')
     %li.side-nav-link
       %h2.side-nav-link__parent
         = link_to staffs_pages_path, {:class => "side-nav-link__parent-link"} do
           %i.fa.fa-book.side-nav-link__parent-icon
-          ページ
+          = t('Pages')
     %li.side-nav-link
       %h2.side-nav-link__parent
         = link_to staffs_snippets_path, {:class => "side-nav-link__parent-link"} do
           %i.fa.fa-paperclip.side-nav-link__parent-icon
-          スニペット
+          = t('Snippets')
     %li.side-nav-link
       %h2.side-nav-link__parent
         = link_to staffs_staffs_path, {:class => "side-nav-link__parent-link"} do
           %i.fa.fa-user.side-nav-link__parent-icon
-          スタッフ
+          = t('Staffs')
     %li.side-nav-link
       %h2.side-nav-link__parent
         = link_to staffs_sites_path, {:class => "side-nav-link__parent-link"} do
           %i.fa.fa-home.side-nav-link__parent-icon
-          設定
+          = t('Site Settings')
+
