@@ -70,7 +70,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -78,7 +79,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -86,7 +88,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -94,7 +97,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -102,7 +106,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -110,7 +115,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -118,7 +124,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -126,7 +133,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -134,7 +142,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -142,7 +151,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -150,7 +160,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -158,7 +169,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -166,7 +178,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -174,7 +187,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -182,7 +196,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -190,7 +205,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 Article.create!(
@@ -198,7 +214,8 @@ Article.create!(
   title: 'Article Tile',
   body: 'Article Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
   category_id: 1,
-  staff_id: 1
+  staff_id: 1,
+  published: true
 )
 
 # page
@@ -206,14 +223,16 @@ Page.create!(
   id: 20,
   slug: 'contact',
   title: 'contact',
-  body: 'Page Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse'
+  body: 'Page Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
+  published: true
 )
 
 Page.create!(
   id: 21,
   slug: 'access',
   title: 'access',
-  body: 'Page Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse'
+  body: 'Page Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
+  published: true
 )
 
 # snippet
@@ -221,21 +240,24 @@ Snippet.create!(
   id: 30,
   slug: 'home_about',
   title: 'ABOUT',
-  body: 'Snippet Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse'
+  body: 'Snippet Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
+  published: true
 )
 
 Snippet.create!(
   id: 31,
   slug: 'home_access',
   title: 'ACCESS',
-  body: 'Snippet Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse'
+  body: 'Snippet Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
+  published: true
 )
 
 Snippet.create!(
   id: 32,
   slug: 'home_overview',
   title: 'OVERVIEW',
-  body: 'Snippet Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse'
+  body: 'Snippet Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
+  published: true
 )
 
 # service
@@ -244,7 +266,8 @@ Service.create!(
   slug: 'entrusted_development',
   title: '受託開発',
   body: 'Service Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
-  description: 'Service Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse'
+  description: 'Service Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
+  published: true
 )
 
 Service.create!(
@@ -252,7 +275,8 @@ Service.create!(
   slug: 'kowabana',
   title: '怖話',
   body: 'Service Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
-  description: 'Service Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse'
+  description: 'Service Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
+  published: true
 )
 
 # site
@@ -261,5 +285,6 @@ Site.create!(
   slug: 'site',
   title: 'FJORD, LLC.',
   sub_title: 'Builing Apps and Design',
-  body: 'Site Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse'
+  body: 'Site Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
+  published: true
 )
