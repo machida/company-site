@@ -1,0 +1,10 @@
+%header.main__header
+  %h2.main__header-heading
+    = t('Site')
+.main__body
+  %table
+    %tbody
+      %tr
+        %td= @site.title
+
+        %td= link_to 'Edit', edit_staffs_site_path(@site)
