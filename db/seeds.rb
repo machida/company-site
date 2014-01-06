@@ -55,6 +55,36 @@ Staff.create!(
   password_confirmation: 'testtest'
 )
 
+Staff.create!(
+  id: 5,
+  name: 'miyauchi',
+  email: 'miyauchi@example.com',
+  slug: "miyauchi",
+  role: "editor",
+  password: 'testtest',
+  password_confirmation: 'testtest'
+)
+
+Staff.create!(
+  id: 6,
+  name: 'hrysd',
+  email: 'hrysd@example.com',
+  slug: "hrysd",
+  role: "editor",
+  password: 'testtest',
+  password_confirmation: 'testtest'
+)
+
+Staff.create!(
+  id: 7,
+  name: 'nakazato',
+  email: 'nakazato@example.com',
+  slug: "nakazato",
+  role: "editor",
+  password: 'testtest',
+  password_confirmation: 'testtest'
+)
+
 # category
 Category.reset_column_information
 
@@ -263,7 +293,7 @@ Snippet.create!(
 
 # service
 Service.create!(
-  id: 40,
+  id: 41,
   slug: 'entrusted_development',
   title: '受託開発',
   body: 'Service Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
@@ -272,7 +302,7 @@ Service.create!(
 )
 
 Service.create!(
-  id: 41,
+  id: 42,
   slug: 'kowabana',
   title: '怖話',
   body: 'Service Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
