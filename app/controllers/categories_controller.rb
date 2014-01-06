@@ -6,7 +6,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.friendly.find(params[:id])
-    @articles = @category.articles.where("published = ?", true).page(params[:page]).per(12).order(:id)
+    @articles = @category.articles.order('id desc').page(params[:page]).per(12).order(:id)
   end
 
 end

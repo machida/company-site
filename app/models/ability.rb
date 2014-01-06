@@ -5,6 +5,8 @@ class Ability
     staff ||= Staff.new
     if staff.role == "admin"
       can :manage, :all
+    else
+      can :read, Article.published
     end
   end
 end

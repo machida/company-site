@@ -19,6 +19,7 @@ gem 'friendly_id', '~> 5.0.0'
 gem 'kaminari'
 gem 'google-analytics-rails'
 gem 'nkss-rails', github: 'fjordllc/fnkss-rails'
+gem 'nokogiri'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

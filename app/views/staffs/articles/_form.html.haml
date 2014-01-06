@@ -20,9 +20,17 @@
     %br/
     = f.collection_select :category_id, Category.all, :id, :name
   .field
+    = f.label :staffs
+    %br/
+    = f.collection_select :staff_id, Staff.all, :id, :name
+  .field
     = f.label :tags, "Tags (separated by commas)"
     %br/
     = f.text_field :tag_list
+  .field
+    = f.label :published, "Published"
+    %br/
+    = f.check_box :published
   .field
     = f.label :created_at
     %br/

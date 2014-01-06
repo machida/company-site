@@ -191,6 +191,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   nkss-rails!
+  nokogiri
   rails (>= 4.0.2)
   sass-rails (~> 4.0.1)
   sdoc

@@ -1,6 +1,7 @@
 class Staff < ActiveRecord::Base
   module Roles
     ADMIN = "admin"
+    EDITOR = "editor"
   end
 
   # Include default devise modules. Others available are:

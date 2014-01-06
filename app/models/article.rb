@@ -7,6 +7,7 @@ class Article < Post
       find(:all)
     end
   end
-
+  scope :published, where(published: true)
+  scope :unpublished, where(published: false)
 
 end

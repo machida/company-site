@@ -17,6 +17,7 @@ Staff.create!(
   id: 2,
   name: 'staff',
   email: 'staff@example.com',
+  role: "editor",
   slug: "staff",
   password: 'testtest',
   password_confirmation: 'testtest'
