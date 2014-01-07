@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :site_information
-  before_action :articles_by_month
+  before_action :month_articles
   before_action :tag_cloud
   before_action :recent_articles
   protect_from_forgery with: :exception
@@ -22,8 +22,8 @@ class ApplicationController < ActionController::Base
   end
 
   # 投稿の月別アーカイブ作成
-  def articles_by_month
-    @articles_by_month = Article.find(:all, :order => "created_at DESC").group_by { |article| article.created_at.strftime("%m %Y") }
+  def month_articles
+    @articles_by_month = Article.find(:all, :order => "created_at DESC").group_by { |article| article.created_at.strftime("%m%Y")}
   end
 
   # 最新の投稿10件表示

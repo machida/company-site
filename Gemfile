@@ -20,6 +20,7 @@ gem 'kaminari'
 gem 'google-analytics-rails'
 gem 'nkss-rails', github: 'fjordllc/fnkss-rails'
 gem 'nokogiri'
+gem 'by_star', :git => "git://github.com/radar/by_star"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

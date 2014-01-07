@@ -9,7 +9,6 @@
   %h1.side-column__first-heading
     Archive
   %ol.blog-navs-archives__archives
-    - @articles_by_month.each do |monthname, article|
-      %li.blog-navs-archives__archive
-        = link_to "/month/#{monthname}", {:class => "blog-navs-archives__archive-link"} do
-          = monthname
+    - @articles_by_month.each do |month, articles|
+      %li
+        = link_to month, month_path(month)

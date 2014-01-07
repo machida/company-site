@@ -11,6 +11,14 @@ GIT
       rails (>= 3.2.0)
       redcarpet
 
+GIT
+  remote: git://github.com/radar/by_star
+  revision: 453f100644d3b0e8ef00c5666ae817e8752bc268
+  specs:
+    by_star (2.1.0.beta2)
+      activerecord
+      chronic
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,6 +55,7 @@ GEM
     bcrypt-ruby (3.1.2)
     builder (3.1.4)
     cancan (1.6.10)
+    chronic (0.10.2)
     chunky_png (1.2.9)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -179,6 +188,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on
+  by_star!
   cancan
   coffee-rails (~> 4.0.0)
   compass-rails (~> 1.1.2)
