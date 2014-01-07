@@ -20,4 +20,8 @@ CompanySite::Application.routes.draw do
   get 'month/:month_articles' => 'articles#month'
   get 'tags/:tag', to: 'articles#index', as: :tag
   root :to => 'home#index'
+  get '/archives', :controller => 'archives', :action => 'index'
+  get '/archives/:year/:month/:day', :controller => 'archives', :action => 'show'
+  get '/archives/:year/:month', :controller => 'archives', :action => 'show'
+  get '/archives/:year', :controller => 'archives', :action => 'show'
 end
