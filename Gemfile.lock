@@ -203,6 +203,7 @@ DEPENDENCIES
   nkss-rails!
   nokogiri
   rails (>= 4.0.2)
+  redcarpet
   sass-rails (~> 4.0.1)
   sdoc
   sqlite3

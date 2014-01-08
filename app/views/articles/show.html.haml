@@ -1,5 +1,8 @@
 - content_for :page_title do
-  = @article.category.name.upcase
+  - if @article.category.name?
+    = @article.category.name.upcase
+  - else
+    BLOG
 
 %p#notice= notice
 %header.article__header
@@ -17,6 +20,6 @@
       = raw @article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
 
 .article__body
-  = @article.body
+  = markdown(@article.body)
 
 #{link_to 'Back', @article.category}

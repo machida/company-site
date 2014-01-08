@@ -1,6 +1,12 @@
 - content_for :page_title do
   BLOG
 
+
+%h2
+  #{params[:year]}年
+  #{params[:month]}月
+
+
 - @articles.each do |article|
   %article.articles-article
     .articles-article__inner
@@ -19,4 +25,3 @@
         .articles-article__tags
           %ul.tags
             = raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
-
