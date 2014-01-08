@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
 
   # 投稿の月別アーカイブ作成
   def month_articles
-    @articles_by_month = Article.find(:all, :order => "created_at DESC").group_by { |article| article.created_at.strftime("%m%Y")}
+    @articles_by_month = Article.find(:all, :order => "created_at DESC").group_by { |article| article.created_at.strftime("%Y/%m")}
   end
 
   # 最新の投稿10件表示

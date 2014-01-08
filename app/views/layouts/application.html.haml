@@ -16,7 +16,7 @@
           = yield :page_title
 
     .content
-      - if articles? or categories? or category?
+      - if articles? or categories? or category? or archive?
         .wrapper
           .articles__wrapper
             = yield
