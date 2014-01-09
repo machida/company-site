@@ -23,12 +23,12 @@ class ApplicationController < ActionController::Base
 
   # 投稿の月別アーカイブ作成
   def month_articles
-    @articles_by_month = Article.find(:all, :order => "created_at DESC").group_by { |article| article.created_at.strftime("%Y/%m")}
+    @articles_by_month = Article.published.order("created_at DESC").group_by { |article| article.created_at.strftime("%Y/%m")}
   end
 
   # 最新の投稿10件表示
   def recent_articles
-    @articles = Article.where("published = ?", true).order('id desc').limit(10)
+    @articles = Article.published.order('id desc').limit(10)
   end
 
   # order('count DESC')でカウントの多い順にタグを並べています

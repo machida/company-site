@@ -10,7 +10,7 @@ def show
     elsif (year && month && !day)
       @articles = Article.by_month(Time.local(year, month)).reverse
     else
-      @articles = Article.by_yearh(Time.local(year)).reverse
+      @articles = Article.by_year(Time.local(year)).reverse
     end
   end
 end
