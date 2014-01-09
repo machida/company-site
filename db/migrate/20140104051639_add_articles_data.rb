@@ -18,7 +18,8 @@ class AddArticlesData < ActiveRecord::Migration
         id: item.xpath('post_id').text,
         staff_id: item.xpath('creator').text,
         created_at: item.xpath('post_date').text,
-        category_id: item.xpath('category').text
+        category_id: item.xpath('category').text,
+        published: item.xpath('status').text
       )
 
     end

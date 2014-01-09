@@ -21,7 +21,7 @@
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%81%8a%e3%81%8b%e3%81%92%e3%81%95%e3%81%be%e3%81%a7%e3%83%95%e3%82%a3%e3%83%a8%e3%83%ab%e3%83%89%e3%81%ae%e3%83%9b%e3%83%bc%e3%83%a0%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92%e3%83%aa%e3%83%8b%e3%83%a5</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -63,7 +63,7 @@
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%9b%e3%83%bc%e3%83%a0%e3%83%9a%e3%83%bc%e3%82%b8%e3%83%aa%e3%83%8b%e3%83%a5%e3%83%bc%e3%82%a2%e3%83%ab</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -108,7 +108,7 @@
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e9%9b%86%e4%b8%ad%e3%82%bf%e3%82%a4%e3%83%a0</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -165,7 +165,7 @@
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e5%bc%8a%e7%a4%bekomagata%e3%81%8c%e3%83%a1%e3%83%87%e3%82%a3%e3%82%a2%e3%81%ab%e5%8f%96%e3%82%8a%e4%b8%8a%e3%81%92%e3%82%89%e3%82%8c%e3%81%be%e3%81%97%e3%81%9f%e3%80%82</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -211,7 +211,7 @@ ruby on rails、wordpress、webデザイン、web運営のご相談は御気軽�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%81%93%e3%81%ae%e3%82%b5%e3%82%a4%e3%83%88%e3%81%aeheader%e3%81%ab%e9%9b%bb%e8%a9%b1%e7%95%aa%e5%8f%b7%e3%82%92%e8%bc%89%e3%81%9b%e3%81%be%e3%81%97%e3%81%9f%e3%80%82%e9%9b%bb%e8%a9%b1%e3%81%a7</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -268,7 +268,7 @@ ruby on rails、wordpress、webデザイン、web運営のご相談は御気軽�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%96%b0%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%80%81help-me-hackers%e3%82%92%e9%96%8b%e7%99%ba%e4%b8%ad%e3%81%a7%e3%81%99</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -318,7 +318,7 @@ octocatで検索していたら<a href="http://www.davidoreilly.com/">デイビ�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%81%93%e3%81%a3%e3%81%a1%e3%81%ae%e3%82%aa%e3%82%af%e3%83%88%e3%82%ad%e3%83%a3%e3%83%83%e3%83%88%e3%81%af%e7%8b%82%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -401,7 +401,7 @@ octocatで検索していたら<a href="http://www.davidoreilly.com/">デイビ�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%95%e3%82%a3%e3%83%a8%e3%83%ab%e3%83%89%e3%81%ae%e7%86%8a%e6%89%8b2010%e5%b9%b4%e7%89%88</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -500,7 +500,7 @@ URL：<a href="http://www.popopeku.jp/">http://www.popopeku.jp/</a>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e5%88%9d%e5%8f%b0%e4%b8%8d%e5%8b%95%e9%80%9a%e3%82%8a%e3%81%a7%e3%83%ad%e3%82%b3%e3%83%a2%e3%82%b3%e4%b8%bc%e3%81%8c%e9%a3%9f%e3%81%b9%e3%82%8c%e3%82%8b%ef%bc%81%e3%83%9d%e3%83%9d%e3%83%9a%e3%82%af</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -549,7 +549,7 @@ URL：<a href="http://www.popopeku.jp/">http://www.popopeku.jp/</a>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name></wp:post_name>
-		<wp:status>draft</wp:status>
+		<status>draft</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
@@ -610,7 +610,7 @@ URL：<a href="http://www.popopeku.jp/">http://www.popopeku.jp/</a>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name></wp:post_name>
-		<wp:status>draft</wp:status>
+		<status>draft</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
@@ -710,7 +710,7 @@ URL：<a href="http://www.popopeku.jp/">http://www.popopeku.jp/</a>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%95%e3%82%a3%e3%83%a8%e3%83%ab%e3%83%89%e3%81%ae%e5%90%8d%e5%88%ba</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -766,7 +766,7 @@ URL：<a href="http://www.popopeku.jp/">http://www.popopeku.jp/</a>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>2010%e5%b9%b44%e6%9c%8820%e6%97%a5%e3%80%81%e5%88%9d%e5%8f%b0%e3%81%ab%e5%bc%95%e8%b6%8a%e3%81%97%e3%81%a6%e4%b8%80%e5%b9%b4%e3%81%8c%e7%b5%8c%e3%81%a1%e3%81%be%e3%81%97%e3%81%9f</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -822,7 +822,7 @@ URL：<a href="http://www.popopeku.jp/">http://www.popopeku.jp/</a>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name></wp:post_name>
-		<wp:status>draft</wp:status>
+		<status>draft</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -855,7 +855,7 @@ URL：<a href="http://www.popopeku.jp/">http://www.popopeku.jp/</a>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%81%a4%e3%81%84%e3%81%ab%e3%83%95%e3%82%a3%e3%83%a8%e3%83%ab%e3%83%89%e3%83%96%e3%83%ad%e3%82%b0%e3%81%8c%e6%8a%95%e7%a8%bf%e6%95%b010%e3%82%92%e8%b6%85%e3%81%88%e3%80%81%e3%83%9a%e3%83%bc%e3%82%b8</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -930,7 +930,7 @@ URL：<a href="http://www.popopeku.jp/">http://www.popopeku.jp/</a>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e4%ba%94%e5%8f%8d%e7%94%b0%e3%81%ae%e3%83%81%e3%82%a7%e3%82%b4%e3%83%a4%e3%81%a7%e9%80%81%e5%88%a5%e4%bc%9a%e3%82%92%e9%96%8b%e3%81%84%e3%81%a6%e3%81%84%e3%81%9f%e3%81%a0%e3%81%8d%e3%81%be%e3%81%97</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1016,7 +1016,7 @@ URL：<a href="http://www.popopeku.jp/">http://www.popopeku.jp/</a>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3%e3%81%ab%e3%82%88%e3%82%8b%e3%83%a6%e3%83%bc%e3%82%b6%e3%83%bc%e3%83%95%e3%82%a3%e3%83%ab%e3%82%bf%e3%83%aa%e3%83%b3%e3%82%b0</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1062,7 +1062,7 @@ bit.lyで短縮したURLを登録しておくと、そのURLが何回クリッ�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>bit-ly%e3%81%a7url%e3%82%92%e7%9f%ad%e7%b8%ae%e3%81%97%e3%81%9f%e3%81%91%e3%81%a9%e7%9f%ad%e7%b8%ae%e3%81%ab%e3%81%aa%e3%82%89%e3%81%aa%e3%81%8b%e3%81%a3%e3%81%9f%e3%81%ae%e3%81%8c%e5%ac%89%e3%81%97</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1160,7 +1160,7 @@ HAML（ハムル）なのでハムが置いてあります。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>haml%e3%81%ae%e3%83%8f%e3%83%a0%e3%80%80</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1217,7 +1217,7 @@ HAML（ハムル）なのでハムが置いてあります。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e5%a5%91%e7%b4%84%e6%b8%88%e3%81%bf%e3%81%ae%e8%a1%a8%e7%8f%be</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1296,7 +1296,7 @@ twitterやtumblrと同じで任意のユーザーをフォローする機能も�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>picks-party-vol1%e3%81%ab%e5%8f%82%e5%8a%a0%e3%81%97%e3%81%a6%e3%81%8d%e3%81%be%e3%81%97%e3%81%9f%e3%80%82</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1355,7 +1355,7 @@ twitterやtumblrと同じで任意のユーザーをフォローする機能も�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%81%8a%e5%95%8f%e5%90%88%e3%81%9b%e3%81%ab%e3%80%8cskype%e3%80%8d%e3%81%a8%e3%80%8ctwitter%e3%80%8d%e3%82%92%e8%bf%bd%e5%8a%a0%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82%e3%81%8a%e9%9b%bb</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1440,7 +1440,7 @@ twitterやtumblrと同じで任意のユーザーをフォローする機能も�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%80%8c%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e3%82%bf%e3%82%b9%e3%82%af%e3%82%92%e5%85%b1%e6%9c%89%e3%81%99%e3%82%8b%e3%80%8dhelp-me-hackers%e3%82%92%e3%83%aa%e3%83%aa</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1501,7 +1501,7 @@ twitterやtumblrと同じで任意のユーザーをフォローする機能も�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%88%e3%83%83%e3%83%97%e3%83%9a%e3%83%bc%e3%82%b8%e3%81%ae%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%81%ab%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%89%e3%82%b7%e3%83%a7%e3%83%bc%e3%82%92%e9%85%8d%e7%bd%ae</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1569,7 +1569,7 @@ pickバッグ！
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>picks-party-vol-1%e3%81%a7%e8%89%b2%e3%80%85%e3%81%aa%e3%82%82%e3%81%ae%e3%82%92%e3%81%84%e3%81%9f%e3%81%a0%e3%81%8d%e3%81%be%e3%81%97%e3%81%9f%e3%80%82</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1688,7 +1688,7 @@ pickバッグ！
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>across%e3%81%ae%e3%82%b9%e3%82%bf%e3%83%83%e3%83%95%e3%81%ae%e6%96%b9%e3%80%85%e3%81%8b%e3%82%89%e8%b3%9e%e5%93%81%e3%82%92%e7%b4%a0%e6%95%b5%e3%81%aa%e3%81%84%e3%81%9f%e3%81%a0%e3%81%8d%e3%81%be</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1729,7 +1729,7 @@ bitbucketアカウントをお持ちの方は是非ご登録を！]]></body>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>hmh%e3%80%81bitbucket%e3%82%a2%e3%82%ab%e3%82%a6%e3%83%b3%e3%83%88%e3%82%82%e8%bf%bd%e5%8a%a0%e5%87%ba%e6%9d%a5%e3%82%8b%e3%82%88%e3%81%86%e3%81%ab%e3%81%aa%e3%82%8a%e3%81%be%e3%81%97%e3%81%9f</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1771,7 +1771,7 @@ LLC同士、仲良くなりましょう。]]></body>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%81%93%e3%82%8c%e3%81%8b%e3%82%89%e3%81%affjordllc%e3%81%a3%e3%81%a6%e5%90%8d%e4%b9%97%e3%82%8a%e3%81%be%e3%81%99%e3%80%82</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1839,7 +1839,7 @@ TODOリストの場所を移しただけに過ぎません。しかし、Twitter
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e7%b3%bb%e3%81%ae%e3%82%bf%e3%82%b9%e3%82%af%e3%82%92%e8%bb%a2%e8%bc%89%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -1899,7 +1899,7 @@ Facebookにはプロフィールに「宗教・信仰」といった項目があ
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e5%bf%83%e3%81%ae%e3%82%a8%e3%83%87%e3%82%a3%e3%82%bf</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -2055,7 +2055,7 @@ Help me, hackers!の収益化方法に関しては<a href="http://wiki.github.co
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e5%a0%b1%e9%85%ac%e6%94%af%e6%89%95%e3%81%84%e3%81%ae%e6%b5%81%e3%82%8c</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -2162,7 +2162,7 @@ letとアフタヌーンに幸あれ！]]></body>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b3%e3%83%bc%e3%83%89dj%e3%80%80%e7%ac%ac0%e5%9b%9e</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -2295,7 +2295,7 @@ DJ完全にマークアップ界の情報弱者だよ。<a href="http://help-me-
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b3%e3%83%bc%e3%83%89dj-%e7%ac%ac1%e5%9b%9e</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -2348,7 +2348,7 @@ Help me, hackers!に続くフィヨルドのサービス第二弾をリリース
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>html%e3%81%ae%e3%82%a4%e3%83%b3%e3%83%87%e3%83%b3%e3%83%88%e3%82%92%e7%b6%ba%e9%ba%97%e3%81%ab%e3%81%99%e3%82%8b%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%80%81%e3%80%8cham-cutlet%e3%80%8d%e3%82%92</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -2429,7 +2429,7 @@ Help me, hackers!に続くフィヨルドのサービス第二弾をリリース
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%98%e3%83%83%e3%83%80%e3%83%bc%e3%81%ae%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%89%e3%82%b7%e3%83%a7%e3%83%bc%e3%81%ab%e3%83%8f%e3%83%a0%e3%82%ab%e3%83%84%e3%82%92%e8%bf%bd%e5%8a%a0%e3%81%97%e3%81%be</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -2508,7 +2508,7 @@ Hamlを知ってればすぐ作れるサービスです。正直、heroku + sina
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%8f%e3%83%a0%e3%82%ab%e3%83%84%e3%81%ae%e4%b8%ad%e8%ba%ab</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -2555,7 +2555,7 @@ wp-fjord-loveの使い方や必要なpluginなどの情報をこちらのブロ�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%81%af%e3%81%a6%e3%81%aa%e3%82%b9%e3%82%bf%e3%83%bc%e3%82%92%e8%a8%ad%e7%bd%ae%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -2620,7 +2620,7 @@ Help me, hackers!ではプロジェクトもタスクも、編集・削除はい
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -2752,7 +2752,7 @@ Javascript続きで来たこの連載も<a href="http://help-me-hackers.com/milk
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b3%e3%83%bc%e3%83%89dj-%e7%ac%ac2%e5%9b%9e-acts_as_taggable_on_steroids%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3%e3%81%ae%e3%83%90%e3%82%b0%e4%bf%ae%e6%ad%a3</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -2859,7 +2859,7 @@ MacPortsはダウンロード、インストールできるソフトの名前と
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%8c%e6%9c%ac%e6%b0%97%e3%81%aemac%e7%92%b0%e5%a2%83%e3%82%92%e4%bd%9c%e3%82%8b</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -2962,7 +2962,7 @@ Ham CutletはHTMLのインデントを綺麗にする誰得サービスだ。タ
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b3%e3%83%bc%e3%83%89dj-%e7%ac%ac3%e5%9b%9e-select%e3%81%8c%e7%84%a1%e3%81%84%e3%81%aa%e3%82%89textarea%e3%82%92%e9%a3%9f%e3%81%b9%e3%82%8c%e3%81%b0%e3%81%84%e3%81%84%e3%81%98%e3%82%83</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -3027,7 +3027,7 @@ HTMLのインデントを綺麗にするサービスHam CutletにAPIを付ける
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b3%e3%83%bc%e3%83%89dj-%e7%ac%ac4%e5%9b%9e-sinatra%e3%83%a1%e3%82%bd%e3%83%83%e3%83%89%e3%81%af%e6%96%87%e5%ad%97%e5%88%97%e3%82%92%e8%bf%94%e3%81%9b%e3%81%b0%e3%81%84%e3%81%84</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -3083,7 +3083,7 @@ HTMLのインデントを綺麗にするサービスHam CutletにAPIを付ける
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>komagata-a-k-a-%e3%83%a9%e3%83%9a%e3%82%b3%e3%81%ae%e8%82%89%e7%95%aa%e9%95%b7-%e3%81%b8%e3%81%ae%e6%8c%91%e6%88%a6%e8%80%85%e6%b1%82%e3%82%80%ef%bc%81</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -3164,7 +3164,7 @@ DJ、今現在もHelp me, hacekers!上で複数のコード野郎共とコラボ
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b3%e3%83%bc%e3%83%89dj-%e7%ac%ac5%e5%9b%9e-%e3%82%a6%e3%82%a9%e3%83%bc%e3%82%bf%e3%83%bc%e3%83%9e%e3%83%bc%e3%82%af%e3%81%8c%e6%b6%88%e3%81%88%e3%81%aa%e3%81%91%e3%82%8c%e3%81%b0</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -3276,7 +3276,7 @@ DJそろそろ気付いてきたんだが、今、タスクの需要と供給は
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b3%e3%83%bc%e3%83%89dj-%e7%ac%ac6%e5%9b%9e-%e3%81%af%e3%82%84%e3%81%84%ef%bc%81%e3%82%82%e3%81%86%e3%81%a4%e3%81%84%e3%81%9f%e3%81%ae%e3%81%8b%ef%bc%81</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -3540,7 +3540,7 @@ WordPressプラグインで困ったことがあったら@terakuma a.k.a. 法務
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b3%e3%83%bc%e3%83%89dj-%e7%ac%ac7%e5%9b%9e-wordpress%e3%81%ae%e6%93%ac%e4%bc%bccron%e6%a9%9f%e6%a7%8b</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -3721,7 +3721,7 @@ WordPressのプラグインページは見る人が多いからuserscripts.org�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b3%e3%83%bc%e3%83%89dj-%e7%ac%ac8%e5%9b%9e-autopagerize_domnodeinserted%e3%83%bb%e3%83%bb%e3%83%bb%e3%81%a0%e3%81%a8%e3%83%bb%e3%83%bb%e3%83%bb%ef%bc%9f</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -3940,7 +3940,7 @@ URLは以前、「<a href="http://help-me-hackers.com/tasks/63">HTMLのインデ
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b3%e3%83%bc%e3%83%89dj%e7%ac%ac9%e5%9b%9e-chrome-extension%e3%81%ab%e6%8c%91%e6%88%a6</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4040,7 +4040,7 @@ ruby script/server (アプリケーションサーバーを起動)</code></pre>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae-ruby-on-rails-mac-%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89%e3%82%ac%e3%82%a4%e3%83%89</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4223,7 +4223,7 @@ RubyのロゴとWindowsのロゴをうまい具合に組み合わせてあるの
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>rubyinstaller%e3%81%ae%e7%b5%b6%e5%a6%99%e3%81%aa%e3%83%ad%e3%82%b4</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4321,7 +4321,7 @@ to doに期日（Due Date）も登録することができますが、しなく�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>to-do%e7%ae%a1%e7%90%86%e3%81%aeweb%e3%82%a2%e3%83%97%e3%83%aa%e3%80%81todo-ly%e3%81%ae%e4%bd%bf%e3%81%84%e3%82%84%e3%81%99%e3%81%95%e3%81%ab%e6%84%9f%e5%8b%95%ef%bc%81</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4419,7 +4419,7 @@ HTMLのインデントを病的に気にする外人さんがいたらオスス�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>ham-cutlet%e3%82%92%e8%8b%b1%e8%aa%9e%e5%af%be%e5%bf%9c%e3%81%ab%e3%81%97%e3%81%be%e3%81%97%e3%81%9f</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4503,7 +4503,7 @@ Mitaka.rb #10の会場は吉祥寺の「Bistro epices」というお店を貸し
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>mitaka-rb-10%e3%81%a7%e7%be%8e%e5%91%b3%e3%81%97%e3%81%84%e3%82%82%e3%81%ae%e3%82%92%e9%a3%9f%e3%81%b9%e3%81%aa%e3%81%8c%e3%82%89komagata%e3%81%95%e3%82%93%e3%81%aelt%e3%82%92%e8%a6%8b%e3%81%be</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4567,7 +4567,7 @@ heroku、Sinatraで一時間弱で作ってくれました。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%ac%a1%e3%81%ae%e7%a5%9d%e6%97%a5%e3%82%92%e6%95%99%e3%81%88%e3%81%a6%e3%81%8f%e3%82%8c%e3%82%8b%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%80%8cnext-holiday%e3%80%8d%e3%82%92%e3%83%aa%e3%83%aa</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4651,7 +4651,7 @@ Hpricotを使って「doctypeがあるけどpublicなんとかが無いものは
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b3%e3%83%bc%e3%83%89dj%e7%ac%aca%e5%9b%9e-html5%e3%81%a8%e3%81%9d%e3%82%8c%e4%bb%a5%e5%a4%96%e3%82%92%e5%88%a4%e5%88%a5%e3%81%99%e3%82%8b</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4719,7 +4719,7 @@ holiday.name # 敬老の日[/cc]
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>next-holiday%e3%81%ae%e4%b8%ad%e8%ba%ab</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4796,7 +4796,7 @@ MAKES THIS の api もあります。只今、つくる社さんがこれを使�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e4%bd%9c%e3%81%a3%e3%81%a6%e3%82%8b%e4%ba%ba%e3%81%ae%e7%82%ba%e3%81%ae%e3%83%97%e3%83%ad%e3%83%95%e3%82%a3%e3%83%bc%e3%83%ab%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%80%8cmakes-this%e3%80%8d%e3%82%92</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4841,7 +4841,7 @@ MAKES THIS の api もあります。只今、つくる社さんがこれを使�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>ham-cutlet-chrome-extension%e3%81%8c%e7%99%bb%e9%8c%b2%e3%81%95%e3%82%8c%e3%81%be%e3%81%97%e3%81%9f</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4905,7 +4905,7 @@ MAKES THIS の api もあります。只今、つくる社さんがこれを使�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e5%88%9d%e5%8f%b0%e4%b8%80%e6%80%aa%e3%81%97%e3%81%84%e4%b8%8d%e5%8b%95%e7%94%a3%e5%b1%8b%e3%83%93%e3%83%93%e3%82%a2%e3%83%b3</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -4985,7 +4985,7 @@ MAKES THIS の api もあります。只今、つくる社さんがこれを使�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>fjord%e3%81%aeweb%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%81%af%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%bd%e3%83%bc%e3%82%b9%e3%81%a7%e3%81%99</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -5061,7 +5061,7 @@ MAKES THIS の api もあります。只今、つくる社さんがこれを使�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%95%e3%82%a3%e3%83%a8%e3%83%ab%e3%83%89%e3%81%ae%e4%bd%8f%e6%89%80%e3%81%8c%e5%a4%89%e3%82%8f%e3%82%8a%e3%81%be%e3%81%97%e3%81%9f</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -5393,7 +5393,7 @@ Part.01はこんなところで失礼します。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%ae%e7%82%ba%e3%81%ae%e3%80%8c%e6%9c%ac%e5%bd%93%e3%81%af%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%e3%80%8d%e9%bb%92%e3%81%84%e7%94%bb%e9%9d%a2</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -5693,7 +5693,7 @@ $PATHのように中身を変更できるものを変数(へんすう)と言い�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%ae%e7%82%ba%e3%81%ae%e3%80%8c%e6%9c%ac%e5%bd%93%e3%81%af%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%e3%80%8d%e9%bb%92%e3%81%84%e7%94%bb</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -5903,7 +5903,7 @@ cdで移動してlsで一覧するという流れがつかめたでしょうか�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%ae%e7%82%ba%e3%81%ae%e3%80%8c%e6%9c%ac%e5%bd%93%e3%81%af%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%e3%80%8d%e9%bb%92%e3%81%84%e7%94%bb-2</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -6098,7 +6098,7 @@ lsやcd、echoなどは歴史の古いコマンドなのであまりこのガイ
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%ae%e7%82%ba%e3%81%ae%e3%80%8c%e6%9c%ac%e5%bd%93%e3%81%af%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%e3%80%8d%e9%bb%92%e3%81%84%e7%94%bb-3</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -6325,7 +6325,7 @@ Macにはsayという英語の音声合成ソフトも入っています。sayka
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%ae%e7%82%ba%e3%81%ae%e3%80%8c%e6%9c%ac%e5%bd%93%e3%81%af%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%e3%80%8d%e9%bb%92%e3%81%84%e7%94%bb-4</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -6498,7 +6498,7 @@ Macではダウンロードにcurlがよく使われますが、Linuxではwget�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%ae%e7%82%ba%e3%81%ae%e3%80%8c%e6%9c%ac%e5%bd%93%e3%81%af%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%e3%80%8d%e9%bb%92%e3%81%84%e7%94%bb-5</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -6685,7 +6685,7 @@ catはconCATenateの略でファイルの中身を表示するコマンドです
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%ae%e7%82%ba%e3%81%ae%e3%80%8c%e6%9c%ac%e5%bd%93%e3%81%af%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%e3%80%8d%e9%bb%92%e3%81%84%e7%94%bb-6</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -6890,7 +6890,7 @@ ImageMagickはもちろんhomebrewでインストールできます。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%ae%e7%82%ba%e3%81%ae%e3%80%8c%e6%9c%ac%e5%bd%93%e3%81%af%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%e3%80%8d%e9%bb%92%e3%81%84%e7%94%bb-7</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -7029,7 +7029,7 @@ Webデザイナーの為の「本当は怖くない」”黒い画面”入門�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%ae%e7%82%ba%e3%81%ae%e3%80%8c%e6%9c%ac%e5%bd%93%e3%81%af%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%e3%80%8d%e9%bb%92%e3%81%84%e7%94%bb-8</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -7251,7 +7251,7 @@ CMSのカスタマイズはもちろん、0からのシステム構築もデザ�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>foodfoto-inc%e3%81%ae%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e5%88%b6%e4%bd%9c%e3%81%95%e3%81%9b%e3%81%a6%e3%81%84%e3%81%9f%e3%81%a0%e3%81%8d%e3%81%be%e3%81%97%e3%81%9f%e3%80%82</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -7346,7 +7346,7 @@ FJORDでは<a href="http://docs.komagata.org/4558">Heroku上のRedmine</a>を使
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>foodfoto-inc-%e3%82%b5%e3%82%a4%e3%83%88%e3%81%ae%e4%bd%9c%e6%88%90%e3%81%ab%e4%bd%bf%e3%81%a3%e3%81%9f%e3%83%84%e3%83%bc%e3%83%ab%e3%83%bb%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -7401,7 +7401,7 @@ Photoshopで作ってます。アイコン制作は楽しいのでおすすめ�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>gihyo-jp-%e3%81%95%e3%82%93%e3%81%ab%e8%a8%98%e4%ba%8b%e3%82%92%e6%9b%b8%e3%81%8b%e3%81%9b%e3%81%a6%e3%81%84%e3%81%9f%e3%81%a0%e3%81%8d%e3%81%be%e3%81%97%e3%81%9f%e3%80%82</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -7460,7 +7460,7 @@ Photoshopで作ってます。アイコン制作は楽しいのでおすすめ�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e7%ae%a1%e7%90%86%e3%83%84%e3%83%bc%e3%83%ab%e3%81%a8%e3%81%97%e3%81%a6%e3%81%aegithub</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -7508,7 +7508,7 @@ Photoshopで作ってます。アイコン制作は楽しいのでおすすめ�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>css-nite-in-ginza-vol-56%e3%81%a7%e9%bb%92%e3%81%84%e7%94%bb%e9%9d%a2%e3%81%ae%e8%a9%b1%e3%82%92%e3%81%95%e3%81%9b%e3%81%a6%e3%81%84%e3%81%9f%e3%81%a0%e3%81%8d%e3%81%be%e3%81%97%e3%81%9f%e3%80%82</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -7562,7 +7562,7 @@ Photoshopで作ってます。アイコン制作は楽しいのでおすすめ�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%95%e3%82%a3%e3%83%a8%e3%83%ab%e3%83%89%e3%81%af%e3%82%a4%e3%83%b3%e3%83%87%e3%83%b3%e3%83%88%e3%81%ab%e5%9b%b0%e3%81%a3%e3%81%9f%e5%a5%b3%e5%ad%90%e5%a4%a7%e7%94%9f%e3%82%92%e6%95%91%e3%81%84</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -7614,7 +7614,7 @@ Photoshopで作ってます。アイコン制作は楽しいのでおすすめ�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>mitaka-rb%e3%81%a7lt%e3%82%92%e3%82%84%e3%82%89%e3%81%9b%e3%81%a6%e3%81%84%e3%81%9f%e3%81%a0%e3%81%8d%e3%81%be%e3%81%97%e3%81%9f%e3%80%82</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -7660,7 +7660,7 @@ FJORDでは４つあるサービス全てをHerokuで運営しているのでHer
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>heroku-ja-meetup-1%e3%81%a7lokka%e3%81%aelt%e3%82%92%e3%81%95%e3%81%9b%e3%81%a6%e3%81%84%e3%81%9f%e3%81%a0%e3%81%8d%e3%81%be%e3%81%97%e3%81%9f</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -7811,7 +7811,7 @@ FJORDでは４つあるサービス全てをHerokuで運営しているのでHer
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%b9%e3%83%9e%e3%83%9b%e3%81%a7%e3%82%b5%e3%82%a6%e3%83%b3%e3%83%89%e3%83%8e%e3%83%99%e3%83%ab%e9%a2%a8%e6%80%96%e3%81%84%e8%a9%b1%e6%8a%95%e7%a8%bf%e3%82%b5%e3%82%a4%e3%83%88</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -8022,7 +8022,7 @@ FJORDでは４つあるサービス全てをHerokuで運営しているのでHer
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e5%b0%8f%e8%a6%8f%e6%a8%a1web%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e5%ae%89%e4%b8%8a%e3%81%8c%e3%82%8a%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e6%a7%8b%e6%88%90%e3%81%a8%e9%96%8b%e7%99%ba%e3%83%95</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -8267,7 +8267,7 @@ pushをすると、lingrの社内チャットにメッセージが流れるよ�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>github-for-mac-%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%8c%e3%83%96%e3%83%a9%e3%83%b3%e3%83%81%e4%bd%9c%e3%82%8b%e3%80%81%e6%80%96%e8%a9%b1%e3%81%ae</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -8466,7 +8466,7 @@ end</code></pre>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%87%e3%82%b6%e3%82%a4%e3%83%8a%e3%83%bc%e3%81%a8%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9e%e3%83%bc%e3%80%81zip%e7%b4%8d%e5%93%81-vs-github%e3%82%a4%e3%83%b3%e3%83%86%e3%82%b0%e3%83%ac</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -8775,7 +8775,7 @@ File > Export As HTML5 > Folder をクリック。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>iphone%e3%81%a7%e3%82%82%e8%a6%8b%e3%82%8c%e3%82%8b%e3%82%a2%e3%83%8b%e3%83%a1%e3%81%8c%e4%bd%9c%e3%82%8c%e3%82%8bmac%e3%82%a2%e3%83%97%e3%83%aa%e3%80%8chype%e3%80%8d%e3%82%92%e4%bd%bf%e3%81%a3</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -8862,7 +8862,7 @@ File > Export As HTML5 > Folder をクリック。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b1%e3%81%a7%e5%88%9d%e3%82%81%e3%81%a6%e3%83%97%e3%83%ac%e3%82%b9%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9%e6%9b%b8%e3%81%84%e3%81%9f%e3%82%89%e7%b4%b9%e4%bb%8b%e3%81%97%e3%81%a6%e3%81%84</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -8919,7 +8919,7 @@ File > Export As HTML5 > Folder をクリック。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b1%e3%81%ae11%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -9076,7 +9076,7 @@ We are just kidding, don't be angry!、だそうですｗ
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>2011%e5%b9%b4%e3%81%ab%e3%82%84%e3%81%a3%e3%81%9f%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3%e3%81%ae%e3%81%8a%e4%bb%95%e4%ba%8b%e3%80%8cdoorkeeper%e3%80%8d</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -9143,7 +9143,7 @@ We are just kidding, don't be angry!、だそうですｗ
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b1%e3%81%ae12%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -9224,7 +9224,7 @@ We are just kidding, don't be angry!、だそうですｗ
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b11%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -9277,7 +9277,7 @@ We are just kidding, don't be angry!、だそうですｗ
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b12%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -9325,7 +9325,7 @@ We are just kidding, don't be angry!、だそうですｗ
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%96%e3%83%ad%e3%82%b0%e3%81%abadsense%e3%81%ae%e7%ae%a1%e7%90%86%e7%94%bb%e9%9d%a2%e3%81%ae%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88%e3%82%92%e8%bc%89</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -9433,7 +9433,7 @@ We are just kidding, don't be angry!、だそうですｗ
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%b3%e7%94%9f%e5%8b%9f%e9%9b%86%e4%b8%ad</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -9614,7 +9614,7 @@ ITに興味があります。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b13%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -9675,7 +9675,7 @@ ITに興味があります。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b14%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -9728,7 +9728,7 @@ ITに興味があります。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b15%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -9871,7 +9871,7 @@ ITに興味があります。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%83%95%e3%82%a3%e3%83%a8%e3%83%ab%e3%83%89%e3%81%af%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%b3%e7%94%9f%e3%82%92%e5%8b%9f%e9%9b%86%e3%81%97</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10013,7 +10013,7 @@ deployが失敗した場合はメンバー全員にメールが飛びます。�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e5%b0%8f%e3%81%95%e3%81%84%e4%bc%9a%e7%a4%be%e3%81%ae%e3%83%84%e3%83%bc%e3%83%ab%e3%82%b9%e3%82%bf%e3%83%83%e3%82%af%e3%83%bb%e9%96%8b%e7%99%ba%e3%83%95%e3%83%ad%e3%83%bc</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10161,7 +10161,7 @@ deployが失敗した場合はメンバー全員にメールが飛びます。�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%82%92%e4%bd%9c%e3%82%8a%e3%81%9f%e3%81%84%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%b3%e5%8b%9f%e9%9b%86</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10353,7 +10353,7 @@ https://github.com/fjordllc/tutorial/wiki]]></wp:comment_content>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b16%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10410,7 +10410,7 @@ iPhone版も続けてリリース予定です。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b1android%e7%89%88%e3%82%92%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9%e3%81%97%e3%81%be%e3%81%97%e3%81%9f</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10453,7 +10453,7 @@ iPhone版も続けてリリース予定です。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>android%e7%89%88%e3%80%81%e6%80%96%e8%a9%b17-1%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10504,7 +10504,7 @@ iPhone版も続けてリリース予定です。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%80%8c%e6%80%96%e8%a9%b1%e3%80%8d%e3%81%8c%e5%90%8d%e9%96%80%e5%a5%b3%e5%ad%90%e5%a4%a7%e3%80%8c%e3%83%95%e3%82%a7%e3%83%aa%e3%82%b9%e5%a5%b3%e5%ad%a6%e9%99%a2%e3%80%8d%e5%ad%a6%e5%9c%92%e7%a5%ad</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10548,7 +10548,7 @@ iPhone版も続けてリリース予定です。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b1android%e7%89%88%e3%81%8csd%e3%82%ab%e3%83%bc%e3%83%89%e3%81%ab%e7%a7%bb%e5%8b%95%e3%81%a7%e3%81%8d%e3%82%8b%e3%82%88%e3%81%86%e3%81%ab%e3%81%aa%e3%82%8a%e3%81%be%e3%81%97%e3%81%9f</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10608,7 +10608,7 @@ iPhone版も続けてリリース予定です。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b17%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10688,7 +10688,7 @@ iPhone版も続けてリリース予定です。
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%80%8c%e6%80%96%e8%a9%b1%e3%80%8d%e3%81%8c%e3%80%8cpococe%ef%bc%88%e3%83%9d%e3%82%b3%e3%83%81%e3%82%a7%ef%bc%89%e3%80%8d%e3%81%a7%e7%b4%b9%e4%bb%8b%e3%81%95%e3%82%8c%e3%81%be%e3%81%97%e3%81%9f</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10763,7 +10763,7 @@ FJORDのデザイナー <a title="@machida" href="https://twitter.com/machida" t
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>web%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%82%92%e4%bd%9c%e3%81%a3%e3%81%a6%e8%b5%b7%e6%a5%ad%e3%81%97%e3%81%9f%e3%81%84%e5%ad%a6%e7%94%9f%e3%83%bb%e7%a4%be%e4%bc%9a%e4%ba%ba%e3%82%a4%e3%83%b3</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10855,7 +10855,7 @@ Webサイトは<a title="Communiture　" href="http://communiture.com">こちら
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%83%e3%83%97%e7%94%9f%e3%81%8cweb%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%80%81%e3%80%8ccommuniture%e3%80%8d%e3%82%92%e3%83%aa%e3%83%aa</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10927,7 +10927,7 @@ After:
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%b3%e5%8b%9f%e9%9b%86%e3%83%95%e3%82%a9%e3%83%bc%e3%83%a0%e3%81%8c%e3%83%86%e3%83%ad%e3%81%ae%e7%8a%a0%e7%89%b2%e3%81%ab%e3%81%aa%e3%82%8a%e3%81%be%e3%81%97</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -10986,7 +10986,7 @@ After:
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b18%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11036,7 +11036,7 @@ After:
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b1%e3%83%95%e3%82%a7%e3%82%a4%e3%82%b9%e3%83%96%e3%83%83%e3%82%af%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92%e9%96%8b%e8%a8%ad%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%ef%bc%81</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11138,7 +11138,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%80%90%e6%80%96%e3%81%84bgm%e3%80%91%e6%80%96%e8%a9%b1iphone%e3%82%a2%e3%83%97%e3%83%aa%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9%ef%bc%81%e3%80%90%e6%80%96%e3%81%84%e5%8a%b9%e6%9e%9c%e9%9f%b3%e3%80%91</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11228,7 +11228,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b19%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11292,7 +11292,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%80%90%e4%bc%91%e5%ad%a6%e3%83%bb%e3%83%8b%e3%83%bc%e3%83%88%e3%83%bb%e5%b0%b1%e8%81%b7%e6%b5%aa%e4%ba%ba%e6%ad%93%e8%bf%8e%e3%80%91web%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9e%e3%82%a4</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11348,7 +11348,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b110%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11432,7 +11432,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b111%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11490,7 +11490,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b112%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11558,7 +11558,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b11%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a-2</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11614,7 +11614,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b12%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a-2</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11670,7 +11670,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b13%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a-2</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11830,7 +11830,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e8%b6%85%e8%b1%aa%e8%8f%af%e5%95%86%e5%93%81%e3%81%8c%e5%bd%93%e3%81%9f%e3%82%8b%ef%bc%81%e3%83%ad%e3%83%bc%e3%82%ab%e3%83%ab%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%b3%e5%8b%9f%e9%9b%86</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11886,7 +11886,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b14%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a-2</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -11944,7 +11944,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b1android%e7%89%88%e3%83%aa%e3%83%8b%e3%83%a5%e3%83%bc%e3%82%a2%e3%83%ab%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -12000,7 +12000,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b15%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a-2</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -12056,7 +12056,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b12013%e5%b9%b46%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -12096,7 +12096,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b1android%e7%89%888-3%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -12164,7 +12164,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b12013%e5%b9%b47%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -12206,7 +12206,7 @@ http://itunes.apple.com/jp/app/bu-hua/id564486792?ls=1&amp;mt=8</a></p>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%80%90%e9%9b%bb%e8%bb%8a%e3%81%a7%e3%82%82%e3%80%91%e6%80%96%e8%a9%b1iphone%e7%89%88%e3%82%a2%e3%83%83%e3%83%97%e3%83%87%e3%83%bc%e3%83%88%e3%80%82ipad%e7%89%88%e3%82%82%ef%bc%81%e3%80%90%e5%ae%89</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -12255,7 +12255,7 @@ iPhone版をアップデートしてサウンド周りの不具合を修正し�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b12013%e5%b9%b48%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -12338,7 +12338,7 @@ iPhone版をアップデートしてサウンド周りの不具合を修正し�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e3%80%90%e5%a4%b1%e6%95%97%e3%80%91%e6%80%96%e8%a9%b12%e5%b9%b4%e9%96%93%e3%81%ae%e7%b7%8f%e6%8b%ac%e3%80%90%e7%84%a1%e5%bf%b5%e3%80%91</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -12420,7 +12420,7 @@ iPhone版をアップデートしてサウンド周りの不具合を修正し�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b12013%e5%b9%b410%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
@@ -12473,7 +12473,7 @@ iPhone版をアップデートしてサウンド周りの不具合を修正し�
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>%e6%80%96%e8%a9%b12013%e5%b9%b411%e6%9c%88%e3%81%ae%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e6%95%b0%e3%83%bb%e5%8f%8e%e7%9b%8a</wp:post_name>
-		<wp:status>publish</wp:status>
+		<status>true</status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>post</wp:post_type>
