@@ -11,7 +11,7 @@ class Staffs::ArticlesController < StaffsController
   end
 
   def show
-    @article = Article.find(params[:id])
+    @article = Article.published.find(params[:id])
   end
 
   def new

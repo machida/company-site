@@ -10,9 +10,10 @@
     = link_to @article, {:class => "article__title-link"} do
       = @article.title
 .article__informations
-  = image_tag("member-icons/#{@article.staff.slug}.jpg", :alt => "#{@article.staff.name}", :class => "article__author-icon-image")
-  %span.article__author-name
-    = @article.staff.name
+  - if @article.staff
+    = image_tag("member-icons/#{@article.staff.slug}.jpg", :alt => "#{@article.staff.name}", :class => "article__author-icon-image")
+    %span.article__author-name
+      = @article.staff.name
   %span.article__created-at
     = @article.created_at
   .article__tags

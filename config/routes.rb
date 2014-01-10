@@ -22,5 +22,5 @@ CompanySite::Application.routes.draw do
   get '/archives/:year/:month/:day', :controller => 'archives', :action => 'show'
   get '/archives/:year/:month', :controller => 'archives', :action => 'show'
   get '/archives/:year', :controller => 'archives', :action => 'show'
-  root :to => 'home#index'
+  root 'home#index'
 end

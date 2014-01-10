@@ -1,7 +1,6 @@
 - content_for :page_title do
   BLOG
 
-
 %h2
   #{params[:year]}年
   #{params[:month]}月
@@ -19,7 +18,8 @@
         = link_to article, {:class => "articles-article__title-link"} do
           = article.title
       .articles-article__informations
-        = image_tag("member-icons/#{article.staff.slug}.jpg", :alt => "#{article.staff.name}", :class => "articles-article__author-icon-image")
+        - if article.staff
+          = image_tag("member-icons/#{article.staff.slug}.jpg", :alt => "#{article.staff.name}", :class => "articles-article__author-icon-image")
         .articles-article__created-at
           = article.created_at
         .articles-article__tags
