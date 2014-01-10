@@ -22,4 +22,8 @@ module ApplicationHelper
     size ? "#{url}?size=#{size}" : url
   end
 
+  def current_path(path)
+    "is-current" if current_page?(path)
+  end
+
 end

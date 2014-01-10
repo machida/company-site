@@ -1,33 +1,27 @@
 %nav.side-nav
-  %ul.side-nav__wrapper
-    %li.side-nav-link
-      %h2.side-nav-link__parent
-        = link_to staffs_root_path, {:class => "side-nav-link__parent-link"} do
-          %i.fa.fa-home.side-nav-link__parent-icon
-          = t('Dashboard')
-    %li.side-nav-link
-      %h2.side-nav-link__parent
-        = link_to staffs_articles_path, {:class => "side-nav-link__parent-link"} do
-          %i.fa.fa-pencil-square-o.side-nav-link__parent-icon
-          = t('Articles')
-    %li.side-nav-link
-      %h2.side-nav-link__parent
-        = link_to staffs_pages_path, {:class => "side-nav-link__parent-link"} do
-          %i.fa.fa-book.side-nav-link__parent-icon
-          = t('Pages')
-    %li.side-nav-link
-      %h2.side-nav-link__parent
-        = link_to staffs_snippets_path, {:class => "side-nav-link__parent-link"} do
-          %i.fa.fa-paperclip.side-nav-link__parent-icon
-          = t('Snippets')
-    %li.side-nav-link
-      %h2.side-nav-link__parent
-        = link_to staffs_staffs_path, {:class => "side-nav-link__parent-link"} do
-          %i.fa.fa-user.side-nav-link__parent-icon
-          = t('Staffs')
-    %li.side-nav-link
-      %h2.side-nav-link__parent
-        = link_to "/staffs/sites/site", {:class => "side-nav-link__parent-link"} do
-          %i.fa.fa-home.side-nav-link__parent-icon
-          = t('Site Settings')
+  %ul.side-nav__items
+    %li.side-nav__item
+      = link_to staffs_root_path, {:class => "#{current_path(staffs_root_path)} side-nav__link"} do
+        %i.fa.fa-home.side-nav__link-icon
+        = t('Dashboard')
+    %li.side-nav__item
+      = link_to staffs_articles_path, {:class => "#{current_path(staffs_articles_path)} side-nav__link"} do
+        %i.fa.fa-pencil-square-o.side-nav__link-icon
+        = t('Articles')
+    %li.side-nav__item
+      = link_to staffs_pages_path, {:class => "#{current_path(staffs_pages_path)} side-nav__link"} do
+        %i.fa.fa-book.side-nav__link-icon
+        = t('Pages')
+    %li.side-nav__item
+      = link_to staffs_snippets_path, {:class => "#{current_path(staffs_snippets_path)} side-nav__link"} do
+        %i.fa.fa-paperclip.side-nav__link-icon
+        = t('Snippets')
+    %li.side-nav__item
+      = link_to staffs_staffs_path, {:class => "#{current_path(staffs_staffs_path)} side-nav__link"} do
+        %i.fa.fa-user.side-nav__link-icon
+        = t('Staffs')
+    %li.side-nav__item
+      = link_to "/staffs/sites/site", {:class => "#{current_path("/staffs/sites/site")} side-nav__link"} do
+        %i.fa.fa-home.side-nav__link-icon
+        = t('Site Settings')
 
