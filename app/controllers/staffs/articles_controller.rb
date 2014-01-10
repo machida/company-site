@@ -1,7 +1,13 @@
 class Staffs::ArticlesController < StaffsController
 
   def index
-    @articles = Article.order('id desc').all
+    if params[:published] == "false"
+      @articles = Article.unpublished.order('id desc').all
+    elsif params[:published] == "true"
+      @articles = Article.published.order('id desc').all
+    else
+      @articles = Article.order('id desc').all
+    end
   end
 
   def show

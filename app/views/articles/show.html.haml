@@ -1,5 +1,5 @@
 - content_for :page_title do
-  - if @article.category.name?
+  - if @article.category
     = @article.category.name.upcase
   - else
     BLOG

@@ -1,17 +1,17 @@
 class ArticlesController < ApplicationController
   def index
     if params[:tag]
-      @articles = Article.tagged_with(params[:tag]).order('id desc').page(params[:page]).per(12).order(:id)
+      @articles = Article.published.tagged_with(params[:tag]).order('id desc').page(params[:page]).per(12).order(:id)
     elsif params[:search]
-      @articles = Article.search(params[:search]).order('id desc')
+      @articles = Article.published.search(params[:search]).order('id desc')
       render 'search/index'
     else
-      @articles = Article.all.page(params[:page]).order('id desc').per(12).order(:id)
+      @articles = Article.published.page(params[:page]).order('id desc').per(12).order(:id)
     end
   end
 
   def show
-    @article = Article.find(params[:id])
+    @article = Article.published.find(params[:id])
   end
 
   def feed
@@ -22,8 +22,8 @@ class ArticlesController < ApplicationController
   end
 
   def tag
-    @articles = Article.tagged_with(params[:name]).order('id desc')
-    @tags = Article.tag_counts_on(:tags)
+    @articles = Article.published.tagged_with(params[:name]).order('id desc')
+    @tags = Article.published.tag_counts_on(:tags)
     render 'tags/index'
   end
 
