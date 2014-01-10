@@ -1,6 +1,7 @@
 %header.main__header
   %h2.main__header-heading
     = t('Pages')
+  = link_to t('New Page'), new_staffs_page_path, {:class => "main__header-add-link large-button"}
 .main__body
   %table
     %tbody
@@ -16,5 +17,3 @@
           %td= link_to 'Show', staffs_page_path(page)
           %td= link_to 'Edit', edit_staffs_page_path(page)
           %td= link_to 'Destroy', staffs_page_path(page), method: :delete, data: { confirm: 'Are you sure?' }
-  %br/
-  = link_to 'New Page', new_staffs_page_path

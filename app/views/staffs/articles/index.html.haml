@@ -1,7 +1,7 @@
 %header.main__header
   %h2.main__header-heading
     = t('Articles')
-  = link_to 'New Article', new_staffs_article_path, {:class => "main__header-add-link large-button"}
+  = link_to t('New Article'), new_staffs_article_path, {:class => "main__header-add-link large-button"}
 .main__body
   = link_to '全て', staffs_articles_path
   = link_to '公開', staffs_articles_path(:published => "true")
