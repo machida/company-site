@@ -1,10 +1,10 @@
 class MembersController < ApplicationController
   def index
-    @staffs = Staff.find(:all, :conditions => { :member => true })
+    @staffs = Staff.published
   end
 
   def show
-    @staff = Staff.friendly.find(params[:id], :conditions => { :member => true })
+    @staff = Staff.published.friendly.find(params[:id])
   end
 
 end

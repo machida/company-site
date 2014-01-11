@@ -1,20 +1,34 @@
 %header.main__header
   %h2.main__header-heading
     = t('Snippets')
+  = link_to new_staffs_snippet_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-plus
+    = t('New Snippet')
 .main__body
-  %table
+  .main__search
+    %label
+      検索:
+    %input#js-search{:type => "text"}
+    %ul.main__tag-navs.main-tag-navs
+      %li.main-tag-nav= link_to t('All'), staffs_snippets_path
+      %li.main-tag-nav= link_to t('Published'), staffs_snippets_path(:published => "true")
+      %li.main-tag-nav= link_to t('Unublished'), staffs_snippets_path(:published => "false")
+  %table.main__table.main-table
     %tbody
       - @snippets.each do |snippet|
-        %tr
-          %td= snippet.title
-          %td= snippet.slug
-          %td
+        %tr.main-table__tr
+          %td.main-table__td.js-search-target
+            = link_to staffs_snippet_path(snippet) do
+              = snippet.title
+          %td.main-table__td= snippet.slug
+          %td.main-table__td
             - if snippet.published?
               公開
             - else
               下書き
-          %td= link_to 'Show', staffs_snippet_path(snippet)
-          %td= link_to 'Edit', edit_staffs_snippet_path(snippet)
-          %td= link_to 'Destroy', staffs_snippet_path(snippet), method: :delete, data: { confirm: 'Are you sure?' }
-  %br/
-  = link_to 'New Snippet', new_staffs_snippet_path
+          %td.main-table__td
+            %ul.main-table-actions
+              %li.main-table-actions__action
+                = link_to t('Edit'), edit_staffs_snippet_path(snippet)
+              %li.main-table-actions__action
+                = link_to t('Destroy'), staffs_snippet_path(snippet), method: :delete, data: { confirm: 'Are you sure?' }

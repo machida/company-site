@@ -4,11 +4,11 @@ CompanySite::Application.routes.draw do
     root 'home#index'
     resources :pages
     resources :articles
-    resources :posts
     resources :categories
     resources :snippets
     resources :staffs
     resources :sites
+    resources :services
   end
   devise_for :staffs
   resources :snippets

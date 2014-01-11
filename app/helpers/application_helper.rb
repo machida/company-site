@@ -26,6 +26,11 @@ module ApplicationHelper
     "is-current" if current_page?(path)
   end
 
+  def current_controller(controller)
+    "is-current" if current_page?(:controller => controller)
+  end
+
+
   def show_date(time)
     return time unless time
     time.strftime("%Y/%m/%d")
@@ -34,6 +39,14 @@ module ApplicationHelper
   def show_at(time)
     return time unless time
     time.strftime("%Y/%m/%d %H:%M:%S")
+  end
+
+  def controller?(*controller)
+    controller.include?(params[:controller])
+  end
+
+  def action?(*action)
+    action.include?(params[:action])
   end
 
 end

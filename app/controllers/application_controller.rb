@@ -26,9 +26,9 @@ class ApplicationController < ActionController::Base
     @articles_by_month = Article.published.order("created_at DESC").group_by { |article| article.created_at.strftime("%Y/%m")}
   end
 
-  # 最新の投稿10件表示
+  # 最新の投稿20件表示
   def recent_articles
-    @articles = Article.published.order('id desc').limit(10)
+    @articles = Article.published.order('id desc').limit(20)
   end
 
   # order('count DESC')でカウントの多い順にタグを並べています

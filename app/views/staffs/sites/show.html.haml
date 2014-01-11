@@ -1,10 +1,17 @@
 %header.main__header
   %h2.main__header-heading
     = t('Site Settings')
+  = link_to edit_staffs_site_path(@site), {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-wrench
+    = t('Edit Site')
 .main__body
   %table
     %tbody
       %tr
         %td= @site.title
-
-        %td= link_to 'Edit', edit_staffs_site_path(@site)
+      - if @site.meta_keywords?
+        %tr
+          %td= @site.meta_keywords
+      - if @site.meta_description?
+        %tr
+          %td= @site.meta_description

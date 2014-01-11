@@ -70,6 +70,8 @@ GEM
       sass (~> 3.1)
     compass-rails (1.1.2)
       compass (>= 0.12.2)
+    dekiru (0.0.10)
+      http_accept_language (>= 2.0.0)
     devise (3.2.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -99,6 +101,7 @@ GEM
       haml (>= 4.0.0.rc.1)
       hpricot (~> 0.8.6)
       ruby_parser (~> 3.1.1)
+    http_accept_language (2.0.0)
     i18n (0.6.9)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -192,6 +195,7 @@ DEPENDENCIES
   cancan
   coffee-rails (~> 4.0.0)
   compass-rails (~> 1.1.2)
+  dekiru
   devise
   erb2haml
   friendly_id (~> 5.0.0)

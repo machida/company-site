@@ -1,5 +1,8 @@
-%h1 Editing article
-= render 'form'
-= link_to 'Show', staffs_staff_path(@staff)
-|
-\#{link_to 'Back', staffs_staffs_path}
+%header.main__header
+  %h2.main__header-heading
+    = t('Editing Staff')
+.main__body
+  = render 'form'
+  = link_to 'Show', staffs_staff_path(@staff)
+  |
+  \#{link_to 'Back', staffs_staffs_path}

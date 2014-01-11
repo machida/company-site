@@ -17,17 +17,27 @@
   +rem('margin-bottom', 22px)
 .main__header-add-link
   position: absolute
-  +rem('right', 30px)
+  +rem('right', 0px)
   +rem('top', 22px)
 .main__body
   +rem('padding', 30px 30px)
-.main__table
+
+.main-table
   width: 100%
+.main-table__tr
+  &:nth-child(odd)
+    background-color: #f6f6f6
+  &:nth-child(even)
 .main-table__th
   background-color: rgba(0, 0, 0, .1)
   +rem('padding', 10px)
   border: rgba(0, 0, 0, .1) solid 1px
 .main-table__td
   +rem('padding', 10px)
-  border: rgba(0, 0, 0, .1) solid 1px
+  border-bottom: rgba(0, 0, 0, .04) solid 1px
 
+.main-table-actions
+  @extend .reset-ul
+.main-table-actions__action
+  +inline-block
+  +rem('width', 70px)

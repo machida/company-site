@@ -1,0 +1,8 @@
+%p#notice= notice
+= @article.title
+= @article.body
+-# = @article.category.name
+= raw @article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+= link_to 'Edit', edit_staffs_article_path(@article)
+|
+\#{link_to 'Back', staffs_articles_path}

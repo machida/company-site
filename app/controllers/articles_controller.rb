@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
     if params[:tag]
       @articles = Article.published.tagged_with(params[:tag]).order('id desc').page(params[:page]).per(12).order(:id)
     elsif params[:search]
-      @articles = Article.published.search(params[:search]).order('id desc')
+      @articles = Article.published.search(params[:search])
       render 'search/index'
     else
       @articles = Article.published.page(params[:page]).order('id desc').per(12).order(:id)

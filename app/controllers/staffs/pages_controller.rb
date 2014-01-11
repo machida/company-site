@@ -1,7 +1,13 @@
 class Staffs::PagesController < StaffsController
 
   def index
-    @pages = Page.all
+    if params[:published] == "false"
+      @pages = Page.unpublished.order('id desc').all
+    elsif params[:published] == "true"
+      @pages = Page.published.order('id desc').all
+    else
+      @pages = Page.all
+    end
   end
 
   def show

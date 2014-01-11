@@ -1,15 +1,41 @@
 %header.main__header
   %h2.main__header-heading
     = t('Staffs')
+  - if can? :manage, @staff
+    = link_to new_staffs_staff_path, {:class => "main__header-add-link large-button"} do
+      %i.fa.fa-plus
+      = t('New Staff')
 .main__body
-  %table
+  .main__search
+    %label
+      検索:
+    %input#js-search{:type => "text"}
+    %ul.main__tag-navs.main-tag-navs
+      %li.main-tag-nav= link_to t('All'), staffs_staffs_path
+      %li.main-tag-nav= link_to t('Published'), staffs_staffs_path(:published => "true")
+      %li.main-tag-nav= link_to t('Unublished'), staffs_staffs_path(:published => "false")
+  %table.main__table.main-table
     %tbody
       - @staffs.each do |staff|
-        %tr
-          %td= image_tag gravatar_image_url(staff.email, 32)
-          %td= staff.name
-          %td= link_to 'Show', staffs_staff_path(staff)
-          %td= link_to 'Edit', edit_staffs_staff_path(staff)
-          %td= link_to 'Destroy', staffs_staff_path(staff), method: :delete, data: { confirm: 'Are you sure?' }
-  - if can? :manage, @staff
-    = link_to 'New Staff', new_staffs_staff_path
+        %tr.main-table__tr
+          %td.main-table__td= image_tag gravatar_image_url(staff.email, 32)
+          %td.main-table__td.js-search-target
+            = link_to staffs_staff_path(staff) do
+              = staff.name
+          %td.main-table__td.js-search-target
+            = staff.slug
+          %td.main-table__td
+            = staff.role
+          %td.main-table__td
+            %ul.main-table-actions
+              - if staff.published?
+                %li.main-table-actions__action.published
+                  = link_to member_path(staff) do
+                    = t('Published')
+              - else
+                %li.main-table-actions__action.unpublished
+                  = t('Unpublished')
+              %li.main-table-actions__action
+                = link_to 'Edit', edit_staffs_staff_path(staff)
+              %li.main-table-actions__action
+                = link_to 'Destroy', staffs_staff_path(staff), method: :delete, data: { confirm: 'Are you sure?' }

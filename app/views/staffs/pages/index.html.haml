@@ -1,19 +1,36 @@
 %header.main__header
   %h2.main__header-heading
     = t('Pages')
-  = link_to t('New Page'), new_staffs_page_path, {:class => "main__header-add-link large-button"}
+  = link_to new_staffs_page_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-plus
+    = t('New Page')
 .main__body
-  %table
+  .main__search
+    %label
+      検索:
+    %input#js-search{:type => "text"}
+    %ul.main__tag-navs.main-tag-navs
+      %li.main-tag-nav= link_to t('All'), staffs_pages_path
+      %li.main-tag-nav= link_to t('Published'), staffs_pages_path(:published => "true")
+      %li.main-tag-nav= link_to t('Unublished'), staffs_pages_path(:published => "false")
+  %table.main__table.main-table
     %tbody
       - @pages.each do |page|
-        %tr
-          %td= page.title
-          %td= page.slug
-          %td
-            - if page.published?
-              公開
-            - else
-              下書き
-          %td= link_to 'Show', staffs_page_path(page)
-          %td= link_to 'Edit', edit_staffs_page_path(page)
-          %td= link_to 'Destroy', staffs_page_path(page), method: :delete, data: { confirm: 'Are you sure?' }
+        %tr.main-table__tr
+          %td.main-table__td.js-search-target
+            = link_to staffs_page_path(page) do
+              = page.title
+          %td.main-table__td= page.slug
+          %td.main-table__td
+            %ul.main-table-actions
+              - if page.published?
+                %li.main-table-actions__action.published
+                  = link_to page_path(page) do
+                    = t('Published')
+              - else
+                %li.main-table-actions__action.unpublished
+                  = t('Unpublished')
+              %li.main-table-actions__action
+                = link_to t('Edit'), edit_staffs_page_path(page)
+              %li.main-table-actions__action
+                = link_to t('Destroy'), staffs_page_path(page), method: :delete, data: { confirm: 'Are you sure?' }

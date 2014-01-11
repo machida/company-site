@@ -14,4 +14,7 @@ class Staff < ActiveRecord::Base
 
   has_many :posts
 
+  scope :published, -> { where(published: true) }
+  scope :unpublished, -> { where(published: false) }
+
 end

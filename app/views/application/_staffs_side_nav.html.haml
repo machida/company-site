@@ -5,23 +5,27 @@
         %i.fa.fa-home.side-nav__link-icon
         = t('Dashboard')
     %li.side-nav__item
-      = link_to staffs_articles_path, {:class => "#{current_path(staffs_articles_path)} side-nav__link"} do
+      = link_to staffs_articles_path, {:class => "#{controller?('staffs/articles') ? 'is-current' : ''} side-nav__link"} do
         %i.fa.fa-pencil-square-o.side-nav__link-icon
         = t('Articles')
     %li.side-nav__item
-      = link_to staffs_pages_path, {:class => "#{current_path(staffs_pages_path)} side-nav__link"} do
+      = link_to staffs_pages_path, {:class => "#{controller?('staffs/pages') ? 'is-current' : ''} side-nav__link"} do
         %i.fa.fa-book.side-nav__link-icon
         = t('Pages')
     %li.side-nav__item
-      = link_to staffs_snippets_path, {:class => "#{current_path(staffs_snippets_path)} side-nav__link"} do
+      = link_to staffs_snippets_path, {:class => "#{controller?('staffs/snippets') ? 'is-current' : ''} side-nav__link"} do
         %i.fa.fa-paperclip.side-nav__link-icon
         = t('Snippets')
     %li.side-nav__item
-      = link_to staffs_staffs_path, {:class => "#{current_path(staffs_staffs_path)} side-nav__link"} do
+      = link_to staffs_services_path, {:class => "#{controller?('staffs/services') ? 'is-current' : ''} side-nav__link"} do
+        %i.fa.fa-paperclip.side-nav__link-icon
+        = t('Services')
+    %li.side-nav__item
+      = link_to staffs_staffs_path, {:class => "#{controller?('staffs/staffs') ? 'is-current' : ''} side-nav__link"} do
         %i.fa.fa-user.side-nav__link-icon
         = t('Staffs')
     %li.side-nav__item
-      = link_to "/staffs/sites/site", {:class => "#{current_path("/staffs/sites/site")} side-nav__link"} do
+      = link_to "/staffs/sites/site", {:class => "#{controller?('staffs/sites') ? 'is-current' : ''} side-nav__link"} do
         %i.fa.fa-home.side-nav__link-icon
         = t('Site Settings')
 

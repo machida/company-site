@@ -1,5 +1,11 @@
 %p#notice= notice
-= @staff.name
-= link_to 'Edit', edit_staffs_staff_path(@staff)
-|
-\#{link_to 'Back', staffs_staffs_path}
+%header.main__header
+  %h2.main__header-heading
+    = t('Staffs')
+  = link_to staffs_staffs_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-reply
+    = t('Back To Staffs')
+.main__body
+  = @staff.name
+  = @staff.body
+  = link_to 'Edit', edit_staffs_staff_path(@staff)

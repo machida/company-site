@@ -26,8 +26,9 @@ ActiveRecord::Schema.define(version: 20140110044746) do
   end
 
   create_table "contacts", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "name",    null: false
+    t.string "email",   null: false
+    t.text   "content", null: false
   end
 
   create_table "friendly_id_slugs", force: true do |t|
@@ -106,7 +107,7 @@ ActiveRecord::Schema.define(version: 20140110044746) do
     t.string   "facebook_id"
     t.string   "twitter_id"
     t.text     "body"
-    t.boolean  "member",                 default: false, null: false
+    t.boolean  "published",              default: false, null: false
     t.string   "role"
     t.string   "slug"
     t.text     "description"

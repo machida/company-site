@@ -13,7 +13,7 @@ class Staffs::StaffsController < StaffsController
   end
 
   def edit
-    @staff = Staff.find(params[:id])
+    @staff = Staff.friendly.find(params[:id])
   end
 
   def create
@@ -31,10 +31,10 @@ class Staffs::StaffsController < StaffsController
   end
 
   def update
-    @staff = Staff.find(params[:id])
+    @staff = Staff.friendly.find(params[:id])
     respond_to do |format|
       if @staff.update(article_params)
-        format.html { redirect_to staffs_staffs_path, notice: 'article was successfully updated.' }
+        format.html { redirect_to staffs_staffs_path, notice: 'staff was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -44,7 +44,7 @@ class Staffs::StaffsController < StaffsController
   end
 
   def destroy
-    @staff = Staff.find(params[:id])
+    @staff = Staff.friendly.find(params[:id])
     @staff.destroy
     respond_to do |format|
       format.html { redirect_to staffs_staffs_path }
@@ -55,12 +55,12 @@ class Staffs::StaffsController < StaffsController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_article
-      @staff = Staff.find(params[:id])
+    def set_staff
+      @staff = Staff.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def article_params
-      params.require(:staff).permit(:title, :body, :tag_list, :slug, :category_id)
+    def staff_params
+      params.require(:staff).permit(:name, :body, :published)
     end
 end
