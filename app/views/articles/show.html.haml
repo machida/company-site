@@ -23,4 +23,7 @@
 .article__body
   = markdown(@article.body)
 
+  = link_to("Previous articlet", @article.previous_article) if @article.previous_article
+  = link_to("Next article", @article.next_article) if @article.next_article
+
 #{link_to 'Back', @article.category}

@@ -8,4 +8,12 @@ class Article < Post
     end
   end
 
+  def previous_article
+    self.class.first(:conditions => ["created_at < ?", created_at], :order => "created_at desc")
+  end
+
+  def next_article
+    self.class.first(:conditions => ["created_at > ?", created_at], :order => "created_at asc")
+  end
+
 end

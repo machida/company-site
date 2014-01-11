@@ -1,12 +1,12 @@
 class ArticlesController < ApplicationController
   def index
     if params[:tag]
-      @articles = Article.published.tagged_with(params[:tag]).order('id desc').page(params[:page]).per(12).order(:id)
+      @articles = Article.published.tagged_with(params[:tag]).order('created_at desc').page(params[:page]).per(12).order(:id)
     elsif params[:search]
       @articles = Article.published.search(params[:search])
       render 'search/index'
     else
-      @articles = Article.published.page(params[:page]).order('id desc').per(12).order(:id)
+      @articles = Article.published.page(params[:page]).order('created_at desc').per(12).order(:id)
     end
   end
 
