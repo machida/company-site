@@ -53,6 +53,7 @@ GEM
     arel (4.0.1)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
+    breadcrumbs_on_rails (2.3.0)
     builder (3.1.4)
     cancan (1.6.10)
     chronic (0.10.2)
@@ -191,6 +192,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on
+  breadcrumbs_on_rails
   by_star!
   cancan
   coffee-rails (~> 4.0.0)

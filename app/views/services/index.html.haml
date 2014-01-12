@@ -6,7 +6,7 @@
     %section.two-column-content
       .two-column-content__title-wrapper
         %h2.two-column-content__second-heading
-          = link_to service do
+          = link_to service, {:class => "two-column-content__second-heading-link"} do
             = service.title
       .two-column-content__inner
         = markdown(service.description)

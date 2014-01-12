@@ -11,9 +11,11 @@
     = render 'header'
     = render 'global_nav'
     %header.page__title
-      .wrapper
+      .wrapper.page__title-wrapper
         %h1.page__first-heading
           = yield :page_title
+        .page-title-breadcrumbs
+          = render_breadcrumbs separator: '&nbsp;&nbsp;>&nbsp;&nbsp;'
 
     .content
       - if articles? or categories? or category? or archive?
@@ -21,7 +23,7 @@
           .articles__wrapper
             = yield
             = render 'side_column_articles_nav'
-      - elsif home? or page? or members? or services? or service? or contact?
+      - elsif home? or page? or members? or services? or service? or contact? or member?
         .wrapper
           .content__wrapper
             = yield

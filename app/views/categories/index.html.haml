@@ -1,4 +1,5 @@
-%h1 Listing categories
+- content_for :page_title do
+  CATEGORIES
 
 %table
   %tr
@@ -13,5 +14,5 @@
 - for category in @categories
   = category.name
   %ul
-    - for post in category.posts
-      %li= post.title
+    - for article in category.articles
+      %li= article.title
