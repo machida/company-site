@@ -12,7 +12,7 @@
     %ul.main__tag-navs.main-tag-navs
       %li.main-tag-nav= link_to t('All'), staffs_pages_path
       %li.main-tag-nav= link_to t('Published'), staffs_pages_path(:published => "true")
-      %li.main-tag-nav= link_to t('Unublished'), staffs_pages_path(:published => "false")
+      %li.main-tag-nav= link_to t('Unpublished'), staffs_pages_path(:published => "false")
   %table.main__table.main-table
     %tbody
       - @pages.each do |page|

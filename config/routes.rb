@@ -9,6 +9,7 @@ CompanySite::Application.routes.draw do
     resources :staffs
     resources :sites
     resources :services
+    resources :contacts
   end
   devise_for :staffs
   resources :snippets

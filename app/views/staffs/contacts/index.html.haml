@@ -1,0 +1,37 @@
+%header.main__header
+  %h2.main__header-heading
+    = t('Contacts')
+  = link_to new_staffs_contact_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-plus
+    = t('New Contact')
+.main__body
+  .main__search
+    %label
+      検索:
+    %input#js-search{:type => "text"}
+    %ul.main__tag-navs.main-tag-navs
+      %li.main-tag-nav= link_to t('All'), staffs_contacts_path
+      %li.main-tag-nav= link_to t('Published'), staffs_contacts_path(:published => "true")
+      %li.main-tag-nav= link_to t('Unublished'), staffs_contacts_path(:published => "false")
+  %table.main__table.main-table
+    %tbody
+      - @contacts.each do |contact|
+        %tr.main-table__tr
+          %td.main-table__td.js-search-target
+            = link_to staffs_contact_path(contact) do
+              = contact.title
+          %td.main-table__td= raw contact.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+          %td.main-table__td= contact.created_at
+          %td.main-table__td
+            %ul.main-table-actions
+              - if contact.published?
+                %li.main-table-actions__action.published
+                  = link_to contact_path(contact) do
+                    = t('Published')
+              - else
+                %li.main-table-actions__action.unpublished
+                  = t('Unpublished')
+              %li.main-table-actions__action
+                = link_to t('Edit'), edit_staffs_contact_path(contact), {:class => "main-table-actions__edit"}
+              %li.main-table-actions__action
+                = link_to t('Destroy'), staffs_contact_path(contact), method: :delete, class: "main-table-actions__delete", data: { confirm: 'Are you sure?' }

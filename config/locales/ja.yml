@@ -199,6 +199,10 @@ ja:
   activerecord:
     errors:
       <<: *errors
+  # kaminari
+  views:
+    pagination:
+      truncate: "..."
 
   # staffs
   Logout: "ログアウト"

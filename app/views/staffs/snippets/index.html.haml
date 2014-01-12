@@ -12,7 +12,7 @@
     %ul.main__tag-navs.main-tag-navs
       %li.main-tag-nav= link_to t('All'), staffs_snippets_path
       %li.main-tag-nav= link_to t('Published'), staffs_snippets_path(:published => "true")
-      %li.main-tag-nav= link_to t('Unublished'), staffs_snippets_path(:published => "false")
+      %li.main-tag-nav= link_to t('Unpublished'), staffs_snippets_path(:published => "false")
   %table.main__table.main-table
     %tbody
       - @snippets.each do |snippet|
@@ -23,9 +23,9 @@
           %td.main-table__td= snippet.slug
           %td.main-table__td
             - if snippet.published?
-              公開
+              = t('Published')
             - else
-              下書き
+              = t('Unpublished')
           %td.main-table__td
             %ul.main-table-actions
               %li.main-table-actions__action
