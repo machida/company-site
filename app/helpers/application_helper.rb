@@ -1,6 +1,6 @@
 module ApplicationHelper
 
-  %w(home articles pages tags categories members services archives contacts).each do |controller|
+  %w(home articles pages tags categories members services archives).each do |controller|
     define_method("#{controller}?") do
       params[:controller] == controller and params[:action] == 'index'
     end
@@ -10,6 +10,10 @@ module ApplicationHelper
     define_method("#{controller.singularize}?") do
       (params[:controller] == controller and params[:action] == 'show') or (params[:controller] == controller and params[:action] == 'new')
     end
+  end
+
+  def contact?
+    params[:controller] == "contact" and params[:action] == 'new'
   end
 
   def gravatar_image_url(email = nil, size = nil)
