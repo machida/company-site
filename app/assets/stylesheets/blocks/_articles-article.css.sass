@@ -1,17 +1,15 @@
 .articles__wrapper
-  +rem('margin-left', $md * -0.3)
+  +rem('margin-left', $md * -0.9)
   position: relative
-  +rem('padding-right', 260px)
+  +rem('padding-right', 240px)
 .articles-article
   width: 33.33%
   float: left
-  +rem('padding-right', $md * .3)
-  +rem('padding-left', $md * .3)
+  +rem('padding-right', $md * .9)
+  +rem('padding-left', $md * .9)
   +rem('padding-bottom', $md * .6)
   +box-sizing(border-box)
 .articles-article__inner
-  +rem('padding', $md * .6)
-  border: $gray-l 1px solid
   +rem('height', 300px)
   overflow: hidden
 .articles-article__eyecatch-image-wrapper
@@ -24,12 +22,13 @@
   height: auto
 .articles-article__title
   @extend .reset
-  +text-block($lg, 1.6, .4)
+  +text-block($md, 1.6, .4)
+  font-weight: normal
 .articles-article__title-link
   +hover-link
   color: $black
   display: block
-  +rem('height', $lg * 3)
+  +rem('height', $md * 3)
   overflow: hidden
 .articles-article__author-icon-image
   +rem('width', 24px)

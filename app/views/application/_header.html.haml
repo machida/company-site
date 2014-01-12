@@ -1,4 +1,4 @@
-%header#header
+%header.header
   .wrapper.header__wrapper
     = form_tag(articles_path, :method => "get", :class => "header-search-form") do
       = text_field_tag(:search, params[:search], :class => "header-search-form__input-text")
@@ -16,18 +16,20 @@
         %li.header-staff-nav__item
           = link_to('Login', new_staff_session_path, {:class => "header-staff-nav__link"})
 
-#hero
+.hero
   - if home?
     .wrapper.hero__image-wrapper--home
       = image_tag("hero.png", {:class => "hero__image"})
-      .hero__hgrounp
+      .hero__hgrounp--home
         %h1.hero__site-title
           = @site.title
         %h2.hero__tag-line
           = @site.sub_title
   - else
-    .wrapper.hero__image-wrapper.hero__image-wrapper
-      %h1.hero__site-title
-        = @site.title
-      %h2.hero__tag-line
-        = @site.sub_title
+    .wrapper.hero__image-wrapper--except-home
+      .hero__hgrounp--except-home
+        %h1.hero__site-title
+          = link_to root_path, {:class => "hero__site-title-link"} do
+            = @site.title
+        %h2.hero__tag-line
+          = @site.sub_title
