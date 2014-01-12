@@ -22,5 +22,20 @@ module CompanySite
     config.i18n.default_locale = :ja
     config.time_zone = 'Tokyo'
     config.active_record.default_timezone = :local
+
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "yourdomain.dev",
+      :user_name            => "from@yourdomain.dev",
+      :password             => "Super-Secure-Password",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "yourdomain.dev"
+    }
+
   end
 end

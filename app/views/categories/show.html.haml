@@ -1,8 +1,6 @@
 - content_for :page_title do
   = @category.name.upcase
 
-%p#notice= notice
-
 - @articles.each do |article|
   %article.articles-article
     .articles-article__inner

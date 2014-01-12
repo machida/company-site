@@ -1,14 +1,9 @@
 class ContactMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default :from => "noreply@youdomain.dev"
+  default :to => "you@youremail.dev"
 
-  # Subject can be set in your I18n file at config/locales/en.yml
-  # with the following lookup:
-  #
-  #   en.contact_mailer.sent.subject
-  #
-  def sent
-    @greeting = "Hi"
-
-    mail to: "to@example.org"
+  def new_contact(contact)
+    @contact = contact
+    mail(:subject => "[YourWebsite.tld] #{contact.subject}")
   end
 end
