@@ -1,0 +1,12 @@
+%nav.staff-nav
+  %ul.staff-nav__items
+    - if staff_signed_in?
+      %li.staff-nav__item
+        = link_to '管理画面', staffs_root_path, {:class => "staff-nav__link"}
+      %li.staff-nav__item
+        = link_to('Logout', destroy_staff_session_path, :method => :delete, :class => "staff-nav__link")
+      %li.staff-nav__item
+        = current_staff.name
+    - else
+      %li.staff-nav__item
+        = link_to('Login', new_staff_session_path, {:class => "staff-nav__link"})

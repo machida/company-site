@@ -4,17 +4,6 @@
       = text_field_tag(:search, params[:search], :class => "header-search-form__input-text")
       = button_tag(:name => nil, :class => "header-search-form__button", :type => "submit") do
         %i.fa.fa-search
-    %ul.header-staff-nav
-      - if staff_signed_in?
-        %li.header-staff-nav__item
-          = link_to '管理画面', staffs_root_path, {:class => "header-staff-nav__link"}
-        %li.header-staff-nav__item
-          = link_to('Logout', destroy_staff_session_path, :method => :delete, :class => "header-staff-nav__link")
-        %li.header-staff-nav__item
-          = current_staff.name
-      - else
-        %li.header-staff-nav__item
-          = link_to('Login', new_staff_session_path, {:class => "header-staff-nav__link"})
 
 .hero
   - if home?

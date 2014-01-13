@@ -1,24 +1,27 @@
 @charset "utf-8"
 
-@import normalize
-@import reset
+@import setting/reset/normalize
+@import setting/reset/reset
 @import compass/utilities
 @import compass/css3
-@import variables/colors
-@import variables/fonts_size
-@import variables/layout
+
+//variables
+@import setting/variables/colors
+@import setting/variables/fonts_size
+@import setting/variables/layout
+
+//mixins
+@import setting/mixins/fonts
+@import setting/mixins/rem
+@import setting/mixins/animate
+
 @import //netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css
 @import url(//fonts.googleapis.com/css?family=Quicksand:300,400,700)
 @import url(//fonts.googleapis.com/css?family=Raleway:400,800,500,700)
 @import url(//fonts.googleapis.com/css?family=Tauri)
 
-//mixins
-@import mixins/fonts
-@import mixins/rem
-@import mixins/animate
-
-@import helper
-@import layouts
+@import setting/helper
+@import setting/layouts
 
 //block
 @import blocks/header
@@ -41,6 +44,7 @@
 @import blocks/pagination
 @import blocks/page-title-breadcrumbs
 @import blocks/pager
+@import blocks/staff-nav
 
 //styleguides
 @import example-for-styleguides

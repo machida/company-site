@@ -28,6 +28,11 @@
   #{$absolute-direction1}: #{$absolute-value1}
   #{$absolute-direction2}: #{$absolute-value2}
 
+=fixed($fixed-direction1: left, $fixed-value1: 0, $fixed-direction2: top, $fixed-value2: 0)
+  position: fixed
+  #{$fixed-direction1}: #{$fixed-value1}
+  #{$fixed-direction2}: #{$fixed-value2}
+
 =inconspicuous-white-link
   color: rgba(255, 255, 255, 0.6)
   &:hover,
@@ -55,7 +60,6 @@
     +rem('line-height', $square-block-height)
   @else
     +rem('line-height', $square-block-size)
-
 
 =tag-icon
   &:before

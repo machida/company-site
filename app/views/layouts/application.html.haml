@@ -8,6 +8,7 @@
     = auto_discovery_link_tag( :rss, "/articles/feed.rss" )
     = analytics_init if Rails.env.production?
   %body
+    = render 'staff_nav'
     = render 'header'
     = render 'global_nav'
     %header.page__title
