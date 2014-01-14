@@ -1,3 +1,8 @@
-%h1 Editing Site
-= render 'form'
-= link_to 'Show', staffs_site_path(@site)
+%header.main__header
+  %h2.main__header-heading
+    = t('Site Settings')
+  = link_to staffs_site_path(@site), {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-wrench
+    = t('Edit Site')
+.main__body
+  = render 'form'
