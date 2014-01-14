@@ -6,14 +6,16 @@
       %i.fa.fa-plus
       = t('New Staff')
 .main__body
-  .main__search
-    %label
-      検索:
+  .main__search.main-search
     %input#js-search{:type => "text"}
-    %ul.main__tag-navs.main-tag-navs
-      %li.main-tag-nav= link_to t('All'), staffs_staffs_path
-      %li.main-tag-nav= link_to t('Published'), staffs_staffs_path(:published => "true")
-      %li.main-tag-nav= link_to t('Unpublished'), staffs_staffs_path(:published => "false")
+    %nav.main-tabs-nav
+      %ul.main-tabs-nav__tabs
+        %li.main-tabs-nav__tab<>
+          = link_to t('All'), staffs_staffs_path, {:class => "main-tabs-nav__tab-link #{params[:published] ? '' : 'is-current'}"}
+        %li.main-tabs-nav__tab<>
+          = link_to t('Published'), staffs_staffs_path(:published => "true"), {:class => "main-tabs-nav__tab-link #{params[:published] == 'true' ? 'is-current' : ''}"}
+        %li.main-tabs-nav__tab<>
+          = link_to t('Unpublished'), staffs_staffs_path(:published => "false"), {:class => "main-tabs-nav__tab-link #{params[:published] == 'false' ? 'is-current' : ''}"}
   %table.main__table.main-table
     %tbody
       - @staffs.each do |staff|
