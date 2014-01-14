@@ -18,7 +18,7 @@
         = t('Snippets')
     %li.side-nav__item
       = link_to staffs_services_path, {:class => "#{controller?('staffs/services') ? 'is-current' : ''} side-nav__link"} do
-        %i.fa.fa-paperclip.side-nav__link-icon
+        %i.fa.fa-heart.side-nav__link-icon
         = t('Services')
     %li.side-nav__item
       = link_to staffs_staffs_path, {:class => "#{controller?('staffs/staffs') ? 'is-current' : ''} side-nav__link"} do
@@ -26,6 +26,6 @@
         = t('Staffs')
     %li.side-nav__item
       = link_to "/staffs/sites/site", {:class => "#{controller?('staffs/sites') ? 'is-current' : ''} side-nav__link"} do
-        %i.fa.fa-home.side-nav__link-icon
+        %i.fa.fa-cog.side-nav__link-icon
         = t('Site Settings')
 
