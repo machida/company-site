@@ -11,7 +11,7 @@ class Staffs::ServicesController < StaffsController
   end
 
   def show
-    @service = Service.published.find(params[:id])
+    @service = Service.friendly.find(params[:id])
   end
 
   def new

@@ -3,14 +3,18 @@
   background-color: rgba(0, 0, 0, .8)
   color: $white
   +border-top-right-radius(8px)
+  z-index: 1000
 .staff-nav__items
   @extend .reset-ul
 .staff-nav__item
   +inline-block
-  +rem('padding', 12px 0 12px 18px)
+  +rem('padding', 8px 0 6px 18px)
+  +rem('font-size', 14px)
+  &:first-child
+    +rem('padding-left', 22px)
   &:last-child
     +border-top-right-radius(8px)
-    +rem('padding-right', 18px)
+    +rem('padding-right', 22px)
 .staff-nav__link
   text-decoration: none
   display: block

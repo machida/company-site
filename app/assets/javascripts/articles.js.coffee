@@ -1,3 +1,7 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$ ->
+  $("input").bind "keydown keyup keypress change", ->
+    thisValue = $(this).text()
+    if thisValue == nill
+      $(this).removeClass("active")
+    else
+      $(this).addClass("active")

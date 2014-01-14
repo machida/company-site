@@ -66,9 +66,17 @@
   position: relative
 .header-search-form__input-text
   +text-block($md, 1.4)
+  +rem('padding-left', 8px)
+  +rem('width', 80px)
+  +transition-property(width)
+  +transition-duration(.2s)
+  +box-sizing(border-box)
+  &:focus,
+  &.active
+    +rem('width', 240px)
 .header-search-form__button
   +absolute(right, 0, top, 0)
   +text-block($md, 1.4)
-  +rem('width', 32px)
+  +rem('width', 28px)
   text-align: center
   display: block
