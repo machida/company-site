@@ -14,16 +14,20 @@ CompanySite::Application.routes.draw do
   devise_for :staffs
   resources :snippets
   resources :pages
-  resources :articles
-  resources :categories
+  resources :articles do
+    get 'page/:page', :action => :index, :on => :collection
+  end
+  resources :categories do
+    get 'page/:page', :action => :show, :on => :collection
+  end
   resources :members
   resources :services
   get 'tags/:tag', to: 'articles#index', as: :tag
-  get '/archives', :controller => 'archives', :action => 'index'
-  get '/archives/:year/:month/:day', :controller => 'archives', :action => 'show'
-  get '/archives/:year/:month', :controller => 'archives', :action => 'show'
-  get '/archives/:year', :controller => 'archives', :action => 'show'
-  get '/contact' => 'contact#new'
-  post '/contact' => 'contact#create'
+  get 'archives', :controller => 'archives', :action => 'index'
+  get 'archives/:year/:month/:day', :controller => 'archives', :action => 'show'
+  get 'archives/:year/:month', :controller => 'archives', :action => 'show'
+  get 'archives/:year', :controller => 'archives', :action => 'show'
+  get 'contact' => 'contact#new'
+  post 'contact' => 'contact#create'
   root 'home#index'
 end

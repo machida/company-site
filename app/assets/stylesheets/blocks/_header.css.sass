@@ -2,6 +2,8 @@
   +rem('height', 86px)
 .header__wrapper
   position: relative
+  +rem('padding-left', 0px)
+  +rem('padding-right', 0px)
 
 .hero
   +rem('margin-bottom', 24px)
@@ -43,14 +45,17 @@
 .hero__site-title
   @extend .reset
   +rem('font-size', 71px)
-  font-family: 'Tauri', sans-serif
+  +tauri
   +rem('margin-bottom', -5px)
   color: rgba(255, 255, 255, .7)
 .hero__site-title-link
-  color: rgba(255, 255, 255, .7)
+  color: $white
+  +opacity(.7)
   text-decoration: none
+  +transition-property(opacity)
+  +transition-duration(.4s)
   &:hover
-    color: rgba(255, 255, 255, 1)
+    +opacity(1)
 .hero__tag-line
   @extend .reset
   +text-block(30px)
@@ -59,15 +64,25 @@
 
 .header-search-form
   border: $gray-l solid 1px
-  +box-sizing(border-box)
   +inline-block
   +rem('margin-top', 28px)
   +rem('padding-right', 32px)
+  +rem('padding-top', 3px)
+  +rem('padding-bottom', 3px)
+  +rem('height', $md * 1.4)
+  overflow: hidden
   position: relative
+  input::-webkit-input-placeholder,
+  isindex::-webkit-input-placeholder
+    +inline-block
+    padding-top: 1px
+    +tauri
+    color: rgba(0, 0, 0, .2)
 .header-search-form__input-text
   +text-block($md, 1.4)
+  +rem('height', $md * 1.4)
   +rem('padding-left', 8px)
-  +rem('width', 80px)
+  +rem('width', 100px)
   +transition-property(width)
   +transition-duration(.2s)
   +box-sizing(border-box)
@@ -77,6 +92,8 @@
 .header-search-form__button
   +absolute(right, 0, top, 0)
   +text-block($md, 1.4)
+  +rem('padding-top', 3px)
+  +rem('padding-bottom', 3px)
   +rem('width', 28px)
   text-align: center
   display: block
