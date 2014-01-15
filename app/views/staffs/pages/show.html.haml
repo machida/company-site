@@ -1,4 +1,11 @@
-%p#notice= notice
-= @page.body
-= link_to 'Edit', edit_staffs_page_path(@page)
-\#{link_to 'Back', staffs_pages_path}
+%header.main__header
+  %h2.main__header-heading
+    = t('Page')
+  = link_to staffs_articles_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-reply
+    = t('Back To Pages')
+#notice= notice
+
+.main__body
+  = markdown(@page.body)
+  = link_to t('Edit Page'), edit_staffs_page_path(@page)

@@ -1,4 +1,10 @@
-%h1 Editing page
-= render 'form'
-= link_to 'Show', staffs_page_path(@page)
-\#{link_to 'Back', staffs_pages_path}
+%header.main__header
+  %h2.main__header-heading
+    = t('Editing Page')
+  = link_to staffs_pages_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-reply
+    = t('Back To Pages')
+
+.main__body
+  = render 'form'
+  = link_to t('Show Page'), staffs_page_path(@page)

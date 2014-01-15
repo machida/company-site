@@ -1,5 +1,9 @@
-%h1 Editing article
-= render 'form'
-= link_to 'Show', staffs_article_path(@article)
-|
-\#{link_to 'Back', staffs_articles_path}
+%header.main__header
+  %h2.main__header-heading
+    = t('Editing Article')
+  = link_to staffs_articles_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-reply
+    = t('Back To Articles')
+.main__body
+  = render 'form'
+  = link_to 'Show', staffs_article_path(@article)

@@ -1,6 +1,9 @@
 %header.main__header
   %h2.main__header-heading
-    = t('New article')
+    = t('New Article')
+  = link_to staffs_articles_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-reply
+    = t('Back To Articles')
 .main__body
   = render 'form'
-  = link_to 'Back', staffs_articles_path
+

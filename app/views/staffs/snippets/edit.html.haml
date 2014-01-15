@@ -1,4 +1,10 @@
-%h1 Editing snippet
-= render 'form'
-= link_to 'Show', @staffs_snippet_path
-\#{link_to 'Back', staffs_snippets_path}
+%header.main__header
+  %h2.main__header-heading
+    = t('Editing Snippet')
+  = link_to staffs_snippets_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-reply
+    = t('Back To Snippets')
+
+.main__body
+  = render 'form'
+  = link_to 'Show', @staffs_snippet_path

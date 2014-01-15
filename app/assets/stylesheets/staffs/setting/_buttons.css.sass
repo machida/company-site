@@ -1,0 +1,18 @@
+@charset "utf-8"
+
+$smbt-wd: 32px
+$smbt-ht: 32px
+
+=button-basic
+  +inline-block
+  +box-sizing(border-box)
+  text-decoration: none
+  +border-radius(4px)
+
+=small-button($smbt-wd: 32px, $smbt-ht: 32px, $smbt-bg-cl: $blue, $smbt-tx-cl: $white)
+  +button-basic
+  +rem('width', $smbt-wd)
+  +rem('line-height', $smbt-ht)
+  text-align: center
+  background-color: $smbt-bg-cl
+  color: $smbt-tx-cl

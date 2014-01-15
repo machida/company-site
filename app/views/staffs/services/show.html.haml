@@ -1,8 +1,6 @@
-%p#notice= notice
-= @article.title
-= @article.body
--# = @article.category.name
-= raw @article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
-= link_to 'Edit', edit_staffs_article_path(@article)
+#notice= notice
+= @service.title
+= @service.body
+= link_to 'Edit', edit_staffs_service_path(@service)
 |
-\#{link_to 'Back', staffs_articles_path}
+\#{link_to 'Back', staffs_services_path}

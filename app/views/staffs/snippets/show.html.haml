@@ -1,4 +1,10 @@
-%p#notice= notice
-= link_to 'Edit', edit_staffs_snippet_path(@snippet)
-|
-\#{link_to 'Back', staffs_snippets_path}
+%header.main__header
+  %h2.main__header-heading
+    = t('Snippet')
+  = link_to staffs_snippets_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-reply
+    = t('Back To Snippets')
+
+.main__body
+  #notice= notice
+  = link_to t('Edit Snippet'), edit_staffs_snippet_path(@snippet)
