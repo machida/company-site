@@ -20,8 +20,10 @@ module CompanySite
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.i18n.default_locale = :ja
+    config.encoding = "utf-8"
     config.time_zone = 'Tokyo'
     config.active_record.default_timezone = :local
+    config.active_support.escape_html_entities_in_json = true
 
     config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",

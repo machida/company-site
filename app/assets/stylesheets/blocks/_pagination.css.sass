@@ -1,2 +1,30 @@
 .pagination
   clear: both
+  a,
+  .current
+    +inline-block
+    border: $black solid 1px
+    +rem('font-size', 12px)
+    +rem('width', 32px)
+    +rem('height', 32px)
+    text-align: center
+    +rem('line-height', 32px)
+    +border-radius(50%)
+    text-decoration: none
+    +tauri
+    +rem('margin', 0 2px)
+  a
+    background-color: $white
+    color: $black
+  .current
+    background-color: $pink
+    color: $white
+    border: rgba(0, 0, 0, .2) solid 1px
+  .gap
+    +inline-block
+  .first,
+  .last
+    a
+      background-color: $yellow
+      color: $black
+      border: rgba(0, 0, 0, .2) solid 1px

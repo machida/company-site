@@ -1,24 +1,25 @@
 - content_for :page_title do
   = @category.name.upcase
 
-- @articles.each do |article|
-  %article.articles-article
-    .articles-article__inner
-      = link_to article, {:class => "articles-article__eyecatch-image-wrapper"} do
-        - if article.thumbnail?
-          = image_tag("#{article.thumbnail}", :alt => "#{article.title}", :class => "articles-article__eyecatch-image")
-        - else
-          = image_tag("thumbnail-blank.png", :alt => "#{article.title}", :class => "articles-article__eyecatch-image")
-      %h2.articles-article__title
-        = link_to article, {:class => "articles-article__title-link"} do
-          = article.title
-      .articles-article__informations
-        - if article.staff
-          = image_tag("member-icons/#{article.staff.slug}.jpg", :alt => "#{article.staff.name}", :class => "articles-article__author-icon-image")
-        .articles-article__created-at
-          = show_date(article.created_at)
-        .articles-article__tags
-          %ul.tags
-            = raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+.articles
+  - @articles.each do |article|
+    %article.articles-article
+      .articles-article__inner
+        = link_to article, {:class => "articles-article__eyecatch-image-wrapper"} do
+          - if article.thumbnail?
+            = image_tag("#{article.thumbnail}", :alt => "#{article.title}", :class => "articles-article__eyecatch-image")
+          - else
+            = image_tag("thumbnail-blank.png", :alt => "#{article.title}", :class => "articles-article__eyecatch-image")
+        %h2.articles-article__title
+          = link_to article, {:class => "articles-article__title-link"} do
+            = article.title
+        .articles-article__informations
+          - if article.staff
+            = image_tag("member-icons/#{article.staff.slug}.jpg", :alt => "#{article.staff.name}", :class => "articles-article__author-icon-image")
+          .articles-article__created-at
+            = show_date(article.created_at)
+          .articles-article__tags
+            %ul.tags
+              = raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
 
 = paginate(@articles)

@@ -3,12 +3,19 @@ html
 
 body
   +rem('font-size', $md)
+
 .wrapper
   +rem('max-width', $wrapper-max-width)
   +box-sizing(border-box)
   @extend .center-margin
   +rem('padding-left', $wrapper-padding)
   +rem('padding-right', $wrapper-padding)
+
+a
+  +transition-property(all)
+  +transition-duration(.2s)
+  +transition-timing-function(ease-in)
+
 .content
   color: $black
   +rem('padding-bottom', 40px)
