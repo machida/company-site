@@ -2,9 +2,26 @@
   %h2.main__header-heading
     = t('Dashboard')
 .main__body
-  = link_to t('Article'), new_staffs_article_path
-  = link_to t('Page'), new_staffs_page_path
-  = link_to t('Snippet'), new_staffs_snippet_path
-  = link_to t('Service'), new_staffs_service_path
-  - if can? :manage, @staff
-    = link_to t('Staff'), new_staffs_staff_path
+  %nav.dashboard-nav
+    %ul.dashboard-nav__items
+      %li.dashboard-nav__item
+        = link_to new_staffs_article_path, {:class => "dashboard-nav__link"} do
+          %i.fa.fa-pencil-square-o.dashboard-nav__link-icon
+          = t('New Article')
+      %li.dashboard-nav__item
+        = link_to new_staffs_page_path, {:class => "dashboard-nav__link"} do
+          %i.fa.fa-book.dashboard-nav__link-icon
+          = t('New Page')
+      %li.dashboard-nav__item
+        = link_to new_staffs_snippet_path, {:class => "dashboard-nav__link"} do
+          %i.fa.fa-paperclip.dashboard-nav__link-icon
+          = t('New Snippet')
+      %li.dashboard-nav__item
+        = link_to new_staffs_service_path, {:class => "dashboard-nav__link"} do
+          %i.fa.fa-heart.dashboard-nav__link-icon
+          = t('New Services')
+        - if can? :manage, @staff
+          %li.dashboard-nav__item
+            = link_to new_staffs_staff_path, {:class => "dashboard-nav__link"} do
+              %i.fa.fa-user.dashboard-nav__link-icon
+              = t('New Staff')
