@@ -24,16 +24,27 @@
             = link_to staffs_page_path(page) do
               = page.title
           %td.main-table__td= page.slug
-          %td.main-table__td
-            %ul.main-table-actions
+          %td.main-table__td.main-table-actions__td
+            %ul.main-table-actions__ul
               - if page.published?
                 %li.main-table-actions__action.published
-                  = link_to page_path(page) do
-                    = t('Published')
+                  = link_to page_path(page), {:class => "small-button published tool-tip-container"} do
+                    %i.fa.fa-eye
+                    %span.tool-tip
+                      = t('Published')
               - else
                 %li.main-table-actions__action.unpublished
-                  = t('Unpublished')
+                  %span.small-button.disable.tool-tip-container
+                    %i.fa.fa-pencil
+                    %span.tool-tip
+                      = t('Unpublished')
               %li.main-table-actions__action
-                = link_to t('Edit'), edit_staffs_page_path(page)
+                = link_to edit_staffs_page_path(page), {:class => "small-button edit main-table-actions__edit tool-tip-container"} do
+                  %i.fa.fa-pencil
+                  %span.tool-tip
+                    = t('Edit')
               %li.main-table-actions__action
-                = link_to t('Destroy'), staffs_page_path(page), method: :delete, data: { confirm: 'Are you sure?' }
+                = link_to staffs_page_path(page), method: :delete, class: "main-table-actions__delete small-button delete tool-tip-container", data: { confirm: 'Are you sure?' } do
+                  %i.fa.fa-trash-o
+                  %span.tool-tip
+                    = t('Destroy')

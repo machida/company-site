@@ -4,8 +4,11 @@
       %li.staff-nav__item
         = link_to t('Dashboard'), staffs_root_path, {:class => "staff-nav__link"}
       %li.staff-nav__item
-        = link_to t('Logout'), destroy_staff_session_path, {:method => :delete, :class => "staff-nav__link"}
+        = link_to destroy_staff_session_path, {:method => :delete, :class => "staff-nav__link"} do
+          %i.fa.fa-sign-out.staff-nav__link-icon
+          = t('Logout')
       %li.staff-nav__item
+        = image_tag gravatar_image_url(current_staff.email, 20), {:class => "header__staff-gravatar-image"}
         = current_staff.name
     - else
       %li.staff-nav__item

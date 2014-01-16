@@ -2,5 +2,5 @@
   SERVICE
 
 = @service.title
-= @service.body
+= markdown(@service.body)
 \#{link_to 'Back', services_path}

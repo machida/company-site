@@ -4,8 +4,7 @@
   - else
     PAGE
 
-
-%p#notice= notice
+#notice= notice
 = @page.title
-= @page.body
-\#{link_to 'Back', pages_path}
+= markdown(@page.body)
+= link_to 'Back', pages_path
