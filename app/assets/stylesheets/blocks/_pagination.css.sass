@@ -1,18 +1,22 @@
 .pagination
   clear: both
   a,
+  .current,
+  .gap
+    display: block
+    +tauri
+    float: left
+  a,
   .current
-    +inline-block
-    border: $black solid 1px
+    border-top: $black solid 1px
+    border-bottom: $black solid 1px
+    border-left: $black solid 1px
     +rem('font-size', 12px)
     +rem('width', 32px)
     +rem('height', 32px)
     text-align: center
     +rem('line-height', 32px)
-    +border-radius(50%)
     text-decoration: none
-    +tauri
-    +rem('margin', 0 2px)
   a
     background-color: $white
     color: $black

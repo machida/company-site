@@ -4,19 +4,32 @@
   color: $white
   +border-top-right-radius(8px)
   z-index: 1000
+  +rem('padding-right', 30px)
+  +rem('height', 35px)
 .staff-nav__items
   @extend .reset-ul
 .staff-nav__item
   +inline-block
   +rem('padding', 8px 0 6px 18px)
   +rem('font-size', 14px)
+  +box-sizing(border-box)
   &:first-child
     +rem('padding-left', 22px)
   &:last-child
-    +border-top-right-radius(8px)
     +rem('padding-right', 22px)
 .staff-nav__link
   text-decoration: none
   display: block
   color: $white
-
+.staff-nav__hide-button,
+.staff-nav__show-button
+  display: block
+  cursor: pointer
+  +absolute(right, 0, top, 0)
+  +rem('line-height', 35px)
+  text-align: center
+body
+  .is-hidden
+    display: none
+  .is-shown
+    +inline-block
