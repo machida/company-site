@@ -9,8 +9,12 @@
   #notice= notice
   %h2.article__title= @article.title
   .article__body= markdown(@article.body)
-  .article__category_name= @article.category.name
-  .article__tags= raw @article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+  - if @article.category
+    .article__category_name
+      = @article.category.name
+  - if @article.tag_list
+    .article__tags
+      = raw @article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
   = link_to edit_staffs_article_path(@article), {:class => "large-button"} do
     %i.fa.fa-plus
     = t('Edit')

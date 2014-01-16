@@ -1,10 +1,6 @@
 %header.main__header
   %h2.main__header-heading
     = t('Articles')
-  = link_to new_staffs_article_path, {:class => "main__header-add-link large-button"} do
-    %i.fa.fa-plus
-    = t('New Article')
-.main__body
   .main__search.main-search
     %i.fa.fa-search
     %input#js-search{:type => "text"}
@@ -17,6 +13,12 @@
         %li.main-tabs-nav__tab<>
           = link_to t('Unpublished'), staffs_articles_path(:published => "false"), {:class => "main-tabs-nav__tab-link #{params[:published] == 'false' ? 'is-current' : ''}"}
 
+
+
+  = link_to new_staffs_article_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-plus
+    = t('New Article')
+.main__body
   %table.main__table.main-table
     %tbody
       - if @articles.present?
@@ -25,7 +27,8 @@
             %td.main-table__td.js-search-target
               = link_to staffs_article_path(article) do
                 = article.title
-            %td.main-table__td= raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+            %td.main-table__td
+              = raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
             %td.main-table__td= article.created_at
             %td.main-table__td.main-table-actions__td
               %ul.main-table-actions__ul

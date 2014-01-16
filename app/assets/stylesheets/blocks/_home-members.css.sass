@@ -35,10 +35,12 @@
   +inline-block
 .home-members__sns-link
   color: $black
-  +inline-block
+  display: block
   +text-block($md)
   +square-block(24px)
   text-align: center
+  border: transparent 1px solid
+  +box-sizing(border-box)
   &:hover
-    background-color: $pink
-    color: $white
+    border: $pink 1px solid
+    color: $pink

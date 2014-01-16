@@ -2,8 +2,6 @@
   +rem('height', 86px)
 .header__wrapper
   position: relative
-  +rem('padding-left', 0px)
-  +rem('padding-right', 0px)
 
 .hero
   +rem('margin-bottom', 24px)
@@ -25,7 +23,7 @@
   +side-mg-auto
 
 .hero__hgrounp--home
-  +absolute(left, 0, top, 76px)
+  +absolute(left, 20px, top, 76px)
 .hero__hgrounp--except-home
   +rem('padding', 30px 0)
   .hero__site-title
@@ -97,3 +95,7 @@
   +rem('width', 28px)
   text-align: center
   display: block
+  &:hover
+    color: $pink
+  &:active
+    +absolute(right, 0, top, 2px)

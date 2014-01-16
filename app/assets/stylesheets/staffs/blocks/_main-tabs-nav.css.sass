@@ -2,9 +2,13 @@
   @extend .reset-ul
 .main-tabs-nav__tab
   +inline-block
+  &:first-child
+    .main-tabs-nav__tab-link
+      +border-left-radius(4px)
   &:last-child
     .main-tabs-nav__tab-link
       border-right: rgba(0, 0, 0, .1) solid 1px
+      +border-right-radius(4px)
 .main-tabs-nav__tab-link
   display: block
   text-decoration: none
