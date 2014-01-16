@@ -18,33 +18,41 @@
           = link_to t('Unpublished'), staffs_pages_path(:published => "false"), {:class => "main-tabs-nav__tab-link #{params[:published] == 'false' ? 'is-current' : ''}"}
   %table.main__table.main-table
     %tbody
-      - @pages.each do |page|
-        %tr.main-table__tr
-          %td.main-table__td.js-search-target
-            = link_to staffs_page_path(page) do
-              = page.title
-          %td.main-table__td= page.slug
-          %td.main-table__td.main-table-actions__td
-            %ul.main-table-actions__ul
-              - if page.published?
-                %li.main-table-actions__action.published
-                  = link_to page_path(page), {:class => "small-button published tool-tip-container"} do
-                    %i.fa.fa-eye
-                    %span.tool-tip
-                      = t('Published')
-              - else
-                %li.main-table-actions__action.unpublished
-                  %span.small-button.disable.tool-tip-container
+      - if @pages.present?
+        - @pages.each do |page|
+          %tr.main-table__tr
+            %td.main-table__td.js-search-target
+              = link_to staffs_page_path(page) do
+                = page.title
+            %td.main-table__td= page.slug
+            %td.main-table__td.main-table-actions__td
+              %ul.main-table-actions__ul
+                - if page.published?
+                  %li.main-table-actions__action.published
+                    = link_to page_path(page), {:class => "small-button published tool-tip-container"} do
+                      %i.fa.fa-eye
+                      %span.tool-tip
+                        = t('Published')
+                - else
+                  %li.main-table-actions__action.unpublished
+                    %span.small-button.disable.tool-tip-container
+                      %i.fa.fa-pencil
+                      %span.tool-tip
+                        = t('Unpublished')
+                %li.main-table-actions__action
+                  = link_to edit_staffs_page_path(page), {:class => "small-button edit main-table-actions__edit tool-tip-container"} do
                     %i.fa.fa-pencil
                     %span.tool-tip
-                      = t('Unpublished')
-              %li.main-table-actions__action
-                = link_to edit_staffs_page_path(page), {:class => "small-button edit main-table-actions__edit tool-tip-container"} do
-                  %i.fa.fa-pencil
-                  %span.tool-tip
-                    = t('Edit')
-              %li.main-table-actions__action
-                = link_to staffs_page_path(page), method: :delete, class: "main-table-actions__delete small-button delete tool-tip-container", data: { confirm: 'Are you sure?' } do
-                  %i.fa.fa-trash-o
-                  %span.tool-tip
-                    = t('Destroy')
+                      = t('Edit')
+                %li.main-table-actions__action
+                  = link_to staffs_page_path(page), method: :delete, class: "main-table-actions__delete small-button delete tool-tip-container", data: { confirm: 'Are you sure?' } do
+                    %i.fa.fa-trash-o
+                    %span.tool-tip
+                      = t('Destroy')
+      - else
+        - if params[:published] == "true"
+          = t('Not found published pages')
+        - elsif params[:published] == "false"
+          = t('Not found unpublished pages')
+        - else
+          = t('Not found pages')
