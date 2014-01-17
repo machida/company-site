@@ -9,11 +9,11 @@ class Article < Post
   end
 
   def previous_article
-    self.class.first(:conditions => ["created_at < ?", created_at], :order => "created_at desc")
+    self.class.first(:conditions => ["created_at < ?", created_at], :order => "created_at DESC")
   end
 
   def next_article
-    self.class.first(:conditions => ["created_at > ?", created_at], :order => "created_at asc")
+    self.class.first(:conditions => ["created_at > ?", created_at], :order => "created_at ASC")
   end
 
 end
