@@ -6,11 +6,10 @@
     display: block
     +tauri
     float: left
+    margin-right: -1px
   a,
   .current
-    border-top: $black solid 1px
-    border-bottom: $black solid 1px
-    border-left: $black solid 1px
+    border: $black + 200 solid 1px
     +rem('font-size', 12px)
     +rem('width', 32px)
     +rem('height', 32px)
@@ -24,11 +23,22 @@
     background-color: $pink
     color: $white
     border: rgba(0, 0, 0, .2) solid 1px
+    position: relative
+    z-index: 2
   .gap
     +inline-block
+    +rem('padding-left', 10px)
+    +rem('padding-right', 10px)
+    color: $black + 100
   .first,
   .last
     a
-      background-color: $yellow
+      background-color: $black + 200
       color: $black
-      border: rgba(0, 0, 0, .2) solid 1px
+      border: rgba(0, 0, 0, .1) solid 1px
+      position: relative
+      z-index: 2
+  .first a
+    +border-left-radius(4px)
+  .last a
+    +border-right-radius(4px)

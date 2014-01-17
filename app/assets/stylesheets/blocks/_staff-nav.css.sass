@@ -28,8 +28,12 @@
   +absolute(right, 0, top, 0)
   +rem('line-height', 35px)
   text-align: center
+  +rem('width', 40px)
+
 body
   .is-hidden
-    display: none
+    width: 0
+    overflow: hidden
   .is-shown
     +inline-block
+    width: 373px
