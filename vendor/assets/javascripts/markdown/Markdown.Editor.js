@@ -27,8 +27,8 @@
 
     // The text that appears on the upper part of the dialog box when
     // entering links.
-    var linkDialogText = "<p><b>Insert Hyperlink</b></p><p>http://example.com/ \"optional title\"</p>";
-    var imageDialogText = "<p><b>Insert Image</b></p><p>http://example.com/images/diagram.jpg \"optional title\"<br><br>Need <a href='http://www.google.com/search?q=free+image+hosting' target='_blank'>free image hosting?</a></p>";
+    var linkDialogText = "<h2>Insert Hyperlink</h2><p>http://example.com/ \"optional title\"</p>";
+    var imageDialogText = "<h2>Insert Image</h2><p>http://example.com/images/diagram.jpg \"optional title\"<br><br>Need <a href='http://www.google.com/search?q=free+image+hosting' target='_blank'>free image hosting?</a></p>";
 
     // The default text that appears in the dialog input box when entering
     // links.
@@ -1068,7 +1068,6 @@
             // The main dialog box.
             dialog = doc.createElement("div");
             dialog.className = "wmd-prompt-dialog";
-            dialog.style.padding = "10px;";
             dialog.style.position = "fixed";
             dialog.style.width = "400px";
             dialog.style.zIndex = "1001";
@@ -1076,7 +1075,6 @@
             // The dialog text.
             var question = doc.createElement("div");
             question.innerHTML = text;
-            question.style.padding = "5px";
             dialog.appendChild(question);
 
             // The web form container for the text box and buttons.

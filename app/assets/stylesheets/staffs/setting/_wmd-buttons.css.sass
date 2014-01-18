@@ -1,77 +1,44 @@
+@import url(//fonts.googleapis.com/css?family=Coustard)
+
+$wmd-buttons-ht: 36px
+
 .wmd-panel
   margin-left: 25%
   margin-right: 25%
   width: 50%
   min-width: 500px
 
-.wmd-button-bar
-  width: 100%
-  background-color: Silver
-
-.wmd-input
-  height: 300px
-  width: 100%
-  background-color: Gainsboro
-  border: 1px solid DarkGray
-
-.wmd-preview
-  background-color: #c0e0ff
-
 .wmd-button-row
+  @extend .reset-ul
   position: relative
-  margin-left: 5px
-  margin-right: 5px
-  margin-bottom: 5px
-  margin-top: 10px
-  padding: 0px
-  height: 20px
+  height: $wmd-buttons-ht
+  border: $black solid 1px
+  +box-sizing(border-box)
+  overflow: hidden
 
 .wmd-spacer
   width: 1px
-  height: 20px
-  margin-left: 14px
-  position: absolute
-  background-color: Silver
+  height: $wmd-buttons-ht
+  background-color: $black
   display: inline-block
-  list-style: none
 
 .wmd-button
-  width: 20px
-  height: 20px
-  padding-left: 2px
-  padding-right: 3px
-  position: absolute
+  width: $wmd-buttons-ht
+  height: $wmd-buttons-ht
   display: inline-block
-  list-style: none
   cursor: pointer
 
-.wmd-button > span
-  background-image: image_url('wmd-buttons.png')
-  background-repeat: no-repeat
-  background-position: 0px 0px
-  width: 20px
-  height: 20px
-  display: inline-block
-
-.wmd-spacer1
-  left: 50px
-
-.wmd-spacer2
-  left: 175px
-
-.wmd-spacer3
-  left: 300px
-
 .wmd-prompt-background
-  background-color: Black
+  background-color: $black
 
 .wmd-prompt-dialog
-  border: 1px solid #999999
-  background-color: #F5F5F5
+  border: 1px solid $black
+  background-color: $white
+  +rem('padding', 16px)
+  +box-sizing(border-box)
 
 .wmd-prompt-dialog > div
-  font-size: 0.8em
-  font-family: arial, helvetica, sans-serif
+  +rem('font-size', 16px)
 
 .wmd-prompt-dialog > form > input[type="text"]
   border: 1px solid #999999
@@ -79,6 +46,65 @@
 
 .wmd-prompt-dialog > form > input[type="button"]
   border: 1px solid #888888
-  font-family: trebuchet MS, helvetica, sans-serif
-  font-size: 0.8em
   font-weight: bold
+
+// buttons
+.wmd-button
+  >span
+    +inline-block
+    +rem('width', $wmd-buttons-ht)
+    +rem('height', $wmd-buttons-ht)
+    +rem('line-height', $wmd-buttons-ht)
+    text-align: center
+    float: left
+    &:before
+      +fa
+#wmd-bold-button
+  span
+    &:before
+      content: "\f032"
+#wmd-italic-button
+  span
+    &:before
+      content: "\f033"
+#wmd-link-button
+  span
+    &:before
+      content: "\f0c1"
+#wmd-quote-button
+  span
+    &:before
+      content: "\f10d"
+#wmd-code-button
+  span
+    &:before
+      content: "\f121"
+#wmd-image-button
+  span
+    &:before
+      content: "\f03e"
+#wmd-olist-button
+  span
+    &:before
+      content: "\f0cb"
+#wmd-ulist-button
+  span
+    &:before
+      content: "\f0ca"
+#wmd-heading-button
+  span
+    &:before
+      font-family: 'Coustard', serif
+      content: "H"
+#wmd-hr-button
+  span
+    &:before
+      content: "\f0c4"
+#wmd-undo-button
+  span
+    &:before
+      content: "\f112"
+#wmd-redo-button
+  span
+    &:before
+      content: "\f064"
