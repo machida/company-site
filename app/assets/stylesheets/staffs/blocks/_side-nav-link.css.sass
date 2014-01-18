@@ -2,17 +2,17 @@
   @extend .reset-ul
 .side-nav__item
   border-bottom: $bd
-.side-nav-link__parent-icon
-  +rem('font-size', 24px)
-  +rem('margin-right', 4px)
 .side-nav__link
   +block-link
   +rem('padding', 16px 20px)
   color: $black
   +rem('font-size', 16px)
-  line-height: 1
+  +rem('line-height', 24px)
   vertical-align: bottom
   &.is-current
     background-color: $white
     margin-right: -1px
+.side-nav__link-icon
+  +rem('font-size', 24px)
+  +rem('margin-right', 8px)
 
