@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require jquery.turbolinks
 //= require jquery.depend.min
+//= require jquery.cheat-code
 //= require_tree .

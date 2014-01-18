@@ -1,10 +1,12 @@
-%nav.staff-nav
+%nav.staff-nav.js-cheatCode-shown.is-hidden
   %i.fa.fa-long-arrow-left.js-hide.staff-nav__hide-button
   %i.fa.fa-long-arrow-right.js-show.staff-nav__show-button.is-hidden
   %ul.staff-nav__items.js-hidden.js-shown
     - if staff_signed_in?
       %li.staff-nav__item
-        = link_to t('Dashboard'), staffs_root_path, {:class => "staff-nav__link"}
+        = link_to staffs_root_path, {:class => "staff-nav__link"} do
+          %i.fa.fa-tachometer
+          = t('Dashboard')
       %li.staff-nav__item
         = link_to destroy_staff_session_path, {:method => :delete, :class => "staff-nav__link"} do
           %i.fa.fa-sign-out.staff-nav__link-icon
