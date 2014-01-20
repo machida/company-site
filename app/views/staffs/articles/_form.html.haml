@@ -12,7 +12,7 @@
     .staff-fields__field
       = f.label :title, t('Title'), {:class => 'staff-fields__label'}
       = f.text_field :title, {:class => 'staff-fields__text'}
-    .js-markdown
+    .js-markdown.js-markdown-article
       .staff-fields__field.relative
         .staff-fields__markdown
           = f.label :body, t('Body'), {:class => 'staff-fields__label'}
