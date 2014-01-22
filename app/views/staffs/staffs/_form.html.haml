@@ -7,9 +7,15 @@
       %ul
         - @article.errors.full_messages.each do |msg|
           %li= msg
-  .field
-    = f.label :name
-    %br/
-    = f.text_field :name
-  .actions
-    = f.submit
+
+  .staff-fields
+    .staff-fields__field
+      = f.label :name
+      = f.text_field :name, {:class => 'staff-fields__label'}
+    .js-markdown.js-markdown-staff
+      .staff-fields__field.relative
+        .staff-fields__markdown
+          = f.label :body, t('Body'), {:class => 'staff-fields__label'}
+          = f.text_area :body, {:class => 'staff-fields__body'}
+    .staff-fields__actions
+      = f.submit

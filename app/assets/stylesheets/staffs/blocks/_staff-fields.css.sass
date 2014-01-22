@@ -11,11 +11,19 @@
   width: 50%
 .staff-fields__body
   width: 100%
-  height: 800px
+  +rem('min-height', 260px)
   border: $black solid 1px
   +box-sizing(border-box)
   +rem('margin-top', -1px)
+  resize: none
 .staff-fields__text
   width: 50%
   border: $black solid 1px
   +box-sizing(border-box)
+.staff-fields__tags
+  @extend .reset-ul
+  li
+    +inline-block
+    border: rgba(0, 0, 0, .4) solid 1px
+    +rem('margin-right', 10px)
+    +rem('padding', 4px 8px)

@@ -53,4 +53,29 @@ module ApplicationHelper
     action.include?(params[:action])
   end
 
+  # タグの初期化（更新時に使用）
+  def initial_tag_list(tag_list)
+    raw tag_list.map{|tag| generate_tag_list(tag)}.join
+  end
+
+  def add_tag_input
+    link_to '#', onclick: "add_tag_field(\"#{escape_javascript(generate_tag_list)}\"); return false;" do
+      content_tag('i', '', class: "fa fa-plus")
+    end
+  end
+
+  def generate_tag_list(tag = nil)
+    content = '<li class="tag_list"><input class="tag_input" type="text"'
+    content += " value=\"#{tag}\"" if tag
+    content += ' />'
+    content += remove_tag_input
+    content += '</li>'
+  end
+
+  def remove_tag_input
+    link_to '#', onclick: "remove_tag_field(this); return false;", class: "small-button delete" do
+      content_tag('i', '', class: "fa fa-times")
+    end
+  end
+
 end
