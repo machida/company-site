@@ -1,6 +1,8 @@
 - content_for :page_title do
   BLOG
 
+%h2.archives__title
+  #{params[:tag]}
 - @articles.each do |article|
   %article.articles-article
     .articles-article__inner
