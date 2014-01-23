@@ -6,10 +6,10 @@
       - tag_cloud(@tags, %w()) do |tag|
         %li.blog-navs-tags__tag
           = link_to tag.name, "/tags/#{tag.name}",{:class => "blog-navs-tags__tag-link"}
-
-  %h1.side-column__first-heading
-    Archive
-  %ol.blog-navs-archives__archives
-    - @articles_by_month.each do |month, articles|
-      %li.blog-navs-archives__archive<>
-        = link_to month, "/archives/#{month}", {:class => "blog-navs-archives__archive-link"}
+  .blog-navs-archives
+    %h1.side-column__first-heading
+      Archive
+    %ol.blog-navs-archives__archives
+      - @articles_by_month.each do |month, articles|
+        %li.blog-navs-archives__archive<>
+          = link_to month, "/archives/#{month}", {:class => "blog-navs-archives__archive-link"}
