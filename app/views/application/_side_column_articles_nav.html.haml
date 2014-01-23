@@ -1,10 +1,11 @@
 %aside.side-column.blog-navs
-  %h1.side-column__first-heading
-    Tags
-  %ul.blog-navs-tags__tags
-    - tag_cloud(@tags, %w()) do |tag|
-      %li.blog-navs-tags__tag
-        = link_to tag.name, "/tags/#{tag.name}",{:class => "blog-navs-tags__tag-link"}
+  .blog-navs-tags
+    %h1.side-column__first-heading
+      Tags
+    %ul.blog-navs-tags__tags
+      - tag_cloud(@tags, %w()) do |tag|
+        %li.blog-navs-tags__tag
+          = link_to tag.name, "/tags/#{tag.name}",{:class => "blog-navs-tags__tag-link"}
 
   %h1.side-column__first-heading
     Archive
