@@ -1,5 +1,11 @@
-%h1= t('Editing service')
-= render 'form'
-= link_to 'Show', staffs_service_path(@service)
-|
-\#{link_to 'Back', staffs_services_path}
+%header.main__header
+  %h2.main__header-heading
+    = t('Editing service')
+  = link_to staffs_services_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-reply
+    = t('Back To Service')
+.main__body
+  = render 'form'
+  = link_to 'Show', staffs_service_path(@service)
+  |
+  \#{link_to 'Back', staffs_services_path}

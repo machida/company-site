@@ -53,6 +53,7 @@ GEM
     arel (4.0.1)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
+    bootstrap-datetimepicker-rails (0.0.11)
     breadcrumbs_on_rails (2.3.0)
     builder (3.1.4)
     cancan (1.6.10)
@@ -195,6 +196,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on
+  bootstrap-datetimepicker-rails
   breadcrumbs_on_rails
   by_star!
   cancan

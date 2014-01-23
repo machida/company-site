@@ -23,19 +23,26 @@
     .staff-fields__field
       = f.label :staffs, t('Author'), {:class => 'staff-fields__label'}
       = f.collection_select :staff_id, Staff.all, :id, :name
-
     .staff-fields__field
       = f.label :tags, t("Tags (separated by commas)"), {:class => 'staff-fields__label'}
       %ul#article_tags.staff-fields__tags
         = initial_tag_list(@article.tag_list)
       = add_tag_input
       = f.hidden_field :tag_list
-
+    .staff-fields__field
+      = f.label :slug, t('Slug'), {:class => 'staff-fields__label'}
+      = f.text_field :slug, {:class => 'staff-fields__text'}
+    .staff-fields__field
+      = f.label :meta_keywords, t('Meta Keywords'), {:class => 'staff-fields__label'}
+      = f.text_field :meta_keywords, {:class => 'staff-fields__text'}
+    .staff-fields__field.relative
+      = f.label :meta_description, t('Meta Description'), {:class => 'staff-fields__label'}
+      = f.text_area :meta_description, {:class => 'staff-fields__body'}
     .staff-fields__field
       = f.label :published, t("Published"), {:class => 'staff-fields__label'}
       = f.check_box :published
     .staff-fields__field
       = f.label :created_at, t('Created at'), {:class => 'staff-fields__label'}
-      = f.text_field :created_at, {:class => 'staff-fields__text'}
+      = f.text_field :created_at, {:class => 'staff-fields__text datepicker'}
     .staff-fields__actions
       = f.submit(t('Create'))

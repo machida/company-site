@@ -73,7 +73,7 @@ module ApplicationHelper
   end
 
   def remove_tag_input
-    link_to '#', onclick: "remove_tag_field(this); return false;", class: "small-button delete" do
+    link_to '#', onclick: "remove_tag_field(this); return false;", class: "tag-delete-button" do
       content_tag('i', '', class: "fa fa-times")
     end
   end
