@@ -4,7 +4,7 @@
   color: $white
   +border-top-right-radius(8px)
   z-index: 1000
-  +rem('padding-right', 30px)
+  +rem('padding-right', 40px)
   +rem('height', 35px)
 .staff-nav__items
   @extend .reset-ul
@@ -14,9 +14,9 @@
   +rem('font-size', 14px)
   +box-sizing(border-box)
   &:first-child
-    +rem('padding-left', 22px)
+    +rem('padding-left', 12px)
   &:last-child
-    +rem('padding-right', 22px)
+    +rem('padding-right', 6px)
 .staff-nav__link
   text-decoration: none
   display: block
@@ -29,9 +29,3 @@
   +rem('line-height', 35px)
   text-align: center
   +rem('width', 40px)
-
-body
-  .is-hidden
-    display: none
-  .is-shown
-    +inline-block

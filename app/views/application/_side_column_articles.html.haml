@@ -1,7 +1,7 @@
 %aside.side-column.side-column-articles
   %h1.side-column__first-heading
     Recent Articles
-  %ul.articles-list__articles
+  %ul.reset.articles-list__articles
     - @articles.each do |article|
       %li.articles-list__article
         = link_to article, {:class => "articles-list__article-link"} do

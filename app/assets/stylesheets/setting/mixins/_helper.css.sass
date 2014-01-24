@@ -1,10 +1,3 @@
-.clearfix
-  *zoom: 1
-.clearfix:after
-  content: ''
-  display: table
-  clear: both
-
 @function strip-units($number)
   // strip the units
   // That works. strip-units(13.48cm) will return 13.48
@@ -14,19 +7,15 @@
   margin-left: auto
   margin-right: auto
 
-.center-margin
-  +side-mg-auto
-
-.relative
-  position: relative
-
-.horizontal-list
-  +horizontal-list(0)
-
 =absolute($absolute-direction1: left, $absolute-value1: 0, $absolute-direction2: top, $absolute-value2: 0)
   position: absolute
   #{$absolute-direction1}: #{$absolute-value1}
   #{$absolute-direction2}: #{$absolute-value2}
+
+=fixed($fixed-direction1: left, $fixed-value1: 0, $fixed-direction2: top, $fixed-value2: 0)
+  position: fixed
+  #{$fixed-direction1}: #{$fixed-value1}
+  #{$fixed-direction2}: #{$fixed-value2}
 
 =inconspicuous-white-link
   color: rgba(255, 255, 255, 0.6)
@@ -61,11 +50,3 @@
     +fa
     content: "\f02b"
     margin-right: .4em
-
-=side-mg-auto
-  margin-right: auto
-  margin-left: auto
-
-=block-link
-  display: block
-  text-decoration: none

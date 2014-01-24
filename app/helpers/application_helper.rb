@@ -16,6 +16,14 @@ module ApplicationHelper
     params[:controller] == "contact" and params[:action] == 'new'
   end
 
+  def current_path(path)
+    "is-current" if current_page?(path)
+  end
+
+  def current_controller(controller)
+    "is-current" if current_page?(:controller => controller)
+  end
+
   def gravatar_image_url(email = nil, size = nil)
     url = 'http://www.gravatar.com/avatar/'
     url += if email
@@ -25,15 +33,6 @@ module ApplicationHelper
     end
     size ? "#{url}?size=#{size}" : url
   end
-
-  def current_path(path)
-    "is-current" if current_page?(path)
-  end
-
-  def current_controller(controller)
-    "is-current" if current_page?(:controller => controller)
-  end
-
 
   def show_date(time)
     return time unless time

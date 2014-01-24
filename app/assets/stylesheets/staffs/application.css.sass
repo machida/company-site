@@ -1,29 +1,29 @@
 @charset "utf-8"
 
-@import setting/normalize
-@import setting/reset
+@import setting/reset/normalize
+@import setting/reset/reset
 @import compass/utilities
 @import compass/css3
-@import //netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css
-@import url(//fonts.googleapis.com/css?family=Tauri)
 
+// mixins
+@import setting/mixins/rem
+@import setting/mixins/fonts
+@import setting/mixins/helper
+@import setting/mixins/buttons
 
-// setting
-@import setting/rem
-@import setting/fonts_size
-@import setting/fonts
-@import setting/colors
-@import setting/layout
-@import setting/helper
-@import setting/buttons
+// variables
+@import setting/variables/colors
+@import setting/variables/fonts_size
 
-@import bootstrap-datetimepicker
-
-@import setting/wmd-buttons
+// common
+@import setting/common/helper
+@import setting/common/layout
 
 // shared
+@import bootstrap-datetimepicker
 @import shared/buttons
-@import blocks/tool-tip
+@import shared/tool-tip
+@import shared/wmd-buttons
 
 // blocks
 @import blocks/login
