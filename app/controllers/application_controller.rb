@@ -28,7 +28,7 @@ class ApplicationController < ActionController::Base
 
   # 最新の投稿20件表示
   def recent_articles
-    @articles = Article.published.order("created_at DESC").limit(20)
+    @articles = Article.published.order("created_at DESC").limit(10)
   end
 
   # order('count DESC')でカウントの多い順にタグを並べています

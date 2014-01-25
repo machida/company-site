@@ -11,34 +11,35 @@
     = render 'staff_nav'
     = render 'header'
     = render 'global_nav'
-    %header.page__title
-      .wrapper.page__title-wrapper
-        %h1.page__first-heading
-          = yield :page_title
-        .page-title-breadcrumbs
-          = render_breadcrumbs separator: '&nbsp;&nbsp;>&nbsp;&nbsp;'
+    .page
+      %header.page__title
+        .wrapper.page__title-wrapper
+          %h1.page__first-heading
+            = yield :page_title
+          .page-title-breadcrumbs
+            = render_breadcrumbs separator: '&nbsp;&nbsp;>&nbsp;&nbsp;'
 
-    .content
-      - if articles? or categories? or category? or archive?
-        .wrapper
-          .articles__wrapper
-            = yield
-            = render 'side_column_articles_nav'
-      - elsif home? or page? or members? or services? or service? or contact? or member?
-        .wrapper
-          .content__wrapper
-            = yield
-            = render 'side_column_articles'
-      - elsif article?
-        .wrapper
-          .article__wrapper
-            .article__content
-              .article__content-inner
-                = yield
-      - else
-        .wrapper
-          .content__wrapper
-            = yield
+      .content
+        - if articles? or categories? or category? or archive?
+          .wrapper
+            .articles__wrapper
+              = yield
+              = render 'side_column_articles_nav'
+        - elsif home? or page? or members? or services? or service? or contact? or member?
+          .wrapper
+            .content__wrapper
+              = yield
+              = render 'side_column_articles'
+        - elsif article?
+          .wrapper
+            .article__wrapper
+              .article__content
+                .article__content-inner
+                  = yield
+        - else
+          .wrapper
+            .content__wrapper
+              = yield
 
     %footer.footer
       .wrapper
