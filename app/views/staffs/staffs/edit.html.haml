@@ -1,8 +1,8 @@
 %header.main__header
   %h2.main__header-heading
     = t('Editing Staff')
+  = link_to staffs_staffs_path, {:class => "main__header-add-link large-button"} do
+    %i.fa.fa-reply
+    = t('Back To Staffs')
 .main__body
   = render 'form'
-  = link_to 'Show', staffs_staff_path(@staff)
-  |
-  \#{link_to 'Back', staffs_staffs_path}
