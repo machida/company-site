@@ -58,8 +58,9 @@ module ApplicationHelper
   end
 
   def add_tag_input
-    link_to '#', onclick: "add_tag_field(\"#{escape_javascript(generate_tag_list)}\"); return false;" do
-      content_tag('i', '', class: "fa fa-plus")
+    link_to '#', onclick: "add_tag_field(\"#{escape_javascript(generate_tag_list)}\"); return false;", class: "tag-add-button" do
+      content_tag('i', '', class: "fa fa-plus tag-add-button__icon") +
+      t("Add Tag")
     end
   end
 

@@ -5,6 +5,9 @@
   background-color: $blue
   color: $white
   +rem('padding', 10px 16px)
+  i
+    +rem('margin-right', 6px)
+    +rem('margin-left', -4px)
 
 .small-button
   +small-button
@@ -22,3 +25,7 @@
 
 .tag-delete-button
   +small-button(22px, 22px, $red)
+
+.tag-add-button
+  @extend .large-button
+

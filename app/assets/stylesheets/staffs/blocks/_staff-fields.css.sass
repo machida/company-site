@@ -22,8 +22,14 @@
   +box-sizing(border-box)
 .staff-fields__tags
   @extend .reset-ul
+  +rem('margin-bottom', 16px)
+  +clearfix
   li
-    +inline-block
+    display: block
+    float: left
     border: rgba(0, 0, 0, .4) solid 1px
     +rem('margin-right', 10px)
     +rem('padding', 4px 8px)
+    +rem('margin-bottom', 6px)
+.tag-add-button
+  clear: both
