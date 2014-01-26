@@ -27,6 +27,7 @@ gem 'by_star', :git => "git://github.com/radar/by_star"
 gem 'redcarpet'
 gem 'dekiru'
 gem 'breadcrumbs_on_rails'
+gem 'bootstrap-sass'
 gem 'bootstrap-datetimepicker-rails'
 
 group :doc do

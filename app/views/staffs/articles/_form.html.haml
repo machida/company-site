@@ -41,8 +41,8 @@
     .staff-fields__field
       = f.label :published, t("Published"), {:class => 'staff-fields__label'}
       = f.check_box :published
-    .staff-fields__field
+    .staff-fields__field.datepicker
       = f.label :created_at, t('Created at'), {:class => 'staff-fields__label'}
-      = f.text_field :created_at, {:class => 'staff-fields__text datepicker'}
+      = f.text_field :created_at, {:class => 'staff-fields__text add-on'}
     .staff-fields__actions
       = f.submit(t('Create'), :class => "large-button")
