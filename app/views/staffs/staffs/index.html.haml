@@ -1,22 +1,22 @@
 %header.main__header
   %h2.main__header-heading
     = t('Staffs')
+  %nav.main-tabs-nav
+    %ul.main-tabs-nav__tabs
+      %li.main-tabs-nav__tab<>
+        = link_to t('All'), staffs_staffs_path, {:class => "main-tabs-nav__tab-link #{params[:published] ? '' : 'is-current'}"}
+      %li.main-tabs-nav__tab<>
+        = link_to t('Published'), staffs_staffs_path(:published => "true"), {:class => "main-tabs-nav__tab-link #{params[:published] == 'true' ? 'is-current' : ''}"}
+      %li.main-tabs-nav__tab<>
+        = link_to t('Unpublished'), staffs_staffs_path(:published => "false"), {:class => "main-tabs-nav__tab-link #{params[:published] == 'false' ? 'is-current' : ''}"}
+  .main__search.main-search
+    %i.fa.fa-search
+    %input#js-search{:type => "text"}
   - if can? :manage, @staff
     = link_to new_staffs_staff_path, {:class => "main__header-add-link large-button"} do
       %i.fa.fa-plus
       = t('New Staff')
 .main__body
-  .main__search.main-search
-    %i.fa.fa-search
-    %input#js-search{:type => "text"}
-    %nav.main-tabs-nav
-      %ul.main-tabs-nav__tabs
-        %li.main-tabs-nav__tab<>
-          = link_to t('All'), staffs_staffs_path, {:class => "main-tabs-nav__tab-link #{params[:published] ? '' : 'is-current'}"}
-        %li.main-tabs-nav__tab<>
-          = link_to t('Published'), staffs_staffs_path(:published => "true"), {:class => "main-tabs-nav__tab-link #{params[:published] == 'true' ? 'is-current' : ''}"}
-        %li.main-tabs-nav__tab<>
-          = link_to t('Unpublished'), staffs_staffs_path(:published => "false"), {:class => "main-tabs-nav__tab-link #{params[:published] == 'false' ? 'is-current' : ''}"}
   %table.main__table.main-table
     %tbody
       - @staffs.each do |staff|
