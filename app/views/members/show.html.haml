@@ -4,4 +4,17 @@
 %section.member
   %h2= @staff.name
   = image_tag("member-icons/#{@staff.slug}.jpg", :alt => "#{@staff.name}", :class => "member-icon-image")
+
+  %ul.member__sns-icons
+    %li.member__sns-icon.twitter
+      = link_to "#", {:class => "members__sns-link"} do
+        %i.fa.fa-twitter
+    %li.member__sns-icon.facebook
+      = link_to "https://www.facebook.com/#{@staff.facebook_id}", {:class => "members__sns-link", :target => "_blank"} do
+        %i.fa.fa-facebook
+    %li.member__sns-icon.github
+      = link_to "#", {:class => "members__sns-link"} do
+        %i.fa.fa-github
+
+
   = markdown(@staff.body)
