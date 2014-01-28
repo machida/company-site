@@ -1,8 +1,7 @@
 - content_for :page_title do
   = @staff.name
 
-%table
-  %tbody
-    %tr
-      %td= @staff.name
-      %td= @staff.body
+%section.member
+  %h2= @staff.name
+  = image_tag("member-icons/#{@staff.slug}.jpg", :alt => "#{@staff.name}", :class => "member-icon-image")
+  = markdown(@staff.body)

@@ -2,7 +2,7 @@ $ ->
   i = $.browser.version.original
   i = Math.floor(i)
   if $.browser.original is "msie"
-    $("html").addClass $.browser.original + "-" + i
+    $('.js-hack').addClass $.browser.original + "-" + i
   else
-    $("html").addClass $.browser.original
-  $("html").addClass $.platform.original
+    $('.js-hack').addClass $.browser.original
+  $('.js-hack').addClass $.platform.original
