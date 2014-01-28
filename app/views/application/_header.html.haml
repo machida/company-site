@@ -1,7 +1,7 @@
 %header.header
   .wrapper.header__wrapper
     = form_tag(articles_path, :method => "get", :class => "header-search-form") do
-      = text_field_tag(:search, params[:search], :placeholder => "Search", :class => "header-search-form__input-text")
+      = text_field_tag(:search, params[:search], :placeholder => "Search", :class => "header-search-form__input-text js-focused")
       = button_tag(:name => nil, :class => "header-search-form__button", :type => "submit") do
         %i.fa.fa-search
 
