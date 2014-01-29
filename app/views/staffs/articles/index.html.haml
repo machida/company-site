@@ -10,8 +10,8 @@
       %li.main-tabs-nav__tab<>
         = link_to t('Unpublished'), staffs_articles_path(:published => "false"), {:class => "main-tabs-nav__tab-link #{params[:published] == 'false' ? 'is-current' : ''}"}
   .main__search.main-search
-    %i.fa.fa-search
-    %input#js-search{:type => "text"}
+    %i.fa.fa-search.main-search__icon
+    %input.main-search__txt-input#js-search{:type => "text"}
 
   = link_to new_staffs_article_path, {:class => "main__header-add-link large-button"} do
     %i.fa.fa-plus
