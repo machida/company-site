@@ -29,6 +29,7 @@ gem 'dekiru'
 gem 'breadcrumbs_on_rails'
 gem 'bootstrap-sass'
 gem 'bootstrap-datetimepicker-rails'
+gem "google-code-prettify-rails"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
