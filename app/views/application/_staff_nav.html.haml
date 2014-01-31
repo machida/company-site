@@ -17,3 +17,5 @@
     - else
       %li.staff-nav__item
         = link_to t('Login'), new_staff_session_path, {:class => "staff-nav__link"}
+    %li.staff-nav__item
+      = t("#{Rails.env}")

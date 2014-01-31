@@ -47,34 +47,35 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
           %small FJORD,LLC
 
-    #targetDiv
-      aaaa
-    %table#resultArea
-      %tr
-        %td 画面左上からのマウスX座標
-        %td
-          %input#mouseX{readonly: "readonly", type: "text"}/
-        %td 画面左上からのマウスY座標
-        %td
-          %input#mouseY{readonly: "readonly", type: "text"}/
-      %tr
-        %td DIV(#TARGET)左上からのマウスX座標
-        %td
-          %input#divMouseX{readonly: "readonly", type: "text"}/
-        %td DIV("#TARGET)左上からのマウスY座標
-        %td
-          %input#divMouseY{readonly: "readonly", type: "text"}/
-      %tr
-        %td ウインドウ横幅
-        %td
-          %input#windowW{readonly: "readonly", type: "text"}/
-        %td ウインドウ縦幅
-        %td
-          %input#windowH{readonly: "readonly", type: "text"}/
-      %tr
-        %td スクロール量（X座標）
-        %td
-          %input#scrollX{readonly: "readonly", type: "text"}/
-        %td スクロール量（Y座標）
-        %td
-          %input#scrollY{readonly: "readonly", type: "text"}/
+    - if development?
+      #targetDiv
+        aaaa
+      %table#resultArea
+        %tr
+          %td 画面左上からのマウスX座標
+          %td
+            %input#mouseX{readonly: "readonly", type: "text"}/
+          %td 画面左上からのマウスY座標
+          %td
+            %input#mouseY{readonly: "readonly", type: "text"}/
+        %tr
+          %td DIV(#TARGET)左上からのマウスX座標
+          %td
+            %input#divMouseX{readonly: "readonly", type: "text"}/
+          %td DIV("#TARGET)左上からのマウスY座標
+          %td
+            %input#divMouseY{readonly: "readonly", type: "text"}/
+        %tr
+          %td ウインドウ横幅
+          %td
+            %input#windowW{readonly: "readonly", type: "text"}/
+          %td ウインドウ縦幅
+          %td
+            %input#windowH{readonly: "readonly", type: "text"}/
+        %tr
+          %td スクロール量（X座標）
+          %td
+            %input#scrollX{readonly: "readonly", type: "text"}/
+          %td スクロール量（Y座標）
+          %td
+            %input#scrollY{readonly: "readonly", type: "text"}/

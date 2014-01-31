@@ -16,6 +16,12 @@ module ApplicationHelper
     params[:controller] == "contact" and params[:action] == 'new'
   end
 
+  %w(development test production).each do |env|
+    define_method("#{env}?") do
+      Rails.env == env
+    end
+  end
+
   def current_path(path)
     "is-current" if current_page?(path)
   end

@@ -258,4 +258,8 @@ ja:
   Not found published articles: "公開済みの投稿はありません。"
   Not found unpublished articles: "非公開の投稿はありません。"
   Not found articles: "投稿はまだ登録されていません。"
+  development: "開発環境"
+  test: "テスト環境"
+  prodaction: "本番環境"
+
 
