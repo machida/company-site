@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require jquery.turbolinks
 //= require google-code-prettify-rails/prettify
-//= require positions-sizes
+//= require positions
 //= require jquery.depend.min
 //= require jquery.cheat-code
 //= require_tree .

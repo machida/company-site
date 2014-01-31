@@ -48,34 +48,44 @@
           %small FJORD,LLC
 
     - if development?
-      #targetDiv
-        aaaa
-      %table#resultArea
-        %tr
-          %td 画面左上からのマウスX座標
-          %td
-            %input#mouseX{readonly: "readonly", type: "text"}/
-          %td 画面左上からのマウスY座標
-          %td
-            %input#mouseY{readonly: "readonly", type: "text"}/
-        %tr
-          %td DIV(#TARGET)左上からのマウスX座標
-          %td
-            %input#divMouseX{readonly: "readonly", type: "text"}/
-          %td DIV("#TARGET)左上からのマウスY座標
-          %td
-            %input#divMouseY{readonly: "readonly", type: "text"}/
-        %tr
-          %td ウインドウ横幅
-          %td
-            %input#windowW{readonly: "readonly", type: "text"}/
-          %td ウインドウ縦幅
-          %td
-            %input#windowH{readonly: "readonly", type: "text"}/
-        %tr
-          %td スクロール量（X座標）
-          %td
-            %input#scrollX{readonly: "readonly", type: "text"}/
-          %td スクロール量（Y座標）
-          %td
-            %input#scrollY{readonly: "readonly", type: "text"}/
+      .js-positions.js-hidden.is-hidden
+        %i.fa.fa-times.js-parent-close.js-positions__close-button
+        %table.js-positions__table
+          %tr.js-positions__table-tr
+            %th.js-positions__table-th
+              画面左上→マウスX座標
+            %td.js-positions__table-value
+              %input#mouseX{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
+            %th.js-positions__table-th
+              画面左上→マウスY座標
+            %td.js-positions__table-value
+              %input#mouseY{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
+            %th.js-positions__table-th
+              div左上→マウスX座標
+            %td.js-positions__table-value
+              %input#divMouseX{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
+            %th.js-positions__table-th
+              div左上→マウスY座標
+            %td.js-positions__table-value
+              %input#divMouseY{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
+          %tr.js-positions__table-tr
+            %th.js-positions__table-th
+              ウインドウ横幅
+            %td.js-positions__table-value
+              %input#windowW{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
+            %th.js-positions__table-th
+              ウインドウ縦幅
+            %td.js-positions__table-value
+              %input#windowH{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
+            %th.js-positions__table-th
+              スクロール量（X座標）
+            %td.js-positions__table-value
+              %input#scrollX{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
+            %th.js-positions__table-th
+              スクロール量（Y座標）
+            %td.js-positions__table-value
+              %input#scrollY{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
+        .fa.fa-angle-up.js-hide.js-positions__hide-button
+        .fa.fa-angle-down.js-show.js-positions__show-button.is-hidden
+        #js-target-field.js-positions__target-field.js-hidden.js-shown
+          js-target-field

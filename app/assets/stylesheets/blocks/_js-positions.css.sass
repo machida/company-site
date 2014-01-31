@@ -1,0 +1,71 @@
+.js-positions
+  +fixed(left, 0, top, 0)
+.js-positions__close-button
+  +absolute(right, -24px, top, 0)
+  +rem('width', 24px)
+  +rem('line-height', 24px)
+  background-color: rgba(0, 0, 0, .8)
+  +border-bottom-right-radius(4px)
+  cursor: pointer
+  color: $white
+  text-align: center
+  +rem('font-size', 12px)
+.js-positions__table
+  +rem('font-size', 12px)
+  background-color: rgba(0, 0, 0, .8)
+  color: $white
+.js-positions__table-tr
+  &:last-child
+    .js-positions__table-th,
+    .js-positions__table-value
+      border-bottom: none
+.js-positions__table-value
+  +rem('width', 40px)
+  border-bottom: rgba(255, 255, 255, .4) solid 1px
+.js-positions__table-input
+  +rem('width', 40px)
+  background-color: rgba(255, 255, 255, .9)
+  +rem('padding', 0 6px)
+  text-align: right
+.js-positions__table-th
+  text-align: left
+  font-weight: normal
+  +rem('padding', 6px)
+  border-bottom: rgba(255, 255, 255, .4) solid 1px
+.js-positions__table-value
+  +rem('padding', 6px)
+  &:nth-child(2),
+  &:nth-child(4),
+  &:nth-child(6)
+    border-right: rgba(255, 255, 255, .4) solid 1px
+.js-positions__table-input
+  color: $black
+.js-positions__target-field
+  background-color: rgba(255, 255, 255, .8)
+  width: 100%
+  +rem('height', 360px)
+  +rem('line-height', 360px)
+  text-align: center
+  border: rgba(0, 0, 0, .4) solid 1px
+  border-top: none
+  border-left: none
+  +rem('font-size', 80px)
+  color: rgba(0, 0, 0, .2)
+  +border-bottom-right-radius(8px)
+  +box-sizing(border-box)
+  +tauri
+.js-positions__show-button,
+.js-positions__hide-button
+  +absolute(right, 7px, top, 61px)
+  background-color: rgba(0, 0, 0, .8)
+  +rem('width', 26px)
+  +rem('height', 22px)
+  +box-sizing(border-box)
+  text-align: center
+  +border-bottom-radius(4px)
+  cursor: pointer
+  color: $white
+.js-positions__show-button
+  +rem('line-height', 22px)
+.js-positions__hide-button
+  +rem('line-height', 20px)

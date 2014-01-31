@@ -1,7 +1,11 @@
 .global-nav
   +rem('padding-top', 40px)
-  +rem('margin-bottom', 60px)
   @extend .clearfix
+  &.is-fixed
+    +rem('padding-top', 16px)
+    background-color: $white
+    z-index: 3
+    +box-shadow(rgba(0, 0, 0, .2) 0 1px 1px)
 .global-nav__li
   display: block
   width: 20%

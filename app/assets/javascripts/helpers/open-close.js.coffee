@@ -10,3 +10,8 @@ $ ->
     $(this).parent().find('.js-shown').removeClass('is-hidden')
     $(this).addClass('is-hidden')
     $(this).prev('.js-hide').removeClass('is-hidden')
+$ ->
+  $('.js-parent-close').click ->
+    $(this).parent('.js-hidden').addClass('is-hidden')
+    $(this).parent('.js-hidden').removeClass('is-shown')
+    $(this).addClass('is-hidden')

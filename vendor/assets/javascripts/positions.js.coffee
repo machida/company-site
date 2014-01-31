@@ -16,14 +16,14 @@ window.addEventListener "load", (->
 
   # get scroll amount.
   window.onscroll = ->
-    scrollX = document.documentElement.scrollLeft or document.body.scrollLeft
-    scrollY = document.documentElement.scrollTop or document.body.scrollTop
+    scrollX = document.documentElement.scrollLeft
+    scrollY = document.documentElement.scrollTop
     document.getElementById("scrollX").value = scrollX
     document.getElementById("scrollY").value = scrollY
 
 
   # get mouse coords at targetDiv.
-  document.getElementById("targetDiv").onmousemove = (e) ->
+  document.getElementById("js-target-field").onmousemove = (e) ->
     mouseX = undefined
     mouseY = undefined
     offsetX = 0

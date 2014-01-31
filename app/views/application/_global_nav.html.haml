@@ -1,12 +1,13 @@
-%nav.global-nav.wrapper#global-nav
-  %ul.horizontal-list.global-nav__ul
-    %li.global-nav__li
-      =link_to "HOME", root_path, {:class => "#{current_path(root_path)} global-nav__link"}
-    %li.global-nav__li
-      =link_to "SERVICE", services_path, {:class => "#{controller?('services') ? 'is-current' : ''} global-nav__link"}
-    %li.global-nav__li
-      =link_to "MEMBERS", "/members", {:class => "#{controller?('members') ? 'is-current' : ''} global-nav__link"}
-    %li.global-nav__li
-      =link_to "BLOG", "/categories/blog", {:class => "#{controller?('categories') ? 'is-current' : ''} #{controller?('articles') ? 'is-current' : ''} global-nav__link"}
-    %li.global-nav__li
-      =link_to "CONTACT", contact_path, {:class => "#{controller?('contact') ? 'is-current' : ''} global-nav__link"}
+%nav.global-nav
+  .wrapper
+    %ul.horizontal-list.global-nav__ul
+      %li.global-nav__li
+        =link_to "HOME", root_path, {:class => "#{current_path(root_path)} global-nav__link"}
+      %li.global-nav__li
+        =link_to "SERVICE", services_path, {:class => "#{controller?('services') ? 'is-current' : ''} global-nav__link"}
+      %li.global-nav__li
+        =link_to "MEMBERS", "/members", {:class => "#{controller?('members') ? 'is-current' : ''} global-nav__link"}
+      %li.global-nav__li
+        =link_to "BLOG", "/categories/blog", {:class => "#{controller?('categories') ? 'is-current' : ''} #{controller?('articles') ? 'is-current' : ''} global-nav__link"}
+      %li.global-nav__li
+        =link_to "CONTACT", contact_path, {:class => "#{controller?('contact') ? 'is-current' : ''} global-nav__link"}
