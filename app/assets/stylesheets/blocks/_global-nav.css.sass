@@ -6,6 +6,15 @@
     background-color: $white
     z-index: 3
     +box-shadow(rgba(0, 0, 0, .2) 0 1px 1px)
+    .global-nav__li
+      width: 16%
+    .global-nav__link
+      border-bottom: none
+      +rem('padding-bottom', 10px)
+  +transition-duration(.05s)
+  *
+    +transition-property(all)
+    +transition-duration(.05s)
 .global-nav__li
   display: block
   width: 20%
@@ -24,3 +33,4 @@
   &.is-current
     color: $black
     border-bottom: 2px solid $black
+    cursor: default
