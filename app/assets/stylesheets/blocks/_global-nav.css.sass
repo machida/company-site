@@ -2,7 +2,7 @@
   +rem('padding-top', 40px)
   @extend .clearfix
   &.is-fixed
-    +rem('padding-top', 16px)
+    +rem('padding-top', 10px)
     background-color: $white
     z-index: 3
     +box-shadow(rgba(0, 0, 0, .2) 0 1px 1px)
@@ -11,10 +11,23 @@
     .global-nav__link
       border-bottom: none
       +rem('padding-bottom', 10px)
+      text-align: center
+      +rem('line-height', 34px)
   +transition-duration(.05s)
   *
     +transition-property(all)
     +transition-duration(.05s)
+.global-nav__logo-link
+  +inline-block
+  background-color: $yellow
+  color: $black
+  text-align: center
+  text-decoration: none
+  +rem('padding', 0 16px)
+  +rem('line-height', 34px)
+  +rem('font-size', 18px)
+  +tauri
+  font-weight: bold
 .global-nav__li
   display: block
   width: 20%
