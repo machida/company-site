@@ -261,5 +261,12 @@ ja:
   development: "開発環境"
   test: "テスト環境"
   prodaction: "本番環境"
-
-
+  Subject: "題"
+  Name: "名前"
+  Email: "メールアドレス"
+  helpers:
+    submit:
+      create: "登録する"
+      update: "更新する"
+      submit: "保存する"
+      Send: "送信"

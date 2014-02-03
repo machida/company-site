@@ -1,6 +1,7 @@
 .global-nav
   +rem('padding-top', 40px)
   @extend .clearfix
+  +transition-duration(.05s)
   &.is-fixed
     +rem('padding-top', 10px)
     background-color: $white
@@ -13,19 +14,16 @@
       +rem('padding-bottom', 10px)
       text-align: center
       +rem('line-height', 34px)
-  +transition-duration(.05s)
   *
     +transition-property(all)
     +transition-duration(.05s)
 .global-nav__logo-link
   +inline-block
-  background-color: $yellow
-  color: $black
+  color: $white
   text-align: center
   text-decoration: none
-  +rem('padding', 0 16px)
   +rem('line-height', 34px)
-  +rem('font-size', 18px)
+  +rem('font-size', 28px)
   +tauri
   font-weight: bold
 .global-nav__li
