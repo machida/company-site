@@ -1,0 +1,22 @@
+.contact-form
+.contact-form__field
+  +rem('margin-bottom', 30px)
+.contact-form__label
+  +inline-block
+  +rem('width', 110px)
+  text-align: right
+  +rem('padding-right', 16px)
+  +rem('font-size', 14px)
+.contact-form__text-input,
+.contact-form__textarea
+  border: rgba(0, 0, 0, .2) solid 1px
+  +rem('width', 430px)
+.contact-form__textarea
+  +rem('height', 460px)
+.contact-form__action
+  @extend .reset-ul
+.contact-form__fields-title
+  text-align: center
+  i
+    display: block
+    +rem('font-size', 60px)

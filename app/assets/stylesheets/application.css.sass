@@ -1,7 +1,14 @@
 @charset "utf-8"
 
+//////////////
+//setting
+//////////////
+
+//reset
 @import setting/reset/normalize
 @import setting/reset/reset
+
+//compass
 @import compass/utilities
 @import compass/css3
 
@@ -22,31 +29,47 @@
 @import setting/common/helper
 @import setting/common/layouts
 
+//////////////
 //block
+//////////////
+
+// common
 @import blocks/header
 @import blocks/global-nav
 @import blocks/side-column
 @import blocks/page
 @import blocks/two-column-content
-@import blocks/about
-@import blocks/members
-@import blocks/home-members
-@import blocks/home-access
-@import blocks/home-overview
-@import blocks/article
-@import blocks/articles-list
-@import blocks/articles-article
-@import blocks/blog-navs-tags
-@import blocks/blog-navs-archives
-@import blocks/post-navs
 @import blocks/footer
 @import blocks/pagination
 @import blocks/page-title-breadcrumbs
 @import blocks/pager
-@import blocks/staff-nav
 @import blocks/tool-tip
-@import blocks/archives
 @import blocks/field_with_errors
+
+// side
+@import blocks/post-navs
+@import blocks/blog-navs-tags
+@import blocks/blog-navs-archives
+
+// home
+@import blocks/home-members
+@import blocks/home-access
+@import blocks/home-overview
+
+// pages
+@import blocks/about
+@import blocks/members
+@import blocks/article
+@import blocks/articles-list
+@import blocks/articles-article
+@import blocks/archives
+@import blocks/contact-form
+
+// staff
+@import blocks/staff-nav
+
+// dev
 @import blocks/js-positions
-//styleguides
+
+// styleguides
 @import example-for-styleguides

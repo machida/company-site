@@ -19,13 +19,15 @@
     +transition-duration(.05s)
 .global-nav__logo-link
   +inline-block
-  color: $white
+  color: rgba(0, 0, 0, .2)
   text-align: center
   text-decoration: none
   +rem('line-height', 34px)
   +rem('font-size', 28px)
   +tauri
   font-weight: bold
+  &:hover
+    color: rgba(0, 0, 0, .4)
 .global-nav__li
   display: block
   width: 20%

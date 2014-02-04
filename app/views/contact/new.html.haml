@@ -2,30 +2,22 @@
   CONTACT
 
 = form_for @contact, :url => contact_path, :class => "contact-form" do |form|
-  %h2= t('Send whith Email')
   %fieldset.contact-form__fields
-    .contact-form__field.two-column-content
+    .two-column-content
       .two-column-content__title-wrapper
-        = form.label :name, t('Name'), {:class => "contact-form__label"}
+        %h2.two-column-content__second-heading.contact-form__fields-title
+          %i.fa.fa-envelope-o.contact-form__fields-title-icon
+          Email
       .two-column-content__inner
-        = form.text_field :name, {:class => "contact-form__text-input"}
-    .contact-form__field.two-column-content
-      .two-column-content__title-wrapper
-        = form.label :email, t('Email'), {:class => "contact-form__label"}
-      .two-column-content__inner
-        = form.text_field :email, {:class => "contact-form__text-input"}
-    .contact-form__field.two-column-content
-      .two-column-content__title-wrapper
-        = form.label :subject, t('Subject'), {:class => "contact-form__label"}
-      .two-column-content__inner
-        = form.text_field :subject, {:class => "contact-form__text-input"}
-    .contact-form__field.two-column-content
-      .two-column-content__title-wrapper
-        = form.label :body, t('Body'), {:class => "contact-form__label"}
-      .two-column-content__inner
-        = form.text_area :body, {:class => "contact-form__textarea"}
-    %ul.contact-form__actions.two-column-content
-      %li.contact-form__action
-        .two-column-content__title-wrapper
-        .two-column-content__inner
-          = form.submit 'Send', {:class => "contact-form__action-send"}
+        .contact-form__field
+          = form.label :name, t('Name'), {:class => "contact-form__label"}
+          = form.text_field :name, {:class => "contact-form__text-input"}
+        .contact-form__field
+          = form.label :email, t('Email'), {:class => "contact-form__label"}
+          = form.text_field :email, {:class => "contact-form__text-input"}
+        .contact-form__field
+          = form.label :body, t('Body'), {:class => "contact-form__label"}
+          = form.text_area :body, {:class => "contact-form__textarea"}
+        %ul.contact-form__actions
+          %li.contact-form__action
+            = form.submit 'Send', {:class => "contact-form__action-send"}
