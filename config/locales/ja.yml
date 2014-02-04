@@ -264,6 +264,8 @@ ja:
   Subject: "題"
   Name: "名前"
   Email: "メールアドレス"
+  About Service More: "くわしく"
+  About Staff More: "くわしく"
   helpers:
     submit:
       create: "登録する"

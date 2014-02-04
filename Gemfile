@@ -27,9 +27,13 @@ gem 'by_star', :git => "git://github.com/radar/by_star"
 gem 'redcarpet'
 gem 'dekiru'
 gem 'breadcrumbs_on_rails'
+gem 'modernizr-rails'
 gem 'bootstrap-sass'
 gem 'bootstrap-datetimepicker-rails'
 gem "google-code-prettify-rails"
+gem 'owlcarousel-rails'
+gem 'magnific-popup-rails'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

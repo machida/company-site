@@ -10,3 +10,6 @@
             = service.title
       .two-column-content__inner
         = markdown(service.description)
+        = link_to service, {:class => "two-column-content__more-link"} do
+          = t('About Service More')
+          %i.fa.fa-angle-right.two-column-content__more-link-icon

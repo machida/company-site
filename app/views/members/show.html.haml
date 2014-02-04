@@ -16,5 +16,5 @@
       = link_to "#", {:class => "members__sns-link"} do
         %i.fa.fa-github
 
-
   = markdown(@staff.body)
+  = link_to t('Back'), members_path, {:class => "member__back-link"}
