@@ -4,18 +4,14 @@
 //setting
 //////////////
 
-//reset
-@import setting/reset/normalize
-@import setting/reset/reset
-
 //compass
 @import compass/utilities
 @import compass/css3
 
 //variables
 @import setting/variables/colors
-@import setting/variables/fonts_size
-@import setting/variables/layout
+@import setting/variables/font-sizes
+@import setting/variables/layouts
 
 //mixins
 @import setting/mixins/fonts
@@ -25,31 +21,37 @@
 @import setting/mixins/helper
 @import setting/mixins/colors
 
+//reset
+@import setting/initializers/normalize
+@import setting/initializers/resets
+@import setting/initializers/default
+
 //common
-@import setting/common/helper
-@import setting/common/layouts
+@import setting/helpers/helpers
 
 //////////////
 //block
 //////////////
 
+// layouts
+@import blocks/layouts/header
+@import blocks/layouts/global-nav
+@import blocks/layouts/side-column
+@import blocks/layouts/page
+@import blocks/layouts/two-column-content
+@import blocks/layouts/footer
+
 // common
-@import blocks/header
-@import blocks/global-nav
-@import blocks/side-column
-@import blocks/page
-@import blocks/two-column-content
-@import blocks/footer
-@import blocks/pagination
-@import blocks/page-title-breadcrumbs
-@import blocks/pager
-@import blocks/tool-tip
-@import blocks/field_with_errors
+@import blocks/common/pagination
+@import blocks/common/page-title-breadcrumbs
+@import blocks/common/pager
+@import blocks/common/tool-tip
+@import blocks/common/field_with_errors
 
 // side
-@import blocks/post-navs
-@import blocks/blog-navs-tags
-@import blocks/blog-navs-archives
+@import blocks/side/post-navs
+@import blocks/side/blog-navs-tags
+@import blocks/side/blog-navs-archives
 
 // home
 @import blocks/home/home-members
@@ -66,10 +68,10 @@
 @import blocks/pages/contact-form
 
 // staff
-@import blocks/staff-nav
+@import blocks/staff/staff-nav
 
 // dev
-@import blocks/js-positions
+@import blocks/dev/js-positions
 
 // styleguides
 @import example-for-styleguides
