@@ -1,0 +1,17 @@
+production:
+  aws:
+    access_key_id:  xxxxxxxxxxxxxxx
+    secret_access_key: yyyyyyyyyyyyyyyyyy
+  log_dir: /tmp/log
+
+development:
+  aws:
+    access_key_id:  xxxxxxxxxxxxxxx
+    secret_access_key: yyyyyyyyyyyyyyyyyy
+  log_dir: ~/log
+
+test:
+  aws:
+    access_key_id:  xxxxxxxxxxxxxxxxx
+    secret_access_key: yyyyyyyyyyyyyyyyyy
+  log_dir: ~/test_log

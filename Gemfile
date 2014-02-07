@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 ruby '2.1.0'
 
@@ -27,13 +28,17 @@ gem 'by_star', :git => "git://github.com/radar/by_star"
 gem 'redcarpet'
 gem 'dekiru'
 gem 'breadcrumbs_on_rails'
+gem 'settingslogic'
+
 gem 'modernizr-rails'
 gem 'bootstrap-sass'
-gem 'bootstrap-datetimepicker-rails'
+gem 'bootstrap3-datetimepicker-rails', '~> 2.1.30'
 gem "google-code-prettify-rails"
 gem 'owlcarousel-rails'
 gem 'magnific-popup-rails'
 
+gem 'rails-assets-moment'
+# gem 'rails-assets-Snap.svg'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
