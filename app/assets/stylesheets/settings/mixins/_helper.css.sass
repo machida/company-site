@@ -7,15 +7,21 @@
   margin-left: auto
   margin-right: auto
 
-=absolute($absolute-direction1: left, $absolute-value1: 0, $absolute-direction2: top, $absolute-value2: 0)
+=absolute($absolute-direction1: left, $absolute-value1: 0, $absolute-direction2: top, $absolute-value2: 0, $absolute-z-index: 1)
   position: absolute
   #{$absolute-direction1}: #{$absolute-value1}
   #{$absolute-direction2}: #{$absolute-value2}
+  z-index: $absolute-z-index
 
-=fixed($fixed-direction1: left, $fixed-value1: 0, $fixed-direction2: top, $fixed-value2: 0)
+=fixed($fixed-direction1: left, $fixed-value1: 0, $fixed-direction2: top, $fixed-value2: 0, $fixed-z-index: 1)
   position: fixed
   #{$fixed-direction1}: #{$fixed-value1}
   #{$fixed-direction2}: #{$fixed-value2}
+  z-index: $fixed-z-index
+
+=relative($fixed-direction1: left, $fixed-value1: 0, $fixed-direction2: top, $fixed-value2: 0, $relative-z-index: 1)
+  position: relative
+  z-index: $relative-z-index
 
 =inconspicuous-white-link
   color: rgba(255, 255, 255, 0.6)
@@ -50,3 +56,7 @@
     +fa
     content: "\f02b"
     margin-right: .4em
+
+=transition($transition-duration: .5s, $transition-property: all)
+  +transition-property($transition-property)
+  +transition-duration($transition-duration)

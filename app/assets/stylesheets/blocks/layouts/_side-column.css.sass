@@ -1,9 +1,6 @@
 .side-column
-  position: absolute
-  z-index: 2
-  right: 0
-  +rem('top', -88px)
-  background-color: #f22494
+  +absolute(right, 0, top, -88px, 2)
+  background-color: $pink
   +rem('width', $side-column-width)
   padding-top: 1.2em
   padding-left: 1em
@@ -13,7 +10,7 @@
 .side-column__first-heading
   @extend .reset
   text-align: center
-  font-family: 'Tauri', sans-serif
+  +tauri
   +rem('font-size', $md)
   margin-bottom: 1.2em
   color: $white

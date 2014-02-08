@@ -84,4 +84,26 @@ module ApplicationHelper
     end
   end
 
+  def edit_path
+    if current_staff
+      if params[:controller] == "pages"
+        link_to "/staffs/pages/#{@page.slug}/edit", class: "edit-path" do
+          content_tag('i', '', class: "fa fa-times")
+        end
+      elsif params[:controller] == "articles"
+        link_to "/staffs/articles/#{@article.id}/edit", class: "edit-path" do
+          content_tag('i', '', class: "fa fa-times")
+        end
+      elsif params[:controller] == "services"
+        link_to "/staffs/services/#{@service.slug}/edit", class: "edit-path" do
+          content_tag('i', '', class: "fa fa-times")
+        end
+      elsif params[:controller] == "members"
+        link_to "/staffs/staffs/#{@staff.slug}/edit", class: "edit-path" do
+          content_tag('i', '', class: "fa fa-times")
+        end
+      end
+    end
+  end
+
 end

@@ -3,7 +3,7 @@
   position: relative
   .tool-tip
     display: none
-    +absolute(left, $tt-wd / -2 + $ttw-wd / 2, top, $ttw-ht + $tt-arrow-ht)
+    +absolute(left, $tt-wd / -2 + $ttw-wd / 2, top, $ttw-ht + $tt-arrow-ht, 2)
   &:hover
     .tool-tip
       display: block
@@ -13,14 +13,13 @@
       color: $tt-tx-color
       +rem('font-size', $tt-fz)
       +rem('line-height', $tt-ht)
-      z-index: 2
       &:before
         content: ""
         border-color: transparent
         border-bottom-color: $tt-bg-cl
         border-width: $tt-arrow-ht $tt-arrow-wd
         border-style: solid
-        +absolute(left, $tt-wd / 2 + $tt-arrow-wd * -1, top, $tt-arrow-ht * -2)
+        +absolute(left, $tt-wd / 2 + $tt-arrow-wd * -1, top, $tt-arrow-ht * -2, 2)
 
 .tool-tip-container
   +tool-tip

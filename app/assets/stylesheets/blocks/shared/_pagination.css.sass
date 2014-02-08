@@ -23,8 +23,7 @@
     background-color: $pink
     color: $white
     border: rgba(0, 0, 0, .2) solid 1px
-    position: relative
-    z-index: 2
+    +relative(2)
   .gap
     +inline-block
     +rem('padding-left', 10px)
@@ -36,8 +35,7 @@
       background-color: $black + 200
       color: $black
       border: rgba(0, 0, 0, .1) solid 1px
-      position: relative
-      z-index: 2
+      +relative(2)
   .first a
     +border-left-radius(4px)
   .last a
