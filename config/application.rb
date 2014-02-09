@@ -39,5 +39,6 @@ module CompanySite
       :host => "yourdomain.dev"
     }
 
+    config.compass.require "rgbapng"
   end
 end

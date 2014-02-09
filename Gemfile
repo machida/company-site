@@ -37,6 +37,8 @@ gem "google-code-prettify-rails"
 gem 'owlcarousel-rails'
 gem 'magnific-popup-rails'
 
+gem 'compass-rgbapng'
+
 gem 'rails-assets-moment'
 # gem 'rails-assets-Snap.svg'
 
