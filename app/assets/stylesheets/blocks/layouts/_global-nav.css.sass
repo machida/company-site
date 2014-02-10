@@ -1,19 +1,21 @@
 .global-nav
   +rem('padding-top', 40px)
   +transition(.2s)
-  +clearfix
   +relative(3)
+  +rem('height', 22px)
   &.is-fixed
     +rem('padding-top', 10px)
     background-color: $white
     +box-shadow(rgba(0, 0, 0, .2) 0 1px 1px)
     +fixed(left, 0, top, 0, 1000)
+    height: auto
     .global-nav__li
       width: 13%
       margin-left: 1%
       margin-right: 1%
     .global-nav__logo
       +rem('padding-right', 10px)
+      float: left
     .global-nav__link
       border-bottom: none
       +rem('padding-bottom', 10px)
@@ -52,9 +54,12 @@
   font-weight: bold
   &:hover
     color: rgba(0, 0, 0, .4)
+.global-nav__ul
+  @extend .reset-ul
 .global-nav__li
   display: block
   width: 20%
+  float: left
 .global-nav__link
   text-decoration: none
   border-bottom: 2px solid $gray-l

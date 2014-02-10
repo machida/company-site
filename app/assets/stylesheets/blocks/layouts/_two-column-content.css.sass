@@ -1,6 +1,6 @@
 .two-column-content
   +rem('padding-left', 178px)
-  @extend .clearfix
+  +clearfix
   position: relative
   &:last-child
     .two-column-content__inner
@@ -15,6 +15,7 @@
   padding-left: 2em
   padding-bottom: 3em
   +box-sizing(border-box)
+  +clearfix
   p
     @extend .reset
     +text-block($md, 1.8)
@@ -49,3 +50,14 @@
 .two-column-content__second-heading-link
   +hover-link
   color: $black
+
+.two-column-content__more-link
+  display: block
+  float: right
+  text-decoration: none
+  border: $pink solid 2px
+  color: $pink
+  font-weight: bold
+  +rem('padding', 0 16px)
+  +rem('line-height', 26px)
+  +rem('font-size', 12px)
