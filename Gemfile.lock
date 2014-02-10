@@ -76,6 +76,9 @@ GEM
       sass (~> 3.1)
     compass-rails (1.1.2)
       compass (>= 0.12.2)
+    compass-rgbapng (0.2.1)
+      chunky_png (>= 0.8.0)
+      compass (>= 0.10.0)
     dekiru (0.0.10)
       http_accept_language (>= 2.0.0)
     devise (3.2.2)
@@ -224,6 +227,7 @@ DEPENDENCIES
   cancan
   coffee-rails (~> 4.0.0)
   compass-rails (~> 1.1.2)
+  compass-rgbapng
   dekiru
   devise
   erb2haml
