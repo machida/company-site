@@ -1,10 +1,10 @@
 .page-title-breadcrumbs
   +absolute(right, 0, bottom, 10px)
   +rem('margin-right', $side-column-width + $wrapper-padding + $content-wrapper-right-padding)
-  color: rgba(255, 255, 255, .4)
+  +rgba(rgba(255, 255, 255, .4), $black, color)
   +rem('font-size', $xs)
   a
     +hover-link
-    color: rgba(255, 255, 255, .4)
+    +rgba(rgba(255, 255, 255, .4), $black, color)
     &:hover
       color: $white

@@ -7,4 +7,5 @@
 //= require positions
 //= require jquery.depend.min
 //= require jquery.cheat-code
-//= require_tree .
+//= require_tree ./public
+//= require_tree ./helpers

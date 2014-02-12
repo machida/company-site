@@ -2,14 +2,16 @@
 %html
   %head
     %title= @site.title
-    /[if IE]
-      = javascript_include_tag "//html5shiv.googlecode.com/svn/trunk/html5.js"
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
     = auto_discovery_link_tag( :rss, "/articles/feed.rss" )
     = analytics_init if Rails.env.production?
-  %body
+    /[if IE]
+      = javascript_include_tag "//html5shiv.googlecode.com/svn/trunk/html5.js"
+      = javascript_include_tag "jquery.linkscubber.js"
+      = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", media: "all"
+  %body.js-hack
     = render 'staff_nav'
     = render 'header'
     = render 'global_nav'

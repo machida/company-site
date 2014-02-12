@@ -1,10 +1,10 @@
 .js-positions
-  +fixed(left, 0, top, 0)
+  +fixed(left, 0, top, 0, 2000)
 .js-positions__close-button
   +absolute(right, -24px, top, 0)
   +rem('width', 24px)
   +rem('line-height', 24px)
-  background-color: rgba(0, 0, 0, .8)
+  +rgba(rgba(0, 0, 0, .8), white, background-color)
   +border-bottom-right-radius(4px)
   cursor: pointer
   color: $white
@@ -12,7 +12,7 @@
   +rem('font-size', 12px)
 .js-positions__table
   +rem('font-size', 12px)
-  background-color: rgba(0, 0, 0, .8)
+  +rgba(rgba(0, 0, 0, .8), white, background-color)
   color: $white
 .js-positions__table-tr
   &:last-child
@@ -21,43 +21,51 @@
       border-bottom: none
 .js-positions__table-value
   +rem('width', 40px)
-  border-bottom: rgba(255, 255, 255, .4) solid 1px
+  +rgba(rgba(255, 255, 255, .4), black, border-bottom)
+  border-bottom-style: solid
+  border-bottom-width: 1px
 .js-positions__table-input
   +rem('width', 40px)
-  background-color: rgba(255, 255, 255, .9)
+  +rgba(rgba(255, 255, 255, .9), black, background-color)
   +rem('padding', 0 6px)
   text-align: right
 .js-positions__table-th
   text-align: left
   font-weight: normal
   +rem('padding', 6px)
-  border-bottom: rgba(255, 255, 255, .4) solid 1px
+  +rgba(rgba(255, 255, 255, .4), black, border-bottom-color)
+  border-bottom-style: solid
+  border-bottom-width: 1px
 .js-positions__table-value
   +rem('padding', 6px)
   &:nth-child(2),
   &:nth-child(4),
   &:nth-child(6)
-    border-right: rgba(255, 255, 255, .4) solid 1px
+    +rgba(rgba(255, 255, 255, .4), black, border-right-color)
+    border-right-style: solid
+    border-right-width: 1px
 .js-positions__table-input
   color: $black
 .js-positions__target-field
-  background-color: rgba(255, 255, 255, .8)
+  +rgba(rgba(255, 255, 255, .8), black, background-color)
   width: 100%
   +rem('height', 360px)
   +rem('line-height', 360px)
   text-align: center
-  border: rgba(0, 0, 0, .4) solid 1px
+  +rgba(rgba(0, 0, 0, .4), white, border-color)
+  border-width: 1px
+  border-style: solid
   border-top: none
   border-left: none
   +rem('font-size', 80px)
-  color: rgba(0, 0, 0, .2)
+  +rgba(rgba(0, 0, 0, .2), white, color)
   +border-bottom-right-radius(8px)
   +box-sizing(border-box)
   +tauri
 .js-positions__show-button,
 .js-positions__hide-button
   +absolute(right, 7px, top, 61px)
-  background-color: rgba(0, 0, 0, .8)
+  +rgba(rgba(0, 0, 0, .8), white, background-color)
   +rem('width', 26px)
   +rem('height', 22px)
   +box-sizing(border-box)

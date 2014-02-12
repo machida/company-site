@@ -1,7 +1,7 @@
 .header
   +rem('height', 86px)
 .header__wrapper
-  position: relative
+  +relative(1)
 
 .hero
   +rem('margin-bottom', 24px)
@@ -12,7 +12,7 @@
   +box-sizing(border-box)
 .hero__image-wrapper--home
   +rem('height', 336px)
-  position: relative
+  +relative(1)
   +box-sizing(border-box)
 .hero__image
   height: 100%
@@ -43,7 +43,7 @@
   +rem('font-size', 71px)
   +tauri
   +rem('margin-bottom', -5px)
-  color: rgba(255, 255, 255, .7)
+  +rgba(rgba(255, 255, 255, .7), $blue-green-l, color)
 .hero__site-title-link
   color: $white
   +opacity(.7)
@@ -56,7 +56,7 @@
   @extend .reset
   +text-block(30px)
   +tauri
-  color: rgba(255, 255, 255, .7)
+  +rgba(rgba(255, 255, 255, .7), $blue-green-l, color)
 
 .header-search-form
   border: $gray-l solid 1px
@@ -66,14 +66,14 @@
   +rem('padding-top', 3px)
   +rem('padding-bottom', 3px)
   +rem('height', $md * 1.4)
+  +relative(1)
   overflow: hidden
-  position: relative
   input::-webkit-input-placeholder,
   isindex::-webkit-input-placeholder
     +inline-block
-    padding-top: 1px
+    +rem('padding-top', 1px)
     +tauri
-    color: rgba(0, 0, 0, .2)
+    +rgba(rgba(0, 0, 0, .2), $black, color)
 .header-search-form__input-text
   +text-block($md, 1.4)
   +rem('height', $md * 1.4)

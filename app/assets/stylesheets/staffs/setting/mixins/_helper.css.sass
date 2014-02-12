@@ -12,12 +12,6 @@
   #{$absolute-direction1}: #{$absolute-value1}
   #{$absolute-direction2}: #{$absolute-value2}
 
-=inconspicuous-white-link
-  color: rgba(255, 255, 255, 0.6)
-  &:hover,
-  &.is-hover
-    color: rgba(255, 255, 255, 1)
-
 =text-block($font-size: $sm, $line-height: false, $margin-bottom: false)
   +rem('font-size', $font-size)
   @if not ($line-height == false or $line-height == "")

@@ -29,8 +29,9 @@
   +rem('padding-left', 90px)
   display: block
   position: relative
-  +inconspicuous-white-link
+  +rgba(rgba(255, 255, 255, 0.6), $pink, color)
   &:hover
+    color: rgba(255, 255, 255, 1)
     .post-nav____article-image
       +opacity(1)
 .post-nav____article-image-wrapper
@@ -64,7 +65,9 @@
   +text-block($sm)
   +rem('margin-right', $sm*.8)
 .post-nav__item-link
-  +inconspicuous-white-link
   +hover-link
+  +rgba(rgba(255, 255, 255, 0.6), $pink, color)
+  &:hover
+    color: rgba(255, 255, 255, 1)
   &.tag
     +tag-icon

@@ -24,7 +24,7 @@
       position: relative
       &:after
         content: ""
-        background-color: rgba(0, 0, 0, 0)
+        +rgba(rgba(0, 0, 0, 0), white, background-color)
         display: block
         +rem('height', 0px)
         width: 100%
@@ -33,19 +33,19 @@
         +transition(.4s)
       &.is-hover
         &:after
-          background-color: rgba(0, 0, 0, .2)
+          +rgba(rgba(0, 0, 0, .2), white, background-color)
           +rem('height', 3px)
           +absolute(left, 0, top, 41px)
       &.is-current
         &:after
-          background-color: rgba(0, 0, 0, 0)
+          +rgba(rgba(0, 0, 0, 0), white, background-color)
           +rem('height', 3px)
           +absolute(left, 0, top, 41px)
   *
     +transition(.1s)
 .global-nav__logo-link
   +inline-block
-  color: rgba(0, 0, 0, .2)
+  +rgba(rgba(0, 0, 0, .2), white, color)
   text-align: center
   text-decoration: none
   +rem('line-height', 34px)
