@@ -1,18 +1,28 @@
 .contact-form
 .contact-form__field
   +rem('margin-bottom', 30px)
+  +relative(1)
+  +rem('padding-left', 140px)
 .contact-form__label
-  +inline-block
-  +rem('width', 110px)
+  display: block
+  +rem('width', 120px)
   text-align: right
-  +rem('padding-right', 16px)
   +rem('font-size', 14px)
+  +absolute(left, 0, top, 0)
+.contact-form__label-required-icon
+  +rem('font-size', 6px)
+  color: $pink
 .contact-form__text-input,
 .contact-form__textarea
   border: rgba(0, 0, 0, .2) solid 1px
   +rem('width', 430px)
 .contact-form__textarea
   +rem('height', 460px)
+.field_with_errors
+  .contact-form__text-input,
+  .contact-form__textarea
+    border: rgba($pink, .4) solid 1px
+    background-color: lighten($pink, 45%)
 .contact-form__action
   @extend .reset-ul
 .contact-form__fields-title

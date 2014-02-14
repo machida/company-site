@@ -13,7 +13,7 @@ module ApplicationHelper
   end
 
   def contact?
-    params[:controller] == "contact" and params[:action] == 'new'
+    params[:controller] == "contact" and params[:action] == 'new' or params[:action] == 'create'
   end
 
   %w(development test production).each do |env|

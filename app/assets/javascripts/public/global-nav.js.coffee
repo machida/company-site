@@ -1,9 +1,11 @@
 $ ->
   $(window).scroll ->
     globalNavPosition = $(".global-nav")
-    position = globalNavPosition.position()
+    headerHeight = $('.header').height()
+    heroHeight = $('.hero').height()
+    position = headerHeight + heroHeight
     scrollY = $(this).scrollTop()
-    if scrollY > position.top
+    if scrollY > position
       $('.global-nav').addClass('is-fixed')
       $('.page__title').addClass('is-actived')
       $('.global-nav .js-hidden').removeClass('is-hidden')
@@ -11,4 +13,3 @@ $ ->
       $('.global-nav').removeClass('is-fixed')
       $('.page__title').removeClass('is-actived')
       $('.global-nav .js-hidden').addClass('is-hidden')
-

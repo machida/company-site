@@ -1,29 +1,38 @@
 .pagination
   clear: both
-  a,
-  .current,
-  .gap
+  +relative(1)
+  .page,
+  .next,
+  .last,
+  .first,
+  .prev
+    +rem('font-size', 12px)
+    +rem('width', 30px)
+    +rem('height', 30px)
+    text-align: center
+    +rem('line-height', 30px)
+    +border-radius(50%)
+    +inline-block
     display: block
     +tauri
     float: left
-    margin-right: -1px
-  a,
-  .current
-    border: $black + 200 solid 1px
-    +rem('font-size', 12px)
-    +rem('width', 32px)
-    +rem('height', 32px)
-    text-align: center
-    +rem('line-height', 32px)
-    text-decoration: none
+    +rem('margin-right', 6px)
+    +rem('margin-left', 6px)
   a
-    background-color: $white
-    color: $black
-  .current
+    +rgba(rgba($black, .4), white, color)
+    +relative(2)
+    text-decoration: none
+    display: block
+    &:hover
+      color: $black
+  .page.current
     background-color: $pink
     color: $white
-    border: rgba(0, 0, 0, .2) solid 1px
     +relative(2)
+    &:after
+      content: none
+      &:hover
+        content: none
   .gap
     +inline-block
     +rem('padding-left', 10px)
@@ -32,11 +41,25 @@
   .first,
   .last
     a
-      background-color: $black + 200
       color: $black
-      border: rgba(0, 0, 0, .1) solid 1px
       +relative(2)
-  .first a
-    +border-left-radius(4px)
-  .last a
-    +border-right-radius(4px)
+  .page
+    +relative(2)
+    &:after
+      content: ""
+      display: block
+      +absolute(left, 16px, top, 16px, 1)
+      height: 0
+      width: 0
+      background-color: transparent
+      +border-radius(50%)
+      +transition(.2s)
+    &:hover
+      &:after
+        content: ""
+        display: block
+        +absolute(left, 0, top, 0, 1)
+        height: 100%
+        width: 100%
+        background-color: $gray-l
+        +border-radius(50%)

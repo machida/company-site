@@ -1,6 +1,7 @@
 - content_for :page_title do
   CONTACT
 
+= params[:action]
 = form_for @contact, :url => contact_path, :class => "contact-form" do |form|
   %fieldset.contact-form__fields
     .two-column-content
@@ -10,13 +11,19 @@
           Email
       .two-column-content__inner
         .contact-form__field
-          = form.label :name, t('Name'), {:class => "contact-form__label"}
+          %label{class: "contact-form__label"}
+            = t('Name')
+            %i.fa.fa-asterisk.contact-form__label-required-icon
           = form.text_field :name, {:class => "contact-form__text-input"}
         .contact-form__field
-          = form.label :email, t('Email'), {:class => "contact-form__label"}
+          %label{class: "contact-form__label"}
+            = t('Email')
+            %i.fa.fa-asterisk.contact-form__label-required-icon
           = form.text_field :email, {:class => "contact-form__text-input"}
         .contact-form__field
-          = form.label :body, t('Body'), {:class => "contact-form__label"}
+          %label{class: "contact-form__label"}
+            = t('Body')
+            %i.fa.fa-asterisk.contact-form__label-required-icon
           = form.text_area :body, {:class => "contact-form__textarea"}
         %ul.contact-form__actions
           %li.contact-form__action
