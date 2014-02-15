@@ -1,7 +1,6 @@
 - content_for :page_title do
-  CONTACT
+  = (params[:controller]).upcase
 
-= params[:action]
 = form_for @contact, :url => contact_path, :class => "contact-form" do |form|
   %fieldset.contact-form__fields
     .two-column-content

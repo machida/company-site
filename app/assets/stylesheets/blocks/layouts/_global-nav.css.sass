@@ -1,5 +1,5 @@
 .global-nav
-  +rem('padding-top', 40px)
+  +rem('padding-top', 30px)
   +transition(.1s)
   +relative(3)
   +rem('height', 22px)
@@ -18,10 +18,11 @@
       float: left
     .global-nav__link
       border-bottom: none
+      padding-top: 0
       +rem('padding-bottom', 10px)
       text-align: center
       +rem('line-height', 34px)
-      position: relative
+      +relative(1)
       &:after
         content: ""
         +rgba(rgba(0, 0, 0, 0), white, background-color)
@@ -62,7 +63,8 @@
   float: left
 .global-nav__link
   text-decoration: none
-  border-bottom: 2px solid $gray-l
+  +border(bottom, 2px, solid, $gray-l, white)
+  +rem('padding-top', 10px)
   display: block
   font-weight: bold
   color: $gray-l
@@ -75,6 +77,8 @@
   &:active
     top: 4px
     +relative(1)
+    color: $black
+    border-bottom: 2px solid $black
   &.is-current
     color: $black
     border-bottom: 2px solid $black

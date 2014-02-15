@@ -1,23 +1,29 @@
 .pagination
   clear: both
   +relative(1)
+  .current,
   .page,
   .next,
   .last,
   .first,
-  .prev
+  .prev,
     +rem('font-size', 12px)
     +rem('width', 30px)
     +rem('height', 30px)
     text-align: center
     +rem('line-height', 30px)
     +border-radius(50%)
-    +inline-block
     display: block
-    +tauri
     float: left
     +rem('margin-right', 6px)
     +rem('margin-left', 6px)
+    +tauri
+  .gap
+    +rem('padding-left', 10px)
+    +rem('padding-right', 10px)
+    color: $black + 100
+    display: block
+    float: left
   a
     +rgba(rgba($black, .4), white, color)
     +relative(2)
@@ -25,25 +31,15 @@
     display: block
     &:hover
       color: $black
-  .page.current
+  .current
     background-color: $pink
     color: $white
     +relative(2)
-    &:after
-      content: none
-      &:hover
-        content: none
-  .gap
-    +inline-block
-    +rem('padding-left', 10px)
-    +rem('padding-right', 10px)
-    color: $black + 100
+  .page,
+  .next,
+  .prev,
   .first,
   .last
-    a
-      color: $black
-      +relative(2)
-  .page
     +relative(2)
     &:after
       content: ""

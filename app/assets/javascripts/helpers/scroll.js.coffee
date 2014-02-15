@@ -1,6 +1,6 @@
 $ ->
   $("a[href^=#]").click ->
-    speed = 400 # ミリ秒
+    speed = 200 # ミリ秒
     href = $(this).attr("href")
     target = $((if href is "#" or href is "" then "html" else href))
     position = target.offset().top #targetの位置を取得

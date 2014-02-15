@@ -11,7 +11,7 @@
       = javascript_include_tag "//html5shiv.googlecode.com/svn/trunk/html5.js"
       = javascript_include_tag "jquery.linkscubber.js"
       = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", media: "all"
-  %body.js-hack
+  %body.js-hack#head
     = render 'staff_nav'
     = render 'header'
     = render 'global_nav'
@@ -50,6 +50,8 @@
         .footer__wrapper
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
           %small FJORD,LLC
+    = link_to "#head",{class: "scroll-to-top js-scroll-to-top"} do
+      %i.fa.fa-angle-up.scroll-to-top__icon
 
     - if development?
       .js-positions.js-hidden.is-hidden

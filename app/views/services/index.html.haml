@@ -1,5 +1,5 @@
 - content_for :page_title do
-  SERVICE
+  = (params[:controller]).upcase
 
 %section.service
   - @services.each do |service|

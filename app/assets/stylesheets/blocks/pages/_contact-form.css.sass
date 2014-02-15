@@ -14,7 +14,7 @@
   color: $pink
 .contact-form__text-input,
 .contact-form__textarea
-  border: rgba(0, 0, 0, .2) solid 1px
+  +border(all, 1px, solid, rgba(0, 0, 0, .2), white)
   +rem('width', 430px)
 .contact-form__textarea
   +rem('height', 460px)
@@ -37,6 +37,7 @@
   +rem('font-size', 20px)
   +rem('padding', 0 36px)
   display: block
+  +rem('width', 120px)
   +side-mg-auto
   +tauri
   &:hover

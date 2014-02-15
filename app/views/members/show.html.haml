@@ -1,21 +1,23 @@
 - content_for :page_title do
   = @staff.name
 
-%section.member
-  %h2= @staff.name
-  = image_tag("member-icons/#{@staff.slug}.jpg", :alt => "#{@staff.name}", :class => "member-icon-image")
+%section.two-column-content.member
+  .two-column-content__title-wrapper.member__title-wrapper
+    = image_tag("member-icons/#{@staff.slug}.jpg", :alt => "#{@staff.name}", :class => "member__member-icon-image")
+    %h2.two-column-content__second-heading.member__member-name= @staff.name
 
-  %ul.member__sns-icons
-    %li.member__sns-icon.twitter
-      = link_to "#", {:class => "members__sns-link"} do
-        %i.fa.fa-twitter
-    %li.member__sns-icon.facebook
-      = link_to "https://www.facebook.com/#{@staff.facebook_id}", {:class => "members__sns-link", :target => "_blank"} do
-        %i.fa.fa-facebook
-    %li.member__sns-icon.github
-      = link_to "#", {:class => "members__sns-link"} do
-        %i.fa.fa-github
+  .two-column-content__inner
+    %ul.member__sns-icons
+      %li.member__sns-icon.twitter
+        = link_to "#", {:class => "members__sns-link"} do
+          %i.fa.fa-twitter
+      %li.member__sns-icon.facebook
+        = link_to "https://www.facebook.com/#{@staff.facebook_id}", {:class => "members__sns-link", :target => "_blank"} do
+          %i.fa.fa-facebook
+      %li.member__sns-icon.github
+        = link_to "#", {:class => "members__sns-link"} do
+          %i.fa.fa-github
 
-  = markdown(@staff.body)
-  = link_to t('Back'), members_path, {:class => "member__back-link"}
-  = edit_path
+    = markdown(@staff.body)
+    = link_to t('Back'), members_path, {:class => "member__back-link"}
+    = edit_path
