@@ -58,7 +58,8 @@
   border: $pink solid 2px
   color: $pink
   font-weight: bold
-  +rem('padding', 0 16px)
+  +rem('padding-right', 30px)
+  +rem('padding-left', 16px)
   +rem('line-height', 26px)
   +rem('font-size', 12px)
   +relative(1)
@@ -66,7 +67,9 @@
     background-color: $pink
     color: $white
   .two-column-content__more-link-icon
-    +absolute(right, 10px, top, 0)
+    +absolute(right, 0, top, 0)
     +rem('line-height', 26px)
     display: block
     +rem('font-size', 16px)
+    +rem('width', 30px)
+    text-align: center
