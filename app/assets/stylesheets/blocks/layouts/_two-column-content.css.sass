@@ -17,7 +17,6 @@
   +box-sizing(border-box)
   +clearfix
   p
-    @extend .reset
     +text-block($md, 1.8)
 
 .two-column-content__title-wrapper
@@ -31,7 +30,6 @@
 .two-column-content__first-heading
   background-color: $yellow
   +inline-block
-  @extend .reset
   +text-block($xl, 3)
   +rem('width', 180px)
   text-align: center
@@ -39,11 +37,11 @@
   color: $black
 
 .two-column-content__second-heading
-  @extend .reset
   +tauri
   +text-block($lg, 1.4, .4)
   +rem('font-size', $lg)
   text-align: right
+  font-weight: bold
   &.members__member-name
     text-align: center
     margin-bottom: .6em
@@ -60,16 +58,14 @@
   font-weight: bold
   +rem('padding-right', 30px)
   +rem('padding-left', 16px)
-  +rem('line-height', 26px)
-  +rem('font-size', 12px)
+  +text-block(12px, 26px)
   +relative(1)
   &:hover
     background-color: $pink
     color: $white
   .two-column-content__more-link-icon
     +absolute(right, 0, top, 0)
-    +rem('line-height', 26px)
+    +text-block(16px, 26px)
     display: block
-    +rem('font-size', 16px)
     +rem('width', 30px)
     text-align: center

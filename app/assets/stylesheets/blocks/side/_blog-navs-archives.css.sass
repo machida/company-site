@@ -1,12 +1,11 @@
-.blog-navs-archives__archives
-  @extend .reset-ul
 .blog-navs-archives__archive
   +inline-block
   width: 50%
   text-align: center
 .blog-navs-archives__archive-link
   +hover-link
-  +rem('font-size', $sm)
   +rgba(rgba(255, 255, 255, 0.6), $pink, color)
+  +text-block($sm, 1.4, 8px)
+  display: block
   &:hover
     color: rgba(255, 255, 255, 1)

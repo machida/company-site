@@ -14,8 +14,10 @@
           = @site.title
         %h2.hero__tag-line
           = @site.sub_title
-        = link_to '#' do
-          = image_tag 'logos/rails-logo.svg'
+      %ul.hero__tools
+        %li.hero__tool
+          = link_to '#', class:"hero__tool-link" do
+            = image_tag 'logos/rails.svg', class:"hero__tool-name"
   - else
     .wrapper.hero__image-wrapper--except-home
       .hero__hgrounp--except-home

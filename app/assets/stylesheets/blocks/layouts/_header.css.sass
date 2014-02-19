@@ -27,23 +27,22 @@
   .hero__site-title
     display: block
     float: left
-    +rem('line-height', 60px)
-    +rem('font-size', 60px)
+    +text-block(60px, 1)
   .hero__tag-line
     display: block
     float: left
     vertical-align: bottom
-    +rem('line-height', 30px)
-    +rem('font-size', 22px)
+    +text-block(22px, 1.4)
     +rem('margin-left', 26px)
     +rem('margin-top', 28px)
 
 .hero__site-title
-  @extend .reset
   +rem('font-size', 71px)
   +tauri
   +rem('margin-bottom', -5px)
   +rgba(rgba(255, 255, 255, .7), $blue-green-l, color)
+  font-weight: bold
+  +rem('margin-bottom', 10px)
 .hero__site-title-link
   color: $white
   +opacity(.7)
@@ -53,10 +52,10 @@
   &:hover
     +opacity(1)
 .hero__tag-line
-  @extend .reset
   +text-block(30px)
   +tauri
   +rgba(rgba(255, 255, 255, .7), $blue-green-l, color)
+  font-weight: bold
 
 .header-search-form
   +border(all, 1px, solid, rgba(0, 0, 0, .1), white)

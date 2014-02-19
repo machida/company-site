@@ -5,14 +5,12 @@ $header-bottom-mg: 4px
   border-bottom: $bd
   background-color: $blue
 .header__site-title
-  @extend .reset
   +rem('font-size', 38px)
   +tauri
 .header__site-title-link
   text-decoration: none
   color: $white
 .header__nav-items
-  @extend .reset-ul
   position: absolute
   +absolute(right, 20px, bottom, $header-bottom-mg)
 .header__nav-item

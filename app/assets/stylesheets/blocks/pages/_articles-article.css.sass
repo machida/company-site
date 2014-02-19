@@ -21,7 +21,6 @@
   width: 100%
   height: auto
 .articles-article__title
-  @extend .reset
   +text-block($md, 1.6, .4)
   font-weight: normal
 .articles-article__title-link
@@ -41,8 +40,6 @@
   color: $gray
 .articles-article__tags
   +rem('padding-top', $md * .4)
-  ul
-    @extend .reset-ul
   li
     +inline-block
     +rem('margin-right', $md * .6)

@@ -10,7 +10,6 @@
   +side-mg-auto
 
 .article__title
-  @extend .reset
   +text-block($xxxxxxxl, 1.4, .8)
   margin-left: -0.1em
   margin-right: -0.1em
@@ -21,7 +20,6 @@
 .article__body
   +rem('font-size', $lg)
   p
-    @extend .reset
     +rem('line-height', $lg*1.9)
     +rem('margin-bottom', $lg*1.7)
   ul,
@@ -39,7 +37,6 @@
     +side-mg-auto
     max-width: 120%
   blockquote
-    @extend .reset
     position: relative
     padding-left: 1.8em
     border-left: 8px solid rgba(0, 0, 0, .1)
@@ -70,7 +67,6 @@
 .article__tags
   display: inline
   ul
-    @extend .reset-ul
     display: inline
   li
     +inline-block

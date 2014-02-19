@@ -2,14 +2,12 @@
   +rem('margin-bottom', $md * 2)
   +rem('margin-right', $md * -0.6)
   @extend .clearfix
-.blog-navs-tags__tags
-  @extend .reset-ul
 .blog-navs-tags__tag
   +inline-block
   +rem('margin-right', $md * .6)
 .blog-navs-tags__tag-link
   +inline-block
-  +rem('font-size', $sm)
+  +text-block($sm, 1.6, 10px)
   +hover-link
   +tag-icon
   +rgba(rgba(255, 255, 255, 0.6), $pink, color)
