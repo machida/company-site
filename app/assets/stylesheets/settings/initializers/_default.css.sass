@@ -7,9 +7,12 @@ body
 .wrapper
   +rem('max-width', $wrapper-max-width)
   +box-sizing(border-box)
-  @extend .center-margin
+  +side-mg-auto
   +rem('padding-left', $wrapper-padding)
   +rem('padding-right', $wrapper-padding)
+  @media screen and (max-width: #{$break-point})
+    +rem('padding-left', 10px)
+    +rem('padding-right', 10px)
 
 *
   +transition-property(all)
@@ -24,3 +27,5 @@ body
 .content__wrapper
   +rem('padding-right', $side-column-width + $content-wrapper-right-padding)
   +relative(1)
+  @media screen and (max-width: #{$break-point})
+    padding-right: 0

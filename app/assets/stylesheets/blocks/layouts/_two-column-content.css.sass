@@ -2,6 +2,8 @@
   +rem('padding-left', 178px)
   +clearfix
   position: relative
+  @media screen and (max-width: #{$break-point})
+    padding-left: 0
   &:last-child
     .two-column-content__inner
       margin-bottom: 0
@@ -16,6 +18,9 @@
   padding-bottom: 3em
   +box-sizing(border-box)
   +clearfix
+  @media screen and (max-width: #{$break-point})
+    padding-left: 0
+    border-left: none
   p
     +text-block($md, 1.8)
 
@@ -26,6 +31,9 @@
   +box-sizing(border-box)
   &.members__title-wrapper
     padding-right: 0
+  @media screen and (max-width: #{$break-point})
+    position: static
+    width: 100%
 
 .two-column-content__first-heading
   background-color: $yellow
@@ -42,6 +50,8 @@
   +rem('font-size', $lg)
   text-align: right
   font-weight: bold
+  @media screen and (max-width: #{$break-point})
+    text-align: left
   &.members__member-name
     text-align: center
     margin-bottom: .6em

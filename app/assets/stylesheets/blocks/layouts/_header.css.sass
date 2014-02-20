@@ -1,11 +1,15 @@
 .header
   +rem('height', 86px)
+  @media screen and (max-width: #{$break-point})
+    +rem('height', 50px)
 .header__wrapper
   +relative(1)
 
 .hero
   +rem('margin-bottom', 24px)
   +blue-green-l-gradient
+  @media screen and (max-width: #{$break-point})
+    overflow-x: hidden
 .hero__image-wrapper--except-home
   +rem('height', 120px)
   overflow: hidden
@@ -14,6 +18,8 @@
   +rem('height', 336px)
   +relative(1)
   +box-sizing(border-box)
+  @media screen and (max-width: #{$break-point})
+    +rem('height', 260px)
 .hero__image
   height: 100%
   width: auto
@@ -22,6 +28,8 @@
 
 .hero__hgrounp--home
   +absolute(left, 20px, top, 76px)
+  @media screen and (max-width: #{$break-point})
+    +absolute(left, 10px, top, 25px)
 .hero__hgrounp--except-home
   +rem('padding', 30px 0)
   .hero__site-title
@@ -37,7 +45,7 @@
     +rem('margin-top', 28px)
 
 .hero__site-title
-  +rem('font-size', 71px)
+  +rem('font-size', 68px)
   +tauri
   +rem('margin-bottom', -5px)
   +rgba(rgba(255, 255, 255, .7), $blue-green-l, color)
@@ -56,6 +64,12 @@
   +tauri
   +rgba(rgba(255, 255, 255, .7), $blue-green-l, color)
   font-weight: bold
+
+.hero__tools
+  +absolute(right, 15px, bottom, 12px)
+.hero__tool-name
+  +rem('width', 45px)
+  +opacity(.7)
 
 .header-search-form
   +border(all, 1px, solid, rgba(0, 0, 0, .1), white)

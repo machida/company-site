@@ -1,3 +1,6 @@
+.home-access__heading
+  @media screen and (max-width: #{$break-point})
+    +inline-block
 .home-access__address
   +text-block($md, 1.4, .8)
 .home-access__take-time
@@ -35,6 +38,12 @@
   text-align: center
   +rem('width', 66px)
   float: right
+  @media screen and (max-width: #{$break-point})
+    +inline-block
+    float: none
+    width: auto
+    +text-block($lg, 1.4, .4)
+    +rem('margin-left', 6px)
 .home-access__map-link
   color: $black
   i
