@@ -12,7 +12,7 @@
       = javascript_include_tag "//html5shiv.googlecode.com/svn/trunk/html5.js"
       = javascript_include_tag "jquery.linkscubber.js"
       = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", media: "all"
-  %body.js-hack#head
+  %body.body.js-hack.js-side-slid#head
     = render 'staff_nav'
     = render 'header'
     = render 'global_nav'
@@ -96,3 +96,4 @@
         .fa.fa-angle-down.js-show.js-positions__show-button.is-hidden
         #js-target-field.js-positions__target-field.js-hidden.js-shown
           js-target-field
+    = render 'mobile_nav'

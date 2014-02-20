@@ -4,8 +4,8 @@
       = text_field_tag(:search, params[:search], :placeholder => "Search", :class => "header-search-form__input-text js-focused")
       = button_tag(:name => nil, :class => "header-search-form__button", :type => "submit") do
         %i.fa.fa-search
-
-.hero
+    %i.fa.fa-bars.mobile.header__mobile-nav-opener.js-side-slide
+.hero{class: "#{mobile? ? 'js-window-width' : ''}"}
   - if home?
     .wrapper.hero__image-wrapper--home
       = image_tag("hero.png", {:class => "hero__image"})

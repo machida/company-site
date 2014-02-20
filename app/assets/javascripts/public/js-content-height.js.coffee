@@ -3,4 +3,4 @@ $ ->
   footerheight = undefined
   pageheight = $(".page").outerHeight(true)
   footerheight = $(".footer").outerHeight(true)
-  $(".side-column").css "height", pageheight + footerheight + "px"
+  $(".js-content-height").css "height", pageheight + footerheight + "px"

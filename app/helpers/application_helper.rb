@@ -106,4 +106,8 @@ module ApplicationHelper
     end
   end
 
+  def mobile?
+    browser.name == 'iPhone' or browser.name == 'Android'
+  end
+
 end

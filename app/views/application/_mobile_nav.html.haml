@@ -1,0 +1,15 @@
+%nav.mobile-global-nav.mobile.js-side-slid
+  %i.fa.fa-times.mobile-global-nav__rm-side-slide-icon.js-rm-side-slide
+  %ul.mobile-global-nav__ul
+    %li.mobile-global-nav__logo
+      = link_to "FJORD, LLC.", root_path, {:class => "mobile-global-nav__logo-link"}
+    %li.mobile-global-nav__li
+      = link_to "HOME", root_path, {:class => "#{current_path(root_path)} mobile-global-nav__link"}
+    %li.mobile-global-nav__li
+      = link_to "SERVICE", services_path, {:class => "#{controller?('services') ? 'is-current' : ''} mobile-global-nav__link"}
+    %li.mobile-global-nav__li
+      = link_to "MEMBERS", "/members", {:class => "#{controller?('members') ? 'is-current' : ''} mobile-global-nav__link"}
+    %li.mobile-global-nav__li
+      = link_to "BLOG", "/categories/blog", {:class => "#{controller?('categories') ? 'is-current' : ''} #{controller?('articles') ? 'is-current' : ''} mobile-global-nav__link"}
+    %li.mobile-global-nav__li
+      = link_to "CONTACT", contact_path, {:class => "#{controller?('contact') ? 'is-current' : ''} mobile-global-nav__link"}

@@ -3,8 +3,14 @@
   +rem('margin-top', 60px)
   +rem('margin-bottom', 28px)
   +transition-duration(0)
+  @media screen and (max-width: #{$break-point})
+    background-color: $yellow
+    +rem('margin-top', 20px)
+    border-left: $black solid 10px
   &.is-actived
     +rem('margin-top', 120px)
+    @media screen and (max-width: #{$break-point})
+      +rem('margin-top', 20px)
 .page__title-wrapper
   position: relative
 .page__first-heading
@@ -16,3 +22,7 @@
   +tauri
   color: $black
   font-weight: bold
+  @media screen and (max-width: #{$break-point})
+    +text-block($lg, 2.4)
+    width: auto
+    text-align: left

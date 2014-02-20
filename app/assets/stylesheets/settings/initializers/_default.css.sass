@@ -23,6 +23,9 @@ body
   color: $black
   +rem('padding-bottom', 80px)
   +rem('min-height', 1000px)
+  @media screen and (max-width: #{$break-point})
+    min-height: auto
+    padding-bottom: 0
 
 .content__wrapper
   +rem('padding-right', $side-column-width + $content-wrapper-right-padding)

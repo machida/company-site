@@ -59,6 +59,7 @@ GEM
     bootstrap3-datetimepicker-rails (2.1.30)
       momentjs-rails (~> 2.5.0)
     breadcrumbs_on_rails (2.3.0)
+    browser (0.4.0)
     builder (3.1.4)
     cancan (1.6.10)
     chronic (0.10.2)
@@ -223,6 +224,7 @@ DEPENDENCIES
   bootstrap-sass
   bootstrap3-datetimepicker-rails (~> 2.1.30)
   breadcrumbs_on_rails
+  browser
   by_star!
   cancan
   coffee-rails (~> 4.0.0)

@@ -29,6 +29,7 @@ gem 'redcarpet'
 gem 'dekiru'
 gem 'breadcrumbs_on_rails'
 gem 'settingslogic'
+gem 'browser'
 
 gem 'modernizr-rails'
 gem 'bootstrap-sass'
