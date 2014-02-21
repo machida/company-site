@@ -27,4 +27,7 @@
         %h2.hero__tag-line
           = @site.sub_title
 
-%p#notice= notice
+- if notice
+  .notice
+    .wrapper.notice__wrapper
+      = notice

@@ -5,7 +5,7 @@ require 'open-uri'
 class AddArticlesData < ActiveRecord::Migration
   def up
     Article.delete_all
-    articles = Nokogiri::XML(File.open("../db/old-data.xml"))
+    articles = Nokogiri::XML(File.open("#{Rails.root}/db/old-data.xml"))
     articles.encoding = "utf-8"
     @articles = articles.xpath('//item')
 

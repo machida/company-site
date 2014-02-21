@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title= @site.title
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+    = auto_discovery_link_tag( :rss, "/articles/feed.rss" )
+    = analytics_init if Rails.env.production?
+    /[if IE]
+      = javascript_include_tag "//html5shiv.googlecode.com/svn/trunk/html5.js"
+      = javascript_include_tag "jquery.linkscubber.js"
+      = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", media: "all"
+  %body.body.js-hack.js-side-slid#head{class: "#{controller_name}-#{action_name} application"}
+    = yield
+    = render 'mobile_nav'

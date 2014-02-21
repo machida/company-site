@@ -12,6 +12,10 @@ module ApplicationHelper
     end
   end
 
+  def sign_in?
+    params[:controller] == 'sessions' and params[:action] == 'new'
+  end
+
   def contact?
     params[:controller] == "contact" and params[:action] == 'new' or params[:action] == 'create'
   end

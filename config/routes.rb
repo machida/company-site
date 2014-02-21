@@ -11,7 +11,7 @@ CompanySite::Application.routes.draw do
     resources :services
     resources :contacts
   end
-  devise_for :staffs
+  devise_for :staffs, :controllers => { :sessions => "staffs/sessions" }
   resources :snippets
   resources :pages
   resources :articles do
