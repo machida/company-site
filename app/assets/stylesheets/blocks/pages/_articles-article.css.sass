@@ -1,6 +1,8 @@
 .articles__wrapper
   +rem('margin-left', $md * -0.6)
   position: relative
+  @media screen and (max-width: #{$break-point})
+    +rem('margin-left', $md * -0.2)
 .articles-article
   width: 25%
   +rem('padding-right', $md * .6)
@@ -8,18 +10,18 @@
   +rem('padding-bottom', $md * .6)
   +box-sizing(border-box)
   +rem('margin-bottom', 20px)
+  @media screen and (max-width: #{$break-point})
+    width: 50%
+    +rem('padding-right', $md * .2)
+    +rem('padding-left', $md * .2)
 .articles-article__inner
   overflow: hidden
   +rem('padding', 10px)
   border: $gray-l solid 1px
-.articles-article__eyecatch-image-wrapper
-  display: block
-  overflow: hidden
-  +rem('height', 140px)
-  +rem('margin-bottom', $md * .6)
 .articles-article__eyecatch-image
   width: 100%
   height: auto
+  +rem('margin-bottom', $md * .6)
 .articles-article__title
   +text-block($md, 1.6, .4)
   font-weight: normal
