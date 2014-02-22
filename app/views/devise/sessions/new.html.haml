@@ -1,15 +1,17 @@
-%h2 Sign in
-= form_for(:staff, :url => session_path(:staff)) do |f|
-  %div
-    = f.label :email
-    %br/
-    = f.email_field :email, :autofocus => true
-  %div
-    = f.label :password
-    %br/
-    = f.password_field :password
-  - if devise_mapping.rememberable?
-    %div
-      = f.check_box :remember_me
-      = f.label :remember_me
-  %div= f.submit "Sign in"
+.sign-in.js-window-height
+  .wrapper.sign-in__wrapper
+    .sign-in__form
+      %h2.sign-in__first-heading Sign in
+      = form_for(:staff, :url => session_path(:staff)) do |f|
+        .sign-in__input-field
+          = f.label :email, :class => "sign-in__label"
+          = f.email_field :email, :autofocus => true, :class => "sign-in__input"
+        .sign-in__input-field
+          = f.label :password, :class => "sign-in__label"
+          = f.password_field :password, :class => "sign-in__input"
+        - if devise_mapping.rememberable?
+          .sign-in__remember-me-field
+            = f.check_box :remember_me, :class => "sign-in__input"
+            = f.label :remember_me, :class => "sign-in__remember-me"
+        .sign-in__input-field--submit
+          = f.submit "Sign in", :class => "sign-in__input"

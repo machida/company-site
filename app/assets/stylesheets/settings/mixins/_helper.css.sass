@@ -40,12 +40,13 @@
     +rgba($border-color, $border-bg-color, border-#{$border-position}-color)
     border-#{$border-position}-style: $border-style
 
-=background-image($bg-color: white, $bg-img: false, $bg-position-x: left, $bg-position-y: top, $bg-repeat: no-repeat, $bg-attachment: scroll)
+=background-image($bg-color: transparent, $bg-img: false, $bg-position-x: left, $bg-position-y: top, $bg-repeat: no-repeat, $bg-attachment: scroll, $bg-size: auto)
   background-color: $bg-color
   background-image: image_url("#{$bg-img}")
   background-position: $bg-position-x $bg-position-y
   background-repeat: $bg-repeat
   background-attachment: $bg-attachment
+  background-size: $bg-size
 
 =text-block($font-size: $sm, $line-height: false, $margin-bottom: false)
   +rem('font-size', $font-size)
@@ -61,6 +62,14 @@
     @else
       $rem-margin-bottom: $font-size * strip-units($margin-bottom)
       +rem('margin-bottom', $rem-margin-bottom)
+
+=center-block($block-width: 300px, $block-height: 300px)
+  +rem('width', $block-width)
+  +rem('height', $block-height)
+  +absolute(left, 50%, top, 50%)
+  +rem('margin-top', $block-height / 2 * -1)
+  +rem('margin-left', $block-width / 2 * -1)
+  +box-sizing(border-box)
 
 =transition($transition-duration: .5s, $transition-property: all, $transition-timing: ease-in)
   +transition-property($transition-property)
