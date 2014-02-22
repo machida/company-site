@@ -5,3 +5,8 @@ $('.page').ready ->
     return
 
   return
+
+$ ->
+  $('a').click ->
+    $('.js-window-loading').fadeIn()
+    return
