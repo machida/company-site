@@ -8,10 +8,14 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.friendly.find(params[:id])
-    @articles = @category.articles.order('id desc').page(params[:page]).per(12).order(:id)
+    @articles = @category.articles.order('id desc').page(params[:page]).per(12).order("created_at DESC")
     add_breadcrumb "home", root_path
     add_breadcrumb "categories", categories_path
     add_breadcrumb @category.name, categories_path
+    respond_to do |format|
+      format.js
+      format.html
+    end
   end
 
 end

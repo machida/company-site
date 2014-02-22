@@ -12,4 +12,4 @@
     %ol.blog-navs-archives__archives
       - @articles_by_month.each do |month, articles|
         %li.blog-navs-archives__archive<>
-          = link_to month, "/archives/#{month}", {:class => "blog-navs-archives__archive-link"}
+          = link_to month, "/archives/#{month}", {:class => "blog-navs-archives__archive-link", "data-no-turbolink" => "1"}

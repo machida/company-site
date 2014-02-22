@@ -10,6 +10,6 @@
       %li.global-nav__li
         = link_to "MEMBERS", "/members", {:class => "#{controller?('members') ? 'is-current' : ''} global-nav__link"}
       %li.global-nav__li
-        = link_to "BLOG", "/categories/blog", {:class => "#{controller?('categories') ? 'is-current' : ''} #{controller?('articles') ? 'is-current' : ''} global-nav__link"}
+        = link_to "BLOG", "/categories/blog", {:class => "#{controller?('categories') ? 'is-current' : ''} #{controller?('articles') ? 'is-current' : ''} global-nav__link", "data-no-turbolink" => "1"}
       %li.global-nav__li
         = link_to "CONTACT", contact_path, {:class => "#{controller?('contact') ? 'is-current' : ''} global-nav__link"}

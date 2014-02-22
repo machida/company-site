@@ -1,7 +1,7 @@
 class Staffs::ContactsController < StaffsController
 
   def index
-    @contacts = Contact
+    @contacts = Contact.all
   end
 
   def show

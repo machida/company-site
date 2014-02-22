@@ -1,0 +1,2 @@
+$('.articles').append("#{escape_javascript(render 'articles')}");
+$('.pagination').html("#{escape_javascript(paginate(@articles, :remote => true)) }");

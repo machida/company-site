@@ -6,4 +6,4 @@
 -#    per_page:      number of items to fetch per page
 -#    remote:        data-remote
 %span.first
-  = link_to_unless current_page.first?, '<i class="fa fa-angle-double-left"></i>'.html_safe, url, :remote => remote
+  = link_to_unless current_page.first?, '<i class="fa fa-angle-double-left"></i>'.html_safe, url, "data-no-turbolink" => "1", :remote => remote

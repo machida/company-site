@@ -2,6 +2,13 @@
   = (params[:controller]).upcase
 
 = form_for @contact, :url => contact_path, :class => "contact-form" do |form|
+  - if @contact.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@contact.errors.count, "error")
+      %ul
+        - @contact.errors.full_messages.each do |msg|
+          %li= msg
   %fieldset.contact-form__fields
     .two-column-content
       .two-column-content__title-wrapper
@@ -19,6 +26,11 @@
             = t('Email')
             %i.fa.fa-asterisk.contact-form__label-required-icon
           = form.text_field :email, {:class => "contact-form__text-input"}
+        .contact-form__field
+          %label{class: "contact-form__label"}
+            = t('Subject')
+            %i.fa.fa-asterisk.contact-form__label-required-icon
+          = form.text_field :subject, {:class => "contact-form__text-input"}
         .contact-form__field
           %label{class: "contact-form__label"}
             = t('Body')

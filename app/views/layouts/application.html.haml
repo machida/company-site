@@ -17,11 +17,13 @@
     = render 'header'
     = render 'global_nav'
     .page
+      .mobile-breadcrumbs.mobile
+        = render_breadcrumbs separator: '&nbsp;&nbsp;>&nbsp;&nbsp;'
       %header.page__title
         .wrapper.page__title-wrapper
           %h1.page__first-heading
             = yield :page_title
-          .page-title-breadcrumbs
+          .page-title-breadcrumbs.pc
             = render_breadcrumbs separator: '&nbsp;&nbsp;>&nbsp;&nbsp;'
 
       .content
@@ -29,7 +31,7 @@
           .wrapper
             .articles__wrapper
               = yield
-              = render 'side_column_articles_nav'
+              -# = render 'side_column_articles_nav'
         - elsif home? or page? or members? or services? or service? or contact? or member?
           .wrapper
             .content__wrapper
