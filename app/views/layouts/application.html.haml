@@ -53,49 +53,8 @@
           %small FJORD,LLC
     = link_to "#head",{class: "scroll-to-top js-scroll-to-top"} do
       %i.fa.fa-angle-up.scroll-to-top__icon
-
     - if development?
-      .js-positions.js-hidden.is-hidden
-        %i.fa.fa-times.js-parent-close.js-positions__close-button
-        %table.js-positions__table
-          %tr.js-positions__table-tr
-            %th.js-positions__table-th
-              画面左上→マウスX座標
-            %td.js-positions__table-value
-              %input#mouseX{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
-            %th.js-positions__table-th
-              画面左上→マウスY座標
-            %td.js-positions__table-value
-              %input#mouseY{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
-            %th.js-positions__table-th
-              div左上→マウスX座標
-            %td.js-positions__table-value
-              %input#divMouseX{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
-            %th.js-positions__table-th
-              div左上→マウスY座標
-            %td.js-positions__table-value
-              %input#divMouseY{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
-          %tr.js-positions__table-tr
-            %th.js-positions__table-th
-              ウインドウ横幅
-            %td.js-positions__table-value
-              %input#windowW{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
-            %th.js-positions__table-th
-              ウインドウ縦幅
-            %td.js-positions__table-value
-              %input#windowH{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
-            %th.js-positions__table-th
-              スクロール量（X座標）
-            %td.js-positions__table-value
-              %input#scrollX{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
-            %th.js-positions__table-th
-              スクロール量（Y座標）
-            %td.js-positions__table-value
-              %input#scrollY{readonly: "readonly", type: "text", class: "js-positions__table-input"}/
-        .fa.fa-angle-up.js-hide.js-positions__hide-button
-        .fa.fa-angle-down.js-show.js-positions__show-button.is-hidden
-        #js-target-field.js-positions__target-field.js-hidden.js-shown
-          js-target-field
+      = render 'js_positions'
     = render 'mobile_nav'
     .js-window-loading.loading
       %i.fa.fa-spinner.fa-spin

@@ -7,6 +7,6 @@ $('.page').ready ->
   return
 
 $ ->
-  $('a').click ->
+  $('a').not("a[href^=#]").click ->
     $('.js-window-loading').fadeIn()
     return
