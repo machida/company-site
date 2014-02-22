@@ -63,10 +63,10 @@
       $rem-margin-bottom: $font-size * strip-units($margin-bottom)
       +rem('margin-bottom', $rem-margin-bottom)
 
-=center-block($block-width: 300px, $block-height: 300px)
+=center-block($block-width: 300px, $block-height: 300px, $block-z-index: 1)
   +rem('width', $block-width)
   +rem('height', $block-height)
-  +absolute(left, 50%, top, 50%)
+  +fixed(left, 50%, top, 50%, $block-z-index)
   +rem('margin-top', $block-height / 2 * -1)
   +rem('margin-left', $block-width / 2 * -1)
   +box-sizing(border-box)
