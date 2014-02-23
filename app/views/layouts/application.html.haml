@@ -11,6 +11,7 @@
     /[if IE]
       = javascript_include_tag "//html5shiv.googlecode.com/svn/trunk/html5.js"
       = javascript_include_tag "jquery.linkscubber.js"
+      = javascript_include_tag "//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
       = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", media: "all"
   %body.body.js-hack.js-side-slid#head{class: "#{controller_name}-#{action_name} application"}
     = render 'staff_nav'
@@ -18,7 +19,8 @@
     = render 'global_nav'
     .page
       .mobile-breadcrumbs.mobile
-        = render_breadcrumbs separator: '&nbsp;&nbsp;>&nbsp;&nbsp;'
+        .mobile-breadcrumbs__wrapper.wrapper
+          = render_breadcrumbs separator: '&nbsp;&nbsp;>&nbsp;&nbsp;'
       %header.page__title
         .wrapper.page__title-wrapper
           %h1.page__first-heading

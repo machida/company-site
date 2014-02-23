@@ -1,8 +1,12 @@
+#container
+  +opacity(0)
 .articles__wrapper
   +rem('margin-left', $md * -0.6)
+  +rem('margin-right', $md * -0.6)
   position: relative
   @media screen and (max-width: #{$break-point})
     +rem('margin-left', $md * -0.2)
+    +rem('margin-right', $md * -0.2)
 .articles-article
   width: 25%
   +rem('padding-right', $md * .6)
@@ -14,10 +18,13 @@
     width: 50%
     +rem('padding-right', $md * .2)
     +rem('padding-left', $md * .2)
+    +rem('margin-bottom', 6px)
 .articles-article__inner
   overflow: hidden
   +rem('padding', 10px)
   border: $gray-l solid 1px
+  @media screen and (max-width: #{$break-point})
+    +rem('padding', 6px)
 .articles-article__eyecatch-image
   width: 100%
   height: auto
