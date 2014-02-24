@@ -9,10 +9,14 @@
     = auto_discovery_link_tag( :rss, "/articles/feed.rss" )
     = analytics_init if Rails.env.production?
     /[if IE]
+      = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", media: "all"
       = javascript_include_tag "//html5shiv.googlecode.com/svn/trunk/html5.js"
       = javascript_include_tag "jquery.linkscubber.js"
+      = javascript_include_tag "jquery.belatedPNG.min.js"
+    /[if lt IE 9]
       = javascript_include_tag "//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
-      = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", media: "all"
+    - if development? and not browser.ie?
+      = javascript_include_tag "positions"
   %body.body.js-hack.js-side-slid#head{class: "#{controller_name}-#{action_name} application"}
     = render 'staff_nav'
     = render 'header'
@@ -62,3 +66,7 @@
     = render 'mobile_nav'
     .js-window-loading.loading
       %i.fa.fa-spinner.fa-spin
+    :javascript
+      svgeezy.init(false, 'png');
+      $("img").fixPng();
+
