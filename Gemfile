@@ -28,6 +28,7 @@ gem 'dekiru'
 gem 'breadcrumbs_on_rails'
 gem 'settingslogic'
 gem 'browser'
+gem 'letter_opener'
 
 gem 'modernizr-rails'
 gem 'bootstrap-sass'

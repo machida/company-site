@@ -10,5 +10,6 @@
 //= require imagesloaded
 //= require jquery.infinitescroll
 //= require svgeezy.min
+//= footerFixed
 //= require_tree ./public
 //= require_tree ./helpers
