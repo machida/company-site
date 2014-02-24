@@ -8,6 +8,7 @@
 //= require markdown/jquery.markdown
 //= require jquery.autosize.min
 //= require bootstrap
+//= require moment.min
 //= require bootstrap-datetimepicker
 
 //= require staffs/markdown
