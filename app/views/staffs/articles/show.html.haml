@@ -1,12 +1,13 @@
 %header.main__header
   %h2.main__header-heading
-    = t('New Article')
+    = t('Article')
   = link_to staffs_articles_path, {:class => "main__header-add-link large-button"} do
     %i.fa.fa-reply
     = t('Back To Articles')
 
 .main__body
-  #notice= notice
+  - if notice
+    #notice= notice
   %h2.article__title= @article.title
   .article__body= markdown(@article.body)
   - if @article.category

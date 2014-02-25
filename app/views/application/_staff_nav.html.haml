@@ -4,11 +4,11 @@
   %ul.staff-nav__items.js-hidden.js-shown
     - if staff_signed_in?
       %li.staff-nav__item
-        = link_to staffs_root_path, {:class => "staff-nav__link"} do
+        = link_to staffs_root_path, {:class => "staff-nav__link", "data-no-turbolink" => "1"} do
           %i.fa.fa-tachometer
           = t('Dashboard')
       %li.staff-nav__item
-        = link_to destroy_staff_session_path, {:method => :delete, :class => "staff-nav__link"} do
+        = link_to destroy_staff_session_path, {:method => :delete, :class => "staff-nav__link", "data-no-turbolink" => "1"} do
           %i.fa.fa-sign-out.staff-nav__link-icon
           = t('Logout')
       %li.staff-nav__item
@@ -16,6 +16,6 @@
         = current_staff.name
     - else
       %li.staff-nav__item
-        = link_to t('Login'), new_staff_session_path, {:class => "staff-nav__link"}
+        = link_to t('Login'), new_staff_session_path, {:class => "staff-nav__link", "data-no-turbolink" => "1"}
     %li.staff-nav__item
       = t("#{Rails.env}")

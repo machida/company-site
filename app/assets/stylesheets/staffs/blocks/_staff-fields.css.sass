@@ -3,12 +3,14 @@
 .staff-fields__label
   display: block
   font-weight: bold
-  +rem('font-size', $sm)
+  +text-block($sm, 26px)
 .staff-fields__markdown
   width: 50%
 .markdown-preview
-  +absolute(right, 0, top, 0)
+  +absolute(right, 0, top, 30px)
   width: 50%
+  +rem('padding-left', 20px)
+  +box-sizing(border-box)
 .staff-fields__body
   width: 100%
   +rem('min-height', 260px)
@@ -16,9 +18,13 @@
   +box-sizing(border-box)
   +rem('margin-top', -1px)
   resize: none
+  +rem('padding', 4px 6px)
+  +text-block(16px, 1.8)
 .staff-fields__text
   width: 50%
   border: $black solid 1px
+  +text-block(16px, 30px)
+  +rem('padding', 0 6px)
   +box-sizing(border-box)
 .staff-fields__tags
   +rem('margin-bottom', 16px)

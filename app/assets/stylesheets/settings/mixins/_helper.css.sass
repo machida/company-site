@@ -54,13 +54,13 @@
     @if unit($line-height) == "px"
       +rem('line-height', $line-height)
     @else
-      $rem-line-height: $font-size * strip-units($line-height)
+      $rem-line-height: $font-size * $line-height
       +rem('line-height', $rem-line-height)
   @if not ($margin-bottom == false or $line-height == "")
     @if unit($margin-bottom) == "px"
       +rem('margin-bottom', $margin-bottom)
     @else
-      $rem-margin-bottom: $font-size * strip-units($margin-bottom)
+      $rem-margin-bottom: $font-size * $margin-bottom
       +rem('margin-bottom', $rem-margin-bottom)
 
 =center-block($block-width: 300px, $block-height: 300px, $block-z-index: 1)
@@ -94,3 +94,7 @@
     +fa
     content: "\f02b"
     margin-right: .4em
+
+=block-link
+  display: block
+  text-decoration: none
