@@ -42,11 +42,12 @@
 
 =bg-image($bg-color: transparent, $bg-img: false, $bg-position-x: left, $bg-position-y: top, $bg-repeat: no-repeat, $bg-attachment: scroll, $bg-size: auto)
   background-color: $bg-color
-  background-image: image_url("#{$bg-img}")
-  background-position: $bg-position-x $bg-position-y
-  background-repeat: $bg-repeat
-  background-attachment: $bg-attachment
-  background-size: $bg-size
+  @if $bg-img
+    background-image: image_url("#{$bg-img}")
+    background-position: $bg-position-x $bg-position-y
+    background-repeat: $bg-repeat
+    background-attachment: $bg-attachment
+    background-size: $bg-size
 
 =text-block($font-size: $sm, $line-height: false, $margin-bottom: false)
   +rem('font-size', $font-size)

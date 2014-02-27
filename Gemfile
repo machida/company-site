@@ -28,7 +28,7 @@ gem 'dekiru'
 gem 'breadcrumbs_on_rails'
 gem 'settingslogic'
 gem 'browser'
-gem 'letter_opener'
+gem 'auto_html'
 
 gem 'modernizr-rails'
 gem 'bootstrap-sass'
@@ -53,6 +53,7 @@ group :development do
   gem 'pry'
   gem 'pry-doc'
   gem 'pry-rails'
+  gem 'letter_opener'
 end
 
 group :production do
