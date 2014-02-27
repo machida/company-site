@@ -20,6 +20,15 @@ module ApplicationHelper
     params[:controller] == "contact" and params[:action] == 'new' or params[:action] == 'create'
   end
 
+  def staffs?
+    (params[:controller]).include?("staffs")
+  end
+
+  def devise?
+    (params[:controller]).include?("devise")
+  end
+
+
   %w(development test production).each do |env|
     define_method("#{env}?") do
       Rails.env == env
