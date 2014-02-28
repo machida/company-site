@@ -4,7 +4,6 @@ source 'https://rails-assets.org'
 ruby '2.1.0'
 
 gem 'rails', '>= 4.0.2'
-gem 'sass-rails', '~> 4.0.1'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
@@ -13,7 +12,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise'
 gem 'cancan'
-gem 'compass-rails', '~> 1.1.2'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'acts-as-taggable-on'
@@ -24,12 +22,12 @@ gem 'nkss-rails', github: 'fjordllc/fnkss-rails'
 gem 'nokogiri'
 gem 'by_star', :git => "git://github.com/radar/by_star"
 gem 'redcarpet'
-gem 'dekiru'
 gem 'breadcrumbs_on_rails'
 gem 'settingslogic'
 gem 'browser'
 gem 'auto_html'
 
+# JS
 gem 'modernizr-rails'
 gem 'bootstrap-sass'
 gem 'bootstrap3-datetimepicker-rails', '~> 2.1.30'
@@ -37,7 +35,11 @@ gem "google-code-prettify-rails"
 gem 'owlcarousel-rails'
 gem 'magnific-popup-rails'
 
+# Sass
+gem 'sass-rails', '~> 4.0.1'
+gem 'compass-rails', '~> 1.1.2'
 gem 'compass-rgbapng'
+gem 'SassyLists'
 
 gem 'rails-assets-moment'
 # gem 'rails-assets-Snap.svg'

@@ -24,6 +24,9 @@ GEM
   remote: https://rails-assets.org/
   specs:
     RedCloth (4.2.9)
+    SassyLists (0.4.9)
+      compass (>= 0.12.1)
+      sass (>= 3.2.0)
     actionmailer (4.0.2)
       actionpack (= 4.0.2)
       mail (~> 2.5.4)
@@ -88,8 +91,6 @@ GEM
     compass-rgbapng (0.2.1)
       chunky_png (>= 0.8.0)
       compass (>= 0.10.0)
-    dekiru (0.0.10)
-      http_accept_language (>= 2.0.0)
     devise (3.2.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -122,7 +123,6 @@ GEM
       haml (>= 4.0.0.rc.1)
       hpricot (~> 0.8.6)
       ruby_parser (~> 3.1.1)
-    http_accept_language (2.0.0)
     i18n (0.6.9)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -246,6 +246,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  SassyLists
   acts-as-taggable-on
   auto_html
   bootstrap-sass
@@ -257,7 +258,6 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   compass-rails (~> 1.1.2)
   compass-rgbapng
-  dekiru
   devise
   erb2haml
   friendly_id (~> 5.0.0)
