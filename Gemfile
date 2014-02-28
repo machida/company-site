@@ -34,14 +34,17 @@ gem 'bootstrap3-datetimepicker-rails', '~> 2.1.30'
 gem "google-code-prettify-rails"
 gem 'owlcarousel-rails'
 gem 'magnific-popup-rails'
+gem 'rails-assets-moment'
 
 # Sass
 gem 'sass-rails', '~> 4.0.1'
 gem 'compass-rails', '~> 1.1.2'
-gem 'compass-rgbapng'
 gem 'SassyLists'
+gem 'sass-mediaqueries-rails'
+gem 'ceaser-easing'
+gem 'oulu-rails', :path => '../oulu-rails'
+# gem 'oulu-rails', github: 'oulu/oulu-rails'
 
-gem 'rails-assets-moment'
 # gem 'rails-assets-Snap.svg'
 
 group :doc do

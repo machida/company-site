@@ -6,12 +6,12 @@ $(document).ready ->
         itemSelector: ".articles-article"
         isAnimated: true
         animationOptions:
-          duration: 1000
+          duration: 500
           easing: "linear"
           queue: false
         isResizable: false
         $container.animate opacity: 1
-        ), 50
+        ), 10
   $("#container").infinitescroll
     navSelector: "nav.pagination" # selector for the paged navigation (it will be hidden)
     nextSelector: "nav.pagination a[rel=next]" # selector for the NEXT link (to page 2)

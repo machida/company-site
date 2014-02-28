@@ -40,5 +40,6 @@ module CompanySite
     }
 
     config.compass.require "rgbapng"
+    config.compass.require 'SassyLists'
   end
 end
