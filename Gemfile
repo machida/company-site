@@ -42,8 +42,8 @@ gem 'compass-rails', '~> 1.1.2'
 gem 'SassyLists'
 gem 'sass-mediaqueries-rails'
 gem 'ceaser-easing'
-gem 'oulu-rails', :path => '../oulu-rails'
-# gem 'oulu-rails', github: 'oulu/oulu-rails'
+# gem 'oulu-rails', :path => '../oulu-rails'
+gem 'oulu-rails', github: 'oulu/oulu-rails'
 
 # gem 'rails-assets-Snap.svg'
 
