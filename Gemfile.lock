@@ -13,9 +13,9 @@ GIT
 
 GIT
   remote: git://github.com/oulu/oulu-rails.git
-  revision: 8e7d3e1b21833d7f50673a6c5d42256239ba3d90
+  revision: d9b50fa76fd97794019a45c888e2024f09ccbe85
   specs:
-    oulu-rails (0.0.3)
+    oulu-rails (0.0.4)
       SassyLists
       ceaser-easing
       compass-rails
