@@ -12,14 +12,8 @@ GIT
       redcarpet
 
 GIT
-  remote: git://github.com/radar/by_star
-  revision: d1848c6b01341ce6fc4d5859e8a8f199518a8c6a
-  specs:
-    by_star (2.2.0.rc1)
-      activesupport
-
-PATH
-  remote: ../oulu-rails
+  remote: git://github.com/oulu/oulu-rails.git
+  revision: 8e7d3e1b21833d7f50673a6c5d42256239ba3d90
   specs:
     oulu-rails (0.0.3)
       SassyLists
@@ -29,6 +23,13 @@ PATH
       railties
       sass-mediaqueries-rails
       sass-rails
+
+GIT
+  remote: git://github.com/radar/by_star
+  revision: d1848c6b01341ce6fc4d5859e8a8f199518a8c6a
+  specs:
+    by_star (2.2.0.rc1)
+      activesupport
 
 GEM
   remote: https://rubygems.org/
