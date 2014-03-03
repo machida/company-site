@@ -60,22 +60,12 @@
   color: $black
 
 .two-column-content__more-link
-  display: block
+  +button-base(12px, 26px, bold, auto, true, false, 14px, right)
   float: right
-  text-decoration: none
   border: $pink solid 2px
   color: $pink
-  font-weight: bold
   +rem('padding-right', 30px)
   +rem('padding-left', 16px)
-  +text-block(12px, 26px)
-  +relative(1)
   &:hover
     background-color: $pink
     color: $white
-  .two-column-content__more-link-icon
-    +absolute(right, 0, top, 0)
-    +text-block(16px, 26px)
-    display: block
-    +rem('width', 30px)
-    text-align: center

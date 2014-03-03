@@ -37,7 +37,7 @@ class Staffs::PagesController < StaffsController
   end
 
   def update
-    @page = Article.friendly.find(params[:id])
+    @page = Page.friendly.find(params[:id])
     respond_to do |format|
       if @page.update(page_params)
         format.html { redirect_to staffs_pages_path, notice: 'article was successfully updated.' }

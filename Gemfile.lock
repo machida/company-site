@@ -12,10 +12,16 @@ GIT
       redcarpet
 
 GIT
-  remote: git://github.com/oulu/oulu-rails.git
-  revision: d9b50fa76fd97794019a45c888e2024f09ccbe85
+  remote: git://github.com/radar/by_star
+  revision: d1848c6b01341ce6fc4d5859e8a8f199518a8c6a
   specs:
-    oulu-rails (0.0.4)
+    by_star (2.2.0.rc1)
+      activesupport
+
+PATH
+  remote: ../oulu-rails
+  specs:
+    oulu-rails (0.0.5)
       SassyLists
       ceaser-easing
       compass-rails
@@ -23,13 +29,6 @@ GIT
       railties
       sass-mediaqueries-rails
       sass-rails
-
-GIT
-  remote: git://github.com/radar/by_star
-  revision: d1848c6b01341ce6fc4d5859e8a8f199518a8c6a
-  specs:
-    by_star (2.2.0.rc1)
-      activesupport
 
 GEM
   remote: https://rubygems.org/
@@ -210,6 +209,8 @@ GEM
     rdoc (4.1.1)
       json (~> 1.4)
     redcarpet (2.3.0)
+    respond-rails (1.0.1)
+      railties (>= 3.1.0)
     rinku (1.5.1)
     ruby_parser (3.1.3)
       sexp_processor (~> 4.1)
@@ -297,6 +298,7 @@ DEPENDENCIES
   rails-assets-moment
   rails_12factor
   redcarpet
+  respond-rails (~> 1.0)
   sass-mediaqueries-rails
   sass-rails (~> 4.0.1)
   sdoc

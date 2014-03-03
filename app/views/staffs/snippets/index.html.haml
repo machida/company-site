@@ -9,9 +9,7 @@
         = link_to t('Published'), staffs_snippets_path(:published => "true"), {:class => "main-tabs-nav__tab-link #{params[:published] == 'true' ? 'is-current' : ''}"}
       %li.main-tabs-nav__tab<>
         = link_to t('Unpublished'), staffs_snippets_path(:published => "false"), {:class => "main-tabs-nav__tab-link #{params[:published] == 'false' ? 'is-current' : ''}"}
-  .main__search.main-search
-    %i.fa.fa-search
-    %input#js-search{:type => "text"}
+  = render 'staffs/shared/main_search'
   = link_to new_staffs_snippet_path, {:class => "main__header-add-link large-button"} do
     %i.fa.fa-plus
     = t('New Snippet')

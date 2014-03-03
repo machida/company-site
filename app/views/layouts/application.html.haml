@@ -15,7 +15,7 @@
       = javascript_include_tag "oulu/ie/jquery.belatedPNG.min.js"
       = javascript_include_tag "oulu/ie/ie-selectors"
     /[if lt IE 9]
-      = javascript_include_tag "//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
+      = respond_include_tags
     - if development? and not browser.ie?
       = javascript_include_tag "positions"
   %body.body.js-hack.js-side-slid#head{class: "#{controller_name}-#{action_name} application"}

@@ -1,17 +1,18 @@
 @charset "utf-8"
 
 @import oulu
+@import oulu/web-fonts/font-awsome
+@import oulu/web-fonts/tauri
 
 // mixins
 @import settings/mixins/buttons
-@import settings/mixins/fonts
 
 // variables
 @import settings/variables/colors
 @import settings/variables/font-sizes
 
-// common
-@import settings/common/layout
+// initializers
+@import settings/initializers/default
 
 // shared
 @import bootstrap-datetimepicker
@@ -20,6 +21,7 @@
 @import shared/wmd-buttons
 
 // blocks
+@import blocks/loading
 @import blocks/login
 @import blocks/header
 @import blocks/main

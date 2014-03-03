@@ -11,6 +11,7 @@
   +absolute(left, 0, top, 0)
   text-align: center
   +rem('line-height', 50px)
+  line-height: 50px !important
 
 .hero
   +rem('margin-bottom', 24px)
@@ -38,6 +39,7 @@
   @media screen and (max-width: #{$break-point})
     margin-left: 78px
     margin-right: 0
+    position: absolute\9
 .hero__hgrounp--home
   +absolute(left, 20px, top, 76px)
   @media screen and (max-width: #{$break-point})
@@ -128,8 +130,6 @@
   +rem('height', $md * 1.4)
   +rem('padding-left', 8px)
   +rem('width', 100px)
-  +transition-property(width)
-  +transition-duration(.2s)
   +box-sizing(border-box)
   &:focus,
   &.is-focused
@@ -142,6 +142,7 @@
   +rem('width', 28px)
   text-align: center
   display: block
+  cursor: pointer
   &:hover
     color: $pink
   &:active

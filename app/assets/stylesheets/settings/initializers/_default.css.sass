@@ -1,8 +1,8 @@
-html
-  font-size: 62.5%
-
 body
   +rem('font-size', $md)
+
+*
+  +transition(.2s)
 
 .wrapper
   +rem('max-width', $wrapper-max-width)
@@ -13,11 +13,6 @@ body
   @media screen and (max-width: #{$break-point})
     +rem('padding-left', 10px)
     +rem('padding-right', 10px)
-
-*
-  +transition-property(all)
-  +transition-duration(.2s)
-  +transition-timing-function(ease-in)
 
 .content
   color: $black

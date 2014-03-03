@@ -6,11 +6,10 @@
 //= require markdown/Markdown.Sanitizer
 //= require markdown/Markdown.Editor
 //= require markdown/jquery.markdown
-//= require jquery.autosize.min
 //= require bootstrap
 //= require moment.min
 //= require bootstrap-datetimepicker
 
-//= require staffs/markdown
-//= require staffs/form
+//= require oulu
+
 //= require_tree .
