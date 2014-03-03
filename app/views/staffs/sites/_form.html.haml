@@ -1,12 +1,13 @@
 = form_for [:staffs, @site] do |f|
   - if @site.errors.any?
-    #error_explanation
-      %h2
+    .error-explanation
+      %h2.error-explanation__heading
         = pluralize(@site.errors.count, "error")
         prohibited this site from being saved:
-      %ul
+      %ul.error-explanation__errors
         - @site.errors.full_messages.each do |msg|
-          %li= msg
+          %li.error-explanation__error
+            = msg
   .staff-fields
     .staff-fields__field
       = f.label :title, {:class => 'staff-fields__label'}

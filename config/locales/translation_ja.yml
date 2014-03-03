@@ -1,0 +1,146 @@
+ja:
+  activerecord:
+    models:
+      acts_as_taggable_on/tag: acts_as_taggable_on/tag  #g
+      acts_as_taggable_on/tagging: acts_as_taggable_on/tagging  #g
+      article: article  #g
+      category: category  #g
+      page: page  #g
+      post: post  #g
+      service: service  #g
+      site: site  #g
+      snippet: snippet  #g
+      staff: staff  #g
+
+    attributes:
+      acts_as_taggable_on/tag:
+        name: name  #g
+        taggings: taggings  #g
+
+      acts_as_taggable_on/tagging:
+        context: context  #g
+        tag: :activerecord.models.tag  #g
+        taggable: :activerecord.models.taggable  #g
+        taggable_type: taggable_type  #g
+        tagger: :activerecord.models.tagger  #g
+        tagger_type: tagger_type  #g
+
+      article:
+        base_tags: base_tags  #g
+        body: body  #g
+        category: :activerecord.models.category  #g
+        description: description  #g
+        meta_description: meta_description  #g
+        meta_keywords: meta_keywords  #g
+        published: published  #g
+        slug: slug  #g
+        staff: :activerecord.models.staff  #g
+        sub_title: sub_title  #g
+        tag_taggings: tag_taggings  #g
+        taggings: taggings  #g
+        tags: tags  #g
+        thumbnail: thumbnail  #g
+        title: title  #g
+
+      category:
+        articles: articles  #g
+        name: name  #g
+        slug: slug  #g
+
+      page:
+        base_tags: base_tags  #g
+        body: body  #g
+        description: description  #g
+        meta_description: meta_description  #g
+        meta_keywords: meta_keywords  #g
+        published: published  #g
+        slug: slug  #g
+        staff: :activerecord.models.staff  #g
+        sub_title: sub_title  #g
+        tag_taggings: tag_taggings  #g
+        taggings: taggings  #g
+        tags: tags  #g
+        thumbnail: thumbnail  #g
+        title: title  #g
+
+      post:
+        base_tags: base_tags  #g
+        body: body  #g
+        description: description  #g
+        meta_description: meta_description  #g
+        meta_keywords: meta_keywords  #g
+        published: published  #g
+        slug: slug  #g
+        staff: :activerecord.models.staff  #g
+        sub_title: sub_title  #g
+        tag_taggings: tag_taggings  #g
+        taggings: taggings  #g
+        tags: tags  #g
+        thumbnail: thumbnail  #g
+        title: title  #g
+
+      service:
+        base_tags: base_tags  #g
+        body: body  #g
+        description: description  #g
+        meta_description: meta_description  #g
+        meta_keywords: meta_keywords  #g
+        published: published  #g
+        slug: slug  #g
+        staff: :activerecord.models.staff  #g
+        sub_title: sub_title  #g
+        tag_taggings: tag_taggings  #g
+        taggings: taggings  #g
+        tags: tags  #g
+        thumbnail: thumbnail  #g
+        title: title  #g
+
+      site:
+        base_tags: base_tags  #g
+        body: body  #g
+        description: description  #g
+        meta_description: meta_description  #g
+        meta_keywords: meta_keywords  #g
+        published: published  #g
+        slug: slug  #g
+        staff: :activerecord.models.staff  #g
+        sub_title: sub_title  #g
+        tag_taggings: tag_taggings  #g
+        taggings: taggings  #g
+        tags: tags  #g
+        thumbnail: thumbnail  #g
+        title: title  #g
+
+      snippet:
+        base_tags: base_tags  #g
+        body: body  #g
+        description: description  #g
+        meta_description: meta_description  #g
+        meta_keywords: meta_keywords  #g
+        published: published  #g
+        slug: slug  #g
+        staff: :activerecord.models.staff  #g
+        sub_title: sub_title  #g
+        tag_taggings: tag_taggings  #g
+        taggings: taggings  #g
+        tags: tags  #g
+        thumbnail: thumbnail  #g
+        title: title  #g
+
+      staff:
+        body: body  #g
+        current_sign_in_at: current_sign_in_at  #g
+        current_sign_in_ip: current_sign_in_ip  #g
+        description: description  #g
+        email: email  #g
+        encrypted_password: encrypted_password  #g
+        last_sign_in_at: last_sign_in_at  #g
+        last_sign_in_ip: last_sign_in_ip  #g
+        name: name  #g
+        posts: posts  #g
+        published: published  #g
+        remember_created_at: remember_created_at  #g
+        reset_password_sent_at: reset_password_sent_at  #g
+        reset_password_token: reset_password_token  #g
+        role: role  #g
+        slug: slug  #g

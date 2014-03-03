@@ -1,12 +1,13 @@
 = form_for [:staffs, @snippet] do |f|
   - if @snippet.errors.any?
-    #error_explanation
-      %h2
+    .error-explanation
+      %h2.error-explanation__heading
         = pluralize(@snippet.errors.count, "error")
         prohibited this snippet from being saved:
-      %ul
+      %ul.error-explanation__errors
         - @snippet.errors.full_messages.each do |msg|
-          %li= msg
+          %li.error-explanation__error
+            = msg
   .staff-fields
     .staff-fields__field
       = f.label :title, t('Title'), {:class => 'staff-fields__label'}

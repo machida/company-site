@@ -1,12 +1,13 @@
 = form_for [:staffs, @service] do |f|
   - if @service.errors.any?
-    #error_explanation
-      %h2
+    .error-explanation
+      %h2.error-explanation__heading
         = pluralize(@service.errors.count, "error")
         prohibited this article from being saved:
-      %ul
+      %ul.error-explanation__errors
         - @service.errors.full_messages.each do |msg|
-          %li= msg
+          %li.error-explanation__error
+            = msg
   .staff-fields
     .staff-fields__field
       = f.label :title, {:class => 'staff-fields__label'}

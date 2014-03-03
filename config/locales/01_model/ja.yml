@@ -1,0 +1,29 @@
+ja:
+  activerecord:
+    errors:
+      template:
+        header:
+          one:   "%{model}にエラーが発生しました。"
+          other: "%{model}に%{count}つのエラーが発生しました。"
+        body: "次の項目を確認してください。"
+      messages:
+        taken: "はすでに存在します。"
+        record_invalid: "バリデーションに失敗しました。 %{errors}"
+      full_messages:
+        format: "[%{attribute}]%{message}"
+      models:
+        user:
+          attributes:
+            base:
+              restricted:  "制限付きユーザーには許可されていない動作です"
+            company_id:
+              user_not_working_for: "ユーザが所属していない会社です"
+    models:
+      user: ユーザー
+      company: 会社
+    attributes:
+      user:
+        name: 名前
+        age: 年齢
+      company:
+        name: 会社名

@@ -3,12 +3,15 @@
 
 = form_for @contact, :url => contact_path, :class => "contact-form" do |form|
   - if @contact.errors.any?
-    #error_explanation
-      %h2
+    .error-explanation
+      %i.fa.fa-exclamation-triangle.error-explanation__icon
+      %h2.error-explanation__heading
         = pluralize(@contact.errors.count, "error")
-      %ul
+      %ul.error-explanation__errors
         - @contact.errors.full_messages.each do |msg|
-          %li= msg
+          %li.error-explanation__error
+            %i.fa.fa-check.error-explanation__error-icon
+            = msg
   %fieldset.contact-form__fields
     .two-column-content
       .two-column-content__title-wrapper

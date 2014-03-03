@@ -8,11 +8,11 @@
 .hero{class: "#{mobile? ? 'js-window-width' : ''}"}
   - if home?
     .wrapper.hero__image-wrapper--home
-      = image_tag("hero.png", {:class => "hero__image"})
+      = image_tag("hero.png", {:class => "hero__image fadeIn animated js-one-animate"})
       .hero__hgrounp--home
-        %h1.hero__site-title
+        %h1.hero__site-title.fadeIn.animated.js-one-animate
           = @site.title
-        %h2.hero__tag-line
+        %h2.hero__tag-line.fadeIn.animated.js-one-animate
           = @site.sub_title
       %ul.hero__tools
         %li.hero__tool

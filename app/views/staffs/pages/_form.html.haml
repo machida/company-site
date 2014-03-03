@@ -1,12 +1,13 @@
 = form_for [:staffs, @page] do |f|
   - if @page.errors.any?
-    #error_explanation
-      %h2
+    .error-explanation
+      %h2.error-explanation__heading
         = pluralize(@page.errors.count, "error")
         prohibited this page from being saved:
-      %ul
+      %ul.error-explanation__errors
         - @page.errors.full_messages.each do |msg|
-          %li= msg
+          %li.error-explanation__error
+            = msg
   .staff-fields
     .staff-fields__field.relative
       .staff-fields__field

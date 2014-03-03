@@ -1,0 +1,27 @@
+.error-explanation
+  background-color: tint($yellow, 60%)
+  border: shade($yellow, 12%) dotted 2px
+  +rem('margin-bottom', 40px)
+  +rem('padding', 10px 12px)
+  +relative(1)
+.error-explanation__icon
+  +absolute(left, 0, top, 50%)
+  +text-block(50px, 50px)
+  +rem('margin-top', -25px)
+  color: shade($yellow, 12%)
+  +rem('width', 120px)
+  text-align: center
+.error-explanation__heading
+  text-align: center
+  font-weight: bold
+  +text-block(22px, 1.6, 6px)
+.error-explanation__errors
+  +rem('padding-left', 120px)
+.error-explanation__error
+  +inline-block
+  +text-block(14px, 2.4)
+  +rem('margin', 0 6px)
+.error-explanation__error-icon
+  color: shade($yellow, 12%)
+  +rem('font-size', 16px)
+  +rem('margin-right', 4px)

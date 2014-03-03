@@ -1,10 +1,12 @@
 = form_for [:staffs, @category] do |f|
   - if @category.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@category.errors.count, "error")} prohibited this category from being saved:"
-      %ul
+    .error-explanation
+      %h2.error-explanation__heading
+        = "#{pluralize(@category.errors.count, "error")} prohibited this category from being saved:"
+      %ul.error-explanation__errors
         - @category.errors.full_messages.each do |msg|
-          %li= msg
+          %li.error-explanation__error
+            = msg
 
   .field
     = f.label :name

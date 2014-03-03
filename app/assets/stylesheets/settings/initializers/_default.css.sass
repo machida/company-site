@@ -4,6 +4,11 @@ body
 *
   +transition(.2s)
 
+*::selection
+  background: rgba($yellow, .3)
+*::-moz-selection
+  background: rgba($yellow, .3)
+
 .wrapper
   +rem('max-width', $wrapper-max-width)
   +box-sizing(border-box)
