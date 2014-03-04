@@ -12,16 +12,10 @@ GIT
       redcarpet
 
 GIT
-  remote: git://github.com/radar/by_star
-  revision: d1848c6b01341ce6fc4d5859e8a8f199518a8c6a
+  remote: git://github.com/oulu/oulu-rails.git
+  revision: d6eb16a7771e771ec3ec11e5c704f276324e1bf1
   specs:
-    by_star (2.2.0.rc1)
-      activesupport
-
-PATH
-  remote: ../oulu-rails
-  specs:
-    oulu-rails (0.0.5)
+    oulu-rails (0.0.6)
       SassyLists
       ceaser-easing
       color-schemer
@@ -30,6 +24,13 @@ PATH
       railties
       sass-mediaqueries-rails
       sass-rails
+
+GIT
+  remote: git://github.com/radar/by_star
+  revision: d1848c6b01341ce6fc4d5859e8a8f199518a8c6a
+  specs:
+    by_star (2.2.0.rc1)
+      activesupport
 
 GEM
   remote: https://rubygems.org/
