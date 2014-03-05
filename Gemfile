@@ -11,7 +11,7 @@ gem 'jquery-turbolinks'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise'
-gem 'cancan'
+gem 'cancancan'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'acts-as-taggable-on'
@@ -44,9 +44,10 @@ gem 'sass-mediaqueries-rails'
 gem 'ceaser-easing'
 gem 'respond-rails', '~> 1.0'
 gem 'color-schemer'
+# http://l-lin.github.io/font-awesome-animation/
+gem 'rails-assets-font-awesome-animation'
 # gem 'oulu-rails', :path => '../oulu-rails'
 gem 'oulu-rails', github: 'oulu/oulu-rails'
-
 
 # gem 'rails-assets-Snap.svg'
 
