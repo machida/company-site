@@ -1,0 +1,14 @@
+.header
+  +rem('height', 86px)
+  @media screen and (max-width: #{$break-point})
+    +rem('height', 50px)
+.header__wrapper
+  +relative(1)
+.header__mobile-nav-opener
+  +rem('font-size', 30px)
+  +rem('width', 50px)
+  +rem('height', 50px)
+  +absolute(left, 0, top, 0)
+  text-align: center
+  +rem('line-height', 50px)
+  line-height: 50px !important
