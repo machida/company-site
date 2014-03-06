@@ -28,9 +28,9 @@ GIT
 
 GIT
   remote: git://github.com/oulu/oulu-rails.git
-  revision: 078cc38b6bc7963402020bfc6cdc55e135ae7ba5
+  revision: 34a432f407d857557b42b85b4ff910ac1f34a065
   specs:
-    oulu-rails (0.0.6)
+    oulu-rails (0.0.7)
       SassyLists
       ceaser-easing
       color-schemer
@@ -328,7 +328,7 @@ PLATFORMS
 
 DEPENDENCIES
   SassyLists
-  acts-as-taggable-on
+  acts-as-taggable-on (~> 3.0.1)
   auto_html
   bootstrap-sass
   bootstrap3-datetimepicker-rails (~> 2.1.30)
@@ -357,7 +357,7 @@ DEPENDENCIES
   modernizr-rails
   nkss-rails!
   nokogiri
-  oulu-rails!
+  oulu-rails (~> 0.0.7)!
   owlcarousel-rails
   pg
   pry

@@ -1,17 +1,13 @@
-production:
-  aws:
-    access_key_id:  xxxxxxxxxxxxxxx
-    secret_access_key: yyyyyyyyyyyyyyyyyy
-  log_dir: /tmp/log
+defaults: &defaults
+  action_mailer:
+    user_name: "your_name@gmail.com"
+    password: "your_password"
 
 development:
-  aws:
-    access_key_id:  xxxxxxxxxxxxxxx
-    secret_access_key: yyyyyyyyyyyyyyyyyy
-  log_dir: ~/log
+  <<: *defaults
 
 test:
-  aws:
-    access_key_id:  xxxxxxxxxxxxxxxxx
-    secret_access_key: yyyyyyyyyyyyyyyyyy
-  log_dir: ~/test_log
+  <<: *defaults
+
+production:
+  <<: *defaults

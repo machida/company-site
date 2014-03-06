@@ -14,7 +14,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'haml-rails'
 gem 'erb2haml'
-gem 'acts-as-taggable-on'
+gem "acts-as-taggable-on", "~> 3.0.1"
 gem 'friendly_id', '~> 5.0.0'
 gem 'kaminari'
 gem 'google-analytics-rails'
@@ -56,7 +56,7 @@ gem 'rails-assets-font-awesome-animation'
 # http://lab.hakim.se/ladda/
 gem 'rails-assets-Ladda'
 # gem 'oulu-rails', :path => '../oulu-rails'
-gem 'oulu-rails', github: 'oulu/oulu-rails'
+gem 'oulu-rails', '~> 0.0.7', github: 'oulu/oulu-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

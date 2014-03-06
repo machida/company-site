@@ -1,9 +1,9 @@
 class ContactMailer < ActionMailer::Base
-  default :from => "noreply@youdomain.dev"
-  default :to => "you@youremail.dev"
+  default :from => Settings.new_contact.from
+  default :to => Settings.new_contact.to
 
   def new_contact(contact)
     @contact = contact
-    mail(:subject => "[YourWebsite.tld] #{contact.subject}")
+    mail(:to => Settings.new_contact.to, :subject => "#{contact.subject}")
   end
 end
