@@ -1,13 +1,28 @@
 defaults: &defaults
-  action_mailer:
-    user_name: "your_name@gmail.com"
-    password: "your_password"
+  new_contact:
+    from: "xxxxx@xxxxx.com"
+    to: "xxxxxx@xxxxxx.jp"
 
 development:
   <<: *defaults
+  action_mailer:
+    user_name: "xxxxx@xxxxxx.com"
+    password: "xxxxxxxxx"
+    domain: "xxxxxx.jp"
+    host: "xxxxxxx.jp"
 
 test:
   <<: *defaults
+  action_mailer:
+    user_name: "xxxxxxx@xxxxxx.com"
+    password: "xxxxxxxx"
+    domain: "localhost:3000"
+    host: "localhost:3000"
 
 production:
   <<: *defaults
+  action_mailer:
+    user_name: "xxxxxxx@xxxxxx.com"
+    password: "xxxxxxxx"
+    domain: "localhost:3000"
+    host: "localhost:3000"
