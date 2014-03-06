@@ -30,6 +30,6 @@ class Staffs::SitesController < StaffsController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def site_params
-      params.require(:site).permit(:title, :sub_title, :body)
+      params.require(:site).permit(:title, :sub_title, :body, :meta_keywords, :meta_description)
     end
 end

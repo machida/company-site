@@ -37,19 +37,26 @@ gem 'magnific-popup-rails'
 gem 'rails-assets-moment'
 
 # Sass
-gem 'sass-rails', '~> 4.0.1'
-gem 'compass-rails', '~> 1.1.2'
+gem 'sass-rails', github: "rails/sass-rails"
+gem 'sass', github: "nex3/sass", tag: '3.3.0.rc.6'
+gem "compass", "~> 1.0.0.alpha.18"
+gem "compass-rails", github: "Compass/compass-rails"
+# http://sassylists.com/
 gem 'SassyLists'
+# https://github.com/paranoida/sass-mediaqueries-rails
 gem 'sass-mediaqueries-rails'
+# https://github.com/jhardy/compass-ceaser-easing
 gem 'ceaser-easing'
+# https://github.com/gevans/respond-rails
 gem 'respond-rails', '~> 1.0'
+# https://github.com/Team-Sass/color-schemer
 gem 'color-schemer'
 # http://l-lin.github.io/font-awesome-animation/
 gem 'rails-assets-font-awesome-animation'
+# http://lab.hakim.se/ladda/
+gem 'rails-assets-Ladda'
 # gem 'oulu-rails', :path => '../oulu-rails'
 gem 'oulu-rails', github: 'oulu/oulu-rails'
-
-# gem 'rails-assets-Snap.svg'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -1,9 +1,9 @@
 .body
   +bg-image(#2da1c6, "sign-in/sign-in__bg.jpg", center, top, no-repeat, scroll, cover)
 .sign-in
-  +bg-image(transparent, "sign-in/sign-in__pettern.gif", left, top, repeat)
+  +bg-image(transparent, "sign-in/sign-in__pettern.png", left, top, repeat)
 .sign-in__form
-  +center-block(500px, 300px)
+  +center-block(500px, 330px)
   +rgba-background(rgba(255, 255, 255, .4))
   +absolute(left, 50%, top, 50%)
   +rem('padding', 18px 24px)
@@ -28,7 +28,7 @@
   text-align: right
 .sign-in__remember-me
   +inline-block
-  +rem('font-size', 18px)
+  +rem('font-size', 14px)
   +tauri
 .sign-in__input
   color: $white
@@ -40,6 +40,7 @@
   +box-sizing(border-box)
   +rem('padding', 4px 8px)
   font-family: 'Tauri', sans-serif
+  +text-block(16px, 1.8)
 .sign-in__input[type="checkbox"]
   +inline-block
 .sign-in__input[type="submit"]

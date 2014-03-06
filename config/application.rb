@@ -44,5 +44,14 @@ module CompanySite
 
     config.compass.require "rgbapng"
     config.compass.require 'SassyLists'
+
+    config.to_prepare do
+      Devise::SessionsController.layout "staffs_application"
+      Devise::RegistrationsController.layout proc{ |controller| staff_signed_in? ? "staffs_application" : "sign_in_application" }
+      Devise::ConfirmationsController.layout "staffs_application"
+      Devise::UnlocksController.layout "staffs_application"
+      Devise::PasswordsController.layout "staffs_application"
+    end
+
   end
 end
