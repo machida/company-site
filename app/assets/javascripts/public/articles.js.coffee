@@ -1,4 +1,4 @@
-$(document).ready ->
+$ ->
   $container = $("#container")
   $container.imagesLoaded ->
     setTimeout (->
@@ -32,4 +32,3 @@ $(document).ready ->
         $newElems.animate opacity: 1
         $("#container").masonry "appended", $newElems, true
         ), 500
-
