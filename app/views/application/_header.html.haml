@@ -5,28 +5,10 @@
       = button_tag(:name => nil, :class => "header-search-form__button", :type => "submit") do
         %i.fa.fa-search
     %i.fa.fa-bars.mobile.header__mobile-nav-opener.js-side-slide
-.hero{class: "#{mobile? ? 'js-window-width' : ''}"}
-  - if home?
-    .wrapper.hero__image-wrapper--home
-      = image_tag("hero.png", {:class => "hero__image fadeIn animated js-one-animate"})
-      .hero__hgrounp--home
-        %h1.hero__site-title.fadeIn.animated.js-one-animate
-          = @site.title
-        %h2.hero__tag-line.fadeIn.animated.js-one-animate
-          = @site.sub_title
-      %ul.hero__tools
-        %li.hero__tool
-          = link_to '#', class:"hero__tool-link" do
-            = image_tag 'logos/rails.svg', class:"hero__tool-name fixping"
-  - else
-    .wrapper.hero__image-wrapper--except-home
-      .hero__hgrounp--except-home
-        %h1.hero__site-title
-          = link_to root_path, {:class => "hero__site-title-link"} do
-            = @site.title
-        %h2.hero__tag-line
-          = @site.sub_title
-
+    - if article?
+      = render 'global_nav'
+- if not article?
+  = render 'hero'
 - if notice
   .notice.js-delay-hidden
     .wrapper.notice__wrapper

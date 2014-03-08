@@ -1,5 +1,14 @@
 #container
   +opacity(0)
+  @media screen and (min-width: #{$break-point})
+    &:after
+      content: ""
+      display: block
+      background-color: $gray-l
+      +rem('width', 8px)
+      height: 100%
+      +absolute(left, 50%, top, 0)
+      +rem('margin-left', -4px)
 .articles__wrapper
   +rem('margin-left', $md * -0.6)
   +rem('margin-right', $md * -0.6)
@@ -8,21 +17,29 @@
     +rem('margin-left', $md * -0.2)
     +rem('margin-right', $md * -0.2)
 .articles-article
-  width: 33.33%
+  width: 50%
   +rem('padding-right', $md * .9)
   +rem('padding-left', $md * .9)
   +rem('padding-bottom', $md * .6)
   +box-sizing(border-box)
-  +rem('margin-bottom', 20px)
+  &:nth-child(odd)
+    @media screen and (min-width: #{$break-point})
+      +rem('padding-right', 40px)
+  &:nth-child(even)
+    @media screen and (min-width: #{$break-point})
+      +rem('padding-left', 40px)
   @media screen and (max-width: #{$break-point})
     width: 50%
     +rem('padding-right', $md * .2)
     +rem('padding-left', $md * .2)
     +rem('margin-bottom', 6px)
+    border: none
 .articles-article__inner
   overflow: hidden
+  +rem('margin-bottom', 20px)
   @media screen and (max-width: #{$break-point})
     +rem('padding', 6px)
+    margin-bottom: 0
 .articles-article__eyecatch-image
   width: 100%
   height: auto

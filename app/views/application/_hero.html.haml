@@ -1,0 +1,18 @@
+.hero.is-clear{class: "#{mobile? ? 'js-window-width' : ''}"}
+  .wrapper{class: "#{home? ? 'hero__image-wrapper--home' : 'hero__image-wrapper--except-home'}"}
+    - if home?
+      = image_tag("hero.png", {:class => "hero__image fadeIn animated js-one-animate"})
+    %div{class: "#{home? ? 'hero__hgrounp--home' : 'hero__hgrounp--except-home'}"}
+      %h1.hero__site-title.fadeIn.animated.js-one-animate
+        - if home?
+          = @site.title
+        - else
+          = link_to root_path, {:class => "hero__site-title-link"} do
+            = @site.title
+      %h2.hero__tag-line.fadeIn.animated.js-one-animate
+        = @site.sub_title
+    - if home?
+      %ul.hero__tools
+        %li.hero__tool
+          = link_to '#', class:"hero__tool-link" do
+            = image_tag 'logos/rails.svg', class:"hero__tool-name fixping"

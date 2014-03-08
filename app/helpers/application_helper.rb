@@ -12,6 +12,10 @@ module ApplicationHelper
     end
   end
 
+  def pc?
+    browser.platform == 'mac' or browser.platform == 'windows' or browser.platform == 'linux'
+  end
+
   def sign_in?
     params[:controller] == 'sessions' and params[:action] == 'new'
   end

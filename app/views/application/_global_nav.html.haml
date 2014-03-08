@@ -1,15 +1,19 @@
-%nav.global-nav.pie.pc
-  .wrapper
-    %ul.global-nav__ul
-      %li.global-nav__logo.js-hidden.is-hidden
-        = link_to "FJORD, LLC.", root_path, {:class => "global-nav__logo-link"}
-      %li.global-nav__li
-        = link_to "HOME", root_path, {:class => "#{current_path(root_path)} global-nav__link js-hovered"}
-      %li.global-nav__li
-        = link_to "SERVICE", services_path, {:class => "#{controller?('services') ? 'is-current' : ''} global-nav__link js-hovered"}
-      %li.global-nav__li
-        = link_to "MEMBERS", "/members", {:class => "#{controller?('members') ? 'is-current' : ''} global-nav__link js-hovered"}
-      %li.global-nav__li
-        = link_to "BLOG", "/categories/blog", {:class => "#{controller?('categories') ? 'is-current' : ''} #{controller?('articles') ? 'is-current' : ''} global-nav__link js-hovered", "data-no-turbolink" => "1"}
-      %li.global-nav__li
-        = link_to "CONTACT", contact_path, {:class => "#{controller?('contact') ? 'is-current' : ''} global-nav__link js-hovered"}
+%nav.pc{class: "#{article? ? 'articles-global-nav' : 'global-nav pie'}"}
+  %div{class: "#{article? ? '' : 'wrapper'}"}
+    - if article?
+      %h1.articles-global-nav__logo
+        = link_to "FJORD, LLC.", root_path, {:class => "articles-global-nav__logo-link"}
+    %ul{class: "#{article? ? 'articles-global-nav__ul' : 'global-nav__ul'}"}
+      - if not article?
+        %li{class: "#{article? ? 'articles-global-nav__logo' : 'global-nav__logo js-hidden is-hidden'}"}
+          = link_to "FJORD, LLC.", root_path, {:class => "global-nav__logo-link"}
+      %li{class: "#{article? ? 'articles-global-nav__li' : 'global-nav__li'}"}
+        = link_to "HOME", root_path, {:class => "#{current_path(root_path)} #{article? ? 'articles-global-nav__link' : 'global-nav__link js-hovered'}"}
+      %li{class: "#{article? ? 'articles-global-nav__li' : 'global-nav__li'}"}
+        = link_to "SERVICE", services_path, {:class => "#{controller?('services') ? 'is-current' : ''} #{article? ? 'articles-global-nav__link' : 'global-nav__link js-hovered'}"}
+      %li{class: "#{article? ? 'articles-global-nav__li' : 'global-nav__li'}"}
+        = link_to "MEMBERS", "/members", {:class => "#{controller?('members') ? 'is-current' : ''} #{article? ? 'articles-global-nav__link' : 'global-nav__link js-hovered'}"}
+      %li{class: "#{article? ? 'articles-global-nav__li' : 'global-nav__li'}"}
+        = link_to "BLOG", "/categories/blog", {:class => "#{controller?('categories') ? 'is-current' : ''} #{controller?('articles') ? 'is-current' : ''} #{article? ? 'articles-global-nav__link' : 'global-nav__link js-hovered'}", "data-no-turbolink" => "1"}
+      %li{class: "#{article? ? 'articles-global-nav__li' : 'global-nav__li'}"}
+        = link_to "CONTACT", contact_path, {:class => "#{controller?('contact') ? 'is-current' : ''} #{article? ? 'articles-global-nav__link' : 'global-nav__link js-hovered'}"}

@@ -1,12 +1,11 @@
 .header-search-form
   +border(all, 1px, solid, rgba(0, 0, 0, .1), white)
   +inline-block
-  +rem('margin-top', 28px)
   +rem('padding-right', 32px)
   +rem('padding-top', 3px)
   +rem('padding-bottom', 3px)
-  +rem('height', $md * 1.4)
-  +relative(1)
+  +text-block($md, 1.4)
+  +absolute(right, 0, top, 28px)
   overflow: hidden
   input::-webkit-input-placeholder,
   isindex::-webkit-input-placeholder

@@ -21,17 +21,19 @@
   %body.body.js-hack.js-side-slid#top{class: "#{controller_name}-#{action_name} application #{browser}"}
     = render 'staff_nav'
     = render 'header'
-    = render 'global_nav'
+    - if not article?
+      = render 'global_nav'
     .page
       .mobile-breadcrumbs.mobile
         .mobile-breadcrumbs__wrapper.wrapper
           = render_breadcrumbs separator: '&nbsp;&nbsp;>&nbsp;&nbsp;'
-      %header.page__title
-        .wrapper.page__title-wrapper
-          %h1.page__first-heading
-            = yield :page_title
-          .page-title-breadcrumbs.pc
-            = render_breadcrumbs separator: '&nbsp;&nbsp;>&nbsp;&nbsp;'
+      - if not article?
+        %header.page__title
+          .wrapper.page__title-wrapper
+            %h1.page__first-heading
+              = yield :page_title
+            .page-title-breadcrumbs.pc
+              = render_breadcrumbs separator: '&nbsp;&nbsp;>&nbsp;&nbsp;'
 
       .content
         - if articles? or categories? or category? or archive?
