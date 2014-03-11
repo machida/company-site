@@ -1,17 +1,15 @@
 $ ->
   $container = $("#container")
   $container.imagesLoaded ->
-    setTimeout (->
-      $container.masonry
-        itemSelector: ".articles-article"
-        isAnimated: true
-        animationOptions:
-          duration: 500
-          easing: "linear"
-          queue: false
-        isResizable: false
-        $container.animate opacity: 1
-        ), 200
+    $container.masonry
+      itemSelector: ".articles-article"
+      isAnimated: true
+      animationOptions:
+        duration: 100
+        easing: "linear"
+        queue: false
+      isResizable: false
+      $container.animate opacity: 1
   $("#container").infinitescroll
     navSelector: "nav.pagination" # selector for the paged navigation (it will be hidden)
     nextSelector: "nav.pagination a[rel=next]" # selector for the NEXT link (to page 2)
@@ -31,4 +29,4 @@ $ ->
         # show elems now they're ready
         $newElems.animate opacity: 1
         $("#container").masonry "appended", $newElems, true
-        ), 500
+        ), 100

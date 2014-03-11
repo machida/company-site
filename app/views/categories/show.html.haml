@@ -1,7 +1,6 @@
 - content_for :page_title do
   = @category.name.upcase
 
-.articles
-  = render 'articles/articles'
+= render 'articles/articles'
 
 = paginate @articles, :remote => true

@@ -27,6 +27,20 @@ GIT
       rake
 
 GIT
+  remote: git://github.com/oulu/oulu-rails.git
+  revision: 28e5d720668fe55e1932808d30d571f0df8b66ee
+  specs:
+    oulu-rails (0.0.8)
+      SassyLists
+      ceaser-easing
+      color-schemer
+      compass-rails
+      compass-rgbapng
+      railties
+      sass-mediaqueries-rails
+      sass-rails
+
+GIT
   remote: git://github.com/radar/by_star
   revision: d1848c6b01341ce6fc4d5859e8a8f199518a8c6a
   specs:
@@ -41,19 +55,6 @@ GIT
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.2.0)
       sprockets-rails (~> 2.0.0)
-
-PATH
-  remote: ../oulu-rails
-  specs:
-    oulu-rails (0.0.8)
-      SassyLists
-      ceaser-easing
-      color-schemer
-      compass-rails
-      compass-rgbapng
-      railties
-      sass-mediaqueries-rails
-      sass-rails
 
 GEM
   remote: https://rubygems.org/
@@ -356,7 +357,7 @@ DEPENDENCIES
   modernizr-rails
   nkss-rails!
   nokogiri
-  oulu-rails!
+  oulu-rails (~> 0.0.7)!
   owlcarousel-rails
   pg
   pry

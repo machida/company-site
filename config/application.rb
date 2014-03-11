@@ -17,23 +17,12 @@ module CompanySite
     config.active_record.default_timezone = :local
     config.active_support.escape_html_entities_in_json = true
 
-    config.after_initialize do
-      config.action_mailer.smtp_settings = {
-        :address              => "smtp.gmail.com",
-        :port                 => 587,
-        :domain               => Settings.action_mailer.domain,
-        :user_name            => Settings.action_mailer.user_name,
-        :password             => Settings.action_mailer.password,
-        :authentication       => :plain,
-        :enable_starttls_auto => true
-      }
-
-      config.action_mailer.default_url_options = {
-        :host => Settings.action_mailer.host
-      }
-    end
     config.compass.require "rgbapng"
     config.compass.require 'SassyLists'
+    config.compass.require 'color-schemer'
+    config.compass.require 'ceaser-easing'
+
+    config.assets.initialize_on_precompile = false
 
     config.to_prepare do
       Devise::SessionsController.layout "staffs_application"

@@ -1,14 +1,17 @@
-#container
+#infscr-loading
+  z-index: 10000
+.articles
   +opacity(0)
-  @media screen and (min-width: #{$break-point})
-    &:after
-      content: ""
-      display: block
-      background-color: $gray-l
-      +rem('width', 8px)
-      height: 100%
-      +absolute(left, 50%, top, 0)
-      +rem('margin-left', -4px)
+  z-index: 2
+@media screen and (min-width: #{$break-point})
+  .timeline
+    content: ""
+    display: block
+    background-color: $gray-l
+    +rem('width', 8px)
+    height: 100%
+    +absolute(left, 50%, top, 0)
+    +rem('margin-left', -4px)
 .articles__wrapper
   +rem('margin-left', $md * -0.6)
   +rem('margin-right', $md * -0.6)
@@ -22,28 +25,50 @@
   +rem('padding-left', $md * .9)
   +rem('padding-bottom', $md * .6)
   +box-sizing(border-box)
-  &:nth-child(odd)
+  z-index: 1
+  +rem('margin-bottom', 100px)
+  &.odd
     @media screen and (min-width: #{$break-point})
-      +rem('padding-right', 40px)
-  &:nth-child(even)
+      +rem('padding-right', 80px)
+      .articles-article__meta
+        +absolute(right, -50px, top, 10%)
+  &.even
     @media screen and (min-width: #{$break-point})
-      +rem('padding-left', 40px)
+      +rem('padding-left', 80px)
+      .articles-article__meta
+        +absolute(left, -50px, top, 10%)
+  &:nth-child(2)
+    @media screen and (min-width: #{$break-point})
+      +rem('margin-top', 100px)
   @media screen and (max-width: #{$break-point})
     width: 50%
     +rem('padding-right', $md * .2)
     +rem('padding-left', $md * .2)
     +rem('margin-bottom', 6px)
     border: none
+.articles-article__meta
+  +rem('width', 100px)
+  text-align: center
 .articles-article__inner
+  +relative(1)
+  background-color: #eee
+  +rem('height', 140px)
   overflow: hidden
-  +rem('margin-bottom', 20px)
   @media screen and (max-width: #{$break-point})
     +rem('padding', 6px)
     margin-bottom: 0
+.articles-article__informations
+  width: 50%
+  +absolute(right, 0, top, 0)
+  +box-sizing(border-box)
+  +rem('padding', 10px 12px)
+.articles-article__eyecatch-image-wrapper
+  width: 50%
+  overflow: hidden
+  display: block
 .articles-article__eyecatch-image
-  width: 100%
-  height: auto
-  +rem('margin-bottom', $md * .6)
+  +rem('min-height', 160px)
+  width: auto
 .articles-article__title
   +text-block($md, 1.6, .4)
   font-weight: normal
@@ -53,13 +78,11 @@
   display: block
   overflow: hidden
 .articles-article__author-icon-image
-  +rem('width', 24px)
+  +rem('width', 50px)
   +border-radius(50%)
   +inline-block
-  +rem('margin-right', $md * .2)
 .articles-article__created-at
   +rem('font-size', $xs)
-  +inline-block
   color: $gray
 .articles-article__tags
   +rem('padding-top', $md * .4)
