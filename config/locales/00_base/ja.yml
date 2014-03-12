@@ -266,6 +266,7 @@ ja:
   Email: "メールアドレス"
   About Service More: "くわしく"
   About Staff More: "くわしく"
+  Reset Password: "パスワードをリセット"
   helpers:
     submit:
       create: "登録する"

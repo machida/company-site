@@ -15,4 +15,5 @@
             = f.label :remember_me, :class => "sign-in__remember-me"
         .sign-in__input-field--submit
           = f.submit "Sign in", :class => "sign-in__input"
-      = link_to "aaaaaaaaa", new_staff_password_path
+      %p.sign-in__new-password
+        = link_to t('Reset Password'), new_staff_password_path, class: "sign-in__new-password-link"
