@@ -1,9 +1,9 @@
 class ContactMailer < ActionMailer::Base
-  default :from => Settings.new_contact.from
-  default :to => Settings.new_contact.to
+  default :from => ENV["NEW_CONTACT_FROM"]
+  default :to => ENV["NEW_CONTACT_TO"]
 
   def new_contact(contact)
     @contact = contact
-    mail(:to => Settings.new_contact.to, :subject => "#{contact.subject}")
+    mail(:to => ENV["NEW_CONTACT_TO"], :subject => "#{contact.subject}")
   end
 end

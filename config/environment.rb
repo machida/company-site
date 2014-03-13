@@ -5,10 +5,10 @@ require File.expand_path('../application', __FILE__)
 CompanySite::Application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => Settings.action_mailer.user_name,
-  :password => Settings.action_mailer.password,
-  :domain => Settings.action_mailer.domain,
-  :address => Settings.action_mailer.address,
+  :user_name => ENV["ACTION_MAILER_USER_NAME"],
+  :password => ENV["ACTION_MAILER_PASSWORD"],
+  :domain => ENV["ACTION_MAILER_DOMAIN"],
+  :address => ENV["ACTION_MAILER_ADDRESS"],
   :port => 587,
   :authentication => :plain,
   :enable_starttls_auto => true
