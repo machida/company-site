@@ -1,0 +1,7 @@
+%tr.attached_image{id: "attached_image-#{attached_image.id}"}
+  %td= attached_image.subject
+  %td= attached_image.body
+  %td= link_to attached_image.attachment_file_name, attached_image.attachment.url if attached_image.attachment?
+  %td= link_to 'Show', attached_image
+  %td= link_to 'Edit', edit_attached_image_path(attached_image)
+  %td= link_to 'Destroy', attached_image, :confirm => 'Are you sure?', :method => :delete, :remote => true

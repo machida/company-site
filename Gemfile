@@ -26,6 +26,13 @@ gem 'breadcrumbs_on_rails'
 gem 'figaro'
 gem 'browser'
 gem 'auto_html'
+gem 'active_decorator'
+gem 'remotipart', '~> 1.0'
+
+# For Carrierwave
+gem 'carrierwave'
+gem 'rmagick'
+gem 'fog'
 
 # JS
 gem 'modernizr-rails'

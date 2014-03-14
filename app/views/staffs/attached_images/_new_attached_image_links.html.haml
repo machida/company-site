@@ -1,0 +1,4 @@
+#new-attached_image-links
+  = link_to 'New attached_image', new_staffs_attached_image_path, :remote => true, :'data-type' => 'html', :id => 'new-staffs-attached-image-link'
+  %br/
+  = link_to 'New attached_image with Attachment', new_staffs_attached_image_path(:attachment => true), :remote => true, :'data-type' => 'html', :id => 'new-staffs-attached-image-attachment-link'

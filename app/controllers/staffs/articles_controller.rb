@@ -1,6 +1,7 @@
 class Staffs::ArticlesController < StaffsController
 
   def index
+    @attached_images = AttachedImage.all
     if params[:published] == "false"
       @articles = Article.unpublished.order('id desc').all
     elsif params[:published] == "true"

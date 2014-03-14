@@ -9,7 +9,7 @@
 //= require bootstrap
 //= require moment.min
 //= require bootstrap-datetimepicker
+//= require jquery.remotipart
 
-//= require oulu
 
 //= require_tree .
