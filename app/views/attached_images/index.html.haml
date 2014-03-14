@@ -1,0 +1,21 @@
+%h1 Listing attached_images
+
+%table
+  %tr
+    %th Image
+    %th Alt
+    %th
+    %th
+    %th
+
+  - @attached_images.each do |attached_image|
+    %tr
+      %td= attached_image.image
+      %td= attached_image.alt
+      %td= link_to 'Show', attached_image
+      %td= link_to 'Edit', edit_attached_image_path(attached_image)
+      %td= link_to 'Destroy', attached_image, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Attached image', new_attached_image_path

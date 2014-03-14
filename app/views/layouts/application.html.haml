@@ -17,7 +17,7 @@
     /[if lt IE 9]
       = respond_include_tags
     - if development? and not browser.ie?
-      = javascript_include_tag "oulu/plugins/positions"
+      = javascript_include_tag "oulu/dev/positions"
   %body.body.js-hack.js-side-slid#top{class: "#{controller_name}-#{action_name} application #{browser}"}
     = render 'staff_nav'
     = render 'header'

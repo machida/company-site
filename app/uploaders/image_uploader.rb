@@ -1,9 +1,9 @@
 # encoding: utf-8
 
-class AttachedImageUploader < CarrierWave::Uploader::Base
+class ImageUploader < CarrierWave::Uploader::Base
 
   # リサイズしたり画像形式を変更するのに必要
-  include CarrierWave::RMagick
+  include CarrierWave::MiniMagick
 
   # 画像の上限を800pxにする
   process :resize_to_limit => [1000, 1000]

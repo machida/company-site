@@ -11,5 +11,6 @@
 //= require bootstrap-datetimepicker
 //= require jquery.remotipart
 
+//= require oulu
 
 //= require_tree .

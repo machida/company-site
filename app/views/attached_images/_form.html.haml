@@ -1,0 +1,16 @@
+= form_for @attached_image do |f|
+  - if @attached_image.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@attached_image.errors.count, "error")} prohibited this attached_image from being saved:"
+      %ul
+        - @attached_image.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :image
+    = f.file_field :image
+  .field
+    = f.label :alt
+    = f.text_field :alt
+  .actions
+    = f.submit 'Save'
