@@ -16,6 +16,7 @@
     .js-markdown.js-markdown-article
       .staff-fields__field.is-relative
         .staff-fields__markdown
+          = link_to "aaaa", staffs_attached_images_path, :remote => true, :'data-type' => :html, :class => "js-ajax-attached-images"
           = f.label :body, t('Body'), {:class => 'staff-fields__label'}
           = f.text_area :body, {:class => 'staff-fields__body'}
     .staff-fields__field

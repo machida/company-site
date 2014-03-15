@@ -2,6 +2,10 @@ class Staffs::AttachedImagesController < StaffsController
 
   def index
     @attached_images = AttachedImage.all
+    respond_to do |format|
+      format.html { render :layout => false }
+      format.js
+    end
   end
 
   def show
