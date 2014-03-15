@@ -1,4 +1,4 @@
-= form_for @attached_image do |f|
+= form_for [:staffs, @attached_image] do |f|
   - if @attached_image.errors.any?
     #error_explanation
       %h2= "#{pluralize(@attached_image.errors.count, "error")} prohibited this attached_image from being saved:"

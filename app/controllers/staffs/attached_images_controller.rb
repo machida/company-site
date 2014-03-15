@@ -1,34 +1,25 @@
-class AttachedImagesController < ApplicationController
-  before_action :set_attached_image, only: [:show, :edit, :update, :destroy]
+class Staffs::AttachedImagesController < StaffsController
 
-  # GET /attached_images
-  # GET /attached_images.json
   def index
     @attached_images = AttachedImage.all
   end
 
-  # GET /attached_images/1
-  # GET /attached_images/1.json
   def show
   end
 
-  # GET /attached_images/new
   def new
     @attached_image = AttachedImage.new
   end
 
-  # GET /attached_images/1/edit
   def edit
   end
 
-  # POST /attached_images
-  # POST /attached_images.json
   def create
     @attached_image = AttachedImage.new(attached_image_params)
 
     respond_to do |format|
       if @attached_image.save
-        format.html { redirect_to @attached_image, notice: 'Attached image was successfully created.' }
+        format.html { redirect_to staffs_attached_images_path, notice: 'Attached image was successfully created.' }
         format.json { render action: 'show', status: :created, location: @attached_image }
       else
         format.html { render action: 'new' }
@@ -37,8 +28,6 @@ class AttachedImagesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /attached_images/1
-  # PATCH/PUT /attached_images/1.json
   def update
     respond_to do |format|
       if @attached_image.update(attached_image_params)
@@ -51,12 +40,10 @@ class AttachedImagesController < ApplicationController
     end
   end
 
-  # DELETE /attached_images/1
-  # DELETE /attached_images/1.json
   def destroy
     @attached_image.destroy
     respond_to do |format|
-      format.html { redirect_to attached_images_url }
+      format.html { redirect_to staffs_attached_images_url }
       format.json { head :no_content }
     end
   end

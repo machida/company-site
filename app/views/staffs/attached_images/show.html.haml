@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Image:
+  = @attached_image.image
+%p
+  %b Alt:
+  = @attached_image.alt
+
+= link_to 'Edit', edit_staffs_attached_image_path(@attached_image)
+\|
+= link_to 'Back', staffs_attached_images_path

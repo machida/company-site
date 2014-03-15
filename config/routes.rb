@@ -1,6 +1,4 @@
 CompanySite::Application.routes.draw do
-  resources :attached_images
-
   mount Nkss::Engine => '/styleguides' if Rails.env.development?
   namespace :staffs do
     root 'home#index'
@@ -12,6 +10,7 @@ CompanySite::Application.routes.draw do
     resources :sites
     resources :services
     resources :contacts
+    resources :attached_images
   end
   devise_for :staffs, :controllers => { :sessions => "staffs/sessions" }
   resources :snippets
