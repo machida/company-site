@@ -44,8 +44,8 @@ gem 'magnific-popup-rails'
 gem 'rails-assets-moment'
 
 # Sass
-gem 'sass-rails', github: "rails/sass-rails"
-gem 'sass', github: "nex3/sass", tag: '3.3.0.rc.6'
+gem 'sass-rails', :git => 'git://github.com/machida/sass-rails.git', :branch => "sass3"
+gem 'sass', github: "nex3/sass", tag: '3.3.3'
 gem "compass", "~> 1.0.0.alpha.18"
 gem "compass-rails", github: "Compass/compass-rails"
 # http://sassylists.com/

@@ -3,8 +3,8 @@ class Staffs::AttachedImagesController < StaffsController
   def index
     @attached_images = AttachedImage.all
     respond_to do |format|
-      format.html { render :layout => false }
-      format.js
+      format.html { render layout: (request.headers["X-Requested-With"] != 'XMLHttpRequest') }
+      format.js { render json: @attached_images }
     end
   end
 
