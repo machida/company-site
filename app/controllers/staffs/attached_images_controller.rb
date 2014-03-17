@@ -3,7 +3,7 @@ class Staffs::AttachedImagesController < StaffsController
   def index
     @attached_images = AttachedImage.all
     respond_to do |format|
-      format.html { render layout: (request.headers["X-Requested-With"] != 'XMLHttpRequest') }
+      format.html { render layout: !request.xhr? }
       format.js { render json: @attached_images }
     end
   end
@@ -45,11 +45,9 @@ class Staffs::AttachedImagesController < StaffsController
   end
 
   def destroy
+    @attached_image = AttachedImage.find(params[:id])
     @attached_image.destroy
-    respond_to do |format|
-      format.html { redirect_to staffs_attached_images_url }
-      format.json { head :no_content }
-    end
+    render :json => {:attached_image => @attached_image}
   end
 
   private

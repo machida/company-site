@@ -1,14 +1,23 @@
-%header.header
-  .wrapper.header__wrapper
-    = form_tag(articles_path, :method => "get", :class => "header-search-form pc") do
-      = text_field_tag(:search, params[:search], :placeholder => "Search", :class => "header-search-form__input-text js-focused")
-      = button_tag(:name => nil, :class => "header-search-form__button", :type => "submit") do
-        %i.fa.fa-search
-    %i.fa.fa-bars.mobile.header__mobile-nav-opener.js-side-slide
-    - if article?
-      = render 'global_nav'
 - if not article?
+  %header.header
+    .wrapper.header__wrapper
+      = form_tag(articles_path, :method => "get", :class => "header-search-form pc") do
+        = text_field_tag(:search, params[:search], :placeholder => "Search", :class => "header-search-form__input-text js-focused")
+        = button_tag(:name => nil, :class => "header-search-form__button", :type => "submit") do
+          %i.fa.fa-search
+      %i.fa.fa-bars.mobile.header__mobile-nav-opener.js-side-slide
   = render 'hero'
+  = render partial: 'global_nav', locals: {position: "global"}
+- else
+  %header.header
+    .wrapper.header__wrapper
+      = form_tag(articles_path, :method => "get", :class => "header-search-form pc") do
+        = text_field_tag(:search, params[:search], :placeholder => "Search", :class => "header-search-form__input-text js-focused")
+        = button_tag(:name => nil, :class => "header-search-form__button", :type => "submit") do
+          %i.fa.fa-search
+      %i.fa.fa-bars.mobile.header__mobile-nav-opener.js-side-slide
+      = render partial: 'global_nav', locals: {position: "article-global"}
+  .article-hero
 - if notice
   .notice.js-delay-hidden
     .wrapper.notice__wrapper

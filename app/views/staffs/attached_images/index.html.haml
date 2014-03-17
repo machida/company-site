@@ -3,16 +3,24 @@
 
 .attached-images__attached-images
   - @attached_images.each do |attached_image|
-    .attached-images__attached-image.attached-image
-      = image_tag("#{attached_image.image}", class: ".attached-image__image")
+    .attached-images__attached-image.attached-image.js-hidden
+      .attached-image__image-wrapper
+        = image_tag("#{attached_image.image}", class: "attached-image__image")
+        %ul.attached-image__actions
+          %li.attached-image__action
+            = link_to 'Show', staffs_attached_image_path(attached_image)
+          %li.attached-image__action
+            = link_to 'Edit', edit_staffs_attached_image_path(attached_image)
+          %li.attached-image__action
+            = link_to 'Destroy', staffs_attached_image_path(attached_image, format: :json), :method => :delete, remote: "true", :data => { :confirm => 'Are you sure?' }
       %p.attached-image__alt
         = attached_image.alt
-      %ul.attached-image__actions
-        %li.attached-image__action
-          = link_to 'Show', staffs_attached_image_path(attached_image)
-        %li.attached-image__action
-          = link_to 'Edit', edit_staffs_attached_image_path(attached_image)
-        %li.attached-image__action
-          = link_to 'Destroy', staffs_attached_image_path(attached_image), :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 = link_to 'New Attached image', new_staffs_attached_image_path
+
+:javascript
+  $(function() {
+   $('a[data-method="delete"]').on('ajax:success', function(xhr,data,status) {
+      $(this).parents('.js-hidden').fadeOut("slow");
+   });
+  });

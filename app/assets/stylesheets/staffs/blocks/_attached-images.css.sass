@@ -1,0 +1,34 @@
+#attached-images
+  background-color: rgba(0, 0, 0, .8)
+  +rem('width', 560px)
+  &.is-opend
+    +fixed(right, 0, top, 0, 100)
+  &.is-closed
+    +fixed(right, -100%, top, 0, 100)
+.attached-image
+  float: left
+  +rem('margin', 10px)
+  +rem('height', 260px)
+.attached-image__alt
+  display: block
+  color: $white
+  +text-block(14px, 22px, 8px)
+  +rem('height', 44px)
+.attached-image__image-wrapper
+  +rem('width', 160px)
+  +rem('height', 160px)
+  overflow: hidden
+  +relative(1)
+.attached-image__image
+  +rem('width', 160px)
+  +rem('max-height', 260px)
+.attached-image__actions
+  +absolute(left, 0, bottom, 0)
+  width: 100%
+  background-color: rgba(255, 255, 255, .8)
+  +rem('padding', 10px)
+  +box-sizing(border-box)
+  text-align: center
+.attached-image__action
+  +inline-block
+

@@ -23,6 +23,7 @@ module CompanySite
     config.compass.require 'ceaser-easing'
 
     config.assets.initialize_on_precompile = false
+    config.assets.precompile += ['jquery.js']
 
     config.to_prepare do
       Devise::SessionsController.layout "staffs_application"

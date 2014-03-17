@@ -6,7 +6,6 @@ ruby '2.1.0'
 gem 'rails', '>= 4.0.2'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
@@ -35,6 +34,7 @@ gem 'mini_magick'
 gem 'fog'
 
 # JS
+gem 'jquery-rails-cdn'
 gem 'modernizr-rails'
 gem 'bootstrap-sass'
 gem 'bootstrap3-datetimepicker-rails', '~> 2.1.30'
@@ -42,6 +42,7 @@ gem "google-code-prettify-rails"
 gem 'owlcarousel-rails'
 gem 'magnific-popup-rails'
 gem 'rails-assets-moment'
+gem 'rails-assets-datetimepicker'
 
 # Sass
 gem 'sass-rails', :git => 'git://github.com/machida/sass-rails.git', :branch => "sass3"

@@ -16,7 +16,7 @@
     .js-markdown.js-markdown-article
       .staff-fields__field.is-relative
         .staff-fields__markdown
-          = link_to "aaaa", staffs_attached_images_path, :remote => true, :'data-type' => :html, :class => "js-ajax-attached-images"
+          = link_to "images", staffs_attached_images_path, :remote => true, :'data-type' => :html, :class => "js-ajax-attached-images js-open-attached-images"
           = f.label :body, t('Body'), {:class => 'staff-fields__label'}
           = f.text_area :body, {:class => 'staff-fields__body'}
     .staff-fields__field
@@ -45,6 +45,6 @@
       = f.check_box :published
     .staff-fields__field.datepicker
       = f.label :created_at, t('Created at'), {:class => 'staff-fields__label'}
-      = f.text_field :created_at, {:class => 'staff-fields__text add-on'}
+      = f.text_field :created_at, {class: 'staff-fields__text add-on', id: "datetimepicker"}
     .staff-fields__actions
       = f.submit(t('Create'), :class => "large-button")

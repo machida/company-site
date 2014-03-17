@@ -1,4 +1,3 @@
-//= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.turbolinks
@@ -8,9 +7,6 @@
 //= require markdown/jquery.markdown
 //= require bootstrap
 //= require moment.min
-//= require bootstrap-datetimepicker
-//= require jquery.remotipart
-
 //= require oulu
 
 //= require_tree .

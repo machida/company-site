@@ -3,6 +3,7 @@
   %head
     %title= @site.title
     = stylesheet_link_tag "staffs/application", media: "all", "data-turbolinks-track" => true
+    = jquery_include_tag :google, :force => true
     = javascript_include_tag "staffs/application", "data-turbolinks-track" => true
     = csrf_meta_tags
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
@@ -32,7 +33,7 @@
               = image_tag gravatar_image_url(current_staff.email, 32), {:class => "header__staff-gravatar-image"}
               = current_staff.name
 
-    #attached-images
+    #attached-images.is-closed
 
     - if notice
       .notice
