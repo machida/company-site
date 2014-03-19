@@ -9,17 +9,17 @@
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
     = auto_discovery_link_tag( :rss, "/articles/feed.rss" )
     = analytics_init if production?
-    /[if IE]
+    - if browser.ie8?
       = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", media: "all"
       = javascript_include_tag "//html5shiv.googlecode.com/svn/trunk/html5.js"
-      = javascript_include_tag "oulu/ie/jquery.linkscubber.js"
-      = javascript_include_tag "oulu/ie/jquery.belatedPNG.min.js"
-      = javascript_include_tag "oulu/ie/ie-selectors"
-    /[if lt IE 9]
+      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"
       = respond_include_tags
+      = javascript_include_tag "oulu-ie8"
+    - if browser.ie9?
+      = javascript_include_tag "oulu-ie9"
     - if development? and not browser.ie?
       = javascript_include_tag "oulu/dev/positions"
-  %body.body.js-hack.js-side-slid#top{class: "#{controller_name}-#{action_name} application #{browser}"}
+  %body.body.js-side-slid#top{class: "#{controller_name}-#{action_name} application #{browser}"}
     = render 'staff_nav'
     = render 'header'
     .page

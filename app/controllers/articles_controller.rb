@@ -14,6 +14,7 @@ class ArticlesController < ApplicationController
       @articles = Article.published.page(params[:page]).order('created_at desc').per(12)
       add_breadcrumb "home", root_path
       add_breadcrumb "articles", articles_path
+      format.json { head :no_content }
     end
   end
 
