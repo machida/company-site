@@ -27,6 +27,7 @@ gem 'browser'
 gem 'auto_html'
 gem 'active_decorator'
 gem 'remotipart', '~> 1.0'
+gem 'puma'
 
 # For Carrierwave
 gem 'carrierwave'

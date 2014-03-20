@@ -83,4 +83,7 @@ CompanySite::Application.configure do
   # replace this with your tracker code
   GA.tracker = "UA-xxxxxx-x"
   GA.script_source = "('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'"
+
+  # For Puma
+  config.threadsafe!
 end
