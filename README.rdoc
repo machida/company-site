@@ -2,7 +2,7 @@
 
 * Ruby version 2.1
 
-* Rails version 4.0
+* Rails version 4.2
 
 * System dependencies
 
