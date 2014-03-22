@@ -7,6 +7,7 @@
 //= require markdown/jquery.markdown
 //= require bootstrap
 //= require moment.min
+//= require datetimepicker
 //= require oulu
 
 //= require_tree .

@@ -38,7 +38,6 @@ gem 'fog'
 gem 'jquery-rails-cdn'
 gem 'modernizr-rails'
 gem 'bootstrap-sass'
-gem 'bootstrap3-datetimepicker-rails', '~> 2.1.30'
 gem "google-code-prettify-rails"
 gem 'owlcarousel-rails'
 gem 'magnific-popup-rails'
