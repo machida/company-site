@@ -37,11 +37,9 @@ gem 'fog'
 # JS
 gem 'jquery-rails-cdn'
 gem 'modernizr-rails'
-gem 'bootstrap-sass'
 gem "google-code-prettify-rails"
 gem 'owlcarousel-rails'
 gem 'magnific-popup-rails'
-gem 'rails-assets-moment'
 gem 'rails-assets-datetimepicker'
 
 # Sass
