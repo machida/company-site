@@ -15,6 +15,7 @@
   +text-block($xxxxxxxl, 1.4, .8)
   margin-left: -0.1em
   margin-right: -0.1em
+  font-weight: bold
 .article__title-link
   color: $black
   text-decoration: none
@@ -22,9 +23,11 @@
 
 .article__body
   +rem('font-size', $lg)
+  h4
+    +text-block(24px, 1.6, .9)
+    font-weight: bold
   p
-    +rem('line-height', $lg*1.9)
-    +rem('margin-bottom', $lg*1.7)
+    +text-block($lg, 1.9, 1.7)
   ul,
   ol
     +rem('margin-bottom', $lg*1.7)

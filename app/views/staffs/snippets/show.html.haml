@@ -6,5 +6,6 @@
     = t('Back To Snippets')
 
 .main__body
-  #notice= notice
+  - if notice
+    #notice= notice
   = link_to t('Edit Snippet'), edit_staffs_snippet_path(@snippet)

@@ -3,9 +3,8 @@
 
 %section.two-column-content.member
   .two-column-content__title-wrapper.member__title-wrapper
-    = image_tag("member-icons/#{@staff.slug}.jpg", :alt => "#{@staff.name}", :class => "member__member-icon-image")
-    %h2.two-column-content__second-heading.member__member-name= @staff.name
-
+    %h2.two-column-content__second-heading.member__member-name
+      = t('Contact')
   .two-column-content__inner
     %ul.member__sns-icons
       %li.member__sns-icon.twitter
@@ -17,6 +16,12 @@
       %li.member__sns-icon.github
         = link_to "#", {:class => "members__sns-link"} do
           %i.fa.fa-github
+
+  .two-column-content__title-wrapper.member__title-wrapper
+    = image_tag("member-icons/#{@staff.slug}.jpg", :alt => "#{@staff.name}", :class => "member__member-icon-image")
+    %h2.two-column-content__second-heading.member__member-name= @staff.name
+
+  .two-column-content__inner
 
     = markdown(@staff.body)
     = link_to t('Back'), members_path, {:class => "member__back-link"}

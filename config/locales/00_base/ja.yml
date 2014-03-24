@@ -267,6 +267,7 @@ ja:
   About Service More: "くわしく"
   About Staff More: "くわしく"
   Reset Password: "パスワードをリセット"
+  Back: "戻る"
   helpers:
     submit:
       create: "登録する"
