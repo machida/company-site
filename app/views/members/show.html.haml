@@ -22,7 +22,8 @@
     %h2.two-column-content__second-heading.member__member-name= @staff.name
 
   .two-column-content__inner
-
     = markdown(@staff.body)
-    = link_to t('Back'), members_path, {:class => "member__back-link"}
+    = link_to members_path, {:class => "member__back-link two-column-content__back-link"} do
+      %i.fa.fa-angle-left.two-column-content__back-link-icon
+      = t('Back')
     = edit_path
