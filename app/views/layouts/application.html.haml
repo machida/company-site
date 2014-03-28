@@ -39,7 +39,8 @@
           .wrapper
             .articles__wrapper
               = yield
-              -# = render 'side_column_articles_nav'
+              -#
+                = render 'side_column_articles_nav'
         - elsif home? or page? or members? or services? or service? or contact? or member?
           .wrapper
             .content__wrapper
