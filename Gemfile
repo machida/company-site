@@ -77,6 +77,7 @@ group :development do
   gem 'pry-rails'
   gem 'letter_opener'
   gem 'i18n_generators'
+  gem 'watson-ruby'
 end
 
 group :production do
