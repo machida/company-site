@@ -5,29 +5,28 @@
   = params[:controller]
   = form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
     = devise_error_messages!
-    %div
-      = f.label :email
-      %br/
-      = f.email_field :email, :autofocus => true
-    - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-      %div
-        Currently waiting confirmation for: #{resource.unconfirmed_email}
-    %div
-      = f.label :password
-      %i (leave blank if you don't want to change it)
-      %br/
-      = f.password_field :password, :autocomplete => "off"
-    %div
-      = f.label :password_confirmation
-      %br/
-      = f.password_field :password_confirmation
-    %div
-      = f.label :current_password
-      %i (we need your current password to confirm your changes)
-      %br/
-      = f.password_field :current_password
-    %div= f.submit "Update"
-  %h3 Cancel my account
-  %p
-    Unhappy? #{button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete}
-  = link_to "Back", staffs_root_path
+    .staff-fields
+      .staff-fields__field
+        = f.label :email, class: 'staff-fields__label'
+        = f.email_field :email, :autofocus => true, class: 'staff-fields__text'
+      - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+        .staff-fields__field
+          Currently waiting confirmation for: #{resource.unconfirmed_email}
+      .staff-fields__field
+        = f.label :password, {class: 'staff-fields__label'}
+        %i (leave blank if you don't want to change it)
+        = f.password_field :password, :autocomplete => "off", class: 'staff-fields__text'
+      .staff-fields__field
+        = f.label :password_confirmation, {class: 'staff-fields__label'}
+        = f.password_field :password_confirmation, class: 'staff-fields__text'
+      .staff-fields__field
+        = f.label :current_password, {class: 'staff-fields__label'}
+        %i (we need your current password to confirm your changes)
+        = f.password_field :current_password, class: 'staff-fields__text'
+      .staff-fields__field
+        = f.submit "Update"
+    .staff-fields
+      %h3 Cancel my account
+      .staff-fields__field
+        Unhappy? #{button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete}
+      = link_to "Back", staffs_root_path

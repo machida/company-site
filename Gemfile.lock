@@ -6,7 +6,7 @@ GIT
       compass (>= 0.12.2)
 
 GIT
-  remote: git://github.com/fjordllc/fnkss-rails.git
+  remote: git://github.com/fjordllc/fnkss-rails
   revision: 25699b52704133daef2d3afc83cf561bf622469a
   specs:
     nkss-rails (0.0.1)

@@ -17,7 +17,6 @@ gem "acts-as-taggable-on", "~> 3.0.1"
 gem 'friendly_id', '~> 5.0.0'
 gem 'kaminari'
 gem 'google-analytics-rails'
-gem 'nkss-rails', github: 'fjordllc/fnkss-rails'
 gem 'nokogiri'
 gem 'by_star', :git => "git://github.com/radar/by_star"
 gem 'redcarpet'
@@ -78,6 +77,7 @@ group :development do
   gem 'letter_opener'
   gem 'i18n_generators'
   gem 'watson-ruby'
+  gem 'nkss-rails', git: 'git://github.com/fjordllc/fnkss-rails'
 end
 
 group :production do
