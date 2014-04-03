@@ -6,6 +6,8 @@
 //= require markdown/Markdown.Editor
 //= require markdown/jquery.markdown
 //= require datetimepicker
+//= require jquery-fileupload/basic
+
 //= require oulu
 
 //= require_tree .

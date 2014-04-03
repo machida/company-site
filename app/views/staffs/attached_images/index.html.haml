@@ -18,6 +18,9 @@
 
 = link_to 'New Attached image', new_staffs_attached_image_path
 
+= render 'form'
+
+
 :javascript
   $(function() {
    $('a[data-method="delete"]').on('ajax:success', function(xhr,data,status) {

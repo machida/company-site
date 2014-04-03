@@ -2,6 +2,7 @@ class Staffs::AttachedImagesController < StaffsController
 
   def index
     @attached_images = AttachedImage.all
+    @attached_image = AttachedImage.new
     respond_to do |format|
       format.html { render layout: !request.xhr? }
       format.js { render json: @attached_images }

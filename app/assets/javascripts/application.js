@@ -4,8 +4,8 @@
 //= require jquery.turbolinks
 
 //= require google-code-prettify-rails/prettify
-
 //= require jquery.infinitescroll
+//= require jquery-fileupload/basic
 
 //= require oulu
 

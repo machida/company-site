@@ -40,6 +40,7 @@ gem "google-code-prettify-rails"
 gem 'owlcarousel-rails'
 gem 'magnific-popup-rails'
 gem 'rails-assets-datetimepicker'
+gem "jquery-fileupload-rails"
 
 # Sass
 gem 'sass-rails', :git => 'git://github.com/machida/sass-rails.git', :branch => "sass3"
