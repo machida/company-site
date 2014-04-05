@@ -14,6 +14,10 @@ class Staffs::AttachedImagesController < StaffsController
 
   def new
     @attached_image = AttachedImage.new
+    respond_to do |format|
+      format.html
+      format.json { render json: @attached_image }
+    end
   end
 
   def edit
