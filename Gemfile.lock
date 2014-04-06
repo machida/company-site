@@ -46,7 +46,7 @@ GIT
 PATH
   remote: ../oulu-rails
   specs:
-    oulu-rails (0.0.16)
+    oulu-rails (0.0.17)
       SassyLists
       ceaser-easing
       color-schemer

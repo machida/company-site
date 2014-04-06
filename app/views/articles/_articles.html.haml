@@ -17,10 +17,8 @@
             = image_tag("#{article.thumbnail}", :alt => "#{article.title}", :class => "articles-article__eyecatch-image")
           - else
             = image_tag("thumbnail-blank.png", :alt => "#{article.title}", :class => "articles-article__eyecatch-image")
-      .articles-article__meta
-        - if article.staff
-          = image_tag("member-icons/#{article.staff.slug}.jpg", :alt => "#{article.staff.name}", :class => "articles-article__author-icon-image pie")
-          .articles-article__author-name
-            = article.staff.name
-
-.timeline
+        .articles-article__meta
+          - if article.staff
+            = image_tag("member-icons/#{article.staff.slug}.jpg", :alt => "#{article.staff.name}", :class => "articles-article__author-icon-image pie")
+            .articles-article__author-name
+              = article.staff.name

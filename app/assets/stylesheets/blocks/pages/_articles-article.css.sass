@@ -1,14 +1,24 @@
 .articles__wrapper
 .articles-article
   +box-sizing(border-box)
-  +rem('padding-left', 220px)
   +relative(1)
-  +rem('margin-bottom', 60px)
+  +rem('margin-bottom', 30px)
+  width: 50%
+  float: left
+  +clearfix
+  &:nth-child(odd)
+    +rem('padding-right', 10px)
+  &:nth-child(even)
+    +rem('padding-left', 10px)
+.articles-article__inner
+  border: $black solid 1px
+  +rem('height', 120px)
+  +relative(1)
+  +rem('padding', 10px)
 .articles-article__meta
   +absolute(left, 0, top, 0)
-  +rem('width', 160px)
-  +rem('height', 160px)
-  background-color: $black
+  +rem('width', 80px)
+  +rem('height', 80px)
 .articles-article__inner
   +relative(1)
   +clearfix
