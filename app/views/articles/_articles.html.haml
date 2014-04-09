@@ -1,6 +1,6 @@
 #container.articles
   - @articles.each do |article|
-    %article.articles-article{class: "#{cycle("odd", "even")}"}
+    %article.articles-article{class: "#{cycle("is-odd", "is-even")}"}
       .articles-article__inner
         .articles-article__informations
           .articles-article__created-at

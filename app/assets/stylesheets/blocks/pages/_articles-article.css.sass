@@ -6,22 +6,17 @@
   width: 50%
   float: left
   +clearfix
-  &:nth-child(odd)
+  &.is-odd
     +rem('padding-right', 10px)
-  &:nth-child(even)
+  &.is-even
     +rem('padding-left', 10px)
 .articles-article__inner
   border: $black solid 1px
-  +rem('height', 120px)
-  +relative(1)
+  +rem('height', 220px)
   +rem('padding', 10px)
-.articles-article__meta
-  +absolute(left, 0, top, 0)
-  +rem('width', 80px)
-  +rem('height', 80px)
-.articles-article__inner
   +relative(1)
   +clearfix
+.articles-article__meta
 .articles-article__informations
   width: 50%
   float: left
@@ -33,16 +28,13 @@
   float: left
 .articles-article__eyecatch-image
   width: 100%
-.articles-article__title
-  +text-block($md, 1.6, .4)
-  font-weight: normal
 .articles-article__title-link
   +hover-link
   color: $black
   display: block
   overflow: hidden
-  +text-block(24px, 1.6, .4)
-  font-weight: bold
+  +text-block(24px, 1.5, .4)
+  +bold-ja
 .articles-article__author-icon-image
   +rem('width', 50px)
   +border-radius(50%)
