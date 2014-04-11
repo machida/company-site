@@ -28,12 +28,14 @@
 .articles-article__eyecatch-image
   width: 100%
 .articles-article__title-link
-  +hover-link
   color: $black
   display: block
   overflow: hidden
   +text-block(24px, 1.5, .4)
   +bold-ja
+  text-decoration: none
+  &:hover
+    color: $pink
 .articles-article__author-icon-image
   +rem('width', 50px)
   +border-radius(50%)
