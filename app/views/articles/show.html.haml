@@ -22,8 +22,18 @@
 .article__body
   = markdown(@article.body)
 %nav.article__nav
-  = link_to(@article.previous_article.title, @article.previous_article, class: "previous-article-link") if @article.previous_article
-  = link_to 'Back', @article.category
-  = link_to(@article.next_article.title, @article.next_article) if @article.next_article
+  %ul.article__nav-items
+    - if @article.previous_article
+      %li.article__nav-item.is-previous<>
+        = link_to @article.previous_article, class: "previous-article-link"  do
+          %i.fa.fa-angle-left
+          = @article.previous_article.title
+    - if @article.next_article
+      %li.article__nav-item.is-next<>
+        = link_to @article.next_article, class: "next-article-link" do
+          = @article.next_article.title
+          %i.fa.fa-angle-right
+    %li.article__nav-item.is-back
+      = link_to t('Back To All Articles'), @article.category, class: "back-to-articles-link"
 
 = edit_path

@@ -88,5 +88,20 @@
       content: "\f02b"
       margin-right: .4em
 
+.article__nav
+  +rem('padding-top', 40px)
+.article__nav-item
+  +inline-block(bottom)
+  +rem('margin-bottom', 10px)
+  &.is-previous
+    text-align: left 
+    width: 50%
+  &.is-next
+    text-align: right
+    width: 50%
+  &.is-back
+    text-align: center
+    width: 100%
+
 .article__footer
   padding-top: 3em
