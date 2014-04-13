@@ -19,7 +19,7 @@
       = javascript_include_tag "oulu-ie9"
     - if development? and not browser.ie?
       = javascript_include_tag "oulu/dev/positions"
-  %body.body.js-side-slid#top{class: "#{controller_name}-#{action_name} application #{browser}"}
+  %body.body.js-side-slid#top{class: "#{page_slug} #{controller_name}-#{action_name} application #{browser}"}
     = render 'staff_nav'
     = render 'header'
     .page
