@@ -3,11 +3,11 @@
     %article.articles-article{class: "#{cycle("is-odd", "is-even")}"}
       .articles-article__inner
         .articles-article__informations
-          .articles-article__created-at
-            = show_date(article.created_at)
           %h2.articles-article__title
             = link_to article, {:class => "articles-article__title-link"} do
               = article.title
+          .articles-article__created-at
+            = show_date(article.created_at)
           - if article.tags.count > 0
             .articles-article__tags
               %ul.tags
