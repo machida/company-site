@@ -19,7 +19,6 @@ module CompanySite
 
     config.compass.require "rgbapng"
     config.compass.require 'SassyLists'
-    config.compass.require 'color-schemer'
     config.compass.require 'ceaser-easing'
 
     config.assets.initialize_on_precompile = false

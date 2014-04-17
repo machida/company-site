@@ -46,10 +46,9 @@ GIT
 PATH
   remote: ../oulu-rails
   specs:
-    oulu-rails (0.0.20)
+    oulu-rails (0.0.25)
       SassyLists
       ceaser-easing
-      color-schemer
       compass-rails
       compass-rgbapng
       railties
