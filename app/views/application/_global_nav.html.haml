@@ -1,7 +1,7 @@
 %nav.pc{class: "#{position}-nav"}
   %div{class: "#{article? ? '' : 'wrapper'} #{position}-nav-nav__wrapper"}
     - if article?
-      %h1.articles-global-nav__logo
+      %h1{class: "#{position}-nav__logo"}
         = link_to "FJORD, LLC.", root_path, {class: "#{position}-nav__logo-link"}
     %ul{class: "#{position}-nav__ul"}
       - if not article?
