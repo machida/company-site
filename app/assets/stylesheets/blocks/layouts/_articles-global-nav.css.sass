@@ -7,15 +7,17 @@
   font-weight: bold
   text-decoration: none
   +text-block(30px, 30px)
-  vertical-align: text-bottom
+  color: $black
+  +rem('margin-right', 20px)
+
 .article-global-nav__ul
-  +inline-block
+  +inline-block(bottom)
 .article-global-nav__li
-  +inline-block
+  +inline-block(bottom)
+  +rem('margin-right', 10px)
 .article-global-nav__link
   +tauri
   font-weight: bold
   text-decoration: none
   +text-block(16px, 30px)
-  vertical-align: text-bottom
-
+  color: $black
