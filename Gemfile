@@ -55,14 +55,12 @@ gem 'sass-mediaqueries-rails'
 gem 'ceaser-easing'
 # https://github.com/gevans/respond-rails
 gem 'respond-rails', '~> 1.0'
-# https://github.com/Team-Sass/color-schemer
-gem 'color-schemer'
 # http://l-lin.github.io/font-awesome-animation/
 gem 'rails-assets-font-awesome-animation'
 # http://lab.hakim.se/ladda/
 gem 'rails-assets-Ladda'
-gem 'oulu-rails', :path => '../oulu-rails'
-# gem 'oulu-rails', '~> 0.0.10', github: 'oulu/oulu-rails'
+# gem 'oulu-rails', :path => '../oulu-rails'
+gem 'oulu-rails', '~> 0.1.00', github: 'oulu/oulu-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

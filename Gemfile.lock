@@ -37,16 +37,10 @@ GIT
     sass (3.3.3)
 
 GIT
-  remote: git://github.com/radar/by_star
-  revision: d1848c6b01341ce6fc4d5859e8a8f199518a8c6a
+  remote: git://github.com/oulu/oulu-rails.git
+  revision: e9477af71f6ba0cc588a8665cbf17db4913ccadf
   specs:
-    by_star (2.2.0.rc1)
-      activesupport
-
-PATH
-  remote: ../oulu-rails
-  specs:
-    oulu-rails (0.0.25)
+    oulu-rails (0.1.00)
       SassyLists
       ceaser-easing
       compass-rails
@@ -54,6 +48,13 @@ PATH
       railties
       sass-mediaqueries-rails
       sass-rails
+
+GIT
+  remote: git://github.com/radar/by_star
+  revision: d1848c6b01341ce6fc4d5859e8a8f199518a8c6a
+  specs:
+    by_star (2.2.0.rc1)
+      activesupport
 
 GEM
   remote: https://rubygems.org/
@@ -121,8 +122,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    color-schemer (0.2.8)
-      compass-blend-modes (~> 0.0.2)
     compass (1.0.0.alpha.19)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.0.alpha.19)
@@ -130,8 +129,6 @@ GEM
       json
       listen (~> 1.1.0)
       sass (>= 3.3.0, < 3.5)
-    compass-blend-modes (0.0.2)
-      compass
     compass-core (1.0.0.alpha.19)
       multi_json (~> 1.0)
       sass (>= 3.3.0, < 3.5)
@@ -369,7 +366,6 @@ DEPENDENCIES
   carrierwave
   ceaser-easing
   coffee-rails (~> 4.0.0)
-  color-schemer
   compass (~> 1.0.0.alpha.18)
   compass-rails!
   devise
@@ -392,7 +388,7 @@ DEPENDENCIES
   modernizr-rails
   nkss-rails!
   nokogiri
-  oulu-rails!
+  oulu-rails (~> 0.1.00)!
   owlcarousel-rails
   pg
   pry
