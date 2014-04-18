@@ -60,7 +60,7 @@ gem 'rails-assets-font-awesome-animation'
 # http://lab.hakim.se/ladda/
 gem 'rails-assets-Ladda'
 # gem 'oulu-rails', :path => '../oulu-rails'
-gem 'oulu-rails', '~> 0.1.00', github: 'oulu/oulu-rails'
+gem 'oulu-rails', '~> 0.1.01', github: 'oulu/oulu-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
