@@ -44,23 +44,11 @@ gem "jquery-fileupload-rails"
 
 # Sass
 gem 'sass-rails', :git => 'git://github.com/machida/sass-rails.git', :branch => "sass3"
-gem 'sass', github: "nex3/sass", tag: '3.3.3'
+gem 'sass', github: "nex3/sass", tag: '3.3.5'
 gem "compass", "~> 1.0.0.alpha.18"
 gem "compass-rails", github: "Compass/compass-rails"
-# http://sassylists.com/
-gem 'SassyLists'
-# https://github.com/paranoida/sass-mediaqueries-rails
-gem 'sass-mediaqueries-rails'
-# https://github.com/jhardy/compass-ceaser-easing
-gem 'ceaser-easing'
-# https://github.com/gevans/respond-rails
-gem 'respond-rails', '~> 1.0'
-# http://l-lin.github.io/font-awesome-animation/
-gem 'rails-assets-font-awesome-animation'
-# http://lab.hakim.se/ladda/
-gem 'rails-assets-Ladda'
-# gem 'oulu-rails', :path => '../oulu-rails'
-gem 'oulu-rails', '~> 0.1.01', github: 'oulu/oulu-rails'
+gem 'oulu-rails', :path => '../oulu-rails'
+# gem 'oulu-rails', '~> 0.1.01', github: 'oulu/oulu-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -17,9 +17,10 @@ module CompanySite
     config.active_record.default_timezone = :local
     config.active_support.escape_html_entities_in_json = true
 
-    config.compass.require "rgbapng"
     config.compass.require 'SassyLists'
     config.compass.require 'ceaser-easing'
+    config.compass.require 'rgbapng'
+    config.compass.require 'sass-mediaqueries-rails'
 
     config.assets.initialize_on_precompile = false
     config.assets.precompile += ['jquery.js']
