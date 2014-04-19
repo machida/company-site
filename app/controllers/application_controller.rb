@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   end
 
   def site_information
-    @site = Site.find(1)
+    @site = Site.first
   end
 
   # cancanの名前をuserからstaffにoverride
