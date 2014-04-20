@@ -25,14 +25,16 @@
   %ul.article__nav-items
     - if @article.previous_article
       %li.article__nav-item.is-previous<>
-        = link_to @article.previous_article, class: "previous-article-link"  do
-          %i.fa.fa-angle-left
-          = @article.previous_article.title
+        = link_to @article.previous_article, class: "previous-article-link article__nav-link is-previous"  do
+          %i.fa.fa-angle-left.article__nav-link-icon.is-previous
+          %span.article__nav-link-text.is-previous
+            = @article.previous_article.title
     - if @article.next_article
       %li.article__nav-item.is-next<>
-        = link_to @article.next_article, class: "next-article-link" do
-          = @article.next_article.title
-          %i.fa.fa-angle-right
+        = link_to @article.next_article, class: "next-article-link article__nav-link is-next" do
+          %span.article__nav-link-text.is-next
+            = @article.next_article.title
+          %i.fa.fa-angle-right.article__nav-link-icon.is-next
     %li.article__nav-item.is-back
       = link_to t('Back To All Articles'), @article.category, class: "back-to-articles-link"
 

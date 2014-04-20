@@ -27,6 +27,7 @@ gem 'auto_html'
 gem 'active_decorator'
 gem 'remotipart', '~> 1.0'
 gem 'puma'
+gem 'glitched_string'
 
 # For Carrierwave
 gem 'carrierwave'

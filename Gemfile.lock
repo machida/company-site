@@ -179,6 +179,7 @@ GEM
     formatador (0.2.4)
     friendly_id (5.0.3)
       activerecord (>= 4.0.0)
+    glitched_string (0.2.0)
     google-analytics-rails (0.0.5)
     google-code-prettify-rails (1.1.0)
       railties (>= 3.2.0.beta, < 5.0)
@@ -390,6 +391,7 @@ DEPENDENCIES
   figaro
   fog
   friendly_id (~> 5.0.0)
+  glitched_string
   google-analytics-rails
   google-code-prettify-rails
   haml-rails

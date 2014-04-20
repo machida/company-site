@@ -31,8 +31,14 @@
   ul,
   ol
     +rem('margin-bottom', $lg*1.7)
+    +rem('margin-left', $lg*1.4)
+  ul
+    list-style: disc
+  ol
+    list-style: decimal
   li
     +rem('margin-bottom', $lg*.6)
+    +text-block($lg, 1.6)
     &:last-child
       margin-bottom: 0
   a
@@ -104,5 +110,20 @@
     width: 100%
     +rem('margin-top', 20px)
 
+.article__nav-link
+  display: block
+  +relative
+  &.is-previous
+    +rem('padding-left', 30px)
+  &.is-next
+    +rem('padding-right', 30px)
+.article__nav-link-icon
+  &.is-previous
+    +absolute(left, 0, top, 0)
+  &.is-next
+    +absolute(right, 0, top, 0)
+.article__nav-link-text
+  +ellipsis
+  display: block
 .article__footer
   padding-top: 3em
