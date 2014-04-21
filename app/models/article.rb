@@ -8,12 +8,12 @@ class Article < Post
     end
   end
 
-  def previous_article
-    self.class.where("created_at > ?", created_at).reorder("created_at asc").first
+  def next_article
+    self.class.where("created_at > ?", created_at).reorder("created_at asc").published.first
   end
 
-  def next_article
-    self.class.where("created_at < ?", created_at).reorder("created_at desc").first
+  def previous_article
+    self.class.where("created_at < ?", created_at).reorder("created_at desc").published.first
   end
 
 end
