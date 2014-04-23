@@ -20,7 +20,7 @@ module CompanySite
     config.compass.require 'SassyLists'
     config.compass.require 'ceaser-easing'
     config.compass.require 'rgbapng'
-    config.compass.require 'sass-mediaqueries-rails'
+    config.compass.require 'breakpoint'
 
     config.assets.initialize_on_precompile = false
     config.assets.precompile += ['jquery.js']
