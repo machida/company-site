@@ -39,9 +39,9 @@ GIT
 
 GIT
   remote: git://github.com/radar/by_star
-  revision: a5b99a5efa034fd5a43c9ef66aeb9ba4aacb32a5
+  revision: 8c22f5108b9379adc7fc80d7c5b8b163027eee10
   specs:
-    by_star (2.2.0)
+    by_star (2.2.1)
       activesupport
 
 PATH

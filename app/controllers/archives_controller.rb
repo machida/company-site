@@ -12,5 +12,6 @@ def show
     else
       @articles = Article.published.by_year(Time.local(year)).order('created_at desc').page(params[:page]).per(12).reverse
     end
-  end
+end
+
 end

@@ -1,37 +1,31 @@
+.articles__wrapper
+  +rem('max-width', 680px)
+  +side-mg-auto
 .articles-article
-  +box-sizing(border-box)
   +relative(1)
-  +rem('margin-bottom', 30px)
-  width: 50%
-  float: left
+  +rem('margin-bottom', 80px)
+  +box-sizing(border-box)
   +clearfix
-  &.is-odd
-    +rem('padding-right', 10px)
-  &.is-even
-    +rem('padding-left', 10px)
 .articles-article__inner
-  +rem('height', 220px)
   +relative(1)
   +clearfix
 .articles-article__meta
 .articles-article__informations
-  width: 50%
-  float: left
   +box-sizing(border-box)
-  +rem('padding-right', 20px)
 .articles-article__eyecatch-image-wrapper
-  width: 50%
   display: block
   float: left
+  width: 30%
+  +rem('padding-right', 32px)
+  +box-sizing(border-box)
 .articles-article__eyecatch-image
   width: 100%
 .articles-article__title-link
   color: $black
-  display: block
-  overflow: hidden
-  +text-block(24px, 1.5, .4)
+  +text-block(22px, 1.5)
   +bold-ja
   text-decoration: none
+
   &:hover
     color: $pink
 .articles-article__author-icon-image
@@ -39,11 +33,14 @@
   +border-radius(50%)
   +inline-block
 .articles-article__author-name
-  +inline-block(bottom)
+  +inline-block
+  +tauri
 .articles-article__created-at
-  +rem('font-size', 16px)
+  +text-block(16px, 1.4, 6px)
   color: $gray
   +montserrat
+  display: block
+  +rem('padding-top', 4px)
 .articles-article__tags
   +rem('padding-top', $md * .4)
   li

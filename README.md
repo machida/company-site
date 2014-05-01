@@ -1,14 +1,10 @@
-== README
+## Company Site for FJORD,LLC.
 
-* Ruby version 2.1
+- Ruby version 2.1.1
+- Rails version 4.1.0
+- Use oulu-rails gem (sass files for machida)
 
-* Rails version 4.0.2
+### nokogiriのinstallでエラーが出たら
 
-* System dependencies
-
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+- `$brew tap Homebrew/homebrew-dupes`
+- `NOKOGIRI_USE_SYSTEM_LIBRARIES=1 bundle install`

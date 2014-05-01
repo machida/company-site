@@ -7,11 +7,11 @@ $ ->
     $('#attached-images').toggleClass('is-closed')
 
 $ ->
-  $('#attached_image_image').ready ->
+  $(".js-ajax-attached-images").on "click", ->
     $('#attached_image_image').fileupload
       dataType: 'json'
       dropZone: $('#upload')
-      console.log("aaaa")
+      console.log("upload")
       start: ->
         console.log("aaaaaaaaaaaaaa")
         $('#progress .bar').css 'width', '0%'
