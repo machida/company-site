@@ -38,21 +38,16 @@ GIT
     sass (3.3.5)
 
 GIT
-  remote: git://github.com/radar/by_star
-  revision: 8c22f5108b9379adc7fc80d7c5b8b163027eee10
+  remote: git://github.com/oulu/oulu-rails.git
+  revision: 77d42ff1d24caf8f024b36c43711db7a333db151
   specs:
-    by_star (2.2.1)
-      activesupport
-
-PATH
-  remote: ../oulu-rails
-  specs:
-    oulu-rails (0.1.11)
+    oulu-rails (0.1.15)
       SassyLists
       breakpoint
       ceaser-easing
       compass-rails
       compass-rgbapng
+      modular-scale
       rails-assets-Ladda
       rails-assets-css-modal
       rails-assets-font-awesome-animation
@@ -61,6 +56,13 @@ PATH
       sass-rails
       sassy-maps
       toolkit
+
+GIT
+  remote: git://github.com/radar/by_star
+  revision: 8c22f5108b9379adc7fc80d7c5b8b163027eee10
+  specs:
+    by_star (2.2.1)
+      activesupport
 
 GEM
   remote: https://rubygems.org/
@@ -255,6 +257,8 @@ GEM
     mini_portile (0.5.3)
     minitest (5.3.3)
     modernizr-rails (2.7.1)
+    modular-scale (2.0.5)
+      compass (>= 0.12.0)
     multi_json (1.9.2)
     net-http-digest_auth (1.4)
     net-http-persistent (2.9.4)
@@ -410,7 +414,7 @@ DEPENDENCIES
   modernizr-rails
   nkss-rails!
   nokogiri
-  oulu-rails!
+  oulu-rails (~> 0.1.15)!
   owlcarousel-rails
   pg
   pry
