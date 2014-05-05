@@ -11,6 +11,6 @@
           = image_tag("member-icons/#{staff.slug}.jpg", :alt => "#{staff.name}", :class => "members__member-icon-image pie")
       .two-column-content__inner
         = markdown(staff.description)
-        = link_to "/members/#{staff.slug}", {:class => "two-column-content__more-link"} do
+        = link_to "/members/#{staff.slug}", class: "two-column-content__more-link border-button-md-i-r" do
           = t('About Staff More')
-          %i.fa.fa-angle-right.two-column-content__more-link-icon
+          %i.fa.fa-angle-right.two-column-content__more-link-icon.fa-lg

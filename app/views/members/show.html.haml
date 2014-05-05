@@ -1,29 +1,30 @@
 - content_for :page_title do
   = @staff.name
 
-%section.two-column-content.member
+%section.two-column-content.is-member
   .two-column-content__title-wrapper.member__title-wrapper
     %h2.two-column-content__second-heading.member__member-name
       = t('Contact')
   .two-column-content__inner
-    %ul.member__sns-icons
-      %li.member__sns-icon.twitter
-        = link_to "#", {:class => "members__sns-link"} do
-          %i.fa.fa-twitter
-      %li.member__sns-icon.facebook
-        = link_to "https://www.facebook.com/#{@staff.facebook_id}", {:class => "members__sns-link", :target => "_blank"} do
-          %i.fa.fa-facebook
-      %li.member__sns-icon.github
-        = link_to "#", {:class => "members__sns-link"} do
-          %i.fa.fa-github
+    .member-sns-icons
+      %ul.member-sns-icons__items
+        %li.member-sns-icons__item.is-twitter
+          = link_to "#", class: "members__sns-link border-icon-button-md" do
+            %i.fa.fa-twitter
+        %li.member-sns-icons__item.is-facebook
+          = link_to "https://www.facebook.com/#{@staff.facebook_id}", class: "members__sns-link border-icon-button-md", target: "_blank" do
+            %i.fa.fa-facebook
+        %li.member-sns-icons__item.is-github
+          = link_to "#", class: "members__sns-link border-icon-button-md" do
+            %i.fa.fa-github
 
   .two-column-content__title-wrapper.member__title-wrapper
-    = image_tag("member-icons/#{@staff.slug}.jpg", :alt => "#{@staff.name}", :class => "member__member-icon-image")
+    = image_tag("member-icons/#{@staff.slug}.jpg", :alt => "#{@staff.name}", class: "member__member-icon-image")
     %h2.two-column-content__second-heading.member__member-name= @staff.name
 
   .two-column-content__inner
     = markdown(@staff.body)
-    = link_to members_path, {:class => "member__back-link two-column-content__back-link"} do
-      %i.fa.fa-angle-left.two-column-content__back-link-icon
+    = link_to members_path, class: "member__back-link two-column-content__back-link border-button-md-i-l" do
+      %i.fa.fa-angle-left.two-column-content__back-link-icon.fa-lg
       = t('Back')
     = edit_path
