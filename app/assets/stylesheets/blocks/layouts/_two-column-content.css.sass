@@ -14,8 +14,8 @@
 
 .two-column-content__inner
   +border(left, 1px, solid, rgba(0, 0, 0, .1), white)
-  padding-left: 2em
-  padding-bottom: 3em
+  +rem('padding-left', 32px)
+  +rem('padding-bottom', 38px)
   +box-sizing(border-box)
   +clearfix
   @media screen and (max-width: #{$break-point})
@@ -38,18 +38,14 @@
 .two-column-content__first-heading
   background-color: $yellow
   +inline-block
-  +text-block($xl, 3)
+  +text-block($xl, 3, false, bold, center)
   +rem('width', 180px)
-  text-align: center
   +tauri
   color: $black
 
 .two-column-content__second-heading
   +tauri
-  +text-block($lg, 1.4, .4)
-  +rem('font-size', $lg)
-  text-align: right
-  font-weight: bold
+  +text-block($lg, 1.4, .4, bold, center)
   @media screen and (max-width: #{$break-point})
     text-align: left
   &.members__member-name

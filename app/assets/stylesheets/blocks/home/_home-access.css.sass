@@ -35,9 +35,6 @@
       &:before
         content: "#{$i}"
 .home-access__map-link-wrapper
-  text-align: center
-  +rem('width', 66px)
-  float: right
   @media screen and (max-width: #{$break-point})
     +inline-block
     float: none
@@ -46,6 +43,8 @@
     +rem('margin-left', 6px)
 .home-access__map-link
   color: $black
+  display: block
+  text-align: center
   i
     +rem('font-size', $xxl)
   &:hover

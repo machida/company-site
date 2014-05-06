@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: git://github.com/oulu/oulu-rails.git
-  revision: 77d42ff1d24caf8f024b36c43711db7a333db151
+  revision: 7ffd46a531d434be2e74d377e17381d756b090d1
   specs:
     oulu-rails (0.1.15)
       SassyLists

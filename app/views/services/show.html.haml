@@ -1,7 +1,9 @@
 - content_for :page_title do
-  SERVICE
-%section.service.page-show
+  = @service.title
+%section.page-show{class: "#{page_slug}"}
   .service__title.page-show__page-title
     = @service.title
   = markdown(@service.body)
-  = link_to t('Back'), services_path, {:class => "service__back-link"}
+  = link_to services_path, class: "service__back-link border-button-md-i-l" do
+    %i.fa.fa-angle-left.two-column-content__back-link-icon.fa-lg
+    = t('Back')
