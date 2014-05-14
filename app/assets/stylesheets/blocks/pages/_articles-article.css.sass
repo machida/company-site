@@ -1,47 +1,42 @@
+$block: articles-article
 .articles__wrapper
   +rem('max-width', 680px)
   +side-mg-auto
-.articles-article
+.#{$block}
   +relative(1)
-  +rem('margin-bottom', 80px)
+  +rem('padding-left', 114px)
+  +rem('padding-bottom', 50px)
+  +rem('margin-bottom', 50px)
   +box-sizing(border-box)
   +clearfix
-.articles-article__inner
-  +relative(1)
-  +clearfix
-.articles-article__meta
-.articles-article__informations
-  +box-sizing(border-box)
-.articles-article__eyecatch-image-wrapper
-  display: block
-  float: left
-  width: 30%
-  +rem('padding-right', 32px)
-  +box-sizing(border-box)
-.articles-article__eyecatch-image
-  width: 100%
-.articles-article__title-link
+  +border(bottom, 1px, solid, rgba(0, 0, 0, .08), white)
+.#{$block}__title-link
   color: $black
-  +text-block(22px, 1.5)
+  +text-block(28px, 1.6)
   +bold-ja
   text-decoration: none
-
   &:hover
     color: $pink
-.articles-article__author-icon-image
-  +rem('width', 32px)
+.#{$block}__meta
+  +absolute(left, 0, top, 0)
+  +rem('width', 88px)
+  text-align: center
+.#{$block}__author-icon-image
+  +rem('width', 40px)
   +border-radius(50%)
-  +inline-block
-.articles-article__author-name
-  +inline-block
-  +tauri
-.articles-article__created-at
+  display: block
+  +side-mg-auto
+  +rem('margin-bottom', 4px)
+.#{$block}__author-name
+  display: block
+  +tauri(bold)
+  +text-block(12px, 1.6)
+.#{$block}__created-at
   +text-block(16px, 1.4, 6px)
   color: $gray
   +montserrat
   display: block
-  +rem('padding-top', 4px)
-.articles-article__tags
+.#{$block}__tags
   +rem('padding-top', $md * .4)
   li
     +inline-block
