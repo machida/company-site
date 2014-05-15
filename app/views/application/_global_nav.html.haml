@@ -3,17 +3,17 @@
     - if article?
       %h1{class: "#{position}-nav__logo"}
         = link_to "FJORD, LLC.", root_path, {class: "#{position}-nav__logo-link"}
-    %ul{class: "#{position}-nav__ul"}
+    %ul{class: "#{position}-nav__items"}
       - if not article?
         %li{class: "#{position}-nav__logo js-hidden is-hidden"}
           = link_to "FJORD, LLC.", root_path, {:class => "#{position}-nav__logo-link"}
-      %li{class: "#{position}-nav__li"}
+      %li{class: "#{position}-nav__item"}
         = link_to "HOME", root_path, {:class => "#{current_path(root_path)} #{position}-nav__link"}
-      %li{class: "#{position}-nav__li"}
+      %li{class: "#{position}-nav__item"}
         = link_to "SERVICE", services_path, {:class => "#{controller?('services') ? 'is-current' : ''} #{position}-nav__link js-hovered"}
-      %li{class: "#{position}-nav__li"}
+      %li{class: "#{position}-nav__item"}
         = link_to "MEMBERS", "/members", {:class => "#{controller?('members') ? 'is-current' : ''} #{position}-nav__link js-hovered"}
-      %li{class: "#{position}-nav__li"}
+      %li{class: "#{position}-nav__item"}
         = link_to "BLOG", "/categories/blog", {:class => "#{controller?('categories') ? 'is-current' : ''} #{position}-nav__link js-hovered", "data-no-turbolink" => "1"}
-      %li{class: "#{position}-nav__li"}
+      %li{class: "#{position}-nav__item"}
         = link_to "CONTACT", contact_path, {:class => "#{controller?('contact') ? 'is-current' : ''} #{position}-nav__link js-hovered'}"}

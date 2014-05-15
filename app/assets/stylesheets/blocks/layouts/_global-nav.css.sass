@@ -1,4 +1,6 @@
-.global-nav
+$block: global-nav
+
+.#{$block}
   +rem('padding-top', 30px)
   +transition(.1s)
   +relative(3)
@@ -10,14 +12,14 @@
     filter: progid:DXImageTransform.Microsoft.Shadow(Color='#000000', Direction=Bottom, Strength=0)
     +fixed(left, 0, top, 0, 1000)
     height: auto
-    .global-nav__li
+    .#{$block}__item
       width: 13%
       margin-left: 1%
       margin-right: 1%
-    .global-nav__logo
+    .#{$block}__logo
       +rem('padding-right', 10px)
       float: left
-    .global-nav__link
+    .#{$block}__link
       border-bottom: none
       padding-top: 0
       +rem('padding-bottom', 10px)
@@ -46,39 +48,37 @@
           +absolute(left, 0, top, 41px)
   *
     +transition(.1s)
-.global-nav__logo-link
+.#{$block}__logo-link
   +inline-block
   +rgba(rgba(0, 0, 0, .2), white, color)
   text-align: center
   text-decoration: none
   +text-block(28px, 34px, 0px)
   +tauri(bold)
-  font-weight: bold
   &:hover
-    color: rgba(0, 0, 0, .4)
-.global-nav__li
+    +rgba(rgba(0, 0, 0, .4), white, color)
+.#{$block}__item
   display: block
   width: 20%
   float: left
-.global-nav__link
+.#{$block}__link
   text-decoration: none
   +border(bottom, 2px, solid, $gray-l, white)
   +rem('padding-top', 10px)
   display: block
-  font-weight: bold
   color: $gray-l
   text-align: right
   +tauri(bold)
   +text-block($lg, 1)
   &:hover
     color: darken($gray-l, 18%)
-    border-bottom: 2px solid darken($gray-l, 18%)
+    +border(bottom, 2px, solid, darken($gray-l, 18%))
   &:active
     top: 4px
     +relative(1)
     color: $black
-    border-bottom: 2px solid $black
+    +border(bottom, 2px, solid, $black)
   &.is-current
     color: $black
-    border-bottom: 2px solid $black
+    +border(bottom, 2px, solid, $black)
     cursor: default
