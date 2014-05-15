@@ -310,6 +310,15 @@ Service.create!(
   published: true
 )
 
+Service.create!(
+  id: 43,
+  slug: 'intern',
+  title: 'Rails 研修',
+  body: 'Service Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
+  description: 'Service Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse',
+  published: true
+)
+
 # site
 Site.create!(
   id: 1,

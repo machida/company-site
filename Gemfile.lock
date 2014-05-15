@@ -39,9 +39,9 @@ GIT
 
 GIT
   remote: git://github.com/oulu/oulu-rails.git
-  revision: 194157cee05dc18e6ca4d54ccc3ecd24e67c8a14
+  revision: ffd22363cd8a76b1c16104a424a2686ab0de8dbe
   specs:
-    oulu-rails (0.1.29)
+    oulu-rails (0.1.30)
       SassyLists
       breakpoint
       ceaser-easing
@@ -414,7 +414,7 @@ DEPENDENCIES
   modernizr-rails
   nkss-rails!
   nokogiri
-  oulu-rails (~> 0.1.29)!
+  oulu-rails (~> 0.1.30)!
   owlcarousel-rails
   pg
   pry

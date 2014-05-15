@@ -1,4 +1,5 @@
-.page__title
+$block: page
+.#{$block}__title
   background-color: $black
   +rem('margin-top', 60px)
   +rem('margin-bottom', 28px)
@@ -12,9 +13,9 @@
     +rem('margin-top', 120px)
     @media screen and (max-width: #{$break-point})
       +rem('margin-top', 20px)
-.page__title-wrapper
+.#{$block}__title-wrapper
   position: relative
-.page__first-heading
+.#{$block}__first-heading
   background-color: $yellow
   +inline-block
   +text-block($xl, 3)

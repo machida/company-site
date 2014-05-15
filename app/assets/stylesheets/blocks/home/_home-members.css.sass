@@ -1,34 +1,38 @@
-.home-members__member
+$block: home-members
+
+.#{$block}__member
   +inline-block
-  position: relative
+  +relative
   +rem('width', 240px)
   +box-sizing(border-box)
   +rem('padding-left', 96px)
   +rem('height', 80px)
-.home-members__member-name
+.#{$block}__member-name
   +tauri(bold)
   +text-block($sm, 1, .2)
   +rem('font-size', $sm)
-.home-members__member-icon-link
-  .home-members__member-icon-image
+.#{$block}__member-icon-link
+  .#{$block}__member-icon-image
     border: 2px solid transparent
   &:hover
-    .home-members__member-icon-image
+    .#{$block}__member-icon-image
       border: 2px solid $pink
-.home-members__member-icon-image
+.#{$block}__member-icon-image
   +box-sizing(border-box)
   +rem('width', 82px)
   display: block
   +border-radius(50%)
   +absolute(left, 0, top, 4px)
-.home-members__member-name-link
+.#{$block}__member-informations
+  +absolute(left, 90px, bottom, 0)
+.#{$block}__member-name-link
   +hover-link
   color: $black
   &:hover
     color: $pink
-.home-members__sns-icon
+.#{$block}__sns-icon
   +inline-block
-.home-members__sns-link
+.#{$block}__sns-link
   color: $black
   display: block
   +text-block($md)

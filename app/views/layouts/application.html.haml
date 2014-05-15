@@ -49,9 +49,7 @@
         - elsif article?
           .wrapper
             .article__wrapper
-              .article__content
-                .article__content-inner
-                  = yield
+              = yield
         - else
           .wrapper
             .content__wrapper

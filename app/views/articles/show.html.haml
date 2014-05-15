@@ -3,24 +3,26 @@
     = @article.category.name.upcase
   - else
     BLOG
+.article__content
+  %header.article__header
+    %h2.article__title
+      = link_to @article, {:class => "article__title-link"} do
+        = @article.title
+  .article__informations
+    - if @article.staff
+      = image_tag("member-icons/#{@article.staff.slug}.jpg", :alt => "#{@article.staff.name}", :class => "article__author-icon-image")
+      %span.article__author-name
+        = @article.staff.name
+    %span.article__created-at
+      = show_date(@article.created_at)
+    .article__tags
+      %ul.tags
+        = raw @article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
 
-%header.article__header
-  %h2.article__title
-    = link_to @article, {:class => "article__title-link"} do
-      = @article.title
-.article__informations
-  - if @article.staff
-    = image_tag("member-icons/#{@article.staff.slug}.jpg", :alt => "#{@article.staff.name}", :class => "article__author-icon-image")
-    %span.article__author-name
-      = @article.staff.name
-  %span.article__created-at
-    = show_date(@article.created_at)
-  .article__tags
-    %ul.tags
-      = raw @article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+  .article__body
+    = markdown(@article.body)
+    = edit_path
 
-.article__body
-  = markdown(@article.body)
 %nav.article__nav
   %ul.article__nav-items
     - if @article.previous_article
@@ -38,4 +40,3 @@
     %li.article__nav-item.is-back
       = link_to t('Back To All Articles'), @article.category, class: "back-to-articles-link"
 
-= edit_path

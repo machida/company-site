@@ -1,33 +1,35 @@
-.contact-form__field
+$block: contact-form
+
+.#{$block}__field
   +rem('margin-bottom', 30px)
   +relative(1)
   +rem('padding-left', 140px)
-.contact-form__label
+.#{$block}__label
   display: block
   +rem('width', 120px)
   text-align: right
   +text-block(14px, 28px)
   +absolute(left, 0, top, 0)
-.contact-form__label-required-icon
+.#{$block}__label-required-icon
   +rem('font-size', 6px)
-  color: $pink
-.contact-form__text-input,
-.contact-form__textarea
+  +top(-4px)
+.#{$block}__text-input,
+.#{$block}__textarea
   +border(all, 1px, solid, rgba(0, 0, 0, .2), white)
   width: 100%
   +text-block(16px, 28px)
-.contact-form__textarea
+.#{$block}__textarea
   +rem('height', 460px)
 .field_with_errors
-  .contact-form__text-input,
-  .contact-form__textarea
+  .#{$block}__text-input,
+  .#{$block}__textarea
     border: rgba($pink, .4) solid 1px
-.contact-form__fields-title
+.#{$block}__fields-title
   text-align: center
   i
     display: block
     +rem('font-size', 60px)
-.contact-form__action-send
+.#{$block}__action-send
   border: $pink solid 4px
   color: $pink
   +rem('line-height', 36px)

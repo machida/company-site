@@ -1,4 +1,6 @@
-.footer
+$block: footer
+
+.#{$block}
   padding-top: 2em
   padding-bottom: 2em
   clear: both
@@ -7,13 +9,13 @@
   +rem('font-size', 12px)
   +rem('margin-bottom', 40px)
 
-.footer__wrapper
+.#{$block}__wrapper
   +relative
   +rem('padding-right', 260px)
   @media screen and (max-width: #{$break-point})
     padding-right: 0
 
-.footer__copyright
+.#{$block}__copyright
   display: block
   text-align: center
   +rem('font-size', $lg)

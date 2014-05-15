@@ -1,18 +1,20 @@
-.two-column-content
+$block: two-column-content
+
+.#{$block}
   +rem('padding-left', 178px)
   +clearfix
   position: relative
   @media screen and (max-width: #{$break-point})
     padding-left: 0
   &:last-child
-    .two-column-content__inner
+    .#{$block}__inner
       margin-bottom: 0
       padding-bottom: 0
-  .two-column-content__inner
+  .#{$block}__inner
     *:last-child
       margin-bottom: 0
 
-.two-column-content__inner
+.#{$block}__inner
   +border(left, 1px, solid, rgba(0, 0, 0, .1), white)
   +rem('padding-left', 32px)
   +rem('padding-bottom', 38px)
@@ -24,7 +26,7 @@
   p
     +text-block($md, 1.8, 1.4)
 
-.two-column-content__title-wrapper
+.#{$block}__title-wrapper
   +rem('width', 180px)
   +absolute(left, 0, top, 0)
   +rem('padding-right', 30px)
@@ -35,7 +37,7 @@
     position: static
     width: 100%
 
-.two-column-content__first-heading
+.#{$block}__first-heading
   background-color: $yellow
   +inline-block
   +text-block($xl, 3, false, bold, center)
@@ -43,7 +45,7 @@
   +tauri
   color: $black
 
-.two-column-content__second-heading
+.#{$block}__second-heading
   +tauri
   +text-block($lg, 1.4, .4, bold, center)
   @media screen and (max-width: #{$break-point})
@@ -51,7 +53,7 @@
   &.members__member-name
     text-align: center
     margin-bottom: .6em
-.two-column-content__second-heading-link
+.#{$block}__second-heading-link
   +hover-link
   color: $black
 

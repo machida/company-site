@@ -16,30 +16,29 @@
       - @staffs.each do |staff|
         %li.home-members__member
           %h3.home-members__member-icon
-            = link_to "/members/#{staff.slug}", {:class => "home-members__member-icon-link"} do
-              = image_tag("member-icons/#{staff.slug}.jpg", :alt => "#{staff.name}", :class => "home-members__member-icon-image pie")
+            = link_to "/members/#{staff.slug}", {class: "home-members__member-icon-link"} do
+              = image_tag("member-icons/#{staff.slug}.jpg", :alt => "#{staff.name}", class: "home-members__member-icon-image pie")
 
           .home-members__member-informations
             %h4.home-members__member-name
-              = link_to "/members/#{staff.slug}", {:class => "home-members__member-name-link"} do
+              = link_to "/members/#{staff.slug}", {class: "home-members__member-name-link"} do
                 = staff.name
             %ul.home-members__sns-icons
               %li.home-members__sns-icon.twitter
-                = link_to "#", {:class => "home-members__sns-link pie"} do
+                = link_to "#", {class: "home-members__sns-link pie"} do
                   %i.fa.fa-twitter
               %li.home-members__sns-icon.facebook
-                = link_to "https://www.facebook.com/#{staff.facebook_id}", {:class => "home-members__sns-link pie", :target => "_blank"} do
+                = link_to "https://www.facebook.com/#{staff.facebook_id}", {class: "home-members__sns-link pie", :target => "_blank"} do
                   %i.fa.fa-facebook
               %li.home-members__sns-icon.github
-                = link_to "#", {:class => "home-members__sns-link pie"} do
+                = link_to "#", {class: "home-members__sns-link pie"} do
                   %i.fa.fa-github
 
   %section.home-access.two-column-content
     .two-column-content__title-wrapper
       %h2.two-column-content__second-heading.home-access__heading
         = @snippet_home_access.title
-      .home-access__map-link-wrapper
-        = link_to "/pages/access", :class => "home-access__map-link" do
+        = link_to "/pages/access", class: "home-access__map-link" do
           %i.fa.fa-map-marker
     .home-access__content.two-column-content__inner
       = markdown(@snippet_home_access.body)

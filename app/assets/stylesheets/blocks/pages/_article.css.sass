@@ -1,36 +1,35 @@
-.article__wrapper
-  padding-top: 2.6em
+$block: article
+
+.#{$block}__wrapper
+  +rem('padding-top', 32px)
   @media screen and (max-width: #{$break-point})
     padding-top: 0
 
-.article__content
+.#{$block}__content
   position: relative
-  margin-bottom: 2em
+  +rem('max-width', 720px)
+  +side-mg-auto(false, 96px)
 
-.article__content-inner
-  +rem('max-width', 680px)
-  +side-mg-auto
-
-.article__title
-  +text-block($xxxxxxxl, 1.4, .8)
+.#{$block}__title
+  +text-block(42px, 1.5, .8)
   margin-left: -0.1em
   margin-right: -0.1em
   +bold-ja
-.article__title-link
+.#{$block}__title-link
   color: $black
   text-decoration: none
   cursor: default
 
-.article__body
+.#{$block}__body
   +rem('font-size', $lg)
   h4
-    +text-block(24px, 1.6, .9)
+    +text-block(28px, 1.6, .9)
     +bold-ja
   p
-    +text-block($lg, 1.9, 1.7)
+    +text-block($lg, 1.9, 2)
   ul,
   ol
-    +rem('margin-bottom', $lg*1.7)
+    +rem('margin-bottom', $lg*2)
     +rem('margin-left', $lg*1.4)
   ul
     list-style: disc
@@ -42,41 +41,63 @@
     &:last-child
       margin-bottom: 0
   a
-    color: $pink
-    +hover-link
+    color: $black
+    &:hover
+      text-decoration: none
+      color: $pink
   img
     display: block
-    +side-mg-auto
+    +side-mg-auto(false, 48px)
     max-width: 120%
   blockquote
     position: relative
     padding-left: 1.8em
     border-left: 8px solid rgba(0, 0, 0, .1)
-  *
+    +rem('margin-bottom', 40px)
+  pre
+    +rem('margin-bottom', 40px)
+  code
+    background-color: $black
+    display: block
+    overflow-x: auto
+    overflow-y: hidden
+    +text-block(14px, 1.8)
+    color: #32FF32
+    +rem('padding', 8px 16px)
+  >div
+    +side-mg-auto(false, 40px)
+    strong
+      +text-block(16px, 1.8)
+    iframe
+      +rem('margin-bottom', 8px)
+  .center
+    text-align: center
+  p,
+  ul,
+  ol
     &:last-child
       margin-bottom: 0
 
-.article__informations
-  margin-bottom: 1.4em
-.article__author-icon-image
+.#{$block}__informations
+  +rem('margin-bottom', 28px)
+.#{$block}__author-icon-image
   +square-block(32px)
   +border-radius(50%)
   +inline-block
   margin-right: .2em
-.article__author-name
+.#{$block}__author-name
   display: block
   +rem('font-size', $lg)
   +tauri(bold)
   +inline-block
   margin-right: .6em
-.article__created-at
-  font-weight: normal
-  +rem('font-size', $sm)
+.#{$block}__created-at
+  +montserrat(400)
+  +rem('font-size', 20px)
   +inline-block
-  +rem('padding-top', $lg - $sm)
   color: $gray
 
-.article__tags
+.#{$block}__tags
   display: inline
   ul
     display: inline
@@ -94,41 +115,55 @@
       content: "\f02b"
       margin-right: .4em
 
-.article__nav
-  +rem('padding-top', 40px)
-.article__nav-item
+.#{$block}__nav
+  +relative(1)
+.#{$block}__nav-item
   +inline-block(bottom)
-  +rem('margin-bottom', 10px)
+  &.is-previous,
+  &.is-next
+    width: 38%
   &.is-previous
     text-align: left
-    width: 50%
+    +absolute(left, 0, top, 0)
   &.is-next
     text-align: right
-    width: 50%
+    +absolute(right, 0, top, 0)
   &.is-back
     text-align: center
     width: 100%
-    +rem('margin-top', 20px)
+    +rem('margin-top', 48px)
 
-.article__nav-link
+.#{$block}__nav-link
   display: block
   +relative
+  text-decoration: none
   &.is-previous
-    +rem('padding-left', 30px)
+    +rem('padding-left', 38px)
+    color: $gray
   &.is-next
-    +rem('padding-right', 30px)
-.article__nav-link-icon
+    +rem('padding-right', 38px)
+    color: $gray
+.#{$block}__nav-link-icon
+  &.is-previous,
+  &.is-next
+    background-color: $gray
+    color: $white
+    +text-block(12px, 28px)
+    +rem('width', 28px)
+    text-align: center
   &.is-previous
     +absolute(left, 0, top, 0)
   &.is-next
     +absolute(right, 0, top, 0)
-.article__nav-link-text
+.#{$block}__nav-link-text
   +ellipsis
   display: block
-.article__footer
+  +text-block(14px, 28px)
+.#{$block}__footer
   padding-top: 3em
 
 .back-to-articles-link
   +button-base(14px, 32px, bold, 100px, true, true)
-  border: $pink solid 2px
+  border: $pink solid 4px
   color: $pink
+  +tauri(bold)

@@ -1,23 +1,29 @@
-.article-global-nav
-  +absolute(left, 0, top, 40px)
-.article-global-nav__logo
+$block: article-global-nav
+.#{$block}
+  +absolute(left, 0, top, 30px)
+.#{$block}__logo
   +inline-block
-.article-global-nav__logo-link
+.#{$block}__logo-link
   +tauri(bold)
   font-weight: bold
   text-decoration: none
   +text-block(30px, 30px)
   color: $black
-  +rem('margin-right', 20px)
+  +rem('margin-right', 24px)
 
-.article-global-nav__ul
+.#{$block}__items
   +inline-block(bottom)
-.article-global-nav__li
+.#{$block}__item
   +inline-block(bottom)
-  +rem('margin-right', 10px)
-.article-global-nav__link
+  +rem('margin-right', 24px)
+.#{$block}__link
   +tauri(bold)
   font-weight: bold
   text-decoration: none
   +text-block(16px, 30px)
   color: $black
+  &:hover
+    color: $pink
+  &:active
+    color: $pink
+    +top(2px)
