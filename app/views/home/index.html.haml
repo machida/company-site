@@ -38,8 +38,10 @@
     .two-column-content__title-wrapper
       %h2.two-column-content__second-heading.home-access__heading
         = @snippet_home_access.title
-        = link_to "/pages/access", class: "home-access__map-link" do
+        = link_to "/pages/access", class: "home-access__map-link js-child-hover-show" do
           %i.fa.fa-map-marker
+          %span.home-access__map-description.js-child-hover-show-target.is-hidden
+            GoogleMap
     .home-access__content.two-column-content__inner
       = markdown(@snippet_home_access.body)
 
