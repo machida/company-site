@@ -3,8 +3,10 @@ $block: service
 .#{$block}__title
   +text-block(36px, 1.4, 22px)
   +rem('padding-bottom', 4px)
-  +border(bottom, 1px, solid, rgba(0, 0, 0, 0.8), white)
+  +border(bottom, 1px, solid, rgba(0, 0, 0, 0.08), white)
   +bold-ja
 .#{$block}__body
+  $ms-base: 16px
+  $ms-ratio: $golden
   p
-    +text-block(16px, 1.8, 1.4)
+    +text-block($ms-base, 1.8, 1.4)
