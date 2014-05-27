@@ -138,18 +138,18 @@ $block: article
   +relative
   text-decoration: none
   &.is-previous
-    +rem('padding-left', 38px)
+    +rem('padding-left', 30px)
     color: $gray
   &.is-next
-    +rem('padding-right', 38px)
+    +rem('padding-right', 30px)
     color: $gray
 .#{$block}__nav-link-icon
   &.is-previous,
   &.is-next
-    background-color: $gray
-    color: $white
-    +text-block(12px, 28px)
-    +rem('width', 28px)
+    color: $gray
+    +border(all, 1px, solid, $gray)
+    +text-block(10px, 16px)
+    +rem('width', 16px)
     text-align: center
   &.is-previous
     +absolute(left, 0, top, 0)
@@ -158,7 +158,7 @@ $block: article
 .#{$block}__nav-link-text
   +ellipsis
   display: block
-  +text-block(14px, 28px)
+  +text-block(12px, 16px)
 .#{$block}__footer
   padding-top: 3em
 
