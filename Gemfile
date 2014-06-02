@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
-ruby '2.1.1'
+ruby '2.1.2'
 
 gem 'rails', '>= 4.0.2'
 gem 'uglifier', '>= 1.3.0'
@@ -49,7 +49,7 @@ gem 'sass', github: "nex3/sass", tag: '3.3.5'
 gem "compass", "~> 1.0.0.alpha.18"
 gem "compass-rails", github: "Compass/compass-rails"
 # gem 'oulu-rails', :path => '../oulu-rails'
-gem 'oulu-rails', '~> 0.2.06', github: 'oulu/oulu-rails'
+gem 'oulu-rails', '~> 0.2.12', github: 'oulu/oulu-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

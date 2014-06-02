@@ -47,10 +47,10 @@
               = yield
               = render 'side_column_articles'
         - elsif service?
-        .wrapper
-          .content__wrapper
-            = yield
-            = render 'side_column_services'
+          .wrapper
+            .content__wrapper
+              = yield
+              = render 'side_column_services'
         - elsif article?
           .wrapper
             .article__wrapper
