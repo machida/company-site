@@ -38,7 +38,7 @@
     .two-column-content__title-wrapper
       %h2.two-column-content__second-heading.home-access__heading
         = @snippet_home_access.title
-        = link_to "/pages/access", class: "home-access__map-link js-child-hover-show" do
+        = link_to "/pages/access", class: "home-access__map-link js-child-hover-show js-click-animate", :data => {'click' => 'bounce-expansion'} do
           %i.fa.fa-map-marker
           %span.home-access__map-description.js-child-hover-show-target.is-hidden
             GoogleMap
