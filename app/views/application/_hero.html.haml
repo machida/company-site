@@ -7,7 +7,7 @@
         - if home?
           = @site.title
         - else
-          = link_to root_path, {:class => "hero__site-title-link"} do
+          = link_to root_path, class: "hero__site-title-link glitch", :data => {'text' => "#{@site.title}"} do
             = @site.title
       %h2.hero__tag-line.fadeIn.animated.js-one-animate
         = @site.sub_title

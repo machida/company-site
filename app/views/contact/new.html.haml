@@ -12,8 +12,6 @@
         - if @contact.errors.any?
           .error-explanation
             %i.fa.fa-exclamation-triangle.error-explanation__icon
-            %h2.error-explanation__heading
-              = pluralize(@contact.errors.count, "error")
             %ul.error-explanation__errors
               - @contact.errors.full_messages.each do |msg|
                 %li.error-explanation__error
