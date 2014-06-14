@@ -38,5 +38,6 @@
             = @article.next_article.title
           %i.fa.fa-angle-right.article__nav-link-icon.is-next
     %li.article__nav-item.is-back
-      = link_to t('Back To All Articles'), @article.category, class: "back-to-articles-link"
-
+      = link_to @article.category, class: "back-to-articles-link" do
+        %i.fa.fa-reply
+        = t('Back To All Articles')

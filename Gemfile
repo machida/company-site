@@ -28,6 +28,7 @@ gem 'active_decorator'
 gem 'remotipart', '~> 1.0'
 gem 'puma'
 gem 'glitched_string'
+gem 'albino' 
 
 # For Carrierwave
 gem 'carrierwave'

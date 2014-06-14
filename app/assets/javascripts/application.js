@@ -6,6 +6,7 @@
 //= require google-code-prettify-rails/prettify
 //= require jquery.infinitescroll
 //= require jquery-fileupload/basic
+//= require google-code-prettify/prettify.js
 
 //= require oulu
 

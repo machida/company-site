@@ -384,6 +384,7 @@ PLATFORMS
 DEPENDENCIES
   active_decorator
   acts-as-taggable-on (~> 3.0.1)
+  albino
   auto_html
   breadcrumbs_on_rails
   browser
