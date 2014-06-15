@@ -3,8 +3,10 @@
   %head
     %title= @site.title
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag "prism", media: "all", "data-turbolinks-track" => true
     = jquery_include_tag :google, :force => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
+    = javascript_include_tag "prism.js", "data-turbolinks-track" => true
     = csrf_meta_tags
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
     = auto_discovery_link_tag( :rss, "/articles/feed.rss" )
