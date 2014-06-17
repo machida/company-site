@@ -1,4 +1,5 @@
 $block: page
+
 .#{$block}__title
   background-color: $black
   +rem('margin-top', 60px)
@@ -27,14 +28,14 @@ $block: page
     +text-block($lg, 2.4)
     width: auto
     text-align: left
+
 .edit-block
   text-align: right
 .edit-block__link
-  +text-block(24px, 50px)
-  text-align: center
+  +text-block(24px, 50px, false, center)
   +rem('width', 50px)
   +border-radius(50%)
   background-color: $pink
-  color: $white
+  color: $white !important
   +inline-block
   text-decoration: none

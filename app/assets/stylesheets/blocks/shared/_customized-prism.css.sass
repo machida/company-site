@@ -1,0 +1,220 @@
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+css-extras+clike+javascript+java+php+php-extras+coffeescript+scss+bash+c+cpp+python+sql+groovy+http+ruby+rip+gherkin+csharp+go+nsis+aspnet+scala+swift&plugins=line-highlight+line-numbers+show-invisibles+autolinker+wpd+file-highlight+show-language
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+
+code[class*="language-"]
+  color: #f8f8f2
+  font-family: Consolas, Monaco, 'Andale Mono', monospace
+  direction: ltr
+  text-align: left
+  white-space: pre
+  word-spacing: normal
+  word-break: normal
+  -moz-tab-size: 4
+  -o-tab-size: 4
+  tab-size: 4
+  -webkit-hyphens: none
+  -moz-hyphens: none
+  -ms-hyphens: none
+  hyphens: none
+  +rem('padding', 12px 12px)
+  +text-block(14px, 1.8)
+  +source-code-pro
+
+pre[class*="language-"]
+  color: #f8f8f2
+  font-family: Consolas, Monaco, 'Andale Mono', monospace
+  direction: ltr
+  text-align: left
+  white-space: pre
+  word-spacing: normal
+  word-break: normal
+  -moz-tab-size: 4
+  -o-tab-size: 4
+  tab-size: 4
+  -webkit-hyphens: none
+  -moz-hyphens: none
+  -ms-hyphens: none
+  hyphens: none
+  /* padding: 1em;
+  margin: .5em 0
+  overflow-x: auto
+  overflow-y: hidden
+  +border-radius(2px)
+
+/* Code blocks
+
+\:not(pre) > code[class*="language-"], pre[class*="language-"]
+  background: #272822
+
+/* Inline code
+
+\:not(pre) > code[class*="language-"]
+  padding: .1em
+  border-radius: .3em
+
+.token
+  &.comment, &.prolog, &.doctype, &.cdata
+    color: slategray
+  &.punctuation
+    color: #f8f8f2
+
+.namespace
+  opacity: .7
+
+.token
+  &.property, &.tag, &.constant, &.symbol
+    color: #f92672
+  &.boolean, &.number
+    color: #ae81ff
+  &.selector, &.attr-name, &.string, &.builtin
+    color: #a6e22e
+  &.operator, &.entity, &.url
+    color: #f8f8f2
+
+.language-css .token.string, .style .token.string
+  color: #f8f8f2
+
+.token
+  &.variable
+    color: #f8f8f2
+  &.atrule, &.attr-value
+    color: #e6db74
+  &.keyword
+    color: #66d9ef
+  &.regex
+    color: #fd971f
+  &.important
+    color: #fd971f
+    font-weight: bold
+  &.entity
+    cursor: help
+
+pre[data-line]
+  position: relative
+  padding: 1em 0 1em 3em
+
+.line-highlight
+  position: absolute
+  left: 0
+  right: 0
+  padding: inherit 0
+  margin-top: 1em
+  /* Same as .prism’s padding-top
+  background: hsla(24, 20%, 50%, 0.08)
+  background: -moz-linear-gradient(left, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0))
+  background: -webkit-linear-gradient(left, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0))
+  background: -o-linear-gradient(left, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0))
+  background: linear-gradient(left, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0))
+  pointer-events: none
+  line-height: inherit
+  white-space: pre
+  &:before
+    content: attr(data-start)
+    position: absolute
+    top: .4em
+    left: .6em
+    min-width: 1em
+    padding: 0 .5em
+    background-color: hsla(24, 20%, 50%, 0.4)
+    color: hsl(24, 20%, 95%)
+    font: bold 65% / 1.5 sans-serif
+    text-align: center
+    vertical-align: .3em
+    border-radius: 999px
+  &[data-end]:after
+    content: attr(data-start)
+    position: absolute
+    top: .4em
+    left: .6em
+    min-width: 1em
+    padding: 0 .5em
+    background-color: hsla(24, 20%, 50%, 0.4)
+    color: hsl(24, 20%, 95%)
+    font: bold 65% / 1.5 sans-serif
+    text-align: center
+    vertical-align: .3em
+    border-radius: 999px
+    content: attr(data-end)
+    top: auto
+    bottom: .4em
+
+pre.line-numbers
+  position: relative
+  padding-left: 3.8em
+  counter-reset: linenumber
+  > code
+    position: relative
+
+.line-numbers .line-numbers-rows
+  position: absolute
+  pointer-events: none
+  top: 0
+  font-size: 100%
+  left: -3.8em
+  width: 3em
+  /* works for line-numbers below 1000 lines
+  letter-spacing: -1px
+  border-right: 1px solid #999
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.line-numbers-rows > span
+  pointer-events: none
+  display: block
+  counter-increment: linenumber
+  &:before
+    content: counter(linenumber)
+    color: #999
+    display: block
+    padding-right: 0.8em
+    text-align: right
+
+.token
+  &.tab:not(:empty):before, &.cr:before, &.lf:before
+    color: hsl(24, 20%, 85%)
+  &.tab:not(:empty):before
+    content: '▸'
+  // 改行を不可視
+  &.lf
+    display: none
+  //
+    &.cr:before
+      content: '␍'
+    &.lf:before
+      content: '␊'
+  a
+    color: inherit
+
+code[class*="language-"] a[href], pre[class*="language-"] a[href]
+  cursor: help
+  text-decoration: none
+
+code[class*="language-"] a[href]:hover
+  cursor: help
+  text-decoration: underline
+
+pre
+  &[class*="language-"] a[href]:hover
+    cursor: help
+    text-decoration: underline
+  &[class*='language-']
+    position: relative
+    > code[data-language]
+      /* overflow: scroll;
+      max-height: 28em
+      display: block
+      &::before
+        content: attr(data-language)
+        color: $white
+        background-color: $pink
+        display: inline-block
+        position: absolute
+        top: 0
+        right: 0
+        +text-block(12px, 24px)
+        +rem('padding', 0 12px)

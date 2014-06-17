@@ -28,7 +28,7 @@ gem 'active_decorator'
 gem 'remotipart', '~> 1.0'
 gem 'puma'
 gem 'glitched_string'
-gem 'albino' 
+gem 'albino'
 
 # For Carrierwave
 gem 'carrierwave'
@@ -46,11 +46,11 @@ gem "jquery-fileupload-rails"
 
 # Sass
 gem 'sass-rails', :git => 'git://github.com/machida/sass-rails.git', :branch => "sass3"
-gem 'sass', github: "nex3/sass", tag: '3.3.5'
+gem 'sass', github: "nex3/sass", tag: '3.3.8'
 gem "compass", "~> 1.0.0.alpha.18"
 gem "compass-rails", github: "Compass/compass-rails"
 # gem 'oulu-rails', :path => '../oulu-rails'
-gem 'oulu-rails', '~> 0.2.19', github: 'oulu/oulu-rails'
+gem 'oulu-rails', '~> 0.2.22', github: 'oulu/oulu-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
