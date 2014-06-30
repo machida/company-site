@@ -50,8 +50,8 @@ gem 'sass', github: "nex3/sass", tag: '3.3.8'
 gem "compass", "~> 1.0.0.alpha.18"
 gem "compass-rails", github: "Compass/compass-rails"
 gem "modular-scale"
-gem 'oulu-rails', :path => '../oulu-rails'
-# gem 'oulu-rails', '~> 0.3.02', github: 'oulu/oulu-rails'
+# gem 'oulu-rails', :path => '../oulu-rails'
+gem 'oulu-rails', '~> 0.3.05', github: 'oulu/oulu-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

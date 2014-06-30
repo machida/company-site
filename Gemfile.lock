@@ -37,16 +37,10 @@ GIT
     sass (3.3.8)
 
 GIT
-  remote: git://github.com/radar/by_star
-  revision: 8c22f5108b9379adc7fc80d7c5b8b163027eee10
+  remote: git://github.com/oulu/oulu-rails.git
+  revision: d1e89bf85661d51b32222d82ea578992d762b411
   specs:
-    by_star (2.2.1)
-      activesupport
-
-PATH
-  remote: ../oulu-rails
-  specs:
-    oulu-rails (0.3.03)
+    oulu-rails (0.3.05)
       SassyLists
       ceaser-easing
       compass-rgbapng
@@ -55,11 +49,18 @@ PATH
       sassy-maps
       toolkit
 
+GIT
+  remote: git://github.com/radar/by_star
+  revision: 8c22f5108b9379adc7fc80d7c5b8b163027eee10
+  specs:
+    by_star (2.2.1)
+      activesupport
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    SassyLists (1.0.0)
+    SassyLists (1.1.0)
       compass (>= 0.12.1)
       sass (>= 3.2.0)
     actionmailer (4.1.0)
@@ -335,7 +336,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    toolkit (2.4.0)
+    toolkit (2.5.0)
       sass (~> 3.3.0)
     treetop (1.4.15)
       polyglot
@@ -398,7 +399,7 @@ DEPENDENCIES
   modular-scale
   nkss-rails!
   nokogiri
-  oulu-rails!
+  oulu-rails (~> 0.3.05)!
   owlcarousel-rails
   pg
   pry
