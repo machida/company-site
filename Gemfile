@@ -51,7 +51,7 @@ gem "compass", "~> 1.0.0.alpha.18"
 gem "compass-rails", github: "Compass/compass-rails"
 gem "modular-scale"
 # gem 'oulu-rails', :path => '../oulu-rails'
-gem 'oulu-rails', '~> 0.3.05', github: 'oulu/oulu-rails'
+gem 'oulu-rails', '~> 0.3.11', github: 'oulu/oulu-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

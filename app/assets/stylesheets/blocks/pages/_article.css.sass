@@ -8,7 +8,7 @@ $block: article
 .#{$block}__content
   position: relative
   +rem('max-width', 720px)
-  +side-mg-auto(false, 96px)
+  +horizontal-mg-auto(false, 96px)
 
 .#{$block}__title
   +text-block(42px, 1.5, .8)
@@ -47,7 +47,7 @@ $block: article
       color: $pink
   img
     display: block
-    +side-mg-auto(false, 48px)
+    +horizontal-mg-auto(false, 40px)
     max-width: 120%
   blockquote
     position: relative
@@ -55,7 +55,7 @@ $block: article
     border-left: 8px solid rgba(0, 0, 0, .1)
     +rem('margin-bottom', 40px)
   >div
-    +side-mg-auto(false, 40px)
+    +horizontal-mg-auto(false, 40px)
     strong
       +text-block(16px, 1.8)
     iframe

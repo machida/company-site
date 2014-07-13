@@ -38,9 +38,9 @@ GIT
 
 GIT
   remote: git://github.com/oulu/oulu-rails.git
-  revision: d1e89bf85661d51b32222d82ea578992d762b411
+  revision: 34bec755532c83c3d23d61ca309a8d8f1c53a8e8
   specs:
-    oulu-rails (0.3.05)
+    oulu-rails (0.3.11)
       SassyLists
       ceaser-easing
       compass-rgbapng
@@ -60,9 +60,8 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    SassyLists (1.1.0)
-      compass (>= 0.12.1)
-      sass (>= 3.2.0)
+    SassyLists (2.2.3)
+      sass (~> 3.3)
     actionmailer (4.1.0)
       actionpack (= 4.1.0)
       actionview (= 4.1.0)
@@ -399,7 +398,7 @@ DEPENDENCIES
   modular-scale
   nkss-rails!
   nokogiri
-  oulu-rails (~> 0.3.05)!
+  oulu-rails (~> 0.3.11)!
   owlcarousel-rails
   pg
   pry
