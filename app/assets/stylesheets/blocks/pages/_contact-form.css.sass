@@ -27,9 +27,14 @@ $block: contact-form
     border: rgba($pink, .4) solid 1px
 .#{$block}__fields-title
   text-align: center
+  +screen-xs
+    text-align: left
   i
     display: block
     +rem('font-size', 60px)
+    +screen-xs
+      display: inline
+      +rem('font-size', 18px)
 .#{$block}__action-send
   border: $pink solid 4px
   color: $pink

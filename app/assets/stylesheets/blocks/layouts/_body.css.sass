@@ -1,11 +1,11 @@
 html
-  @media screen and (max-width: #{$break-point})
+  +screen-xs
     overflow-x: hidden
 .body
   +base-fonts
-  @media screen and (max-width: #{$break-point})
+  +screen-xs
     +absolute(left, 0, top, 0)
     +transition(.1s)
   &.is-side-slid
-    @media screen and (max-width: #{$break-point})
+    +screen-xs
       +absolute(left, 100%, top, 0)

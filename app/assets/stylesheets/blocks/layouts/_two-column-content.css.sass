@@ -4,7 +4,7 @@ $block: two-column-content
   +rem('padding-left', 178px)
   +clearfix
   position: relative
-  @media screen and (max-width: #{$break-point})
+  +screen-xs
     padding-left: 0
   &:last-child
     .#{$block}__inner
@@ -20,7 +20,7 @@ $block: two-column-content
   +rem('padding-bottom', 38px)
   +box-sizing(border-box)
   +clearfix
-  @media screen and (max-width: #{$break-point})
+  +screen-xs
     padding-left: 0
     border-left: none
   p
@@ -33,7 +33,7 @@ $block: two-column-content
   +box-sizing(border-box)
   &.members__title-wrapper
     padding-right: 0
-  @media screen and (max-width: #{$break-point})
+  +screen-xs
     position: static
     width: 100%
 
@@ -48,7 +48,7 @@ $block: two-column-content
 .#{$block}__second-heading
   +tauri
   +text-block($lg, 1.4, .4, bold, center)
-  @media screen and (max-width: #{$break-point})
+  +screen-xs
     text-align: left
   &.members__member-name
     text-align: center

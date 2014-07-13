@@ -17,18 +17,18 @@ body
   +horizontal-mg(auto)
   +rem('padding-left', $wrapper-padding)
   +rem('padding-right', $wrapper-padding)
-  @media screen and (max-width: #{$break-point})
+  +screen-xs
     +rem('padding-left', 10px)
     +rem('padding-right', 10px)
 
 .content
   color: $black
   +rem('padding-bottom', 80px)
-  @media screen and (max-width: #{$break-point})
+  +screen-xs
     padding-bottom: 0
 
 .content__wrapper
   +rem('padding-right', $side-column-width + $content-wrapper-right-padding)
   +relative(1)
-  @media screen and (max-width: #{$break-point})
+  +screen-xs
     padding-right: 0
