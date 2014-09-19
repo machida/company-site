@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/Compass/compass-rails.git
-  revision: 5067c08c4c7d801f76bdad5bd6c6945dd18ffd2f
+  revision: cd406796724f7bebcd58f92a31507ba56f3d1b18
   specs:
-    compass-rails (2.0.0.pre)
-      compass (>= 0.12.2)
+    compass-rails (2.0.0)
+      compass (~> 1.0.0)
 
 GIT
   remote: git://github.com/fjordllc/fnkss-rails
@@ -19,28 +19,17 @@ GIT
       redcarpet
 
 GIT
-  remote: git://github.com/machida/sass-rails.git
-  revision: b557b79845c254bbe6eb44f20e8f9fdca8539ba8
-  branch: sass3
-  specs:
-    sass-rails (4.0.1)
-      railties (>= 4.0.0, < 5.0)
-      sass (~> 3.3.5)
-      sprockets (~> 2.8, <= 2.11.0)
-      sprockets-rails (~> 2.0)
-
-GIT
   remote: git://github.com/nex3/sass.git
-  revision: a2fd37ed1b9fdeec501b50e98e5cd837828db5ce
-  tag: 3.3.8
+  revision: d0dbe59044334af0fb08c520425fc7af13950cba
+  tag: 3.4.4
   specs:
-    sass (3.3.8)
+    sass (3.4.4)
 
 GIT
   remote: git://github.com/oulu/oulu-rails.git
-  revision: 34bec755532c83c3d23d61ca309a8d8f1c53a8e8
+  revision: 46cfbf593cf5aaf41719d7c00d3afe0257374d11
   specs:
-    oulu-rails (0.3.11)
+    oulu-rails (0.4.9)
       SassyLists
       ceaser-easing
       compass-rgbapng
@@ -51,7 +40,7 @@ GIT
 
 GIT
   remote: git://github.com/radar/by_star
-  revision: 8c22f5108b9379adc7fc80d7c5b8b163027eee10
+  revision: d972c500b235196e6c512ce24440bd5857839bf5
   specs:
     by_star (2.2.1)
       activesupport
@@ -60,30 +49,30 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    SassyLists (2.2.3)
+    SassyLists (2.2.4)
       sass (~> 3.3)
-    actionmailer (4.1.0)
-      actionpack (= 4.1.0)
-      actionview (= 4.1.0)
-      mail (~> 2.5.4)
-    actionpack (4.1.0)
-      actionview (= 4.1.0)
-      activesupport (= 4.1.0)
+    actionmailer (4.1.6)
+      actionpack (= 4.1.6)
+      actionview (= 4.1.6)
+      mail (~> 2.5, >= 2.5.4)
+    actionpack (4.1.6)
+      actionview (= 4.1.6)
+      activesupport (= 4.1.6)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    actionview (4.1.0)
-      activesupport (= 4.1.0)
+    actionview (4.1.6)
+      activesupport (= 4.1.6)
       builder (~> 3.1)
       erubis (~> 2.7.0)
     active_decorator (0.3.4)
-    activemodel (4.1.0)
-      activesupport (= 4.1.0)
+    activemodel (4.1.6)
+      activesupport (= 4.1.6)
       builder (~> 3.1)
-    activerecord (4.1.0)
-      activemodel (= 4.1.0)
-      activesupport (= 4.1.0)
+    activerecord (4.1.6)
+      activemodel (= 4.1.6)
+      activesupport (= 4.1.6)
       arel (~> 5.0.0)
-    activesupport (4.1.0)
+    activesupport (4.1.6)
       i18n (~> 0.6, >= 0.6.9)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -100,9 +89,9 @@ GEM
       rinku (~> 1.5.0)
     bcrypt (3.1.7)
     breadcrumbs_on_rails (2.3.0)
-    browser (0.4.1)
+    browser (0.6.0)
     builder (3.2.2)
-    cancancan (1.7.1)
+    cancancan (1.9.2)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -116,65 +105,70 @@ GEM
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
-    coffee-script (2.2.0)
+    coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.7.0)
-    compass (1.0.0.alpha.19)
+    coffee-script-source (1.8.0)
+    compass (1.0.1)
       chunky_png (~> 1.2)
-      compass-core (~> 1.0.0.alpha.19)
-      compass-import-once (~> 1.0.3)
-      json
-      listen (~> 1.1.0)
-      sass (>= 3.3.0, < 3.5)
-    compass-core (1.0.0.alpha.19)
+      compass-core (~> 1.0.1)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-core (1.0.1)
       multi_json (~> 1.0)
       sass (>= 3.3.0, < 3.5)
-    compass-import-once (1.0.4)
+    compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
     compass-rgbapng (0.2.1)
       chunky_png (>= 0.8.0)
       compass (>= 0.10.0)
-    devise (3.2.4)
+    devise (3.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    domain_name (0.5.18)
+    domain_name (0.5.21)
       unf (>= 0.0.5, < 1.0.0)
     erb2haml (0.1.5)
       html2haml
     erubis (2.7.0)
-    excon (0.33.0)
-    execjs (2.0.2)
-    ffaker (1.24.0)
+    excon (0.39.5)
+    execjs (2.2.1)
+    ffaker (1.25.0)
     ffi (1.9.3)
-    figaro (0.7.0)
-      bundler (~> 1.0)
-      rails (>= 3, < 5)
-    fog (1.22.0)
+    figaro (1.0.0)
+      thor (~> 0.14)
+    fog (1.23.0)
       fog-brightbox
-      fog-core (~> 1.21, >= 1.21.1)
+      fog-core (~> 1.23)
       fog-json
+      fog-softlayer
+      ipaddress (~> 0.5)
       nokogiri (~> 1.5, >= 1.5.11)
-    fog-brightbox (0.0.2)
-      fog-core
+    fog-brightbox (0.5.1)
+      fog-core (~> 1.22)
       fog-json
-    fog-core (1.22.0)
+      inflecto
+    fog-core (1.24.0)
       builder
-      excon (~> 0.33)
+      excon (~> 0.38)
       formatador (~> 0.2)
       mime-types
       net-scp (~> 1.1)
       net-ssh (>= 2.1.3)
     fog-json (1.0.0)
       multi_json (~> 1.0)
-    formatador (0.2.4)
-    friendly_id (5.0.3)
+    fog-softlayer (0.3.17)
+      fog-core
+      fog-json
+    formatador (0.2.5)
+    friendly_id (5.0.4)
       activerecord (>= 4.0.0)
     glitched_string (0.2.0)
-    google-analytics-rails (0.0.5)
+    google-analytics-rails (0.0.6)
     google-code-prettify-rails (1.1.0)
       railties (>= 3.2.0.beta, < 5.0)
       thor (~> 0.14)
@@ -194,26 +188,28 @@ GEM
       ruby_parser (~> 3.1.1)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
-    i18n (0.6.9)
+    i18n (0.6.11)
     i18n_generators (1.2.1)
       mechanize
       rails (>= 3.0.0)
+    inflecto (0.0.2)
+    ipaddress (0.8.0)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
     jquery-fileupload-rails (0.4.1)
       actionpack (>= 3.1)
       railties (>= 3.1)
-    jquery-rails (3.1.0)
+    jquery-rails (3.1.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    jquery-rails-cdn (1.0.1)
+    jquery-rails-cdn (1.0.3)
       jquery-rails
-    jquery-turbolinks (2.0.2)
+    jquery-turbolinks (2.1.0)
       railties (>= 3.1.0)
       turbolinks
     json (1.8.1)
-    kaminari (0.15.1)
+    kaminari (0.16.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kss (0.5.0)
@@ -221,112 +217,109 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.2.0)
       launchy (~> 2.2)
-    listen (1.1.6)
-      rb-fsevent (>= 0.9.3)
-      rb-inotify (>= 0.9)
-      rb-kqueue (>= 0.2)
     magnific-popup-rails (0.9.9)
-    mail (2.5.4)
-      mime-types (~> 1.16)
-      treetop (~> 1.4.8)
-    mechanize (2.7.2)
+    mail (2.6.1)
+      mime-types (>= 1.16, < 3)
+    mechanize (2.7.3)
       domain_name (~> 0.5, >= 0.5.1)
-      http-cookie (~> 1.0.0)
-      mime-types (~> 1.17, >= 1.17.2)
+      http-cookie (~> 1.0)
+      mime-types (~> 2.0)
       net-http-digest_auth (~> 1.1, >= 1.1.1)
       net-http-persistent (~> 2.5, >= 2.5.2)
       nokogiri (~> 1.4)
       ntlm-http (~> 0.1, >= 0.1.1)
       webrobots (>= 0.0.9, < 0.2)
     method_source (0.8.2)
-    mime-types (1.25.1)
-    mini_magick (3.7.0)
+    mime-types (2.3)
+    mini_magick (3.8.1)
       subexec (~> 0.2.1)
-    mini_portile (0.5.3)
-    minitest (5.3.4)
+    mini_portile (0.6.0)
+    minitest (5.4.1)
     modernizr-rails (2.7.1)
     modular-scale (2.0.5)
       compass (>= 0.12.0)
     multi_json (1.10.1)
     net-http-digest_auth (1.4)
     net-http-persistent (2.9.4)
-    net-scp (1.2.0)
+    net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (2.8.0)
-    nokogiri (1.6.1)
-      mini_portile (~> 0.5.0)
+    net-ssh (2.9.1)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     ntlm-http (0.1.1)
     oily_png (1.1.1)
       chunky_png (~> 1.3.0)
     orm_adapter (0.5.0)
-    owlcarousel-rails (1.1.3.2)
+    owlcarousel-rails (1.1.3.3)
       jquery-rails
     pg (0.17.1)
-    polyglot (0.3.4)
-    posix-spawn (0.3.8)
-    pry (0.9.12.6)
-      coderay (~> 1.0)
-      method_source (~> 0.8)
+    posix-spawn (0.3.9)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
       slop (~> 3.4)
     pry-doc (0.6.0)
       pry (~> 0.9)
       yard (~> 0.8)
     pry-rails (0.3.2)
       pry (>= 0.9.10)
-    puma (2.8.2)
+    puma (2.9.1)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rails (4.1.0)
-      actionmailer (= 4.1.0)
-      actionpack (= 4.1.0)
-      actionview (= 4.1.0)
-      activemodel (= 4.1.0)
-      activerecord (= 4.1.0)
-      activesupport (= 4.1.0)
+    rails (4.1.6)
+      actionmailer (= 4.1.6)
+      actionpack (= 4.1.6)
+      actionview (= 4.1.6)
+      activemodel (= 4.1.6)
+      activerecord (= 4.1.6)
+      activesupport (= 4.1.6)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.1.0)
+      railties (= 4.1.6)
       sprockets-rails (~> 2.0)
-    rails-assets-datetimepicker (2.2.5)
+    rails-assets-datetimepicker (2.3.4)
       rails-assets-jquery (>= 1.7.2)
-    rails-assets-jquery (2.1.0)
+    rails-assets-jquery (2.1.1)
     rails_12factor (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
     rails_serve_static_assets (0.0.2)
     rails_stdout_logging (0.0.3)
-    railties (4.1.0)
-      actionpack (= 4.1.0)
-      activesupport (= 4.1.0)
+    railties (4.1.6)
+      actionpack (= 4.1.6)
+      activesupport (= 4.1.6)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.3.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    rb-kqueue (0.2.3)
-      ffi (>= 0.5.0)
-    rdoc (4.1.1)
+    rdoc (4.1.2)
       json (~> 1.4)
-    redcarpet (3.1.1)
+    redcarpet (3.1.2)
     remotipart (1.2.1)
     rinku (1.5.1)
     ruby_parser (3.1.3)
       sexp_processor (~> 4.1)
+    sass-rails (5.0.0.beta1)
+      railties (>= 4.0.0, < 5.0)
+      sass (~> 3.2)
+      sprockets (~> 2.12)
+      sprockets-rails (>= 2.0, < 4.0)
     sassy-maps (0.4.0)
       sass (~> 3.3)
-    sdoc (0.4.0)
-      json (~> 1.8)
-      rdoc (~> 4.0, < 5.0)
-    sexp_processor (4.4.3)
-    slop (3.5.0)
-    sprockets (2.11.0)
+    sdoc (0.4.1)
+      json (~> 1.7, >= 1.7.7)
+      rdoc (~> 4.0)
+    sexp_processor (4.4.4)
+    slop (3.6.0)
+    sprockets (2.12.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.1.3)
+    sprockets-rails (2.1.4)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
@@ -335,16 +328,13 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    toolkit (2.5.0)
-      sass (~> 3.3.0)
-    treetop (1.4.15)
-      polyglot
-      polyglot (>= 0.3.1)
-    turbolinks (2.2.2)
+    toolkit (2.6.0)
+      sass (~> 3.3)
+    turbolinks (2.3.0)
       coffee-rails
-    tzinfo (1.2.1)
+    tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.5.0)
+    uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unf (0.1.4)
@@ -374,7 +364,7 @@ DEPENDENCIES
   cancancan
   carrierwave
   coffee-rails (~> 4.0.0)
-  compass (~> 1.0.0.alpha.18)
+  compass (~> 1.0.1)
   compass-rails!
   devise
   erb2haml
@@ -398,7 +388,7 @@ DEPENDENCIES
   modular-scale
   nkss-rails!
   nokogiri
-  oulu-rails (~> 0.3.11)!
+  oulu-rails (~> 0.4.9)!
   owlcarousel-rails
   pg
   pry
@@ -411,7 +401,7 @@ DEPENDENCIES
   redcarpet
   remotipart (~> 1.0)
   sass!
-  sass-rails!
+  sass-rails (~> 5.0.0.beta1)
   sdoc
   sqlite3
   turbolinks
