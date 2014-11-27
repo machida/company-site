@@ -210,11 +210,8 @@ pre
       display: block
       &::before
         content: attr(data-language)
-        color: $white
         background-color: $pink
         display: inline-block
-        position: absolute
-        top: 0
-        right: 0
-        +text-block(12px, 24px)
-        +rem('padding', 0 12px)
+        +absolute(left 0, right 0)
+        +text-block(12px 24px, $white)
+        +padding(horizontal, 12px)

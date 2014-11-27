@@ -4,7 +4,7 @@ $block: home-access
   +screen-xs
     +inline-block
 .#{$block}__address
-  +text-block($md, 1.4, .8)
+  +text-block($md 1.4 .8em)
 .#{$block}__take-time
   +rem('font-size', $sm)
 .#{$block}__take-time-link
@@ -46,11 +46,9 @@ $block: home-access
   &:hover
     color: $pink
 .#{$block}__map-description
-  +text-block(12px, 32px)
-  +absolute(left, -41px, top, 36px)
+  +text-block(12px 32px, $white)
+  +absolute(left -41px, top 36px)
   +rem('width', 90px)
   text-align: center
   background-color: $black
-  color: $white
-  +baloon-tale(top, $black, 4px, 10px, false, false)
-
+  +balloon-tale(top $black 4px 10px)

@@ -9,24 +9,24 @@ $block: home-members
   +rem('height', 80px)
 .#{$block}__member-name
   +tauri(bold)
-  +text-block($sm, 1, .2)
+  +text-block($sm 1 .2em)
   +rem('font-size', $sm)
 .#{$block}__member-icon-link
   .#{$block}__member-icon-image
-    border: 2px solid transparent
+    +border(all, 2px solid transparent)
   &:hover
     .#{$block}__member-icon-image
-      border: 2px solid $pink
+      +border(all, 2px solid $pink)
 .#{$block}__member-icon-image
   +box-sizing(border-box)
   +rem('width', 82px)
   display: block
   +border-radius(50%)
-  +absolute(left, 0, top, 4px)
+  +absolute(left 0, top 4px)
   +screen-sm
     +rem('width', 56px)
 .#{$block}__member-informations
-  +absolute(left, 90px, bottom, 0)
+  +absolute(left 90px, bottom 0)
 .#{$block}__member-name-link
   +hover-link
   color: $black
@@ -35,13 +35,11 @@ $block: home-members
 .#{$block}__sns-icon
   +inline-block
 .#{$block}__sns-link
-  color: $black
   display: block
-  +text-block($md)
-  +square-block(24px)
-  text-align: center
-  border: transparent 1px solid
+  +text-block($md, center $black)
+  +size(24px)
+  +border(all, 1px solid transparent)
   +box-sizing(border-box)
   &:hover
-    border: $pink 1px solid
+    +border(all, 1px solid $pink)
     color: $pink

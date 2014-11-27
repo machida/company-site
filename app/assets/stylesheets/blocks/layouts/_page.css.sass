@@ -2,13 +2,12 @@ $block: page
 
 .#{$block}__title
   background-color: $black
-  +rem('margin-top', 60px)
-  +rem('margin-bottom', 28px)
+  +margin(vertical, 60px 28px)
   +transition-duration(0)
   +screen-xs
     background-color: $yellow
-    +rem('margin-top', 20px)
-    +rem('margin-bottom', 14px)
+    +margin(horizontal, 20px 14px)
+    +border(left, 1px solid white)
     border-left: $black solid 10px
   &.is-actived
     +rem('margin-top', 120px)
@@ -19,23 +18,19 @@ $block: page
 .#{$block}__first-heading
   background-color: $yellow
   +inline-block
-  +text-block($xl, 3)
+  +text-block($xl 3, center $black)
   +rem('width', 180px)
-  text-align: center
   +tauri(bold)
-  color: $black
   +screen-xs
-    +text-block($lg, 2.4)
+    +text-block($lg 2.4, left)
     width: auto
-    text-align: left
 
 .edit-block
   text-align: right
 .edit-block__link
-  +text-block(24px, 50px, false, center)
-  +rem('width', 50px)
+  +text-block(24px 50px, center $white)
+  +size(50px)
   +border-radius(50%)
   background-color: $pink
-  color: $white !important
   +inline-block
   text-decoration: none

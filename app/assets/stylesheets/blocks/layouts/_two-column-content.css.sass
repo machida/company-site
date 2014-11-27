@@ -15,7 +15,7 @@ $block: two-column-content
       margin-bottom: 0
 
 .#{$block}__inner
-  +border(left, 1px, solid, rgba(0, 0, 0, .1), white)
+  +border(left, 1px solid rgba(0, 0, 0, .1))
   +rem('padding-left', 32px)
   +rem('padding-bottom', 38px)
   +box-sizing(border-box)
@@ -24,11 +24,11 @@ $block: two-column-content
     padding-left: 0
     border-left: none
   p
-    +text-block($md, 1.8, 1.4)
+    +text-block($md 1.8 1.4em)
 
 .#{$block}__title-wrapper
   +rem('width', 180px)
-  +absolute(left, 0, top, 0)
+  +absolute(left 0, top 0)
   +rem('padding-right', 30px)
   +box-sizing(border-box)
   &.members__title-wrapper
@@ -40,14 +40,13 @@ $block: two-column-content
 .#{$block}__first-heading
   background-color: $yellow
   +inline-block
-  +text-block($xl, 3, false, bold, center)
+  +text-block($xl 3, bold center $black)
   +rem('width', 180px)
   +tauri
-  color: $black
 
 .#{$block}__second-heading
   +tauri
-  +text-block($lg, 1.4, .4, bold, center)
+  +text-block($lg 1.4 .4em, bold center)
   +screen-xs
     text-align: left
   &.members__member-name
@@ -56,4 +55,3 @@ $block: two-column-content
 .#{$block}__second-heading-link
   +hover-link
   color: $black
-

@@ -1,22 +1,16 @@
 .main__header
   position: relative
-  +rem('padding-top', 22px)
-  +rem('padding-bottom', 4px)
+  +padding(horizontal, 22px 4px)
   +rem('margin', 0 20px)
-  border-bottom: rgba(0, 0, 0, .1) solid 1px
+  +border(bottom, 1px solid rgba(0, 0, 0, .1))
 .main__header-heading
-  color: $blue
-  +text-block(32px, 50px)
+  +text-block(32px 50px, $blue)
   +rem('width', 400px)
   +inline-block
 .main__first-heading
-  color: $blue
-  +rem('font-size', 38px)
-  +rem('margin-bottom', 22px)
+  +text-block(38px null 22px, $blue)
 .main__header-add-link
-  position: absolute
-  +rem('right', 0px)
-  +rem('top', 28px)
+  +absolute(right 0, top 28px)
 .main__body
   +rem('padding', 30px 20px)
 
@@ -29,10 +23,10 @@
 .main-table__th
   background-color: rgba(0, 0, 0, .1)
   +rem('padding', 10px)
-  border: rgba(0, 0, 0, .1) solid 1px
+  +border(all, 1px solid rgba(0, 0, 0, .1))
 .main-table__td
   +rem('padding', 10px)
-  border-bottom: rgba(0, 0, 0, .04) solid 1px
+  +border(all, 1px solid rgba(0, 0, 0, .04))
   text-align: left
 
 .main-table-actions__action

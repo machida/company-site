@@ -8,12 +8,12 @@ $block: article
 .#{$block}__content
   position: relative
   +rem('max-width', 720px)
-  +horizontal-mg-auto(false, 96px)
+  +margin(horizontal, auto)
+  +rem('margin-bottom', 96px)
 
 .#{$block}__title
-  +text-block(42px, 1.5, .8)
-  margin-left: -0.1em
-  margin-right: -0.1em
+  +text-block(42px 1.5 .8em)
+  +margin(horizontal, -0.1em)
   +bold-ja
 .#{$block}__title-link
   color: $black
@@ -23,10 +23,10 @@ $block: article
 .#{$block}__body
   +rem('font-size', $lg)
   h4
-    +text-block(28px, 1.6, .9)
+    +text-block(28px 1.6 .9em)
     +bold-ja
   p
-    +text-block($lg, 1.9, 2)
+    +text-block($lg 1.9 2em)
   ul,
   ol
     +rem('margin-bottom', $lg*2)
@@ -37,7 +37,7 @@ $block: article
     list-style: decimal
   li
     +rem('margin-bottom', $lg*.6)
-    +text-block($lg, 1.6)
+    +text-block($lg 1.6)
     &:last-child
       margin-bottom: 0
   a
@@ -47,17 +47,18 @@ $block: article
       color: $pink
   img
     display: block
-    +horizontal-mg-auto(false, 40px)
-    max-width: 120%
+    +margin(horizontal, auto)
+    +rem('margin-bottom', 40px)
   blockquote
     position: relative
     padding-left: 1.8em
     border-left: 8px solid rgba(0, 0, 0, .1)
     +rem('margin-bottom', 40px)
   >div
-    +horizontal-mg-auto(false, 40px)
+    +margin(horizontal, auto)
+    +rem('margin-bottom', 40px)
     strong
-      +text-block(16px, 1.8)
+      +text-block(16px 1.8)
     iframe
       +rem('margin-bottom', 8px)
   .center
@@ -137,23 +138,23 @@ $block: article
   &.is-previous,
   &.is-next
     color: $gray
-    +border(all, 1px, solid, $gray)
-    +text-block(10px, 16px)
+    +border(all, 1px solid $gray)
+    +text-block(10px 16px)
     +rem('width', 16px)
     text-align: center
   &.is-previous
-    +absolute(left, 0, top, 0)
+    +absolute(left 0, top 0)
   &.is-next
-    +absolute(right, 0, top, 0)
+    +absolute(right 0, top 0)
 .#{$block}__nav-link-text
   +ellipsis
   display: block
-  +text-block(12px, 16px)
+  +text-block(12px 16px)
 .#{$block}__footer
   padding-top: 3em
 
 .back-to-articles-link
   +button-base(14px, 32px, bold, 100px, true, true)
-  border: $pink solid 4px
+  +border(all, 4px solid $pink)
   color: $pink
   +tauri(bold)

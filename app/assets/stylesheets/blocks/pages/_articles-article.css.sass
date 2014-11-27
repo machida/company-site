@@ -2,7 +2,7 @@ $block: articles-article
 .articles__wrapper
   +rem('max-width', 680px)
   +rem('padding-top', 32px)
-  +horizontal-mg(auto)
+  +margin(horizontal, auto)
 .#{$block}
   +relative(1)
   +rem('padding-left', 122px)
@@ -10,31 +10,29 @@ $block: articles-article
   +rem('margin-bottom', 50px)
   +box-sizing(border-box)
   +clearfix
-  +border(bottom, 1px, solid, rgba(0, 0, 0, .08), white)
+  +border(bottom, 1px solid rgba(0, 0, 0, .08))
 .#{$block}__title-link
-  color: $black
-  +text-block(28px, 1.6)
+  +text-block(28px 1.6, $black)
   +bold-ja
   text-decoration: none
   &:hover
     color: $pink
 .#{$block}__meta
-  +absolute(left, 0, top, 0)
+  +absolute(left 0, top 0)
   +rem('width', 88px)
   text-align: center
 .#{$block}__author-icon-image
   +rem('width', 40px)
   +border-radius(50%)
   display: block
-  +horizontal-mg(auto)
+  +margin(horizontal, auto)
   +rem('margin-bottom', 4px)
 .#{$block}__author-name
   display: block
   +tauri(bold)
-  +text-block(12px, 1.6)
+  +text-block(12px 1.6)
 .#{$block}__created-at
-  +text-block(16px, 1.4, 6px)
-  color: $gray
+  +text-block(16px 1.4 6px, $gray)
   +montserrat
   display: block
 .#{$block}__tags

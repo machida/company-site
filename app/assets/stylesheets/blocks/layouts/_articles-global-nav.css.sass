@@ -1,14 +1,12 @@
 $block: article-global-nav
 .#{$block}
-  +absolute(left, 0, top, 30px)
+  +absolute(left 0, top 30px)
 .#{$block}__logo
   +inline-block
 .#{$block}__logo-link
   +tauri(bold)
-  font-weight: bold
   text-decoration: none
-  +text-block(30px, 30px)
-  color: $black
+  +text-block(30px 30px, bold $black)
   +rem('margin-right', 24px)
 
 .#{$block}__items
@@ -18,10 +16,8 @@ $block: article-global-nav
   +rem('margin-right', 24px)
 .#{$block}__link
   +tauri(bold)
-  font-weight: bold
   text-decoration: none
-  +text-block(16px, 30px)
-  color: $black
+  +text-block(16px 30px, bold $black)
   &:hover
     color: $pink
   &:active

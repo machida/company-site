@@ -1,11 +1,10 @@
 .header-search-form
-  +border(all, 1px, solid, rgba(0, 0, 0, .1), white)
+  +border(all, 1px solid rgba(0, 0, 0, .1))
   +inline-block
+  +padding(horizontal, 3px)
   +rem('padding-right', 32px)
-  +rem('padding-top', 3px)
-  +rem('padding-bottom', 3px)
-  +text-block($md, 1.4)
-  +absolute(right, 0, top, 28px)
+  +text-block($md 1.4)
+  +absolute(right 0, top 28px)
   overflow: hidden
   input::-webkit-input-placeholder,
   isindex::-webkit-input-placeholder
@@ -15,24 +14,21 @@
     +rgba(rgba(0, 0, 0, .2), $black, color)
     font-weight: bold
 .header-search-form__input-text
-  +text-block($md, 1.4)
-  +rem('height', $md * 1.4)
+  +text-block($md 1.4)
+  +size($md * 1.4 100px)
   +rem('padding-left', 8px)
-  +rem('width', 100px)
   +box-sizing(border-box)
   &:focus,
   &.is-focused
     +rem('width', 240px)
 .header-search-form__button
-  +absolute(right, 0, top, 0)
-  +text-block($md, 1.4)
-  +rem('padding-top', 3px)
-  +rem('padding-bottom', 3px)
+  +absolute(right 0, top 0)
+  +text-block($md 1.4, center)
+  +padding(horizontal, 3px)
   +rem('width', 28px)
-  text-align: center
   display: block
   cursor: pointer
   &:hover
     color: $pink
   &:active
-    +absolute(right, 0, top, 2px)
+    +absolute(right 0, top 2px)

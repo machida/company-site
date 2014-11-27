@@ -20,7 +20,7 @@
   height: 100%
   width: auto
   display: block
-  +horizontal-mg(auto)
+  +margin(horizontal, auto)
   +screen-xs
     margin-left: 78px
     margin-right: 0
@@ -37,20 +37,20 @@
   .hero__site-title
     display: block
     float: left
-    +text-block(60px, 1)
+    +text-block(60px 1)
     +screen-xs
-      +text-block(50px, 1)
+      +text-block(50px 1)
       +rem('margin-bottom', 6px)
       float: none
   .hero__tag-line
     display: block
     float: left
     vertical-align: bottom
-    +text-block(22px, 1.4)
+    +text-block(22px 1.4)
     +rem('margin-left', 26px)
     +rem('margin-top', 28px)
     +screen-xs
-      +text-block(16px, 1.4)
+      +text-block(16px 1.4)
       margin-top: 0
       margin-left: 0
       float: none
@@ -73,23 +73,21 @@
   &:hover
     +opacity(1)
 .hero__tag-line
-  +text-block(30px)
+  +text-block(30px, bold)
   +tauri(bold)
   +rgba(rgba(255, 255, 255, .7), $blue-green-l, color)
-  font-weight: bold
   +screen-xs
     +rem('font-size', 18px)
 
 .hero__tools
-  +absolute(right, 15px, bottom, 12px)
+  +absolute(right 15px, bottom 12px)
   +screen-xs
-    +absolute(left, 10px, bottom, 10px)
+    +absolute(left 10px, bottom 10px)
 .hero__tool-link
   display: block
   float: left
 .hero__tool-name
-  +rem('width', 45px)
-  +rem('height', 57px)
+  +size(57px 45px)
   +opacity(.7)
   +screen-xs
     +rem('width', 38px)

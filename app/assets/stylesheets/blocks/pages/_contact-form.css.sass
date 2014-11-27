@@ -16,7 +16,7 @@ $block: contact-form
   color: $yellow
 .#{$block}__text-input,
 .#{$block}__textarea
-  +border(all, 1px, solid, rgba(0, 0, 0, .2), white)
+  +border(all, 1px solid rgba(0, 0, 0, .2))
   width: 100%
   +text-block(16px, 28px)
 .#{$block}__textarea
@@ -24,7 +24,7 @@ $block: contact-form
 .field_with_errors
   .#{$block}__text-input,
   .#{$block}__textarea
-    border: rgba($pink, .4) solid 1px
+    +border(all, 1px solid rgba($pink, .4))
 .#{$block}__fields-title
   text-align: center
   +screen-xs
@@ -36,15 +36,15 @@ $block: contact-form
       display: inline
       +rem('font-size', 18px)
 .#{$block}__action-send
-  border: $pink solid 4px
+  +border(all, 4px solid $pink)
   color: $pink
   +rem('line-height', 36px)
   +rem('font-size', 20px)
   display: block
   +rem('width', 140px)
-  +horizontal-mg(auto)
+  +margin(horizontal, auto)
   +tauri
   &:hover
-    border: $pink solid 4px
+    +border(all, 4px solid $pink)
     color: $white
     background-color: $pink

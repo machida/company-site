@@ -1,9 +1,7 @@
 .notice
   width: 100%
-  +absolute(left, 0, top, 0)
+  +absolute(left 0, top 0)
   +rgba(rgba($black, .7), white, background-color)
 .notice__wrapper
   +rem('padding', 40px 0)
-  text-align: center
-  +text-block($lg, 1.7)
-  color: $white
+  +text-block($lg 1.7, center $white)

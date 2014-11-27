@@ -45,13 +45,11 @@ gem 'rails-assets-datetimepicker'
 gem "jquery-fileupload-rails"
 
 # Sass
-gem 'sass-rails', '~> 5.0.0.beta1'
-gem 'sass', github: "nex3/sass", tag: '3.4.4'
-gem "compass", "~> 1.0.1"
-gem "compass-rails", github: "Compass/compass-rails"
+gem 'sass-rails'
+gem "compass-rails"
 gem "modular-scale"
 # gem 'oulu-rails', :path => '../oulu-rails'
-gem 'oulu-rails', '~> 0.4.9', github: 'oulu/oulu-rails'
+gem 'oulu-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -10,8 +10,7 @@
   position: relative
   background-color: $pink
   +clearfix
-  padding-top: 2.4em
-  padding-bottom: 2.4em
+  +padding(horizontal, 2.4em)
 .post-nav
   +rem('padding-left', 170px)
   position: relative
@@ -33,15 +32,14 @@
     .post-nav____article-image
       +opacity(1)
 .post-nav____article-image-wrapper
-  +rem('width', 78px)
-  +absolute(left, 0, top, 0)
+  +absolute(left 0, top 0)
   overflow: hidden
-  height: 100%
+  +size(100% 78px)
 .post-nav____article-image
   width: 100%
   +opacity(.7)
 .post-nav____article-title
-  +text-block($sm, 1.5, .6)
+  +text-block($sm 1.5 .6em)
   +rem('height', $sm*3)
   display: block
   overflow: hidden
@@ -50,11 +48,9 @@
   display: block
 .post-nav__first-heading
   +tauri
-  +text-block($md)
-  color: $white
-  +absolute(left, 0, top, 0)
+  +text-block($md, $white right)
+  +absolute(left 0, top 0)
   +rem('width', 130px)
-  text-align: right
 .post-nav__item
   +inline-block
   +text-block($sm)

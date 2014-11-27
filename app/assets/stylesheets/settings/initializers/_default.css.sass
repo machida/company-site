@@ -14,12 +14,10 @@ body
 .wrapper
   +rem('max-width', $wrapper-max-width)
   +box-sizing(border-box)
-  +horizontal-mg(auto)
-  +rem('padding-left', $wrapper-padding)
-  +rem('padding-right', $wrapper-padding)
+  +margin(horizontal, auto)
+  +padding(horizontal, $wrapper-padding)
   +screen-xs
-    +rem('padding-left', 10px)
-    +rem('padding-right', 10px)
+    +padding(horizontal, 10px)
 
 .content
   color: $black
